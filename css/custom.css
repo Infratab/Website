@@ -1,0 +1,19 @@
+.section1, .about,.nav
+{
+min-height: 100%;
+text-align: center;
+margin-top: 5%;
+font-size: 24px;
+}
+.about{
+font-size: 30px;
+}
+.nav a
+{
+color: black;
+padding: 3%;
+}
+.about a
+{
+color: #4db849;
+} 
