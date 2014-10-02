@@ -1,12 +1,22 @@
-.section1, .about,.nav
+header {
+    position: fixed;
+    display: none;
+    width: 100%;
+   z-index:3;
+    font-size: 24px;
+	background-color: orange;
+	
+}
+.section1, .about,.nav, .section2
 {
 min-height: 100%;
 text-align: center;
-margin-top: 5%;
+padding-top: 5%;
 font-size: 24px;
 }
 .about{
 font-size: 30px;
+
 }
 .nav a
 {
@@ -17,3 +27,16 @@ padding: 3%;
 {
 color: #4db849;
 } 
+header img
+{
+padding:10px 300px 10px 110px;
+}
+.section2 nav a
+{
+border:1px solid black;
+} 
+.section2 nav a img
+{
+width:30px;
+height:30px;
+}
