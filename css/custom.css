@@ -23,10 +23,26 @@ font-size: 30px;
 color: black;
 padding: 3%;
 }
-.about a
+.about a 
 {
+
 color: #4db849;
 } 
+.section3 a{
+font-size: 28px;
+color: #4db849;
+}
+.black
+{
+color:#B2ADAD;
+}
+.underline{
+text-decoration: underline;
+}
+.section3 p
+{
+font-size:24px;
+}
 header img
 {
 padding:10px 300px 10px 110px;
@@ -48,35 +64,49 @@ height:70px;
 }
 .section2 li
 {
-list-style:none;
-width: 20%;
-height: 58px;
+
+width:70px;
+height: 72px;
+border-radius: 50%;
 }
-li: first-child
+.section3
 {
-background: url(../images/icons.png) 0 50%;
+text-align: center;
 }
-li: nth-child(2)
+
+#photoshop
 {
-background: url(../images/icons.png) 30% 50%;
+background: url(../images/icons.png) 2px 50% no-repeat;
+
 }
-li: nth-child(3)
+#html
+{
+background: url(../images/icons.png) 4px 50%;
+}
+#js
 {
 background: url(../images/icons.png) 50% 50%;
 }
-li: nth-child(4)
+#db
 {
 background: url(../images/icons.png) 70% 50%;
 }
-li: nth-child(5)
+#server
 {
 background: url(../images/icons.png) 90% 50%;
 }
-
+#navlist li:hover
+{
+background-color:green;
+}
 #section4
 {
 text-align:right;
 }
-	  
+#map_canvas
+{
+width:600px;
+height: 400px;
+}	  
 	  
 	  
