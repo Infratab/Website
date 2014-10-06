@@ -4,7 +4,7 @@ header {
     width: 100%;
    z-index:3;
     font-size: 24px;
-	background-color: orange;
+	background-color: white;
 	
 }
 .section1, .about,.nav, .section2
@@ -18,7 +18,7 @@ font-size: 24px;
 font-size: 30px;
 
 }
-.nav a, a
+.nav a
 {
 color: black;
 padding: 3%;
@@ -31,13 +31,46 @@ header img
 {
 padding:10px 300px 10px 110px;
 }
-.section2 nav a
+.section2 nav img
 {
 
-border:1px solid black;
+box-shadow: 5px 5px 5px #888888;
+border:2px solid white;
 } 
+.section2 div
+{
+margin-left: 30px;
+}
 .section2 nav a img
 {
-width:80px;
-height:80px;
+width:70px;
+height:70px;
 }
+.section2 li
+{
+list-style:none;
+width: 20%;
+height: 58px;
+}
+li: first-child
+{
+background: url(../images/icons.png) 0 50%;
+}
+li: nth-child(2)
+{
+background: url(../images/icons.png) 30% 50%;
+}
+li: nth-child(3)
+{
+background: url(../images/icons.png) 50% 50%;
+}
+li: nth-child(4)
+{
+background: url(../images/icons.png) 70% 50%;
+}
+li: nth-child(5)
+{
+background: url(../images/icons.png) 90% 50%;
+}
+
+
