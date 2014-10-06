@@ -53,52 +53,39 @@ padding:10px 300px 10px 110px;
 box-shadow: 5px 5px 5px #888888;
 border:2px solid white;
 } 
-.section2 div
-{
-margin-left: 30px;
-}
+
 .section2 nav a img
 {
 width:70px;
 height:70px;
 }
-.section2 li
-{
 
-width:70px;
-height: 72px;
-border-radius: 50%;
-}
 .section3
 {
 text-align: center;
 }
+.spec{
+margin-top: 200px;
+}
 
-#photoshop
-{
-background: url(../images/icons.png) 2px 50% no-repeat;
 
-}
-#html
-{
-background: url(../images/icons.png) 4px 50%;
-}
-#js
-{
-background: url(../images/icons.png) 50% 50%;
-}
-#db
-{
-background: url(../images/icons.png) 70% 50%;
-}
-#server
-{
-background: url(../images/icons.png) 90% 50%;
-}
-#navlist li:hover
-{
-background-color:green;
-}
+.spec ul,.spec ul li {padding:0; margin:0; list-style:none;}
+			.spec ul {width:100%;}
+			.spec ul li a {float:left; width:12%;height:100px; margin:0 4%;cursor: pointer; border-radius: 50%;}
+
+			.spec ul li:first-child a{ background: #ecf0f1 url('../images/icons.png') no-repeat -3% 50%;}
+			.spec ul li:nth-child(2) a { background: #ecf0f1 url('../images/icons.png') no-repeat 23.5% 50%;}
+			.spec ul li:nth-child(3) a { background: #ecf0f1 url('../images/icons.png') no-repeat 49.5% 50%;}
+			.spec ul li:nth-child(4) a { background: #ecf0f1 url('../images/icons.png') no-repeat 77% 50%;}
+			.spec ul li:last-child a { background: #ecf0f1 url('../images/icons.png') no-repeat 103% 50%;}
+
+			.spec ul li:first-child a:hover{ background: #2ecc71 url('../images/icons.png') no-repeat -3% 50%;}
+			.spec ul li:nth-child(2) a:hover { background: #2ecc71 url('../images/icons.png') no-repeat 23.5% 50%;}
+			.spec ul li:nth-child(3) a:hover { background: #2ecc71 url('../images/icons.png') no-repeat 49.5% 50%;}
+			.spec ul li:nth-child(4) a:hover { background: #2ecc71 url('../images/icons.png') no-repeat 77% 50%;}
+			.spec ul li:last-child a:hover { background: #2ecc71 url('../images/icons.png') no-repeat 103% 50%;}
+
+
 #section4
 {
 text-align:right;
