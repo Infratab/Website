@@ -26,9 +26,14 @@ $('.section2 nav a').click(function(event) {
         var mapCanvas = document.getElementById('map_canvas');
         var mapOptions = {
           center: new google.maps.LatLng(12.935368, 77.613104),
-          zoom: 8,
+          zoom: 18,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
+		var point= new google.maps.LatLng(12.935368, 77.613104)
+		var marker=new google.maps.Marker({
+		position: point,
+		map:map
+		})
       }
       google.maps.event.addDomListener(window, 'load', initialize);
