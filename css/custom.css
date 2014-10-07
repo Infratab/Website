@@ -1,3 +1,7 @@
+body
+{
+font-family:  'calluna_sansregular';
+}
 header {
     position: fixed;
     display: none;
@@ -5,7 +9,19 @@ header {
    z-index:3;
     font-size: 24px;
 	background-color: white;
+	box-shadow: 5px 5px 5px #888888;
 	
+}
+header a
+{
+color:black;
+padding:0 15px 0 15px;
+font-size: 18px;
+}
+.talk
+{
+padding:0;
+
 }
 .section1, .about,.nav, .section2
 {
@@ -50,7 +66,7 @@ font-size:24px;
 }
 header img
 {
-padding:10px 300px 10px 110px;
+padding:10px 450px 10px 110px;
 }
 .section2 nav
 {
@@ -138,4 +154,41 @@ footer
 {
 text-align:center;
 
+}
+
+
+.postings li 
+{
+list-style: none;
+margin-top:10px;
+margin-bottom:10px;
+}
+.postings li , .postings a
+{
+width:270px;
+height: 144px;
+display: inline-block;
+}
+
+#designer
+{
+left:0;
+width:270px;
+background: url(../images/careers-img.png) 0 0;
+}
+#developer
+{
+left:280px;
+width:270px;
+background: url(../images/careers-img.png) 280px 0;
+}
+.postings li:hover
+{
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: grayscale(100%);
+filter: url(../svg/grayscale.svg); /* Firefox 4+ */
+filter: gray; /* IE 6-9 */
 }
