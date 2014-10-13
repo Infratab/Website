@@ -3,6 +3,48 @@
 		width: 90px !important;
 		margin-left: 8px;
 	}
+	.perk-border
+	{
+       border:none;
+    }
+	.padd0
+	{
+	  padding-top:0.5em;
+	 
+	}
+	.logo-section img 
+	{
+	  width:50%;
+	}
+	h6
+	{
+	font-size:12px;
+	}
+	h5
+	{
+	font-size:14px;
+	}
+	h4
+	{
+	font-size:18px;
+	}
+	h3
+	{
+	font-size:20px;
+	}
+	h2
+	{
+	font-size: 24px;
+	}
+	h1
+	{
+	font-size: 26px;
+	}
+	p
+	{
+	font-size:10px;
+	}
+
 	
 }
 @media screen and (min-width: 320px) and (max-width: 480px){
@@ -32,19 +74,154 @@
 	{
 	   background-color: #2ecc71;
 	}
+	.perk-border
+	{
+       border:none;
+    }
+	.padd0
+	{
+	  padding-top:0.5em;
+	 
+	}
+	.logo-section img 
+	{
+	  width:50%;
+	}
+	
+    h6
+	{
+	font-size:12px;
+	}
+	h5
+	{
+	font-size:14px;
+	}
+	h4
+	{
+	font-size:18px;
+	}
+	h3
+	{
+	font-size:20px;
+	}
+	h2
+	{
+	font-size: 24px;
+	}
+	h1
+	{
+	font-size: 26px;
+	}
+	p
+	{
+	font-size:10px;
+	}
 	
 }
-@media screen and (min-width: 320px) and (max-width: 480px){
-    .perk-border
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .padd1
 	{
-       border:none;
-    }
+	  padding-top:1em;
+	 
+	}
+	h6
+	{
+	font-size:14px;
+	}
+	h5
+	{
+	font-size:16px;
+	}
+	h4
+	{
+	font-size:20px;
+	}
+	h3
+	{
+	font-size:22px;
+	}
+	h2
+	{
+	font-size: 24px;
+	}
+	h1
+	{
+	font-size: 28px;
+	}
+	p
+	{
+	font-size:12px;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .padd2
+	{
+	  padding-top:2em;
+	}
+	h6
+	{
+	font-size:16px;
+	}
+	h5
+	{
+	font-size:18px;
+	}
+	h4
+	{
+	font-size:22px;
+	}
+	h3
+	{
+	font-size:24px;
+	}
+	h2
+	{
+	font-size: 28px;
+	}
+	h1
+	{
+	font-size: 30px;
+	}
+	p
+	{
+	font-size: 14px;
+	}
 
 }
-@media screen and (min-width: 481px) and (max-width: 767px){
-    .perk-border
+@media screen and (min-width: 1366px) and (max-width: 10000px){
+    .padd3
+		{
+		padding-top:3em;
+		}
+		
+	h6
 	{
-       border:none;
-    }
+	font-size:16px;
+	}
+	h5
+	{
+	font-size:18px;
+	}
+	h4
+	{
+	font-size:22px;
+	}
+	h3
+	{
+	font-size:24px;
+	}
+	h2
+	{
+	font-size: 28px;
+	}
+	h1
+	{
+	font-size: 30px;
+	}
+	p
+	{
+	font-size:14px;
+	}
+	
 
 }

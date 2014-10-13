@@ -7,6 +7,7 @@
     <title>Infratab Bangalore Private Limited</title>
     <link rel="shortcut icon" href="images/favicon.ico"> 
     <!-- Bootstrap -->
+	<link href="css/reset.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
 	<link href="css/stylesheet.css" rel="stylesheet">
@@ -20,35 +21,49 @@
     <![endif]-->
   </head>
   <body>
-     <header>
-	     <img alt="logo" src="images/logo.png">
-		 <a href="#section2">We &hearts; JavaScript</a>
+  
+     <header class="navbar-default" role="navigation">
+	  
+	    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img alt="logo" src="images/logo.png"></a>
+    </div>
+	    <div class="collapse navbar-collapse heigh" id="bs-example-navbar-collapse-1">
+		
+		 <h5 class="header-menu"><a href="#section2">We &hearts; JavaScript</a>
 		 <a href="#section3">Careers</a>
 		 <a href="#section4">Contact Us</a>
-		 <span class="talk">
-		 <a href="#">Talk</a>
+        <a href="#">Talk</a>
 		 <a href="www.infratab.in">in</a>|
-		 <a href="www.infratab.com">us</a></span>
+		<a href="www.infratab.com">us</a></h5>
+		
+		 </div>
+		
 	 </header>
-    <div class="section1 col-md-12 col-lg-12 col-sm-12 col-xs-12" id="section1">
+    <div class="section1 padd3 padd2 padd1 padd0 col-md-12 col-lg-12 col-sm-12 col-xs-12" id="section1">
         <div class="logo-section row col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
             <img alt="Infratab Logo" src="images/home-logo.png">
 		
 	    </div>
-        <div class="nav row col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-	        <a href="#section2">We &hearts; JavaScript</a>
+        <div class="nav padd3 padd2 padd1 padd0 row col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+	        <h3><a href="#section2">We &hearts; JavaScript</a>
 		    <a href="#section3">Careers</a>
-		    <a href="#section4">Contact Us</a>
+		    <a href="#section4">Contact Us</a></h3>
 	    </div>
-		<div class="about row col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+		<div class="about padd3 padd2 padd1 padd0 row col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 		    <h2><a href="#">Freshtime&trade;</a> solutions include smart tags and software for<br/>
 			those handling temperature sensitive products.</h2>
 			
 		</div>
     </div>
 	
-	<div class="section2 col-md-12 col-lg-12 col-sm-12 col-xs-12" id="section2">
-		<div class="row col-md-10 col-md-offset-2">
+	<div class="section2 padd3 padd2 padd1 padd0 col-md-12 col-lg-12 col-sm-12 col-xs-12" id="section2">
+		<div class="col-md-10 col-md-offset-2">
 			<nav>
 				 
 				 <a class="team-pic col-md-1 col-lg-1 col-xs-4 col-sm-2" href="#team1"><img src="images/team/pic1.jpg"/></a>
@@ -87,10 +102,10 @@
 	   
 	  
 	   <div class="row col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-	   <a class="underline hiring" href="#">We're Hiring!</a>
-	   <p><br/>Our Small team is going fast, building for a Global Marketplace.<br/>
-	   We'd love your help in making Infratab truly special. Come join us!</p>
-	   <p class="black"><i>"It's not our work life, it's our life's work."</i></p>
+	   <a class="underline hiring" href="#"><h2>We're Hiring!</h2></a>
+	   <h3><br/>Our Small team is going fast, building for a Global Marketplace.<br/>
+	   We'd love your help in making Infratab truly special. Come join us!</h3>
+	   <h3 class="black"><i>"It's not our work life, it's our life's work."</i></h3>
 	   </div>
 	   <div class="row col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 ">
 	           <ul class="postings">
@@ -105,40 +120,40 @@
 	   <div class="col-md-12">
 	   
 	   <div class="col-md-3 col-md-offset-2 perk-border">
-	     <a class="post" href="#">Web Designer</a>
+	     <a class="post" href="#"><h4>Web Designer</h4></a>
 		 <hr/>
-		<span class="underline">Job Perks<br/><br/></span>
-		 <span class="perks">Xbox 360 with Kinect<br/>
+		<h5 class="underline">Job Perks<br/><br/></h5>
+		 <h5 class="perks">Xbox 360 with Kinect<br/>
 		 24/7 Pantry<br/>
 		 All days Lunch<br/>
-		 Regular Team Outings</span>
+		 Regular Team Outings</h5>
 	   </div>
 	   <div class="col-md-5">
-	    <span style="font-size:22px;" class="underline">Job Description</span><br/><br/>
-		<span class="describe">We use BackboneJS as our MV* framework with MarionetteJS<br/>
+	    <h4 class="underline">Job Description</h4><br/>
+		<h5 class="describe">We use BackboneJS as our MV* framework with MarionetteJS<br/>
 		to provide the application architecture.<br/><br/>
-		We also use HandlebarJS and UnderscoreJS.<br/>
-		<a class="button" href="#">Apply Now</a></span>
+		We also use HandlebarJS and UnderscoreJS.<br/></h5>
+		<h3><a class="button" href="#">Apply Now</a></h3>
 	   </div>
 	   <div class="col-md-2"></div>
 	   </div>
     </div>	
-	<div class="col-md-12" id="section4">
+	<div class="col-md-12 section4" id="section4">
 	
 	 <div class="col-md-6 col-md-offset-2 " id="map_canvas"></div>
 	 <div class="col-md-3">
-	 <span>Infratab Bangalore Pvt. Ltd<br/><br/></span>
-	 <span class="small-font">Door No: 386/5, 1st A Cross,<br/>
+	 <h5>Infratab Bangalore Pvt. Ltd<br/><br/>
+	 Door No: 386/5, 1st A Cross,<br/>
 	 7th Block, Koramangala,<br/>
 	 Bangalore-560095,<br/>
 	 Karnataka, India.<br/><br/>
 	 Phone: (+91)80 6454 3666<br/>
-	 Email: info@infratab.in<br/><br/></span>
-	 <span>Infratab,Inc.<br/></span>
-	 <span class="small-font">4347 Raytheon Road,<br/>
+	 Email: info@infratab.in<br/><br/>
+	 Infratab,Inc.<br/></h5>
+	 <h6 class="small-font">4347 Raytheon Road,<br/>
 	 Oxnard, California,<br/>
 	 USA-93033.<br/>
-	 <a href="www.infratab.com">www.infratab.com</a></span>
+	 <a href="www.infratab.com">www.infratab.com</a></h6>
 	 </div
 	 <div class="col-md-2"></div>
 	</div>

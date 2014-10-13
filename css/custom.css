@@ -7,7 +7,7 @@ header {
     display: none;
     width: 100%;
    z-index:4;
-    font-size: 24px;
+  
 	background-color: white;
 	
 	top:0;
@@ -17,30 +17,23 @@ header a
 {
 color:black;
 padding:0 15px;
-font-size: 18px;
+
 }
 .team-name
 {
   margin: 0;
 }
-.talk
-{
-padding:0;
 
-}
+
 .section1, .about,.nav, .section2
 {
 min-height: 100%;
 text-align: center;
-padding-top: 5%;
-font-size: 24px;
+
 padding-right:0;
 padding-left:0;
 }
-.about{
-font-size: 30px;
 
-}
 .nav a
 {
 color: black;
@@ -53,11 +46,9 @@ color: #4db849;
 } 
 .post 
 {
-font-size: 22px;
 color:#4db849;
 }
 .hiring{
-font-size: 28px;
 color: #4db849;
 }
 .black
@@ -67,15 +58,14 @@ color:#B2ADAD;
 .underline{
 text-decoration: underline;
 }
-.section3 p
+.navbar-collapse.collapse
 {
-font-size:24px;
+height: 100px !important;
 }
-header img
-{
-padding:10px 390px 10px 90px;
+.header-menu{
+	float: right;
+	padding: 30px 2px;
 }
-
 .section2 nav img
 {
 
@@ -92,8 +82,12 @@ margin: 5px;
 
 .section3
 {
-margin-top:150px;
 text-align: center;
+}
+.section3,.section2,.section4
+{
+margin-top:75px;
+margin-bottom: 75px;
 }
 .spec{
 margin-top: 200px;
@@ -119,28 +113,21 @@ margin-top: 200px;
 
 #section4
 {
-margin-top:150px;
 text-align:right;
-margin-bottom: 100px;
 }
 #map_canvas
 {
-width:100%;
 height: 400px;
 }	  
-span
-{
-font-size: 18px;
-}	 
+ 
 .button
 {
-font-size:24px;
 border: 1px solid green;
 border-radius: 5px;
 padding: 10px;
 text-decoration: none;
 color: #4db849;
-line-height:4;
+line-height:3;
 }
 .perk-border
 {
@@ -151,10 +138,7 @@ hr
 {
 border: 1px solid #B2ADAD;
 }
-.small-font
-{
-font-size:16px;
-}
+
 footer 
 {
 text-align:center;
@@ -186,6 +170,7 @@ background: url(../images/careers-img.png) 0 0;
 left:280px;
 width:270px;
 background: url(../images/careers-img.png) 280px 0;
+margin-right:58px;
 }
 .postings li:hover
 {
@@ -197,3 +182,4 @@ filter: grayscale(100%);
 filter: url(../svg/grayscale.svg); /* Firefox 4+ */
 filter: gray; /* IE 6-9 */
 }
+
