@@ -1,0 +1,50 @@
+@media screen and (min-width: 481px) and (max-width: 767px){
+	a.team-pic{
+		width: 90px !important;
+		margin-left: 8px;
+	}
+	
+}
+@media screen and (min-width: 320px) and (max-width: 480px){
+	.spec  ul 
+	{
+	   z-index: 3;
+       position: relative;
+	}
+	
+	.spec ul li a{
+		width:52px;
+		height: 52px;
+		margin: 0 1%;
+	}
+	.spec ul li:first-child a{ background: #ecf0f1 url('../images/icons.png') no-repeat -3% 50%; background-size:460px;}
+	.spec ul li:nth-child(2) a { background: #ecf0f1 url('../images/icons.png') no-repeat 23.5% 50%;background-size:460px;}
+	.spec ul li:nth-child(3) a { background: #ecf0f1 url('../images/icons.png') no-repeat 49.5% 50%; background-size:460px;}
+	.spec ul li:nth-child(4) a { background: #ecf0f1 url('../images/icons.png') no-repeat 77% 50%; background-size:460px;}
+	.spec ul li:last-child a { background: #ecf0f1 url('../images/icons.png') no-repeat 103% 50%; background-size:460px;}
+
+	.spec ul li:first-child a:hover{ background: #2ecc71 url('../images/icons.png') no-repeat -3% 50%; background-size:460px;}
+	.spec ul li:nth-child(2) a:hover { background: #2ecc71 url('../images/icons.png') no-repeat 23.5% 50%; background-size:460px;}
+	.spec ul li:nth-child(3) a:hover { background: #2ecc71 url('../images/icons.png') no-repeat 49.5% 50%; background-size:460px;}
+	.spec ul li:nth-child(4) a:hover { background: #2ecc71 url('../images/icons.png') no-repeat 77% 50%; background-size:460px;}
+	.spec ul li:last-child a:hover { background: #2ecc71 url('../images/icons.png') no-repeat 103% 50%; background-size:460px;}
+	.spec ul li a:hover
+	{
+	   background-color: #2ecc71;
+	}
+	
+}
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .perk-border
+	{
+       border:none;
+    }
+
+}
+@media screen and (min-width: 481px) and (max-width: 767px){
+    .perk-border
+	{
+       border:none;
+    }
+
+}
