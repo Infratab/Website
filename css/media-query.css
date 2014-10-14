@@ -7,11 +7,7 @@
 	{
        border:none;
     }
-	.padd0
-	{
-	  padding-top:0.5em;
-	 
-	}
+	
 	.logo-section img 
 	{
 	  width:50%;
@@ -78,11 +74,7 @@
 	{
        border:none;
     }
-	.padd0
-	{
-	  padding-top:0.5em;
-	 
-	}
+	
 	.logo-section img 
 	{
 	  width:50%;
@@ -119,11 +111,7 @@
 	
 }
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    .padd1
-	{
-	  padding-top:1em;
-	 
-	}
+   
 	h6
 	{
 	font-size:14px;
@@ -154,10 +142,7 @@
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1365px){
-    .padd2
-	{
-	  padding-top:2em;
-	}
+   
 	h6
 	{
 	font-size:16px;
@@ -189,10 +174,7 @@
 
 }
 @media screen and (min-width: 1366px) and (max-width: 10000px){
-    .padd3
-		{
-		padding-top:3em;
-		}
+   
 		
 	h6
 	{

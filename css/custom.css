@@ -8,7 +8,7 @@ header {
     width: 100%;
    z-index:4;
   
-	background-color: white;
+	background-color: white !important;
 	
 	top:0;
 	
@@ -23,7 +23,9 @@ padding:0 15px;
 {
   margin: 0;
 }
-
+.underline{
+text-decoration: underline;
+}
 
 .section1, .about,.nav, .section2
 {
@@ -44,26 +46,17 @@ padding: 10px;
 
 color: #4db849;
 } 
-.post 
-{
-color:#4db849;
-}
+
 .hiring{
 color: #4db849;
 }
-.black
-{
-color:#B2ADAD;
-}
-.underline{
-text-decoration: underline;
-}
+
 .navbar-collapse.collapse
 {
 height: 100px !important;
 }
 .header-menu{
-	float: right;
+	
 	padding: 30px 2px;
 }
 .section2 nav img
@@ -84,19 +77,17 @@ margin: 5px;
 {
 text-align: center;
 }
-.section3,.section2,.section4
-{
-margin-top:75px;
-margin-bottom: 75px;
-}
-.spec{
-margin-top: 200px;
-}
 
+.spec{
+padding-top: 35px;
+}
+.tech-box{
+padding-top: 46px;
+}
 
 .spec ul,.spec ul li {padding:0; margin:0; list-style:none;}
 			.spec ul {width:100%;}
-			.spec ul li a {float:left; width:12%;height:100px; margin:0 4%;cursor: pointer; border-radius: 50%;}
+			.spec ul li a {float:left; width:12%;height:100px; margin:0 65px 0 20px;cursor: pointer; border-radius: 50%;}
 
 			.spec ul li:first-child a{ background: #ecf0f1 url('../images/icons.png') no-repeat -3% 50%;}
 			.spec ul li:nth-child(2) a { background: #ecf0f1 url('../images/icons.png') no-repeat 23.5% 50%;}
@@ -129,11 +120,7 @@ text-decoration: none;
 color: #4db849;
 line-height:3;
 }
-.perk-border
-{
-border-right: solid #B2ADAD;
-border-right-width:2px;
-}
+
 hr
 {
 border: 1px solid #B2ADAD;
@@ -145,41 +132,108 @@ text-align:center;
 
 }
 
-
-.postings li 
-{
-list-style: none;
-margin-top:10px;
-margin-bottom:10px;
-}
-.postings li , .postings a
-{
-width:270px;
-height: 144px;
-display: inline-block;
+  .bubble {
+    position: relative;
+    width: 66px;
+    height: 35px;
+    padding: 2px 9px;
+    background: #bbbbbb;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
 }
 
-#designer
-{
-left:0;
-width:270px;
-background: url(../images/careers-img.png) 0 0;
-}
-#developer
-{
-left:280px;
-width:270px;
-background: url(../images/careers-img.png) 280px 0;
-margin-right:58px;
-}
-.postings li:hover
-{
--webkit-filter: grayscale(100%);
--moz-filter: grayscale(100%);
--ms-filter: grayscale(100%);
--o-filter: grayscale(100%);
-filter: grayscale(100%);
-filter: url(../svg/grayscale.svg); /* Firefox 4+ */
-filter: gray; /* IE 6-9 */
+  .bubble:after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: 2px;
+    border-style: solid;
+    border-width: 17px 5px 0;
+    border-color: #bbbbbb transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
 }
 
+.job-perks,.openings
+{
+	border:1px solid #6bc168;
+	border-radius:5px;
+	height:210px;
+	
+}
+.perks-head,.read-more
+{
+background-color: #6bc168;
+color: white;
+padding: 8px 0px;
+text-align:center;
+
+
+}
+.read-more
+{
+
+padding:5px 18px;
+border-radius:3px;
+}
+.perks h5{
+	text-align:left;
+	padding-left:18px;
+	line-height:150%;
+	}
+.openings
+{
+	line-height:200%;
+	padding-top:40px;
+	
+}
+.offerings
+{
+margin-top:50px;
+}
+.see-all
+{
+margin-top:50px;
+}
+.bold{
+	font-weight:700;
+	}
+	
+.section1,.section2, .section3, .section4{
+padding-top:150px;
+padding-bottom:150px;
+}
+
+  .post{
+    position: relative;
+    width: 188px;
+    height: 257px;
+    padding: 0px;
+    background: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	border:1px solid #bdc3c7;
+	margin-right:30px;
+}
+
+  .post:after {
+    content: "";
+    position: absolute;
+    bottom: -21px;
+    left: 73px;
+    border-style: solid;
+    border-width: 20px 16px 0px;
+	border-color: #bdc3c7 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+.post-heading{
+background: #bdc3c7;
+height:40px;
+text-align:center;
+padding-top:12px;
+}
