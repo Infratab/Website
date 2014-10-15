@@ -80,6 +80,7 @@ text-align: center;
 
 .spec{
 padding-top: 35px;
+margin-left:87px;
 }
 .tech-box{
 padding-top: 46px;
@@ -87,19 +88,19 @@ padding-top: 46px;
 
 .spec ul,.spec ul li {padding:0; margin:0; list-style:none;}
 			.spec ul {width:100%;}
-			.spec ul li a {float:left; width:12%;height:100px; margin:0 65px 0 20px;cursor: pointer; border-radius: 50%;}
+			.spec ul li a {float:left; width:9%;height:100px; margin:0 65px 0 49px;cursor: pointer; border-radius: 50%;}
 
-			.spec ul li:first-child a{ background: #ecf0f1 url('../images/icons.png') no-repeat -3% 50%;}
-			.spec ul li:nth-child(2) a { background: #ecf0f1 url('../images/icons.png') no-repeat 23.5% 50%;}
+			.spec ul li:first-child a{ background: #ecf0f1 url('../images/icons.png') no-repeat -3.2% 50%;}
+			.spec ul li:nth-child(2) a { background: #ecf0f1 url('../images/icons.png') no-repeat 23.3% 50%;}
 			.spec ul li:nth-child(3) a { background: #ecf0f1 url('../images/icons.png') no-repeat 49.5% 50%;}
 			.spec ul li:nth-child(4) a { background: #ecf0f1 url('../images/icons.png') no-repeat 77% 50%;}
-			.spec ul li:last-child a { background: #ecf0f1 url('../images/icons.png') no-repeat 103% 50%;}
+			.spec ul li:last-child a { background: #ecf0f1 url('../images/icons.png') no-repeat 103.4% 50%;}
 
-			.spec ul li:first-child a:hover{ background: #2ecc71 url('../images/icons.png') no-repeat -3% 50%;}
-			.spec ul li:nth-child(2) a:hover { background: #2ecc71 url('../images/icons.png') no-repeat 23.5% 50%;}
+			.spec ul li:first-child a:hover{ background: #2ecc71 url('../images/icons.png') no-repeat -3.2% 50%;}
+			.spec ul li:nth-child(2) a:hover { background: #2ecc71 url('../images/icons.png') no-repeat 23.3% 50%;}
 			.spec ul li:nth-child(3) a:hover { background: #2ecc71 url('../images/icons.png') no-repeat 49.5% 50%;}
 			.spec ul li:nth-child(4) a:hover { background: #2ecc71 url('../images/icons.png') no-repeat 77% 50%;}
-			.spec ul li:last-child a:hover { background: #2ecc71 url('../images/icons.png') no-repeat 103% 50%;}
+			.spec ul li:last-child a:hover { background: #2ecc71 url('../images/icons.png') no-repeat 103.4% 50%;}
 
 
 #section4
@@ -206,8 +207,9 @@ padding-top:150px;
 padding-bottom:150px;
 }
 
-  .post{
-    position: relative;
+ .post{
+	
+	 position: relative;
     width: 188px;
     height: 257px;
     padding: 0px;
@@ -218,22 +220,35 @@ padding-bottom:150px;
 	border:1px solid #bdc3c7;
 	margin-right:30px;
 }
+.post:after, .post:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
 
-  .post:after {
-    content: "";
-    position: absolute;
-    bottom: -21px;
-    left: 73px;
-    border-style: solid;
-    border-width: 20px 16px 0px;
-	border-color: #bdc3c7 transparent;
-    display: block;
-    width: 0;
-    z-index: 1;
+.post:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: white;
+	border-width: 15px;
+	margin-left: -17px;
+}
+.post:before {
+	border-color: white;
+	border-top-color:#bdc3c7 ;
+	border-width: 19px;
+	margin-left: -21px;
 }
 .post-heading{
 background: #bdc3c7;
 height:40px;
 text-align:center;
 padding-top:12px;
+}
+.post-content li{
+	text-align:left;
 }
