@@ -1,0 +1,411 @@
+//Imports
+@import "style";
+
+//Custom Fonts
+//-------------------------------
+
+//Font sizes
+//..............
+
+@font-13-c:		13px;
+@font-1515-c: 	15.15px; 
+
+//Custom Colors
+//--------------------------------
+
+@red-c:						#FF0000;
+@tooltip-color-c:			#959796;
+@selection-color-c:			#E97141;
+@scrollBar-color-c:			#f1f1f1;
+@yellowbg-c:				#f39c11;
+
+//Custom Variables
+//--------------------------------
+
+//In pixels
+
+@onepx-c: 					1px;
+@widthpx-c: 				@onepx-c;
+@heightpx-c: 				@onepx-c;
+@lineheightpx-c:			@onepx-c;
+@marginpx-c: 				@onepx-c;
+@paddingpx-c:				@onepx-c;
+
+
+//In percentage
+
+@onepr-c:					1%;
+@widthpr-c: 				@onepr-c;
+@heightpr-c: 				@onepr-c;
+@lineheightpr-c:			@onepr-c;
+@marginpr-c: 				@onepr-c;
+@paddingpr-c:				@onepr-c;
+
+
+//In em
+
+@oneem-c:					1em;
+@widthem-c: 				@oneem-c;
+@heightem-c: 				@oneem-c;
+@lineheightem-c:			@oneem-c;
+@marginem-c: 				@oneem-c;
+@paddingem-c:				@oneem-c;
+
+
+//Custom Z-index
+
+
+
+
+//Custom Mixins
+//---------------------------------
+
+//Custom class
+.allzero{
+	margin:0;
+	padding:0
+}
+.padzero{
+	padding:0
+}
+.marginzero{
+	margin:0
+}
+.table-middle{
+	vertical-align:middle
+}
+.transparentColor{
+	color:transparent !important
+}
+
+//Display
+//................
+
+.disp-wb{
+	display: -webkit-box;
+}
+.disp-wb-imp{
+	display: -webkit-box !important;
+}
+.disp-wib{
+	display: -webkit-inline-box;
+}
+.disp-wib-imp{
+	display: -webkit-inline-box !important;
+}
+.disp-b{
+	display: block;
+}
+.disp-b-imp{
+	display: block !important;
+}
+.disp-comp{
+	display: compact;
+}
+.disp-comp-imp{
+	display: compact !important;
+}
+.disp-flex{
+	display: flex;
+}
+.disp-flex-imp{
+	display: flex !important;
+}
+.disp-grid{
+	display: grid;
+}
+.disp-grid-imp{
+	display: grid !important;
+}
+.disp-inh{
+	display: inherit;
+}
+.disp-inh-imp{
+	display: inherit !important;
+}
+.disp-ini{
+	display: initial;
+}
+.disp-ini-imp{
+	display: initial !important;
+}
+.disp-in{
+	display: inline;
+}
+.disp-in-imp{
+	display: inline !important;
+}
+.disp-ib{
+	display: inline-block;
+}
+.disp-ib-imp{
+	display: inline-block !important;
+}
+.disp-if{
+	display: inline-flex;
+}
+.disp-if-imp{
+	display: inline-flex !important;
+}
+.disp-ig{
+	display: inline-grid;
+}
+.disp-ig-imp{
+	display: inline-grid !important;
+}
+.disp-it{
+	display: inline-table;
+}
+.disp-it-imp{
+	display: inline-table !important;
+}
+.disp-li{
+	display: list-item;
+}
+.disp-li-imp{
+	display: list-item !important;
+}
+.disp-n{
+	display: none;
+}
+.disp-n-imp{
+	display: none !important;
+}
+.disp-run{
+	display: run-in;
+}
+.disp-run-imp{
+	display: run-in !important;
+}
+.disp-tab{
+	display: table;
+}
+.disp-tab-imp{
+	display: table !important;
+}
+.disp-tcap{
+	display: table-caption;
+}
+.disp-tcap-imp{
+	display: table-caption !important;
+}
+.disp-tcell{
+	display: table-cell;
+}
+.disp-tcell-imp{
+	display: table-cell !important;
+}
+.disp-tcol{
+	display: table-column;
+}
+.disp-tcol-imp{
+	display: table-column !important;
+}
+.disp-tcolg{
+	display: table-column-group;
+}
+.disp-tcolg-imp{
+	display: table-column-group !important;
+}
+.disp-tfg{
+	display: table-footer-group;
+}
+.disp-tfg-imp{
+	display: table-footer-group !important;
+}
+.disp-thg{
+	display: table-header-group;
+}
+.disp-thg-imp{
+	display: table-header-group !important;
+}
+.disp-trg{
+	display: table-row-group;
+}
+.disp-trg-imp{
+	display: table-row-group !important;
+}
+
+//Overflow
+//.................
+
+//overflow: .of, overfllow-x: .ofx, overflow-y: .ofy, overflow-wrap: .ofw
+
+.of-a{
+	overflow: auto;
+}
+.of-hide{
+	overflow: hidden;
+}
+.of-inh{
+	overflow: inherit;
+}
+.of-ini{
+	overflow: initial;
+}
+.of-ol{
+	overflow: overlay;
+}
+.of-scroll{
+	overflow: scroll;
+}
+.of-vis{
+	overflow: visible;
+}
+
+.ofx-a{
+	overflow-x: auto;
+}
+.ofx-hide{
+	overflow-x: hidden;
+}
+.ofx-inh{
+	overflow-x: inherit;
+}
+.ofx-ini{
+	overflow-x: initial;
+}
+.ofx-ol{
+	overflow-x: overlay;
+}
+.ofx-scroll{
+	overflow-x: scroll;
+}
+.ofx-vis{
+	overflow-x: visible;
+}
+
+.ofy-a{
+	overflow-y: auto;
+}
+.ofy-hide{
+	overflow-y: hidden;
+}
+.ofy-inh{
+	overflow-y: inherit;
+}
+.ofy-ini{
+	overflow-y: initial;
+}
+.ofy-ol{
+	overflow-y: overlay;
+}
+.ofy-scroll{
+	overflow-y: scroll;
+}
+.ofy-vis{
+	overflow-y: visible;
+}
+
+.ofw-break{
+	overflow-wrap: break-word;
+}
+.ofw-inh{
+	overflow-wrap: inherit;
+}
+.ofw-ini{
+	overflow-wrap: initial;
+}
+.ofw-norm{
+	overflow-wrap: normal;
+}
+
+
+//Text Overflow
+//.................
+
+//text-overflow: tof
+
+.tof-c{
+	text-overflow: clip;
+}
+.tof-e{
+	text-overflow: ellipsis;
+}
+.tof-inh{
+	text-overflow: inherit;
+}
+.tof-ini{
+	text-overflow: initial;
+}
+
+//Text Transform
+//.................
+
+//text-transform: tt
+
+.tt-cap{
+	text-transform: capitalize;
+}
+.tt-inh{
+	text-transform: inherit;
+}
+.tt-ini{
+	text-transform: initial;
+}
+.tt-lc{
+	text-transform: lowercase;
+}
+.tt-uc{
+	text-transform: uppercase;
+}
+.tt-none{
+	text-transform: none;
+}
+
+
+//Vertical alignment
+//.....................
+
+//Vertical-alignment: valign
+
+.valign-t{
+	vertical-align: top;
+}
+.valign-m{
+	vertical-align: middle;
+}
+.valign-b{
+	vertical-align: bottom;
+}
+.valign-tt{
+	vertical-align: text-top;
+}
+.valign-tb{
+	vertical-align: text-bottom;
+}
+.valign-bl{
+	vertical-align: baseline;
+}
+.valign-wbm{
+	vertical-align: -webkit-baseline-middle;
+}
+.valign-inh{
+	vertical-align: inherit;
+}
+.valign-ini{
+	vertical-align: initial;
+}
+.valign-sub{
+	vertical-align: sub;
+}
+.valign-sup{
+	vertical-align: super;
+}
+
+
+//	Media queries
+//---------------------------------
+
+@highdensity:                 ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+                              ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
+                              ~"only screen and (-o-min-device-pixel-ratio: 3/2)",
+                              ~"only screen and (min-device-pixel-ratio: 1.5)";
+@mobile:                      ~"only screen and (min-width:288px)  and (max-width:767px)";
+@mobile-sm:                   ~"only screen and (min-width:220px)  and (max-width:319px)";
+@mobile-portrait:             ~"only screen and (min-width:320px)  and (max-width:767px)";                             
+@mobile-landscape:            ~"only screen and (min-width:569px)  and (max-width:767px)"; 
+@tablet:                      ~"only screen and (min-width:768px)  and (max-width:1023px)";
+@desktop-md:                  ~"only screen and (min-width:1024px)  and (max-width:1365px)";
+@desktop-xl:                  ~"only screen and (min-width:1366px)  and (max-width:1920px)";
+@desktop-xxl:                 ~"only screen and (min-width:1921px)  and (max-width:10000px)";
