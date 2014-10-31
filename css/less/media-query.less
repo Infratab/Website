@@ -1,0 +1,423 @@
+@import "variable.less";
+@import "mixins.less";
+
+@media screen and (min-width: 320*widthPx) and (max-width: 481*widthPx){ 
+	img.background {
+        height: 100*heightPt;
+    }
+
+    .section 
+	{
+        height: auto;
+        padding-top: 70*paddingPx;
+		h3 
+		{
+			font-size: 14*pixel;
+			width: 83*widthPt;
+			margin: 0 auto;
+			padding: 0 0 0 5*paddingPt;
+		}
+		 h1 
+		 {
+			font-size: 30*pixel;
+			margin: 18*marginPx 0 35*marginPx 0;
+         }
+    }
+
+   .section.welcome {
+        height: 100*heightPt;
+    }
+
+    span.logo.glyphicon {
+        margin-top: 20*marginPx;
+    }
+	
+	
+	.outerWrapper 
+	{
+	min-height: 480*heightPx;
+	}
+
+.logo 
+{
+	margin-top: 4*marginEm;
+	img
+	{
+		width:25*widthPt;
+	}
+}
+
+.welcome
+{
+ ul.topNav 
+ {
+    width: 64*widthPt;
+    right: 22*percentage;
+    position: absolute;
+    top: 4*percentage;
+ }
+ div.row 
+ {
+    padding-bottom: 1.5*paddingEm;
+ }
+}
+
+
+
+
+
+ul.menu 
+{
+	width: 92*widthPt;
+	margin: 0 auto;
+	padding-left:5*paddingPt;
+	li 
+	{
+		width: 25*widthPt;
+		&:first-child 
+		{
+			width: 38*widthPt;
+		}
+		a 
+		{
+			font-size: 14*pixel;
+		}
+	}
+}
+ 
+
+
+
+.navbar ul.topNav 
+{
+    width: 100*widthPt;
+    left: 0;
+    position:static;
+}
+
+.navbar .navbar-nav.mid 
+{
+    position: inherit;
+    left: 0;
+}
+
+.pull-right {float:left !important;}
+.popover h3.popover-title{width:100*widthPt !important;}
+.mysprite;
+
+ .careers-heading h3{
+font-size:16*pixel;
+}
+.careers-description p{
+font-size:14*pixel;
+}
+.openings{padding-bottom:5*paddingPx;}
+.border{
+margin:auto;
+}
+ .see-all{margin-top:10*marginPx; 
+			float:right;
+			margin-right: 0;}
+address
+{
+		text-align:center;
+		span 
+		{
+			font-size: 16*pixel;
+		}
+		p
+		{
+			font-size: 14*pixel;
+		}
+}
+	
+.hqbox
+{
+	width:100*widthPt;
+	height:230*heightPx;
+	font-size:14*pixel;
+	text-align:right;
+}
+.hq
+{
+	margin-top:25*marginPt;
+	font-size: 32*pixel;
+	padding-top: 6*paddingPx;
+	padding-bottom: 6*paddingPx;
+}
+#map_canvas
+{
+	width:100*widthPt;
+}
+}
+@media screen and (min-width: 481*widthPx) and (max-width: 767*widthPx){
+.modal {
+        overflow-y: hidden;
+    }
+.outerWrapper {
+min-height: 480*heightPx;
+}
+
+.logo 
+{
+	margin-top: 4*marginEm;
+	img{width:22*widthPt;}
+}
+
+.welcome
+{
+	ul.topNav 
+	{
+		width: 50*widthPt;
+		right: 28*percentage;
+		position: absolute;
+		top: 4*percentage;
+	}
+	div.row 
+	{
+		padding-bottom: 1.5*paddingEm;
+	}
+}
+
+ 
+
+.section h3 
+{
+    font-size: 18*pixel;
+    width: 83*widthPt;
+    margin: 0 auto;
+    padding: 0 0 0 5*paddingPt;
+}
+
+ul.menu 
+{
+	width: 92*widthPt;
+	margin: 0 auto;
+	padding-left:5*paddingPt;
+	li 
+	{
+		a {font-size: 16*pixel;}
+		width: 25*widthPt;
+		&:first-child 
+		{
+			width: 38*widthPt;
+		}
+	}
+}
+
+
+
+.navbar
+{
+	ul.topNav 
+	{
+		width: 100*widthPt;
+		left: 0;
+		position:static;
+    }
+	.navbar-nav.mid 
+	{
+		position: inherit;
+		left: 0;
+    }
+}
+
+
+
+.pull-right {float:left !important;}
+
+
+  .section .content {
+        text-align: center;
+    }
+
+    .section.welcome {
+        overflow: hidden;
+        height: auto;
+    }
+
+    img.background {
+        background-attachment: scroll;
+        position: absolute;
+    }
+	.openings{padding-bottom:5*paddingPx;}
+.border{
+margin:auto;
+}
+.popover h3.popover-title{width:100*widthPt !important;}
+
+.mysprite;
+
+.see-all
+{
+	margin-top:10*marginPx; 
+	float:right;
+	margin-right: 0;
+}
+	
+#map_canvas
+{
+	width:100*widthPt;
+}
+address
+{
+	text-align:center;
+}
+.hqbox
+{
+	text-align:right;
+	margin-right:auto;
+	margin-left:auto;
+}
+}
+@media screen and (min-width: 768*widthPx) and (max-width: 991*widthPx){
+	.navbar 
+	{
+		.navbar-nav li a 
+		{
+			padding: 0 15*paddingPx;
+		}
+		a.navbar-brand 
+		{
+			padding-right: 5*paddingPx;
+		}
+		.navbar-collapse.collapse 
+		{
+			display: none;
+		}
+	}	
+
+.outerWrapper 
+	{
+		min-height: 480*heightPx;
+	}
+
+.logo 
+{
+	margin-top: 4*marginEm;
+	img{width:25*widthPt;}
+}
+	
+	.welcome
+		{
+			ul.topNav 
+			{
+				width: 24*widthPt;
+				right: 12*percentage;
+				position: absolute;
+				top: 4*percentage;
+			}
+			div.row 
+			{
+				padding-bottom: 1.5*paddingEm;
+			}
+		}
+
+	
+
+	.section h3 {
+		font-size: 19*pixel;
+		width: 83*widthPt;
+		margin: 0 auto;
+		padding: 0 0 0 5*paddingPt;
+	}
+
+	ul.menu 
+	{
+		width: 92*widthPt;
+		margin: 0 auto;
+		padding-left:5paddingPt;
+		li 
+		{
+			a {font-size: 16*pixel;}
+			width: 25*widthPt;
+			&:first-child 
+			{
+				width: 38*widthPt;
+			}
+		}
+	}
+	
+	
+
+	.navbar 
+	{
+		ul.topNav 
+		{
+			width: 100*widthPt;
+			left: 0;
+			position:static;
+		}
+		.navbar-nav.mid
+		{
+			position: inherit;
+			left: 0;
+		}
+	}
+
+	
+		
+.popover h3.popover-title{width:100*widthPt !important;}
+
+.mysprite;
+
+	.pull-right {float:left !important;}
+	.see-all{margin-top:10*marginPx; 
+			float:right;
+			margin-right: 0;}
+	#map_canvas{
+	width:100*widthPt;
+	}
+	address{
+		text-align:center;
+	}
+	.hqbox{
+		text-align:right;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+@media screen and (min-width: 992*widthPx) and (max-width: 1365*widthPx){
+
+
+
+.logo 
+{
+	margin-top: 8*marginEm;
+	img{width:18*widthPt;}
+}
+	
+	.welcome
+	{
+		ul.topNav 
+		{
+			width: 20*widthPt;
+			right: 12*percentage;
+			position: absolute;
+			top: 4*percentage;
+		}
+		div.row 
+		{
+			padding-bottom: 3*paddingEm;
+		}
+	}
+
+	
+	.mysprite;
+	
+}
+@media screen and (min-width: 992*widthPx) and (max-width: 1024*widthPx){
+	#map_canvas{
+	width:83*widthPt;
+	}
+	address{
+		margin-left:235*marginPx;
+		width:100*widthPt;
+		text-align:center;
+	}
+	.hqbox{
+		text-align:right;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}

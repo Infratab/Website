@@ -1,0 +1,88 @@
+@import "variable.less";
+
+.width-percentage(@width)
+{
+	width:@width*@widthPt;
+}
+.mystyle
+{
+width:80*widthPx;
+height:80*heightPx;
+}
+
+
+.mysprite
+{
+	.designation
+	{
+		ul li a
+		{
+			margin:11*marginPx 0 200*marginPx 0;
+		}
+		&:first-child  
+		{
+			a 
+			{
+				background: url('../img/result.png') no-repeat 13*pixel 10*pixel;
+				.mystyle;
+				&:hover 
+				{
+					background: url('../img/result.png') no-repeat 13*pixel 10*pixel;
+					.mystyle;
+				}
+			}
+		}
+		&:nth-child(2)
+		{
+			a 
+			{ 
+				background: url('../img/result.png') no-repeat 13*pixel -52*pixel;
+				.mystyle;
+				&:hover 
+				{
+					background: url('../img/result.png') no-repeat 13*pixel -52*pixel;
+					.mystyle;
+				}
+			}
+		}
+		&:nth-child(3)
+		{
+			a  
+			{ 
+				background: url('../img/result.png') no-repeat 13*pixel -109*pixel;
+				.mystyle;
+				&:hover 
+				{
+					background: url('../img/result.png') no-repeat 13*pixel -109*pixel;
+					.mystyle;
+				}
+			}
+		}
+		&:nth-child(4) 
+		{
+			a 
+			{ 
+				background: url('../img/result.png') no-repeat 13*pixel -172pixel;
+				.mystyle;
+				&:hover 
+				{
+					background: url('../img/result.png') no-repeat 13*pixel -172*pixel;
+					.mystyle;
+				}			
+			}
+		}
+		&:last-child
+		{
+			a 
+			{ 
+				background: url('../img/result.png') no-repeat 13*pixel -239*pixel;
+				.mystyle;
+				&:hover 
+				{
+					background: url('../img/result.png') no-repeat 13*pixel -239*pixel;
+					.mystyle;
+				}
+			}
+		}
+	}
+}
