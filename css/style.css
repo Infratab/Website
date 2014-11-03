@@ -195,7 +195,7 @@ h3.popover-title {border-radius: 0;background:#bdc3c7;color:#fff !important; fon
     -webkit-transition: .3s;
     transition: .3s;
 }
-
+.india{color:#4db849!important;}
 .btn:hover {
     border-color: #fff;
     color: #fff;
@@ -359,7 +359,8 @@ img.background {width: auto;min-width: 100%;min-height: 100%;position: fixed;z-i
 .careers-heading h3{color:#4db849;}
 .careers-description{font-size:18px; padding-top:40px;padding-bottom:60px;}
 .border {padding-top:40px;line-height:2;height:226px;width:166px;}
-.job-perks,.border{border:1px solid #6bc168;border-radius:5px;height:226px;}
+.job-perks,.border{border:1px solid #6bc168;border-radius:5px;height:226px;font-size:16px;font-weight:600;}
+.perks{text-align:left; padding-left:20px;line-height:1.8;padding-top:15px;}
 .perks-head{font-size:18px;}
 .perks-head,.read-more, .see-all{background-color: #6bc168;color: white;padding: 8px 0px;text-align:center;}
 .read-more, .see-all{padding:5px 22px;border-radius:3px;font-size:16px;}
@@ -376,8 +377,8 @@ address span{font-size:20px;}
 .hqbox , .hqbox a{border:1px solid #4db849;width:300px;background:#4db849;color:white;line-height:2;}
 .hqaddr{margin-bottom:0 !important;text-align:right;}
 .hq{margin-top: 45px;font-size: 40px;border: 1px solid #6bc168;border-radius: 50%;text-align:center;color:#6bc168;}
-.footer {color: #ecf0f1;overflow: hidden;position: relative;background-color: #333;z-index: 1;}
-.footer p a {color: #ecf0f1;}
+.footer {color: #95a5a6;overflow: hidden;position: relative;background-color:white;z-index: 1;}
+.footer p a {color: #95a5a6; text-decoration:underline;}
 .footer p a:hover {color: #4db849;}
 .footer p {line-height: 25px;}
 .copyright {margin: 30px 0;width: 100%;text-align: center;}
