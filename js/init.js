@@ -1,4 +1,3 @@
-
 //navigation javascript
 (function($){$(function(){$('#navbar').affix({offset:{top:function(){return(this.top=$('.section.welcome').height()- 70)}}});$(function(){$('.gallery').mixitup({easing:'snap',  resizeContainer:true});});$(document).off('click.tab.data-api');$('a.tab').hover(function(){$(this).tab('show');});$("li a").tooltip({animation:false});$("li a").tooltip({animation:false});$(window).scroll(function(){var top=$(window).scrollTop();var width=$(window).width();var bottom=top+ $(window).height();if(width>768){$("img.background").css({top:-1*Math.abs(top/2)});}
 else{if(top>$(".section.welcome").height()){$(".section.welcome").css("visibility","hidden");}
@@ -55,28 +54,87 @@ function initialize() {
 	  
 // team page highlight js
 $(document).ready(function(){
-	
-	$(".empList a").hover(function(){
-		var dataDesignation = $(arguments[0].target).parent().attr("data-designation");		
-		if(dataDesignation!== undefined){
+	//image hover event
+	$(".empImage").hover(function(event){
+		//mouse over event
+		var dataDesignation = $(event.target).closest(".empImage").attr("data-designation");		
+		if(dataDesignation!== ""){
 			var designations = dataDesignation.split(" ");
 			$.each(designations, function( index, designation ) {
 				var designationClass = "." + designation + " ";			
-				$(designationClass + "a").addClass("designation-span-background");
+				$(designationClass + ".designation-circle").addClass("designation-span-background");
+				$(designationClass + ".popover.top .arrow").addClass("designation-arrow-color");
+				//$(designationClass + ".popover.top .arrow: after").addClass("designation-arrow-size");
 				$(designationClass + ".popover-title").addClass("designation-background");
 				$(designationClass + ".popover").addClass("designation-border");
 			});
 		}
-	}, function(){
-		var dataDesignation = $(arguments[0].target).parent().attr("data-designation");		
-		if(dataDesignation!== undefined){
+	}, function(event){
+		//mouse out event
+		var dataDesignation = $(event.target).closest(".empImage").attr("data-designation");		
+		if(dataDesignation!== ""){
 			var designations = dataDesignation.split(" ");
 			$.each(designations, function( index, designation ) {
 				var designationClass = "." + designation + " ";
-				$(designationClass + "a").removeClass("designation-span-background");
+				$(designationClass + ".designation-circle").removeClass("designation-span-background");
+				$(designationClass + ".popover.top .arrow").removeClass("designation-arrow-color");
+				//$(designationClass + ".popover.top .arrow:after").removeClass("designation-arrow-size");
 				$(designationClass + ".popover-title").removeClass("designation-background");
 				$(designationClass + ".popover").removeClass("designation-border");
 			});
 		}
-	});		
+	});
+	
+	//Icon's hover events
+	$(".icon").hover(function(event){
+		//mouse over event
+		var dataDesignation = $(event.target).closest(".icon").attr("class");		
+		if(dataDesignation!== ""){
+			var designations = dataDesignation.split(" "),
+				designations=designations.slice(1);
+			$.each(designations, function( index, designation ) {
+				//applying classes to the div
+				var designationClass = "." + designation + " ";			
+				$(designationClass + ".designation-circle").addClass("designation-span-background");
+				$(designationClass + ".popover.top .arrow").addClass("designation-arrow-color");
+				//$(designationClass + ".popover.top .arrow: after").addClass("designation-arrow-size");
+				$(designationClass + ".popover-title").addClass("designation-background");
+				$(designationClass + ".popover").addClass("designation-border");
+				//applying classes to the image
+				$(".empImage").each(function(innerIndex,myEle){
+					var splitingList=myEle.getAttribute("data-designation").split(" "),
+						indexValue=splitingList.indexOf(designations[0]);
+					if (indexValue!==-1) {
+						$(myEle.children[0]).addClass("image-border");
+						$(myEle).tooltip("show");
+					};
+				});
+			});
+		}
+	}, function(event){
+		//mouse out event
+		var dataDesignation = $(event.target).closest(".icon").attr("class");
+		if(dataDesignation!== ""){
+			var designations = dataDesignation.split(" "),
+				designations=designations.slice(1);
+			$.each(designations, function( index, designation ) {
+				//removing classes to the div
+				var designationClass = "." + designation + " ";
+				$(designationClass + ".designation-circle").removeClass("designation-span-background");
+				$(designationClass + ".popover.top .arrow").removeClass("designation-arrow-color");
+				//$(designationClass + ".popover.top .arrow:after").removeClass("designation-arrow-size");
+				$(designationClass + ".popover-title").removeClass("designation-background");
+				$(designationClass + ".popover").removeClass("designation-border");
+				//applying classes to the image
+				$(".empImage").each(function(innerIndex,myEle){
+					var splitingList=myEle.getAttribute("data-designation").split(" "),
+						indexValue=splitingList.indexOf(designations[0]);
+					if (indexValue!==-1) {
+						$(myEle.children[0]).removeClass("image-border");
+						$(myEle).tooltip("hide");
+					};
+				});
+			});
+		}
+	});
 });

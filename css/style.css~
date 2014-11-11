@@ -152,7 +152,6 @@ ul.menu li a:hover span {color:#e74c3c;}
 }
 .home-logo{margin-top:93px;
 margin-bottom:68px;}
-.home-description h3{font-size:24px !important;}
 
 /*home page style end*/
 
@@ -162,7 +161,6 @@ margin-bottom:68px;}
 ul.empList {width:100%; margin-bottom:220px;}
 ul.empList li {display:inline-block;text-align:center;margin:1.5%;padding:3px;background:#fff; border-radius: 4px; }
 ul.empList li img:hover {width:60px;height:60px;border:2px solid #6bc168;}
-.image-border{border: 2px solid #6bc168;}
 ul.empList li img {width:60px;height:60px;}
 
 .tooltip {font-size: 15px; }
@@ -171,7 +169,7 @@ ul.empList li img {width:60px;height:60px;}
 
 .popover {border-radius: 0; border:2px solid #bdc3c7;padding:0;width: 70%;}
 h3.popover-title {border-radius: 0;background:#bdc3c7;color:#fff !important; font-size: 16px !important;}
-.popover-content{padding: 9px 5px 9px 22px!important;}.popover-content ul{list-style-type:disc;text-align:left;}
+
 .circle img {border-radius: 50%; width:80px;height:80px;}
 
 .tooltip.top {
@@ -339,8 +337,7 @@ img.background {width: auto;min-width: 100%;min-height: 100%;position: fixed;z-i
 
 .designation ul, .designation ul li{padding:0; margin:0;}
 .designation ul{width:100%;}
-
-.designation .designation-circle{display: inline-block; margin:9px 0px 20px 0px;cursor: pointer; border:1px solid #6bc168; border-radius:50%;width:80px;height:80px;}
+.designation .designation-circle{display: inline-block; margin:9px 0px 0 0px;cursor: pointer; border:1px solid #6bc168; border-radius:50%;width:80px;height:80px;}
 .designation ul li:hover + .popover h3{ background: #6bc168;}
 .designation ul li:hover + .popover { border: solid 2px #6bc168;}
 .designation ul li:hover + .popover.top .arrow{border-top-color:#6bc168 !important;}
@@ -375,33 +372,32 @@ img.background {width: auto;min-width: 100%;min-height: 100%;position: fixed;z-i
 .border {padding-top:40px;line-height:2;height:226px;width:166px;}
 .job-perks,.border{border:1px solid #6bc168;height:226px;font-size:16px;font-weight:600;}
 .perks{line-height:1.8;padding-top:15px;}
-.perks ul {list-style-type:disc;padding-left:25px;text-align:left;padding-top:7px;}
+.perks ul {list-style-type:disc;padding-left:25px;text-align:left;}
 .perks-head{font-size:18px;}
 .perks-head,.read-more, .see-all{background-color: #6bc168;color: white;padding: 8px 0px;text-align:center;}
 .read-more, .see-all{padding:5px 22px;font-size:16px;}
-.see-all{margin-right: 10%; float:right;padding:5px 45px;}
-.border p{margin-bottom:24px;}
+.see-all{margin-right: 190px; float:right;padding:5px 45px;}
 /*career page style ends */
 
 
 
 
 /*contact page style*/
-#map_canvas{height:448px;width:640px;border:1px solid #bdc3c7;}	
+#map_canvas{height:456px;width:640px;border:1px solid #bdc3c7;}	
 address{text-align:right;font-size: 16px;line-height:1.5;}
 address span{font-size:20px;}
-.hqbox , .hqbox a{border:1px solid #4db849;width:275px;background:#4db849;color:white;line-height:1.5;}
-.addressus{margin-right:5px;padding-top:9px;padding-bottom:9px;padding-right:6px;}
+.hqbox , .hqbox a{border:1px solid #4db849;width:300px;background:#4db849;color:white;line-height:2;}
+.addressus{margin-right:5px;}
 .hqaddr{margin-bottom:0 !important;text-align:right;}
 .hq , .hqcircle,.hqbox{margin:0;padding:0;}
-.hq p{color:#6bc168;font-size: 40px;padding-top:8px;}
+.hq p{color:#6bc168;font-size: 40px;}
 .hqcircle{width: 80px;
 height: 80px;
 border: 1px solid;
 border-radius: 50%;
 text-align: center;
-margin-top: 30px;
-margin-left: 10px;
+margin-top: 41px;
+margin-left: 30px;
 color:#6bc168;}
 .footer {color: #95a5a6;overflow: hidden;position: relative;background-color:white;z-index: 1;}
 .footer p a {color: #95a5a6; text-decoration:underline;}
