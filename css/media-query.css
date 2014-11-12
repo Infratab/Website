@@ -327,7 +327,7 @@ font-size: 14px;
 	}
 }
 
-@media screen and (min-width: 992px) and (max-width: 1365px){
+@media screen and (min-width: 992px) and (max-width: 1024px){
 
 
 
@@ -370,24 +370,7 @@ margin-bottom: 300px;
 padding: 5px 10px;
 }
 .section{min-height:80%;}
- address{
-		text-align:center;
-	}
-	address span {
-font-size: 16px;
-}
-address p{
-font-size: 14px;
-}
-	.addressus{text-align:right;}
-	.hqbox{margin:0 auto;}
-	#map_canvas{
-	width:80%;
-	height:300px;
-	margin-right: auto;
-	margin-left:auto;
-	}
-}
+.hqbox{float:right;}
 }
 
 
