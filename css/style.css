@@ -315,7 +315,7 @@ body.modal-open,.modal-open .navbar-fixed-top {
 .navbar ul.topNav li:last-child {width:10%;}
 .navbar ul.topNav li a:hover {color:#4db849;}
 .navbar ul.topNav li:first-child span {position: relative;text-align: center; background:#bdc3c7; width:100%;padding:2.5% 15%;color:#fff;}
-.navbar ul.topNav li:first-child span:after {content:'';position:absolute;width:0;height:0;left:1px;top:24px;border:6px solid;border-color:#bdc3c7 transparent transparent #bdc3c7;}
+.navbar ul.topNav li:first-child span:after {content:'';position:absolute;width:0;height:0;left:0px;top:24px;border:6px solid;border-color:#bdc3c7 transparent transparent #bdc3c7;}
 .navbar ul.topNav li:first-child a:hover span {background:#4db849;}
 .navbar ul.topNav li:first-child a:hover span:after {border-color: #4db849 transparent transparent #4db849;}
 .navbar ul.topNav li:nth-child(3){line-height: 5;}
@@ -331,7 +331,7 @@ body.modal-open,.modal-open .navbar-fixed-top {
 .section.welcome {padding-top: 0;}
 .section.welcome .content, .section.image .content, .section.welcome .content, .section.white .content {text-align: center;}
 img.background {width: auto;min-width: 100%;min-height: 100%;position: fixed;z-index: -1;}
-.section h3 {display: block;text-align: center;font-size: 30px;color: #000;line-height: 1.35em;}
+.section h3 {display: block;text-align: center;font-size: 30px;color: #000;line-height: 1.7em;}
 .section:last-child {background-color: #fff;}
 .section .content.affix {width: 90%;}
 
@@ -365,13 +365,14 @@ img.background {width: auto;min-width: 100%;min-height: 100%;position: fixed;z-i
 .designation:last-child a:hover {background: url('../img/result.png') no-repeat 10px -239px;width:70px;height:70px;}
 
 
+
 /*team page style ends*/
 
 
 
 /* career page style*/
 .careers-heading h3{color:#4db849;}
-.careers-description{font-size:18px; padding-top:40px;padding-bottom:60px;}
+.careers-description{font-size:18px; padding-top:40px;padding-bottom:60px;line-height:1.7;}
 .border {padding-top:40px;line-height:2;height:226px;width:166px;}
 .job-perks,.border{border:1px solid #6bc168;height:226px;font-size:16px;font-weight:600;}
 .perks{line-height:1.8;padding-top:15px;}
@@ -379,7 +380,7 @@ img.background {width: auto;min-width: 100%;min-height: 100%;position: fixed;z-i
 .perks-head{font-size:18px;}
 .perks-head,.read-more, .see-all{background-color: #6bc168;color: white;padding: 8px 0px;text-align:center;}
 .read-more, .see-all{padding:5px 22px;font-size:16px;}
-.see-all{margin-right: 10%; float:right;padding:5px 45px;}
+.see-all{float:center;padding:5px 45px;}
 .border p{margin-bottom:24px;}
 /*career page style ends */
 
@@ -387,11 +388,14 @@ img.background {width: auto;min-width: 100%;min-height: 100%;position: fixed;z-i
 
 
 /*contact page style*/
-#map_canvas{height:448px;width:640px;border:1px solid #bdc3c7;}	
+#map_canvas{height:427px;width:640px;border:1px solid #bdc3c7;}	
 address{text-align:right;font-size: 16px;line-height:1.5;}
 address span{font-size:20px;}
-.hqbox , .hqbox a{border:1px solid #4db849;width:275px;background:#4db849;color:white;line-height:1.5;}
-.addressus{margin-right:5px;padding-top:9px;padding-bottom:9px;padding-right:6px;}
+address a{text-decoration:none;color:black;}
+address a:hover{color:black;}
+.hqbox , .hqbox a{border:1px solid #4db849;width:262px;background:#4db849;color:white;line-height:1.5;}
+.addressus{margin-right:7px;padding-top:9px;padding-bottom:9px;}
+.addressus a:hover{color:white;}
 .hqaddr{margin-bottom:0 !important;text-align:right;}
 .hq , .hqcircle,.hqbox{margin:0;padding:0;}
 .hq p{color:#6bc168;font-size: 40px;padding-top:8px;}
@@ -401,7 +405,7 @@ border: 1px solid;
 border-radius: 50%;
 text-align: center;
 margin-top: 30px;
-margin-left: 10px;
+margin-left: 7px;
 color:#6bc168;}
 .footer {color: #95a5a6;overflow: hidden;position: relative;background-color:white;z-index: 1;}
 .footer p a {color: #95a5a6; text-decoration:underline;}
