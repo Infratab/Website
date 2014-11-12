@@ -133,10 +133,14 @@ ul.menu li a:hover span {color:#e74c3c;}
 .welcome a i:before {color:#000;}
 .welcome a i:hover:before {color:#4db849;}
 
+.home{display:table;
+width:100%;}
 .home h3 {line-height: 3em;letter-spacing:.5px; color:#000;}
 .home h3 a {color:#4db849;}
 .home h3 a:hover {text-decoration:none;}
 
+.container{display:table-cell;
+vertical-align:middle;}
 .scroll-down i {
     display: block;
     font-size: 40px;
