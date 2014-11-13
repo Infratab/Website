@@ -367,7 +367,8 @@ img.background {width: auto;min-width: 100%;min-height: 100%;position: fixed;z-i
 .designation:nth-child(3) a:hover {background: url('../img/result.png') no-repeat 10px -109px;width:70px;height:70px;}
 .designation:nth-child(4) a:hover {background: url('../img/result.png') no-repeat 10px -173px;width:70px;height:70px;}
 .designation:last-child a:hover {background: url('../img/result.png') no-repeat 10px -239px;width:70px;height:70px;}
-
+.team{display:table;width:100%;}
+.team .fixed-container{display:table-cell;vertical-align:middle;}
 
 
 /*team page style ends*/
@@ -377,6 +378,8 @@ img.background {width: auto;min-width: 100%;min-height: 100%;position: fixed;z-i
 /* career page style*/
 .careers-heading h3{color:#4db849;}
 .careers-description{font-size:18px; padding-top:40px;padding-bottom:60px;line-height:1.7;}
+.career{display:table;width:100%;}
+.career .fixed-container{display:table-cell;vertical-align:middle;}
 .border {padding-top:40px;line-height:2;height:226px;width:166px;}
 .job-perks,.border{border:1px solid #6bc168;height:226px;font-size:16px;font-weight:600;}
 .perks{line-height:1.8;padding-top:15px;}
