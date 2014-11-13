@@ -397,6 +397,7 @@ address{text-align:right;font-size: 16px;line-height:1.5;}
 address span{font-size:20px;}
 address a{text-decoration:none;color:black;}
 address a:hover{color:black;}
+.hqbox{float:right;}
 .hqbox , .hqbox a{border:1px solid #4db849;width:262px;background:#4db849;color:white;line-height:1.5;}
 .addressus{margin-right:7px;padding-top:9px;padding-bottom:9px;}
 .addressus a:hover{color:white;}
@@ -411,6 +412,8 @@ text-align: center;
 margin-top: 30px;
 margin-left: 7px;
 color:#6bc168;}
+.contactUs{display:table;width:85%;margin-right:auto;margin-left:auto;}
+.contactUs .fixed-container{display:table-cell;vertical-align:middle;}
 .footer {color: #95a5a6;overflow: hidden;position: relative;background-color:white;z-index: 1;}
 .footer p a {color: #95a5a6; text-decoration:underline;}
 .footer p a:hover {color: #4db849;}
