@@ -1,0 +1,122 @@
+/*desktop mediaQuery*/
+
+@media screen and (min-width:1024px) {
+
+/* Home */
+
+.welcome ul.topNav          			{width:18%;top:10%;right:10%;}
+.welcome ul.topNav li a     			{font-size:16px;}
+.welcome ul.topNav li:first-child       {width:33%;}
+.welcome ul.topNav li:nth-child(2)      {width:10%;}
+.welcome ul.topNav li:last-child        {width:10%;}
+.welcome ul.topNav li:first-child span  {padding:2.5% 15%;}
+.welcome ul.topNav li:first-child span:after{left:0;}
+
+ul.menu li                  			{margin: 0 2em;}
+ul.menu li a                			{font-size:18px;}
+
+.welcome div.row            			{padding-bottom:4em;}
+.welcome img.mainLogo       			{width:15%;}
+.welcome h3                 			{font-size:24px;line-height:1.35em;width:50%;}
+.welcome a i:before         			{font-size:40px;}
+
+a.arrowDown                 			{bottom:7.5%;left:48%;}
+
+.navbar ul.topNav li:first-child span:after {left:1px;}
+
+
+/* Team */
+
+ul.empList                  			{margin-bottom:25%;}
+ul.empList li               			{margin:1.5% 3.75%;padding:3px;border-radius:4px; }
+ul.empList li img           			{width:80px;height:80px;}
+
+.tooltip                        		{font-size:16px;}
+.tooltip-inner                  		{padding:6px 10px;}
+.tooltip.bottom                 		{margin-top:2.25em;}
+
+.designation .designation-circle		{margin:9px 0px 20px 0px;width:100px;height:100px;}
+
+.designation ul li a                	{width:70px; height:70px;}
+.designation:first-child  a         	{background:url('../img/result.png') no-repeat 42% -8%;;width:70px;height:70px;}
+.designation:nth-child(2) a         	{background:url('../img/result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
+.designation:nth-child(3) a         	{background:url('../img/result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top:3px;}
+.designation:nth-child(4) a         	{background:url('../img/result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top:10px; }
+.designation:last-child a           	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top:12px;}
+
+.designation:first-child  a:hover   	{background:url('../img/result.png') no-repeat 42% -8%; width:70px;height:70px;}
+.designation:nth-child(2) a:hover   	{background:url('../img/result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
+.designation:nth-child(3) a:hover   	{background:url('../img/result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
+.designation:nth-child(4) a:hover   	{background:url('../img/result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
+.designation:last-child a:hover     	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
+
+.popover                				{width:90%;height:270px;}
+h3.popover-title        				{font-size:20px !important;line-height:1.25em;}
+.popover-content        				{padding: 0.75em 0 0.75em 2em;}
+.popover-content ul li  				{line-height:1.75em;font-size:16px;}
+
+
+/* careers */
+
+.careers p.info 								{font-size:18px;line-height:1.7; padding:2em;}
+.careers .row-eq-height > div[class*='col-']	{line-height:2;}
+.careers .row-eq-height h3 						{padding:0.5em;}
+.careers .row-eq-height ul 						{padding:5% 15%;}
+.careers .row-eq-height ul li, .row-eq-height p {font-size:18px;}
+.careers .row-eq-height span 					{padding: 25% 0;}
+.careers .row-eq-height a 						{font-size:16px;padding:0.5em 1em;margin-top:1em;}
+
+div[class*='col-'].pull-right 					{padding:0;}
+div[class*='col-'].pull-right a 				{font-size:16px;padding:0.5em 1em;margin-top:1.5em;}
+
+
+/* Contact Us */
+
+.mapCanvas{height:427px;border:2px solid #bdc3c7;} 
+
+address{font-size:16px;line-height:1.5;}
+address span{font-size:20px;}
+.hqbox , .hqbox a{width:262px;line-height:1.5;}
+.addressus{margin-right:7px;padding-top:9px;padding-bottom:9px;}
+.hq p{font-size:40px;padding-top:8px;}
+.hqcircle{width:80px;height:80px;margin-top:30px;margin-left:7px;}
+
+.footer p {line-height:25px;}
+.copyright {margin:30px 0;}
+
+}
+
+
+/* Tablet mediaQuery*/
+
+@media screen and (min-width: 768px) and (min-width: 960px) {
+
+
+
+
+}
+
+@media screen and (min-width: 600px) {
+
+
+
+
+}
+
+
+/* Mobile mediaQuery*/
+
+@media only screen and (min-device-width:320px) and (max-device-width:480px) and (orientation:portrait) {
+
+
+
+
+}
+
+
+@media only screen and (min-device-width:480px) and (max-device-width:767px) and (orientation:landscape) {
+
+
+
+}
+
