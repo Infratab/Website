@@ -4,7 +4,7 @@ html,body {
     
     color:#000;
 }
-
+div.row{margin-right:0px; margin-left:0px;}
 body::-webkit-scrollbar {
   width: 4px;
   height: 0.5em;
@@ -154,9 +154,9 @@ vertical-align:middle;}
     padding-top: 20px;
     font-size: 44px;
 }
-.home-logo{margin-top:93px;
+.home-logo{
 margin-bottom:68px;}
-.home-description h3{font-size:24px !important;}
+.home-description h3{font-size:24px !important;width:50%; margin:0 auto;}
 
 /*home page style end*/
 
@@ -377,7 +377,7 @@ img.background {width: auto;min-width: 100%;min-height: 100%;position: fixed;z-i
 
 /* career page style*/
 .careers-heading h3{color:#4db849;}
-.careers-description{font-size:18px; padding-top:40px;padding-bottom:60px;line-height:1.7;}
+.careers-description{font-size:18px; padding-top:40px;padding-bottom:40px;line-height:1.7;}
 .career{display:table;width:100%;}
 .career .fixed-container{display:table-cell;vertical-align:middle;}
 .border {padding-top:40px;line-height:2;height:226px;width:166px;}
@@ -389,6 +389,7 @@ img.background {width: auto;min-width: 100%;min-height: 100%;position: fixed;z-i
 .read-more, .see-all{padding:5px 22px;font-size:16px;}
 .see-all{float:center;padding:5px 45px;}
 .border p{margin-bottom:24px;}
+.button-primary{float:right;}
 /*career page style ends */
 
 

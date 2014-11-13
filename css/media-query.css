@@ -105,6 +105,7 @@ margin-left:auto;
 	address span {
 font-size: 16px;
 }
+.hqbox{float:center;}
 address p{
 font-size: 14px;
 }
@@ -124,7 +125,7 @@ min-height: 480px;
 }
 
 .section{padding-top:5% !important;}
-.logo img{width:22%;}
+.logo img{width:32%;}
 .welcome ul.topNav {
     width: 50%;
     right: 28%;
@@ -133,21 +134,41 @@ min-height: 480px;
 }
 .home-logo{margin:0; padding:0;}
 #home{min-height:100%;}
-.talk-in-us{height:30%;width:100%;position:absolute;top:0;}
-.logo{height:30%;position:absolute;top:30%;width:100%;}
-.menu-nav{height:20%;position:absolute; top:60%;width:100%;}
-.home-description{height:20%;position:absolute;top:80%;width:100%;}
+.talk-in-us{height:30%;width:90%;position:absolute;top:0;}
+.logo{height:30%;position:absolute;top:30%;width:90%;}
+.menu-nav{height:20%;position:absolute; top:60%;width:90%;}
+.home-description{height:20%;position:absolute;top:80%;width:90%;}
 
 
 ul.menu {width: 100%;margin: 0 auto;}
 ul.menu li {width: 28%;}
 ul.menu li:first-child {width: 36%;}
-ul.menu li a {font-size: 16px;}
+ul.menu li a {font-size: 26px;}
 
 .welcome div.row {
     padding-bottom: 1.5em;
 }
-
+.welcome ul.topNav li a {
+color: #000;
+font-size: 34px;
+}
+.welcome ul.topNav li:first-child span {
+position: relative;
+text-align: center;
+background: #bdc3c7;
+width: 100%;
+padding: 2.5% 15%;
+color: #fff;
+font-size: 32px;}
+.welcome ul.topNav li:first-child span:after {
+content: '';
+position: absolute;
+width: 0px;
+height: 0px;
+left: 0px;
+top: 47px;
+border: 11px solid;
+border-color: #bdc3c7 transparent transparent #bdc3c7;}
 .section h3 {
     font-size: 18px;
     width: 83%;
@@ -222,6 +243,7 @@ font-size: 14px;
 	width:100%;
 	height:300px;
 	}
+	.hqbox{float:center;}
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
 	.navbar .navbar-nav li a {
@@ -240,38 +262,61 @@ font-size: 14px;
 		min-height: 480px;
 	}
 
-	.logo {margin-top: 4em;}
-	.logo img{width:25%;}
+	
+	.logo img{width:40%;}
 	.welcome ul.topNav {
-		width: 24%;
-		right: 12%;
+		width: 36%;
+		right: 34%;
 		position: absolute;
 		top: 4%;
 	}
+.welcome ul.topNav li a {
+color: #000;
+font-size: 37px;
+}
+.welcome ul.topNav li:first-child span {
+position: relative;
+text-align: center;
+background: #bdc3c7;
+width: 100%;
+padding: 2.5% 15%;
+color: #fff;
+font-size: 40px;
+}
+.welcome ul.topNav li:first-child span:after {
+content: '';
+position: absolute;
+width: 0px;
+height: 0px;
+left: 0px;
+top: 45px;
+border: 23px solid;
+border-color: #bdc3c7 transparent transparent #bdc3c7;
+}
 
 	.welcome div.row {
 		padding-bottom: 1.5em;
 	}
 
 	.section h3 {
-		font-size: 19px;
-		width: 83%;
+		font-size: 38px !important;
+		width: 97%;
 		margin: 0 auto;
-		padding: 0 0 0 5%;
+		
 	}
 	
 	.home-logo{margin:0; padding:0;}
 #home{min-height:100%;}
-.talk-in-us{height:30%;width:100%;position:absolute;top:0;}
-.logo{height:30%;position:absolute;top:30%;width:100%;}
-.menu-nav{height:20%;position:absolute; top:60%;width:100%;}
-.home-description{height:20%;position:absolute;top:80%;width:100%;}
+.talk-in-us{height:30%;width:90%;position:absolute;top:0;}
+.logo{height:30%;position:absolute;top:17%;width:90%;}
+.menu-nav{height:20%;position:absolute; top:60%;width:90%;}
+.home-description{height:20%;position:absolute;top:80%;width:90%;}
 	
 
-	ul.menu {width: 92%;margin: 0 auto;padding-left:5%;}
+	ul.menu {width: 92%;margin: 0 auto;}
 	ul.menu li {width: 25%;}
 	ul.menu li:first-child {width: 38%;}
-	ul.menu li a {font-size: 16px;}
+	ul.menu li a {font-size: 32px;}
 .section{padding-top:5% !important;}
 	.navbar ul.topNav {
 		width: 100%;
@@ -325,13 +370,14 @@ font-size: 14px;
 	width:100%;
 	height:300px;
 	}
+	.hqbox{float:center;}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1024px){
 
 
 
-.logo {margin-top: 8em;}
+.logo {}
 	.logo img{width:18%;}
 	.welcome ul.topNav {
 		width: 20%;
@@ -360,11 +406,14 @@ font-size: 14px;
 	
 	ul.empList {
 
-margin-bottom: 300px;
+margin-bottom: 240px;
 }
-#career{padding-top:0 !important;}
+.popover-content {
+padding: 9px 0px 9px 22px!important;
+font-size:12px;
+}
 .careers-heading h3{margin-top:0px !important;}
-.see-all{margin-right:8%;}
+
 .border{width:145px;}
 .read-more{
 padding: 5px 10px;
