@@ -15,8 +15,8 @@ a, a:focus,a:active,a img,a img:hover,
 a img:focus,button:focus,button.btn:focus   {outline:none;cursor:pointer !important;}
 ul                                          {margin:0;padding:0;list-style:none;text-align:center;}
 
-a                                           {color:#50b948;}
-a:hover, a:active                           {color:#edc80e;text-decoration:none !important;}
+a                                           {color:#000;}
+a:hover, a:active                           {color:#50b948;text-decoration:none !important;}
 
 .clearfix                                   {clear:both;}
 .affix                                      {top:70px;}
@@ -94,7 +94,7 @@ a.arrowDown:hover                                       {text-decoration:none;}
 
 .navbar .navbar-nav li.active a span:first-child		{border-bottom:1px solid #50b948;}
 
-.navbar .navbar-nav li:hover a span > span,
+.navbar .navbar-nav li a:hover span > span,
 .navbar .navbar-nav li.active a span > span 			{background:none;color:#e74c3c !important;}
         
 
@@ -105,8 +105,8 @@ a.arrowDown:hover                                       {text-decoration:none;}
 .navbar ul.topNav li:nth-child(2)                       {width:10%;}
 .navbar ul.topNav li:last-child                         {width:10%;}
 .navbar ul.topNav li a:hover                            {color:#4db849;}
-.navbar ul.topNav li:first-child span                   {position:relative;text-align:center;background:#bdc3c7;width:100%;padding:2.5% 15%;color:#fff;}
-.navbar ul.topNav li:first-child span:after             {content:'';position:absolute;width:0;height:0;top:24px;border:6px solid;border-color:#bdc3c7 transparent transparent #bdc3c7;}
+.navbar ul.topNav li:first-child a span                 {position:relative;text-align:center;background:#bdc3c7;width:100%;padding:2.5% 15%;color:#fff;}
+.navbar ul.topNav li:first-child a span:after           {content:'';position:absolute;width:0;height:0;top:24px;border:6px solid;border-color:#bdc3c7 transparent transparent #bdc3c7;}
 .navbar ul.topNav li:first-child a:hover span           {background:#4db849;}
 .navbar ul.topNav li:first-child a:hover span:after     {border-color: #4db849 transparent transparent #4db849;}
 .navbar ul.topNav li:nth-child(3)                       {line-height:5;}
@@ -129,31 +129,29 @@ ul.empList li img:hover                             {border:2px solid #50b948;}
 .designation ul, .designation ul li                 {padding:0; margin:0;}
 .designation ul                                     {width:100%;}
 .designation .designation-circle                    {display:inline-block;cursor:pointer;border:1px solid #bdc3c7;border-radius:50%;}
-/*.designation ul li:hover + .popover h3.title        {background: #50b948; width:100%;}
-.designation ul li:hover + .popover                 {border:solid 2px #50b948;}
-.designation ul li:hover + .popover.top .arrow      {border-top-color:#50b948 !important;}
-.designation ul li:hover + .popover.top .arrow:after{border-bottom-width:2px !important;}*/
 .designation-circle:hover                           {background:#50b948;border:1px solid #50b948;}
 .designation-background                             {background:#50b948 !important;}
-.designation-border                                 {border:solid 2px #50b948 !important;}
+.designation-border                                 {border:solid 1px #50b948 !important;}
 .designation-arrow-color                            {border-top-color:#50b948 !important;}
-.designation-arrow-size                             {border-bottom-width:2px !important;}
+.designation-arrow-size                             {border-bottom-width:1px !important;}
 .designation-span-background                        {background: #50b948;position:relative !important;}
-
 .designation ul li a                                {display:inline-block;}
+.popover.top .arrow.designation-arrow-color 		{border-top-color:#50b948 !important;}
 
-.popover                                            {border-radius:0;border:2px solid #bdc3c7;padding:0;z-index:999;}
+
+.popover                                            {border-radius:0;border:1px solid #bdc3c7;padding:0;z-index:999;}
 .popover:hover                                      {cursor:pointer;}
 h3.popover-title                                    {border-radius:0;background:#bdc3c7;color:#fff;width:100%;text-align:center;}
 .popover-content ul                                 {list-style-type:disc;text-align:left;}
 .popover-content ul li                              {padding:0 !important;margin:0;}
-
+.popover.top .arrow      							{border-top-color:#bdc3c7 !important;}
+.popover.top .arrow:after 							{border-bottom-width:1px !important;}
 
 /* careers */
 
 .careers h3                                         {color:#4db849;}
 
-.careers .row-eq-height                             {display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.careers .row-eq-height                             {display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:80%;margin:0 auto;}
 .careers .row-eq-height > div[class*='col-']        {border:1px solid #50b948;text-align:center;padding:0;}
 
 .careers .row-eq-height h3                          {background-color:#50b948; color:#fff;display:block;}
@@ -163,23 +161,29 @@ h3.popover-title                                    {border-radius:0;background:
 
 div[class*='col-'].pull-right a                     {background-color:#50b948;color:#fff;}
 
+.hidden-xs											{width:80%; margin:0 auto;}
+
 
 /* Contact Us */
 
 .mapCanvas 											{display:inline-table;}
 
-address                                             {float:right;text-align:right;color:#000;font-size:16px;width:90%;white-space:pre-line; padding:0;}
+address                                             {float:right;text-align:right;color:#000;font-size:16px;width:90%; padding:0;}
+address:first-child, address:last-child a span 		{white-space:pre-line;}
+address:last-child a 								{display:flex;padding:5%;background:#50b948;margin-bottom:0;}
+address:last-child a:hover 							{background:#5dc955;
+													-webkit-transition: background-color 500ms linear;
+													   -moz-transition: background-color 500ms linear;
+													     -o-transition: background-color 500ms linear;
+													    -ms-transition: background-color 500ms linear;
+													        transition: background-color 500ms linear;
+													}
 
-address:last-child {background:#4db849;margin-bottom:0;}
-address:last-child a {display: flex;padding:0 5%; background: blue;}
-address:last-child a span {}
-address:last-child a span:first-child {float:left;width:40%;padding:7.5% 0;}
-address:last-child a span:last-child {float:right;width:60%;text-align:right;color:#fff;}
-.badge {display:table-cell;height:100px;width:100px;text-align:center;vertical-align:middle;border-radius:50%;background:transparent;border:2px solid #85ee7d;font-size: 2em;
-font-weight: normal;display: block;margin:0 auto;line-height: 2.75em;color:#85ee7d; opacity: 0.5;}
+address:last-child a span:first-child 				{float:left;width:40%;padding:7.5% 0;}
+address:last-child a span:last-child 				{float:right;width:60%;text-align:right;color:#fff;}
+.badge 												{display:table-cell;height:100px;width:100px;text-align:center;vertical-align:middle;border-radius:50%;background:transparent;border:2px solid #85ee7d;font-size:2em;font-weight: normal;display: block;margin:0 auto;line-height: 2.75em;color:#85ee7d; opacity: 0.5;}
 
 
-.footer                                             {color:#95a5a6;overflow:hidden;position:relative;}
+.footer                                             {color:#95a5a6;text-align:center; padding:1em 0;}
+.footer p a span,.footer p a:hover span             {color:#50b948;border-bottom:1px solid #50b948;}
 
-.footer p a                                         {color:#50b948;text-decoration:underline;}
-.copyright                                          {text-align:center;}

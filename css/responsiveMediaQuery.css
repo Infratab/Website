@@ -77,7 +77,7 @@ div[class*='col-'].pull-right a 				{font-size:16px;padding:0.5em 1em;margin-top
 
 /* Contact Us */
 
-.mapCanvas										{height:439px;border:2px solid #bdc3c7;}
+.mapCanvas										{height:430px;border:1px solid #bdc3c7;}
 .footer p 										{line-height:25px;}
 .copyright 										{margin:30px 0;}
 
@@ -223,7 +223,7 @@ div[class*='col-'].pull-right a 				{font-size:16px;padding:0.5em 1em;margin-top
 
 /* Contact Us */
 
-.mapCanvas										{height:300px;border:2px solid #bdc3c7; margin-bottom:3em;} 
+.mapCanvas										{height:300px;border:1px solid #bdc3c7; margin-bottom:3em;} 
 address											{font-size:20px;line-height:1.5;}
 address span 									{font-size:22px;}
 .hqbox , .hqbox a 								{width:300px;line-height:1.5;}

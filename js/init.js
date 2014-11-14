@@ -82,7 +82,7 @@ function initialize() {
                 '</div>'+
                 '<h5 id="firstHeading" class="firstHeading">Infratab Banglore Pvt Ltd.</h5>'+
                 '<div id="bodyContent">'+
-                '<p><br>Door No:386/5, 1st A Cross,<br> 7th Block, Koramangala,<br> Bangalore â€“ 560095.<br> Phone: (+91) 80 6454 3666.<br> Website: <a href="http://infratab.in" target="_blank">http://infratab.in</a></p>'+
+                '<p><br>Door No:386/5, 1st A Cross,<br> 7th Block, Koramangala,<br> Bangalore - 560095.<br> Phone: <a href="tel:918064543666">(+91) 80 6454 3666.</a><br> Website: <a href="http://infratab.in" target="_blank">http://infratab.in</a></p>'+
                 '</div>'+
                 '</div>';
             var infowindow = new google.maps.InfoWindow({
