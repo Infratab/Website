@@ -30,7 +30,7 @@ a:hover                                     {color:#edc80e;text-decoration:under
 
 .section                                    {display:table;width:100%;min-height:100%;text-align:center;}
 .section:before                             {content: '';display:inline-block;height:100%;vertical-align:middle;} 
-.Vmiddle                                    {display:inline-block;vertical-align:middle;width:90%;border:#a0a0a0 solid 1px;background:#eee;}
+.Vmiddle                                    {display:inline-block;vertical-align:middle;width:90%;/*border:#a0a0a0 solid 1px;background:#eee;*/}
 .row                                        {margin:0; -webkit-transition: top 400ms; -moz-transition: top 400ms;-o-transition: top 400ms; transition: top 400ms;}
 
 
@@ -70,7 +70,7 @@ a.arrowDown:hover                                       {text-decoration:none;}
 .navbar a.navbar-brand span.glyphicon                   {top:4px;font-size:28px;}
 .navbar a.navbar-brand:hover,
 .navbar a.navbar-brand:focus                            {color:#edc80e;}
-.navbar .navbar-toggle                                  {outline:none;border-color:transparent;margin:20px 0 0 0;padding:0;}
+.navbar .navbar-toggle                                  {outline:none;border-color:transparent;margin:20px 5% 0 0;padding:0;}
 .navbar .navbar-toggle:active,
 .navbar .navbar-toggle:visited,
 .navbar .navbar-toggle:focus,
@@ -103,6 +103,7 @@ a.arrowDown:hover                                       {text-decoration:none;}
 .navbar ul.topNav li:first-child a:hover span:after     {border-color: #4db849 transparent transparent #4db849;}
 .navbar ul.topNav li:nth-child(3)                       {line-height:5;}
 
+
 /* Team */
 
 ul.empList                                          {width:100%;}
@@ -110,6 +111,7 @@ ul.empList li                                       {display:inline-block;text-a
 ul.empList li img                                   {border:2px solid transparent;}
 ul.empList li img:hover                             {border:2px solid #6bc168;}
 
+.tooltip                                            {z-index: 999;}
 .tooltip-inner                                      {background:#6bc168;}
 .tooltip.bottom .tooltip-arrow                      {border-bottom-color:#6bc168;}
 
@@ -129,11 +131,12 @@ ul.empList li img:hover                             {border:2px solid #6bc168;}
 
 .designation ul li a                                {display:inline-block;}
 
-.popover                                            {border-radius:0;border:2px solid #bdc3c7;padding:0;}
+.popover                                            {border-radius:0;border:2px solid #bdc3c7;padding:0;z-index:999;}
 .popover:hover                                      {cursor:pointer;}
 h3.popover-title                                    {border-radius:0;background:#bdc3c7;color:#fff;width:100%;text-align:center;}
 .popover-content ul                                 {list-style-type:disc;text-align:left;}
 .popover-content ul li                              {padding:0 !important;margin:0;}
+
 
 /* careers */
 
@@ -152,7 +155,7 @@ div[class*='col-'].pull-right a                     {background-color:#6bc168;co
 
 /* Contact Us */
 
-
+.mapCanvas 											{display:inline-table;width:100%;}
 
 address                                             {text-align:right;}
 address a                                           {text-decoration:none;color:black;}
@@ -166,38 +169,7 @@ address a:hover                                     {color:black;}
 .hq p                                               {color:#6bc168;}
 .hqcircle                                           {border:1px solid;border-radius:50%;text-align:center;color:#6bc168;}
 
-
 .footer                                             {color:#95a5a6;overflow:hidden;position:relative;}
 .footer p a                                         {color:#95a5a6;text-decoration:underline;}
 .footer p a:hover                                   {color:#4db849;}
 .copyright                                          {text-align: center;}
-
-
-
-@media (max-width: 420px) {
-
-    .section {height:auto;padding-top: 70px;}
-    .section.welcome {height:100%;}
-    .welcome ul.topNav {width: 78%;right: 12%;position: absolute;top: 3%;}
-    .navbar ul.topNav {width: 100%;left: 0; position:static;}
-    .navbar .navbar-nav.mid {position: inherit;left: 0;}
-    .pull-right {float:left !important;}
-
-    ul.menu {width: 92%;margin: 0 auto;padding-left:5%;}
-    ul.menu li {width: 25%;}
-    ul.menu li:first-child {width: 38%;}
-    ul.menu li a {font-size: 16px;}
-
-}
-
-
-@media (max-width: 992px) {
-
-    .navbar .navbar-nav li a {padding:0 15px;}
-    .navbar a.navbar-brand {padding-right:5px;}
-    .navbar .navbar-collapse.collapse {display:none;}
-
-}
-
-
-
