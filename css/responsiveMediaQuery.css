@@ -28,13 +28,13 @@ a.arrowDown                 			{bottom:7.5%;left:49.25%;}
 
 .team .Vmiddle 							{width:100%;}
 
-ul.empList                  			{margin-bottom:22.5% !important;}
+ul.empList                  			{margin-bottom:30% !important;}
 ul.empList li               			{margin:1.5% 1%;padding:3px;border-radius:4px; }
 ul.empList li img           			{width:80px;height:80px;}
 
 .tooltip                        		{font-size:16px;}
 .tooltip-inner                  		{padding:6px 10px;}
-.tooltip.bottom                 		{margin-top:2.25em;}
+.tooltip.bottom                 		{margin-top:2.5em;}
 
 .designation .designation-circle		{margin:9px 0px 20px 0px;width:100px;height:100px;}
 
@@ -45,13 +45,20 @@ ul.empList li img           			{width:80px;height:80px;}
 .designation:nth-child(4) a         	{background:url('../img/result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top:10px; }
 .designation:last-child a           	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top:12px;}
 
-.designation:first-child  a:hover   	{background:url('../img/result.png') no-repeat 42% -8%; width:70px;height:70px;}
-.designation:nth-child(2) a:hover   	{background:url('../img/result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
-.designation:nth-child(3) a:hover   	{background:url('../img/result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
-.designation:nth-child(4) a:hover   	{background:url('../img/result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
-.designation:last-child a:hover     	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
+.designation:first-child > ul li div.designation-circle:hover  a   	{background:url('../img/h-result.png') no-repeat 42% -8%; width:70px;height:70px;}
+.designation:nth-child(2) > ul li div.designation-circle:hover  a  	{background:url('../img/h-result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
+.designation:nth-child(3) > ul li div.designation-circle:hover a   	{background:url('../img/h-result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
+.designation:nth-child(4) > ul li div.designation-circle:hover a   	{background:url('../img/h-result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
+.designation:last-child > ul li div.designation-circle:hover a     	{background:url('../img/h-result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
 
-.popover                				{width:96%;height:270px;}
+
+.designation:first-child > ul li div.designation-circle.designation-span-background  a {background:url('../img/h-result.png') no-repeat 42% -8%; width:70px;height:70px;}
+.designation:nth-child(2) > ul li div.designation-circle.designation-span-background  a{background:url('../img/h-result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
+.designation:nth-child(3) > ul li div.designation-circle.designation-span-background a {background:url('../img/h-result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
+.designation:nth-child(4) > ul li div.designation-circle.designation-span-background a {background:url('../img/h-result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
+.designation:last-child > ul li div.designation-circle.designation-span-background a   {background:url('../img/h-result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
+
+.popover                				{height:270px;}
 h3.popover-title        				{font-size:20px !important;line-height:1.25em;}
 .popover-content        				{padding: 0.75em 0 0.75em 2em;}
 .popover-content ul li  				{line-height:1.75em;font-size:16px;}
@@ -70,23 +77,19 @@ div[class*='col-'].pull-right a 				{font-size:16px;padding:0.5em 1em;margin-top
 
 /* Contact Us */
 
-.mapCanvas										{height:427px;border:2px solid #bdc3c7;}
-address											{font-size:16px;line-height:1.5;}
-address span 									{font-size:20px;}
-.hqbox , .hqbox a 								{line-height:1.5;}
-.addressus 										{margin-right:7px;padding-top:9px;padding-bottom:9px;}
-.hq p 											{font-size:40px;padding-top:8px;}
-.hqcircle 										{width:80px;height:80px;margin-top:30px;margin-left:7px;}
+.mapCanvas										{height:439px;border:2px solid #bdc3c7;}
 .footer p 										{line-height:25px;}
 .copyright 										{margin:30px 0;}
 
 }
 
-@media screen and (min-width:1600px) {
+@media screen and (max-width:1600px) {
 
 .welcome h3                 					{width:45% !important;}
+ul.empList                  					{margin-bottom:25% !important;}
 .welcome ul.topNav li:first-child span:after 	{left:0 !important;}
 .navbar ul.topNav li:first-child span:after 	{left:1px !important;}
+.popover 										{width: 70%;]
 
 }
 
@@ -97,16 +100,19 @@ address span 									{font-size:20px;}
 ul.empList                  					{margin-bottom:30%;}
 .welcome ul.topNav li:first-child span:after,
 .navbar ul.topNav li:first-child span:after 	{left:0;}
+.popover 										{width:75%;}
 
 }
 
 
-@media screen and (min-width:1366px) {
+
+@media screen and (max-width:1366px) {
 
 .welcome h3                 					{width:50%;}
 ul.empList                  					{margin-bottom:30%;}
 .welcome ul.topNav li:first-child span:after,
 .navbar ul.topNav li:first-child span:after 	{left:1px;}
+.popover 										{width:75%;}
 
 }
 
@@ -116,13 +122,14 @@ ul.empList                  					{margin-bottom:30%;}
 ul.empList                  					{margin-bottom:30%;}
 .welcome ul.topNav li:first-child span:after,
 .navbar ul.topNav li:first-child span:after 	{left:0;}
+.popover 										{width:85%;}
 
 }
 
 @media screen and (max-width:1024px) {
 
 .welcome h3                 					{width:70% !important;}
-
+.popover 										{width:96%;}
 }
 
 
@@ -186,11 +193,11 @@ ul.empList li img           			{width:85px;height:85px;}
 .designation:nth-child(4) a         	{background:url('../img/result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top:10px; }
 .designation:last-child a           	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top:12px;}
 
-.designation:first-child  a:hover   	{background:url('../img/result.png') no-repeat 42% -8%; width:70px;height:70px;}
-.designation:nth-child(2) a:hover   	{background:url('../img/result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
-.designation:nth-child(3) a:hover   	{background:url('../img/result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
-.designation:nth-child(4) a:hover   	{background:url('../img/result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
-.designation:last-child a:hover     	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
+.designation:first-child  a:hover   	{background:url('../img/h-result.png') no-repeat 42% -8%; width:70px;height:70px;}
+.designation:nth-child(2) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
+.designation:nth-child(3) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
+.designation:nth-child(4) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
+.designation:last-child a:hover     	{background:url('../img/h-result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
 
 .popover                				{width:90%;height:240px;}
 h3.popover-title        				{font-size:18px !important;line-height:1.25em;}
@@ -285,11 +292,11 @@ ul.empList li img           			{width:65px;height:65px;}
 .designation:nth-child(4) a         	{background:url('../img/result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top:10px; }
 .designation:last-child a           	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top:12px;}
 
-.designation:first-child  a:hover   	{background:url('../img/result.png') no-repeat 42% -8%; width:70px;height:70px;}
-.designation:nth-child(2) a:hover   	{background:url('../img/result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
-.designation:nth-child(3) a:hover   	{background:url('../img/result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
-.designation:nth-child(4) a:hover   	{background:url('../img/result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
-.designation:last-child a:hover     	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
+.designation:first-child  a:hover   	{background:url('../img/h-result.png') no-repeat 42% -8%; width:70px;height:70px;}
+.designation:nth-child(2) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
+.designation:nth-child(3) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
+.designation:nth-child(4) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
+.designation:last-child a:hover     	{background:url('../img/h-result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
 
 .popover                				{width:55%;height:175px;}
 h3.popover-title        				{font-size:14px !important;line-height:1.25em;padding:5px;}
@@ -311,11 +318,11 @@ h3.popover-title        				{font-size:14px !important;line-height:1.25em;paddin
 .designation:nth-child(4) a         	{background:url('../img/result.png') no-repeat 50% 77%;width:70px;height:60px;margin-top:10px;background-size:60%; }
 .designation:last-child a           	{background:url('../img/result.png') no-repeat 45% 114%;width:70px;height:70px;margin-top:14px;background-size:60%;}
 
-.designation:first-child  a:hover   	{background:url('../img/result.png') no-repeat 45% -8%; width:70px;height:70px;background-size:60%;}
-.designation:nth-child(2) a:hover   	{background:url('../img/result.png') no-repeat 50% 27%;width:70px;height:50px;margin-top:20px;background-size:60%;}
-.designation:nth-child(3) a:hover   	{background:url('../img/result.png') no-repeat 45% 50%;width:70px;height:50px;margin-top:14px;background-size:60%;}
-.designation:nth-child(4) a:hover   	{background:url('../img/result.png') no-repeat 50% 77%;width:70px;height:60px;margin-top:10px;background-size:60%;}
-.designation:last-child a:hover     	{background:url('../img/result.png') no-repeat 45% 114%;width:70px;height:70px;margin-top:14px;background-size:60%;}
+.designation:first-child  a:hover   	{background:url('../img/h-result.png') no-repeat 45% -8%; width:70px;height:70px;background-size:60%;}
+.designation:nth-child(2) a:hover   	{background:url('../img/h-result.png') no-repeat 50% 27%;width:70px;height:50px;margin-top:20px;background-size:60%;}
+.designation:nth-child(3) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 50%;width:70px;height:50px;margin-top:14px;background-size:60%;}
+.designation:nth-child(4) a:hover   	{background:url('../img/h-result.png') no-repeat 50% 77%;width:70px;height:60px;margin-top:10px;background-size:60%;}
+.designation:last-child a:hover     	{background:url('../img/h-result.png') no-repeat 45% 114%;width:70px;height:70px;margin-top:14px;background-size:60%;}
 
 .popover                				{width:96%;height:180px;}
 h3.popover-title        				{font-size:14px !important;line-height:1.25em;padding:5px;}
@@ -412,11 +419,11 @@ ul.empList li img           			{width:60px;height:60px;}
 .designation:nth-child(4) a         	{background:url('../img/result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top:10px; }
 .designation:last-child a           	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top:12px;}
 
-.designation:first-child  a:hover   	{background:url('../img/result.png') no-repeat 42% -8%; width:70px;height:70px;}
-.designation:nth-child(2) a:hover   	{background:url('../img/result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
-.designation:nth-child(3) a:hover   	{background:url('../img/result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
-.designation:nth-child(4) a:hover   	{background:url('../img/result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
-.designation:last-child a:hover     	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
+.designation:first-child  a:hover   	{background:url('../img/h-result.png') no-repeat 42% -8%; width:70px;height:70px;}
+.designation:nth-child(2) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
+.designation:nth-child(3) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
+.designation:nth-child(4) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
+.designation:last-child a:hover     	{background:url('../img/h-result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
 
 .popover                				{width:96%;height:180px;}
 h3.popover-title        				{font-size:14px !important;line-height:1.25em;padding:5px;}
@@ -509,11 +516,11 @@ ul.empList li img           			{width:65px;height:65px;}
 .designation:nth-child(4) a         	{background:url('../img/result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top:10px; }
 .designation:last-child a           	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top:12px;}
 
-.designation:first-child  a:hover   	{background:url('../img/result.png') no-repeat 42% -8%; width:70px;height:70px;}
-.designation:nth-child(2) a:hover   	{background:url('../img/result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
-.designation:nth-child(3) a:hover   	{background:url('../img/result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
-.designation:nth-child(4) a:hover   	{background:url('../img/result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
-.designation:last-child a:hover     	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
+.designation:first-child  a:hover   	{background:url('../img/h-result.png') no-repeat 42% -8%; width:70px;height:70px;}
+.designation:nth-child(2) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
+.designation:nth-child(3) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
+.designation:nth-child(4) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
+.designation:last-child a:hover     	{background:url('../img/h-result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
 
 .popover                				{width:96%;height:180px;}
 h3.popover-title        				{font-size:14px !important;line-height:1.25em;padding:5px;}
@@ -606,11 +613,11 @@ ul.empList li img           			{width:65px;height:65px;}
 .designation:nth-child(4) a         	{background:url('../img/result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top:10px; }
 .designation:last-child a           	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top:12px;}
 
-.designation:first-child  a:hover   	{background:url('../img/result.png') no-repeat 42% -8%; width:70px;height:70px;}
-.designation:nth-child(2) a:hover   	{background:url('../img/result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
-.designation:nth-child(3) a:hover   	{background:url('../img/result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
-.designation:nth-child(4) a:hover   	{background:url('../img/result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
-.designation:last-child a:hover     	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
+.designation:first-child  a:hover   	{background:url('../img/h-result.png') no-repeat 42% -8%; width:70px;height:70px;}
+.designation:nth-child(2) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
+.designation:nth-child(3) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
+.designation:nth-child(4) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
+.designation:last-child a:hover     	{background:url('../img/h-result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
 
 .popover                				{width:96%;height:180px;}
 h3.popover-title        				{font-size:14px !important;line-height:1.25em;padding:5px;}
