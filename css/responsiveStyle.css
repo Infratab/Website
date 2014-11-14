@@ -16,8 +16,7 @@ a img:focus,button:focus,button.btn:focus   {outline:none;cursor:pointer !import
 ul                                          {margin:0;padding:0;list-style:none;text-align:center;}
 
 a                                           {color:#6bc168;}
-a:hover                                     {color:#edc80e;text-decoration:none;}
-a:active									{color:#edc80e;text-decoration:underline;}
+a:hover, a:active                           {color:#edc80e;text-decoration:none !important;}
 
 .clearfix                                   {clear:both;}
 .affix                                      {top:70px;}
@@ -81,15 +80,19 @@ a.arrowDown:hover                                       {text-decoration:none;}
 .navbar .navbar-collapse                                {border-color:#ddd;max-height:400px;}
 .navbar .navbar-nav.mid                                 {position:absolute;left:37%;}
 .navbar .navbar-nav li a                                {margin:20px 5px;color:#000;height:30px;line-height:30px;padding:0 20px;font-weight:500;font-size:16px;transition:background-color .2s;-webkit-transition: background-color .2s;}
-.navbar .navbar-nav li a:hover                          {text-decoration:none;color:#4db849;}
+.navbar .navbar-nav li a:hover                          {color:#50b948;}
 .navbar .navbar-nav li.dropdown.open a.dropdown-toggle  {background-color:#bbb;}
 .navbar .navbar-nav ul.dropdown-menu                    {border-radius:0;border:0 solid #999;border-top:1px solid #999;}
 .navbar .navbar-collapse.in ul.dropdown-menu            {border-top:none;}
 .navbar .navbar-collapse.in ul.dropdown-menu li a:hover {color:#ccc;}
 .navbar .navbar-nav li.active a,
-.navbar .navbar-nav li.active a:hover                   {background:none;text-decoration:underline;color:#4db849;}
-.navbar .navbar-nav li.active a span,
-.navbar .navbar-nav li a:hover span                     {background:none;color:#e74c3c;}
+.navbar .navbar-nav li.active a:hover                   {background:none;color:#50b948;}
+
+.navbar .navbar-nav li.active a span:first-child		{border-bottom:1px solid #50b948;}
+
+.navbar .navbar-nav li:hover a span > span,
+.navbar .navbar-nav li.active a span > span 			{background:none;color:#e74c3c !important;}
+        
 
 .navbar ul.topNav                                       {width:18%;right:0;position:absolute;}
 .navbar ul.topNav li                                    {display:inline-table;text-align:center;}
@@ -100,7 +103,7 @@ a.arrowDown:hover                                       {text-decoration:none;}
 .navbar ul.topNav li a:hover                            {color:#4db849;}
 .navbar ul.topNav li:first-child span                   {position:relative;text-align:center;background:#bdc3c7;width:100%;padding:2.5% 15%;color:#fff;}
 .navbar ul.topNav li:first-child span:after             {content:'';position:absolute;width:0;height:0;top:24px;border:6px solid;border-color:#bdc3c7 transparent transparent #bdc3c7;}
-.navbar ul.topNav li:first-child a:hover span           {background:#4db849;text-decoration:none;}
+.navbar ul.topNav li:first-child a:hover span           {background:#4db849;}
 .navbar ul.topNav li:first-child a:hover span:after     {border-color: #4db849 transparent transparent #4db849;}
 .navbar ul.topNav li:nth-child(3)                       {line-height:5;}
 
@@ -113,7 +116,7 @@ ul.empList li img                                   {border:2px solid transparen
 ul.empList li img:hover                             {border:2px solid #6bc168;}
 
 .tooltip                                            {z-index: 999;}
-.tooltip-inner                                      {background:#6bc168;}
+.tooltip-inner                                      {background:#6bc168;display:initial;}
 .tooltip.bottom .tooltip-arrow                      {border-bottom-color:#6bc168;}
 
 .designation ul, .designation ul li                 {padding:0; margin:0;}

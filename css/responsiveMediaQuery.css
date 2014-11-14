@@ -28,7 +28,7 @@ a.arrowDown                 			{bottom:7.5%;left:49.25%;}
 
 .team .Vmiddle 							{width:100%;}
 
-ul.empList                  			{margin-bottom:35% !important;}
+ul.empList                  			{margin-bottom:22.5% !important;}
 ul.empList li               			{margin:1.5% 1%;padding:3px;border-radius:4px; }
 ul.empList li img           			{width:80px;height:80px;}
 
@@ -85,6 +85,8 @@ address span 									{font-size:20px;}
 @media screen and (min-width:1600px) {
 
 .welcome h3                 					{width:45% !important;}
+.welcome ul.topNav li:first-child span:after 	{left:0 !important;}
+.navbar ul.topNav li:first-child span:after 	{left:1px !important;}
 
 }
 
