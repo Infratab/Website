@@ -20,11 +20,13 @@ ul.menu li a                			{font-size:18px;}
 .welcome h3                 			{font-size:24px;line-height:1.35em;width:50%;}
 .welcome a i:before         			{font-size:40px;}
 
-a.arrowDown                 			{bottom:7.5%;left:48%;}
+a.arrowDown                 			{bottom:7.5%;left:49.25%;}
 
 .navbar ul.topNav li:first-child span:after {left:1px;}
 
 /* Team */
+
+.team .Vmiddle 							{width:100%;}
 
 ul.empList                  			{margin-bottom:25%;}
 ul.empList li               			{margin:1.5% 3.75%;padding:3px;border-radius:4px; }
@@ -177,7 +179,7 @@ h3.popover-title        				{font-size:18px !important;line-height:1.25em;}
 
 /* careers */
 
-.careers h3 									{font-size:2.5em;}
+.careers h3 									{font-size:1.75em;}
 .careers p.info 								{font-size:22px;line-height:2;padding:2em 0;}
 .careers .row-eq-height > div[class*='col-sm-']:first-child,
 .careers .row-eq-height > div[class*='col-sm-']:nth-child(2),
@@ -461,15 +463,15 @@ a.arrowDown                 			{bottom:3%;left:48%;}
 .navbar ul.topNav 						{width:70%;margin-left: 12%; position:static;}
 .navbar ul.topNav.pull-right 			{float:left !important;}
 .navbar .navbar-nav li a 				{margin:10px auto; font-size:14px;}
-.navbar .navbar-nav.mid 				{position: inherit;left: 0;}
-.navbar ul.topNav li:first-child span:after {left:0;top: 30px;}
+.navbar .navbar-nav.mid 				{position:inherit;left: 0;}
+.navbar ul.topNav li:first-child span:after {left:1px;top:28px;}
 
 /* Team */
 
 .team .Vmiddle 							{margin-top:80px;}
 
-ul.empList                  			{margin-bottom:7.5%;}
-ul.empList li               			{margin:1.5% 1.75% 5% 1.75%;padding:3px;border-radius:4px; }
+ul.empList                  			{margin-bottom:15%;}
+ul.empList li               			{margin:1.5% 1% 5% 1%;padding:3px;border-radius:4px; }
 ul.empList li img           			{width:65px;height:65px;}
 
 .tooltip                        		{font-size:14px;}

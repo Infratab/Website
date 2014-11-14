@@ -16,7 +16,8 @@ a img:focus,button:focus,button.btn:focus   {outline:none;cursor:pointer !import
 ul                                          {margin:0;padding:0;list-style:none;text-align:center;}
 
 a                                           {color:#6bc168;}
-a:hover                                     {color:#edc80e;text-decoration:underline;}
+a:hover                                     {color:#edc80e;text-decoration:none;}
+a:active									{color:#edc80e;text-decoration:underline;}
 
 .clearfix                                   {clear:both;}
 .affix                                      {top:70px;}
@@ -47,7 +48,7 @@ a:hover                                     {color:#edc80e;text-decoration:under
 
 ul.menu li                                              {display:inline-table;text-align:center;}
 ul.menu li a                                            {color:#000;}
-ul.menu li a:hover                                      {color:#4db849;text-decoration:underline;}
+ul.menu li a:hover                                      {color:#4db849;}
 ul.menu li a:hover span                                 {color:#e74c3c;}
 
 .welcome h3                                             {display:block;text-align:center;color:#000;margin:0 auto;}
@@ -80,7 +81,7 @@ a.arrowDown:hover                                       {text-decoration:none;}
 .navbar .navbar-collapse                                {border-color:#ddd;max-height:400px;}
 .navbar .navbar-nav.mid                                 {position:absolute;left:37%;}
 .navbar .navbar-nav li a                                {margin:20px 5px;color:#000;height:30px;line-height:30px;padding:0 20px;font-weight:500;font-size:16px;transition:background-color .2s;-webkit-transition: background-color .2s;}
-.navbar .navbar-nav li a:hover                          {text-decoration:underline;color:#4db849;}
+.navbar .navbar-nav li a:hover                          {text-decoration:none;color:#4db849;}
 .navbar .navbar-nav li.dropdown.open a.dropdown-toggle  {background-color:#bbb;}
 .navbar .navbar-nav ul.dropdown-menu                    {border-radius:0;border:0 solid #999;border-top:1px solid #999;}
 .navbar .navbar-collapse.in ul.dropdown-menu            {border-top:none;}
