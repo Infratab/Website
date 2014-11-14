@@ -117,12 +117,12 @@ ul.empList li img:hover                             {border:2px solid #6bc168;}
 
 .designation ul, .designation ul li                 {padding:0; margin:0;}
 .designation ul                                     {width:100%;}
-.designation .designation-circle                    {display:inline-block;cursor:pointer;border:1px solid #6bc168;border-radius:50%;}
+.designation .designation-circle                    {display:inline-block;cursor:pointer;border:1px solid #bdc3c7;border-radius:50%;}
 .designation ul li:hover + .popover h3.title        {background: #6bc168; width:100%;}
 .designation ul li:hover + .popover                 {border:solid 2px #6bc168;}
 .designation ul li:hover + .popover.top .arrow      {border-top-color:#6bc168 !important;}
 .designation ul li:hover + .popover.top .arrow:after{border-bottom-width:2px !important;}
-.designation-circle:hover                           {background:#6bc168;}
+.designation-circle:hover                           {background:#6bc168;border:1px solid #6bc168;}
 .designation-background                             {background:#6bc168 !important;}
 .designation-border                                 {border:solid 2px #6bc168;}
 .designation-arrow-color                            {border-top-color:#6bc168 !important;}
