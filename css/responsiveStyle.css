@@ -155,7 +155,7 @@ div[class*='col-'].pull-right a                     {background-color:#6bc168;co
 
 /* Contact Us */
 
-.mapCanvas 											{display:inline-table;width:100%;}
+.mapCanvas 											{display:inline-table;}
 
 address                                             {text-align:right;}
 address a                                           {text-decoration:none;color:black;}
