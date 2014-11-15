@@ -119,8 +119,8 @@ a.arrowDown:hover                                       {text-decoration:none;}
 
 ul.empList                                          {width:100%;}
 ul.empList li                                       {display:inline-block;text-align:center; }
-ul.empList li img                                   {border:2px solid transparent;}
-ul.empList li img:hover                             {border:2px solid #50b948;}
+ul.empList li a img                                 {border:2px solid transparent;}
+ul.empList li a img:hover                           {border:2px solid #50b948;}
 
 .tooltip                                            {z-index:999;}
 .tooltip-inner                                      {background:#50b948;display:initial;border-radius:0;}
@@ -137,7 +137,7 @@ ul.empList li img:hover                             {border:2px solid #50b948;}
 .designation-span-background                        {background: #50b948;position:relative !important;}
 .designation ul li a                                {display:inline-block;}
 .designation:last-child .popover h3.popover-title 	{line-height:1.1;padding:1.15em 0 0 0;} 
-
+.image-border 										{border:2px solid #50b948 !important;}
 .popover.top .arrow.designation-arrow-color 		{border-top-color:#50b948 !important;}
 
 .popover                                            {border-radius:0;border:1px solid #bdc3c7;padding:0;z-index:999;}
