@@ -56,6 +56,7 @@ ul.menu li a:hover span                                 {color:#e74c3c;}
 
 .welcome h3                                             {display:block;text-align:center;color:#000;margin:0 auto;}
 .welcome h3 a                                           {color:#50b948;}
+.welcome h3 a span 										{border-bottom:1px solid #50b948;}
 .welcome h3 a:hover                                     {text-decoration:none; opacity:0.75;}
 .welcome a i:before                                     {color:#000;display:block;font-weight:normal;}
 .welcome a i:hover:before                               {color:#4db849;}
@@ -97,7 +98,6 @@ a.arrowDown:hover                                       {text-decoration:none;}
 .navbar .navbar-nav li a:hover span > span,
 .navbar .navbar-nav li.active a span > span 			{background:none;color:#e74c3c !important;}
         
-
 .navbar ul.topNav                                       {width:18%;right:0;position:absolute;}
 .navbar ul.topNav li                                    {display:inline-table;text-align:center;}
 .navbar ul.topNav li a                                  {color:#000;font-size:16px; padding:0;}
@@ -122,8 +122,8 @@ ul.empList li                                       {display:inline-block;text-a
 ul.empList li img                                   {border:2px solid transparent;}
 ul.empList li img:hover                             {border:2px solid #50b948;}
 
-.tooltip                                            {z-index: 999;}
-.tooltip-inner                                      {background:#50b948;display:initial;}
+.tooltip                                            {z-index:999;}
+.tooltip-inner                                      {background:#50b948;display:initial;border-radius:0;}
 .tooltip.bottom .tooltip-arrow                      {border-bottom-color:#50b948;top:-6px;}
 
 .designation ul, .designation ul li                 {padding:0; margin:0;}
@@ -136,8 +136,9 @@ ul.empList li img:hover                             {border:2px solid #50b948;}
 .designation-arrow-size                             {border-bottom-width:1px !important;}
 .designation-span-background                        {background: #50b948;position:relative !important;}
 .designation ul li a                                {display:inline-block;}
-.popover.top .arrow.designation-arrow-color 		{border-top-color:#50b948 !important;}
+.designation:last-child .popover h3.popover-title 	{line-height:1.1;padding:1.15em 0 0 0;} 
 
+.popover.top .arrow.designation-arrow-color 		{border-top-color:#50b948 !important;}
 
 .popover                                            {border-radius:0;border:1px solid #bdc3c7;padding:0;z-index:999;}
 .popover:hover                                      {cursor:pointer;}
@@ -152,14 +153,20 @@ h3.popover-title                                    {border-radius:0;background:
 .careers h3                                         {color:#4db849;}
 
 .careers .row-eq-height                             {display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:80%;margin:0 auto;}
-.careers .row-eq-height > div[class*='col-']        {border:1px solid #50b948;text-align:center;padding:0;}
+.careers .row-eq-height > div[class*='col-']        {border:1px solid #bdc3c7;text-align:center;padding:0;cursor:pointer;}
 
-.careers .row-eq-height h3                          {background-color:#50b948; color:#fff;display:block;}
+.careers .row-eq-height > div[class*='col-']:hover 	{border:1px solid #50b948;}
+
+.careers .row-eq-height > div[class*='col-']:hover h3,
+.careers .row-eq-height > div[class*='col-']:hover a{background-color:#50b948;}
+
+.careers .row-eq-height h3                          {background-color:#bdc3c7; color:#fff;display:block;}
 .careers .row-eq-height ul li                       {list-style:disc;text-align:left;}
 .careers .row-eq-height span                        {display:block;}
-.careers .row-eq-height a                           {background-color:#50b948;color:#fff;display:inline-block;}
+.careers .row-eq-height a                           {background-color:#bdc3c7;color:#fff;display:inline-block;}
 
-div[class*='col-'].pull-right a                     {background-color:#50b948;color:#fff;}
+div[class*='col-'].pull-right a                     {background-color:#bdc3c7;color:#fff;}
+div[class*='col-'].pull-right a:hover               {background-color:#50b948;}
 
 .hidden-xs											{width:80%; margin:0 auto;}
 
@@ -186,4 +193,3 @@ address:last-child a span:last-child 				{float:right;width:60%;text-align:right
 
 .footer                                             {color:#95a5a6;text-align:center; padding:1em 0;}
 .footer p a span,.footer p a:hover span             {color:#50b948;border-bottom:1px solid #50b948;}
-
