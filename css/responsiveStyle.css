@@ -188,6 +188,7 @@ div[class*='col-'].pull-right a:hover               {background-color:#5dc955;
 .mapCanvas 											{display:inline-table;}
 
 address                                             {float:right;text-align:right;color:#000;font-size:16px;width:90%; padding:0;}
+address h3 											{font-size:23px;}
 address:first-child, address:last-child a span 		{white-space:pre-line;}
 address:last-child a 								{display:flex;padding:5%;background:#50b948;margin-bottom:0;}
 address:last-child a:hover 							{background:#5dc955;

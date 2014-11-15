@@ -68,7 +68,7 @@ h3.popover-title        				{font-size:20px !important;line-height:1.25em;}
 .careers p.info 								{font-size:18px;line-height:1.7; padding:2em;}
 .careers .row-eq-height > div[class*='col-']	{line-height:2;}
 .careers .row-eq-height h3 						{padding:0.5em;}
-.careers .row-eq-height ul 						{padding:5% 15%;}
+.careers .row-eq-height ul 						{padding:5% 10% 5% 15%;}
 .careers .row-eq-height ul li, .row-eq-height p {font-size:18px;}
 .careers .row-eq-height span 					{padding: 25% 0;}
 .careers .row-eq-height a 						{font-size:16px;padding:0.5em 1em;margin-top:1em;}
@@ -118,11 +118,12 @@ ul.empList                  					{margin-bottom:30%;}
 
 @media screen and (max-width:1280px) {
 
-.welcome h3                 					{width:55%;}
+.welcome h3                 					{width:55% !important;}
 ul.empList                  					{margin-bottom:30%;}
 .welcome ul.topNav li:first-child span:after,
 .navbar ul.topNav li:first-child span:after 	{left:0;}
 .popover 										{width:85%;}
+.careers .row-eq-height ul li, .row-eq-height p {font-size:16px;}
 
 }
 
@@ -214,7 +215,7 @@ h3.popover-title        				{font-size:18px !important;line-height:1.25em;}
 .careers .row-eq-height > div[class*='col-sm-']:nth-child(4) {margin-right:1em}
 .careers .row-eq-height > div[class*='col-']	{line-height:2;}
 .careers .row-eq-height h3 						{padding:0.5em;}
-.careers .row-eq-height ul 						{padding:5% 10%;}
+.careers .row-eq-height ul 						{padding:5% 5% 5% 10%;}
 .careers .row-eq-height ul li, .row-eq-height p {font-size:18px;}
 .careers .row-eq-height span 					{padding:40% 0 0 0;}
 .careers .row-eq-height a 						{font-size:16px;padding:0.5em 1em;margin-top:1em;}
@@ -341,7 +342,7 @@ h3.popover-title        				{font-size:14px !important;line-height:1.25em;paddin
 .careers .row-eq-height > div[class*='col-']	{line-height:1.5;margin: 1em 0.75em;}
 .careers .row-eq-height > div[class*='col-']:first-child {margin-top:0;}
 .careers .row-eq-height h3 						{padding:0.5em;font-size:14px;}
-.careers .row-eq-height ul 						{padding:5% 10%;}
+.careers .row-eq-height ul 						{padding:5% 5% 5% 10%;}
 .careers .row-eq-height ul li, .row-eq-height p {font-size:14px;}
 .careers .row-eq-height span 					{padding:20% 0;}
 .careers .row-eq-height a 						{font-size:14px;padding:0.5em 1em;margin-top:1em;}
@@ -440,7 +441,7 @@ h3.popover-title        				{font-size:14px !important;line-height:1.25em;paddin
 .careers .row-eq-height > div[class*='col-']	{line-height:1.5;margin: 1em 1.25em;}
 .careers .row-eq-height > div[class*='col-']:first-child {margin-top:0;}
 .careers .row-eq-height h3 						{padding:0.5em;font-size:16px;}
-.careers .row-eq-height ul 						{padding:5% 10%;}
+.careers .row-eq-height ul 						{padding:5% 5% 5% 10%;}
 .careers .row-eq-height ul li, .row-eq-height p {font-size:14px;}
 .careers .row-eq-height span 					{padding:10% 0;}
 .careers .row-eq-height a 						{font-size:14px;padding:0.5em 1em;margin-top:1em;}
@@ -537,7 +538,7 @@ h3.popover-title        				{font-size:14px !important;line-height:1.25em;paddin
 .careers .row-eq-height > div[class*='col-']	{line-height:1.5;margin: 1em 1.5em;}
 .careers .row-eq-height > div[class*='col-']:first-child {margin-top:0;}
 .careers .row-eq-height h3 						{padding:0.5em;font-size:16px;}
-.careers .row-eq-height ul 						{padding:5% 10%;}
+.careers .row-eq-height ul 						{padding:5% 5% 5% 10%;}
 .careers .row-eq-height ul li, .row-eq-height p {font-size:14px;}
 .careers .row-eq-height span 					{padding:10% 0;}
 .careers .row-eq-height a 						{font-size:14px;padding:0.5em 1em;margin-top:1em;}
@@ -634,7 +635,7 @@ h3.popover-title        				{font-size:14px !important;line-height:1.25em;paddin
 .careers .row-eq-height > div[class*='col-']	{line-height:1.5;margin: 1em 1.5em;}
 .careers .row-eq-height > div[class*='col-']:first-child {margin-top:0;}
 .careers .row-eq-height h3 						{padding:0.5em;font-size:16px;}
-.careers .row-eq-height ul 						{padding:5% 10%;}
+.careers .row-eq-height ul 						{padding:5% 5% 5% 10%;}
 .careers .row-eq-height ul li, .row-eq-height p {font-size:14px;}
 .careers .row-eq-height span 					{padding:10% 0;}
 .careers .row-eq-height a 						{font-size:14px;padding:0.5em 1em;margin-top:1em;}
