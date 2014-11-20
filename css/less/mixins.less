@@ -4,12 +4,225 @@
 {
 	width:@width*@widthPt;
 }
+
 .height-percentage(@height)
 {
 	height:@height*@heightPt;
 }
+
 .colors(@bg-color,@color)
 {
 	background:@bg-color;
 	color:@color;
+}
+
+
+.sprite-style
+{
+	.designation
+	{ 
+		ul li a                	
+		{
+			width:70*@widthPx; 
+			height:70*@heightPx;
+		}
+		&:first-child  a         	
+		{
+			background:url('../img/result.png') no-repeat 42*@percentage -8*@percentage;
+			width:70*@widthPx;
+			height:70*@heightPx;
+		}
+		&:nth-child(2) a         	
+		{
+			background:url('../img/result.png') no-repeat 45*@percentage 24*@percentage;
+			width:70*@widthPx;
+			height:50*@heightPx;
+			margin-top:20*@marginPx;
+		}
+		&:nth-child(3) a         	
+		{
+			background:url('../img/result.png') no-repeat 45*@percentage 48*@percentage;
+			width:70*@widthPx;
+			height:80*@heightPx;
+			margin-top:3*@marginPx;
+		}
+		&:nth-child(4) a         	
+		{
+			background:url('../img/result.png') no-repeat 45*@percentage 76*@percentage;
+			width:70*@widthPx;
+			height:70*@heightPx;
+			margin-top:10*@marginPx; 
+		}
+		&:last-child a           	
+		{
+			background:url('../img/result.png') no-repeat 45*@percentage 104*@percentage;
+			width:70*@widthPx;
+			height:70*@heightPx;
+			margin-top:12*@marginPx;
+		}
+	}
+}
+
+.sprite-hover-style
+{
+	.designation
+	{
+		&:first-child  a:hover   	
+		{
+			background:url('../img/h-result.png') no-repeat 42*@percentage -8*@percentage; 
+			width:70*@widthPx;
+			height:70*@heightPx;
+		}
+		&:nth-child(2) a:hover   	
+		{
+			background:url('../img/h-result.png') no-repeat 45*@percentage 24*@percentage;
+			width:70*@widthPx;
+			height:50*@heightPx;
+			margin-top:20*@marginPx;
+		}
+		&:nth-child(3) a:hover   	
+		{
+			background:url('../img/h-result.png') no-repeat 45*@percentage 48*@percentage;
+			width:70*@widthPx;
+			height:80*@heightPx;
+			margin-top: 3*@marginPx;
+		}
+		&:nth-child(4) a:hover   	
+		{
+			background:url('../img/h-result.png') no-repeat 45*@percentage 76*@percentage;
+			width:70*@widthPx;
+			height:70*@heightPx;
+			margin-top: 10*@marginPx;
+		}
+		&:last-child a:hover     	
+		{
+			background:url('../img/h-result.png') no-repeat 45*@percentage 104*@percentage;
+			width:70*@widthPx;
+			height:70*@heightPx;
+			margin-top: 12*@marginPx;
+		}
+	}
+}
+
+
+
+
+.contact-responsive-style
+{
+.mapCanvas{
+	height:200*@heightPx;
+	border:1*@pixel solid @grey;
+	margin-bottom: @marginEm;
+}
+.paddNone{
+	padding:0;
+}
+address{
+	width:100*@widthPt !important;
+	font-size:14*@pixel !important;
+	h3
+	{
+		font-size:18*@pixel !important;
+	}
+	&:last-child a span
+	{
+		&:first-child
+		{
+			width:30*@widthPt !important;
+			padding-top:13*@paddingPt !important;
+		}
+		&:last-child
+		{
+			width:70*@widthPt !important;
+		}
+	}
+}
+.badge{
+	height:60*@heightPx !important;
+	width: 60*@widthPx !important;
+	line-height:2*@em+3*@em/10 !important;
+	font-size: @em+@em/2 !important;
+}
+.footer{
+	position:relative !important; 
+	height:65*@heightPx;
+}
+}
+
+.career-responsive-style
+{
+	.careers 
+{
+	.Vmiddle
+	{
+		margin-top:80*@marginPx;
+	}
+	h3 									
+	{
+		font-size:18*@pixel;
+	}
+	p.info 								
+	{
+		font-size:14*@pixel;
+		line-height:1.7; 
+		padding:@paddingEm+@paddingEm/2;
+	}
+	.row-eq-height 
+	{
+		display:table;
+		h3 						
+		{
+		padding:@paddingEm/2;
+		font-size:16*@pixel;
+		}
+		ul 						
+		{
+			padding:5*@paddingPt 5*@paddingPt 5*@paddingPt 10*@paddingPt;
+			li
+			{
+				font-size:14*@pixel;
+			}
+		}
+		p 
+		{
+			font-size:14*@pixel;
+		}
+		span
+		{
+			padding:10*@paddingPt 0;
+		}
+		a 						
+		{
+			font-size:14*@pixel;
+			padding:@paddingEm/2 @paddingEm;
+			margin-top:@marginEm;
+		}
+	}
+	.row-eq-height > div[class*='col-xs-']:last-child 
+	{
+		border:none; 
+		margin-top:12*@marginPt+@marginPt/2;
+	}
+	.row-eq-height > div[class*='col-']	
+	{
+		line-height:1.5;
+		margin: @marginEm @marginEm+@marginEm/2;
+		&:first-child 
+		{
+			margin-top:0;
+		}
+	}
+}
+
+div[class*='col-'].pull-right 					
+{
+	padding:0;
+	a 				
+	{
+		font-size:16*@pixel;
+		padding:@paddingEm/2 @paddingEm;
+		margin-top:@marginEm+@marginEm/2;
+	}
+}
+
 }

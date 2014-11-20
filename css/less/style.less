@@ -609,152 +609,159 @@ h3.popover-title{
 
 .careers 
 {
-	h3
+	h3                                         
 	{
-	color:@green;
+		color:@green;
 	}
-	.row-eq-height
+	.row-eq-height                             
 	{
-		display:-webkit-box;
-		display:-webkit-flex;
-		display:-ms-flexbox;
-		display:flex;
-		width:80*@widthPt;
+		.width-percentage(80);
 		margin:0 auto;
-		 h3
-		 {
-			.colors(@bg-grey, @white);
+		h3                          
+		{
+			.colors(@bg-grey,@white);
 			display:block;
 		}
-		ul li
+		ul li                       
 		{
 			list-style:disc;
 			text-align:left;
 		}
-		span
+		span                        
 		{
 			display:block;
 		}
-		a
+		a                           
 		{
-			.colors(@bg-grey, @white);
+			.colors(@bg-grey,@white);
 			display:inline-block;
 		}
 	}
-	.row-eq-height > div[class*='col-']
+	.row-eq-height > div[class*='col-'] > div[class*='col-']       
 	{
 		border:1*@pixel solid @grey;
 		text-align:center;
 		padding:0;
 		cursor:pointer;
-		&:hover
+		&:hover 	
 		{
-			border:1*@pixel solid @light-green;
-			h3
-			{
-				background-color:@light-green;
-				-webkit-transition: background-color 500ms linear;
-			  	-moz-transition: background-color 500ms linear;	    
-			  	-o-transition: background-color 500ms linear;	
-			  	-ms-transition: background-color 500ms linear;	
-			 	transition: background-color 500ms linear;
-			}
-			a
-			{
-				background-color:@light-green;
-				-webkit-transition: background-color 500ms linear;
-			  	-moz-transition: background-color 500ms linear;	    
-			  	-o-transition: background-color 500ms linear;	
-			  	-ms-transition: background-color 500ms linear;	
-			 	transition: background-color 500ms linear;
-			}
+			border:1px solid @light-green;
+		}
+	}
+	.row-eq-height > div[class*='col-'] div[class*='col-']:hover
+	{ 	h3
+		{
+			background-color:@green;
+			-webkit-transition: background-color 500ms linear;
+			-moz-transition: background-color 500ms linear;
+			 -o-transition: background-color 500ms linear;
+			 -ms-transition: background-color 500ms linear;
+			  transition: background-color 500ms linear;
+		}
+		a
+		{
+			background-color:@green;
+			-webkit-transition: background-color 500ms linear;
+			-moz-transition: background-color 500ms linear;
+			 -o-transition: background-color 500ms linear;
+			 -ms-transition: background-color 500ms linear;
+			  transition: background-color 500ms linear;
 		}
 	}
 }
 
 
-div[class*='col-'].pull-right a
+
+div[class*='col-'].pull-right a                     
 {
-	.colors(@bg-grey, @white);
-	&:hover
+	.colors(@bg-grey,@white);
+	&:hover               
 	{
-		background-color:@light-green;
+		background-color:#5dc955;
 		-webkit-transition: background-color 500ms linear;
-		-moz-transition: background-color 500ms linear;
-		-o-transition: background-color 500ms linear;
+		 -moz-transition: background-color 500ms linear;
+		 -o-transition: background-color 500ms linear;
 		-ms-transition: background-color 500ms linear;
 		transition: background-color 500ms linear;
 	}
 }
 
-
-.hidden-xs{
-	.width-percentage(80); 
+.hidden-xs											
+{
+	.width-percentage(80);
 	margin:0 auto;
 }
 
 
+
 /* Contact Us */
-.contactUs{
+.contactUs											
+{
 	position:relative;
 }
 .mapCanvas{
 	display:inline-table;
 }
-address{
+
+address     
+{
 	float:right;
 	text-align:right;
 	color:@black;
 	font-size:16*@pixel;
-	.width-percentage(90);
+	.width-percentage(90); 
 	padding:0;
-	h3{
-	font-size:23*@pixel;
+	h3 											
+	{
+		font-size:23*@pixel;
 	}
 	&:first-child
 	{
-	white-space:pre-line;
+		white-space:pre-line;
 	}
-	&:last-child a 
+	&:last-child
 	{
-
-		display:flex;
-		padding:5*@paddingPt;
-		background:@light-green;
-		margin-bottom:0;
-		&:hover
+		a
 		{
-			background:@light-green;
-			-webkit-transition: background-color 500ms linear;
-			-moz-transition: background-color 500ms linear;
-			-o-transition: background-color 500ms linear;
-			-ms-transition: background-color 500ms linear;
-		    transition: background-color 500ms linear;
-		}
-		span
-		{
-			white-space:pre-line;
-			&:first-child
+			display:flex;
+			padding:5*@paddingPt;
+			background:@green;
+			margin-bottom:0;
+			span
 			{
-				float:left;
-				.width-percentage(40);
-				padding:7*@paddingPt+@paddingPt/2 0;
+			 	white-space:pre-line;
+			 	&:first-child 				
+			 	{
+			 		float:left;
+			 		.width-percentage(40);
+			 		padding:7*@paddingPt+@paddingPt/2 0;
+			 	}
+			 	&:last-child 				
+			 	{
+			 		float:right;
+			 		.width-percentage(60);
+			 		text-align:right;
+			 		color:@white;
+			 	}
 			}
-			&:last-child
+			&:hover 							
 			{
-				float:right;
-				.width-percentage(60);
-				text-align:right;
-				color:@white;
+				background:@light-green;
+				-webkit-transition: background-color 500ms linear;	
+			    -moz-transition: background-color 500ms linear;
+			    -o-transition: background-color 500ms linear;
+			    -ms-transition: background-color 500ms linear;
+			    transition: background-color 500ms linear;
 			}
 		}
 	}
 }
 
-.badge{
+.badge 												
+{
 	display:table-cell;
-	.height-percentage(100);
-	.width-percentage(100);
+	height:100*@heightPx;
+	width:100*@widthPx;
 	text-align:center;
 	vertical-align:middle;
 	border-radius:50*@percentage;
@@ -764,16 +771,17 @@ address{
 	font-weight: normal;
 	display: block;
 	margin:0 auto;
-	line-height: 2*@em+5*@em/4*@em;
+	line-height: 2*@em+3*@em/4;
 	color:@thick-green;
 	opacity: 0.5;
 }
 
 
-.footer{
+.footer                                             
+{
 	color:@grey;
-	text-align:center;
-	.width-percentage(100);
+	text-align:center; 
+	.width-percentage(100); 
 	position:absolute; 
 	bottom:3*@percentage;
 	p a
@@ -786,17 +794,20 @@ address{
 			border-bottom:1*@pixel solid @light-green;
 		}
 	}
+
 }
 
-.copy-left{
+.copy-left 											
+{
 	display:inline-block;
 	text-align:right;
 	margin:0; 
-	font-size: 1*@em+3*@em/20;
-    -moz-transform: scaleX(-1);	     
+	font-size: @em+3*@em/20;
+	-moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
-	-webkit-transform: scaleX(-1);            
+   -webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
 	filter: FlipH;
-    -ms-filter: "FlipH";
+	-ms-filter: "FlipH";
 }
+												       
