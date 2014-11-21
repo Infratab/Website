@@ -7,22 +7,22 @@
 html,body{
 	.font1;
 	.height-percentage(100);
-	.colors(@bg-white, @black);
+	.colors(@white, @black);
 }
 
 body
 	{
 		&::-webkit-scrollbar{
-		width:4*@widthPx;
-		height:@heightEm/2;
-		background:@bg-scrollbar;
+		width:4*@px;
+		height:@em/2;
+		background:@scrollbar;
 		}
 		&::-webkit-scrollbar-track{
-		background: @bg-scrollbar;
+		background: @scrollbar;
 		}
 		&::-webkit-scrollbar-thumb{
 		background: @scrol-thumb;
-		height: 50*@heightPx;
+		height: 50*@px;
 		}
 	}
 ::selection{
@@ -37,8 +37,7 @@ body
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	.font1;
-	margin:0;
-	padding:0;
+	.margin-padding-zero;
 }
 a, a:focus,a:active,a img,a img:hover,
 a img:focus,button:focus,button.btn:focus{
@@ -46,8 +45,7 @@ a img:focus,button:focus,button.btn:focus{
 	cursor:pointer !important;
 }
 ul{
-	margin:0;
-	padding:0;
+	.margin-padding-zero;
 	list-style:none;
 	text-align:center;
 }
@@ -67,7 +65,7 @@ a{
 	clear:both;
 }
 .affix{
-	top:70*@pixel;
+	top:70*@px;
 }
 
 .row.no-gutters{
@@ -86,7 +84,7 @@ a{
 .section{
 	.display(table);
 	.width-percentage(100);
-	min-height:100*@heightPt;
+	min-height:100*@pt;
 	text-align:center;
 	&:before{
 	content: '';
@@ -137,7 +135,7 @@ a{
 			color:@light-green;
 			span
 			{
-				border-bottom:1*@pixel solid @light-green;
+				border-bottom:1*@px solid @light-green;
 			}
 			&:hover
 			{
@@ -160,15 +158,15 @@ a{
 						.positions(relative);
 						text-align: center; 
 						.width-percentage(100);
-						.colors(@bg-grey, @white);
+						.colors(@grey, @white);
 						&:after
 						{
 							content:'';
 							.positions(absolute);
 							width:0;
 							height:0;
-							top:24*@pixel;
-							border:6*@pixel solid;
+							top:24*@px;
+							border:6*@px solid;
 							border-color:@grey transparent transparent @grey;
 						}
 					}
@@ -190,12 +188,12 @@ a{
 				&:nth-child(2) a.active span
 				{
 					color:@light-green; 
-					border-bottom:1*@pixel solid @light-green;
+					border-bottom:1*@px solid @light-green;
 				}
 				&:nth-child(3) a.active span
 				{
 					color:@light-green; 
-					border-bottom:1*@pixel solid @light-green;
+					border-bottom:1*@px solid @light-green;
 				}
 				a
 				{
@@ -241,9 +239,9 @@ a.arrowDown{
 }
 
 .navbar{
-	background-color:@bg-white;
+	background-color:@white;
 	border:none;
-	top:-100*@pixel;
+	top:-100*@px;
 	-webkit-border-radius:0;
 	-moz-border-radius:0;
 	border-radius:0;
@@ -259,7 +257,7 @@ a.arrowDown{
 			a
 			{
 				color:@black;
-				font-size:16*@pixel;
+				font-size:16*@px;
 	 			padding:0;
 	 			&:hover{color:@green;}
 			}
@@ -272,7 +270,7 @@ a.arrowDown{
 				{
 					span
 					{
-						background:@bg-green;
+						background:@green;
 						&:after
 						{
 							border-color: @green transparent transparent @green;
@@ -284,16 +282,16 @@ a.arrowDown{
 					.positions(relative);
 					text-align:center;
 					.width-percentage(100);
-					padding:2*@paddingPt+@paddingPt/2 15*@paddingPt;
-					.colors(@bg-grey, @white);
+					padding:2*@pt+@pt/2 15*@pt;
+					.colors(@grey, @white);
 					&:after
 					{
 						content:'';
 						.positions(absolute);
 						width:0;
 						height:0;
-						top:24*@pixel;
-						border:6*@pixel solid;
+						top:24*@px;
+						border:6*@px solid;
 						border-color:@grey transparent transparent @grey;
 					}
 				}
@@ -305,7 +303,7 @@ a.arrowDown{
 			a.active span 
 			{
 				color:@light-green;
-				border-bottom:1*@pixel solid @light-green;
+				border-bottom:1*@px solid @light-green;
 			}
 		}
 		&:nth-child(3)
@@ -318,7 +316,7 @@ a.arrowDown{
 			a.active span 
 			{
 				color:@light-green;
-				border-bottom:1*@pixel solid @light-green;
+				border-bottom:1*@px solid @light-green;
 			}
 		}
 	}}
@@ -343,7 +341,7 @@ a.arrowDown{
 			}
 			span:first-child
 			{
-				border-bottom:1*@pixel solid @light-green;
+				border-bottom:1*@px solid @light-green;
 			}
 			span > span
 			{
@@ -355,21 +353,21 @@ a.arrowDown{
 		{
 			border-radius:0;
 			border:0 solid @thick-grey;
-			border-top:1*@pixel solid @thick-grey;
+			border-top:1*@px solid @thick-grey;
 		}
 		li.dropdown.open a.dropdown-toggle
 		{
-			background-color:@bg-thick-grey;
+			background-color:@thick-grey;
 		}
 		li a
 		{
-			margin:20*@marginPx 5*@marginPx;
+			margin:20*@px 5*@px;
 			color:@black;
-			height:30*@heightPx;
-			line-height:30@heightPx;
-			padding:0 20*@paddingPx;
+			height:30*@px;
+			line-height:30@px;
+			padding:0 20*@px;
 			font-weight:500;
-			font-size:16*@pixel;
+			font-size:16*@px;
 			transition:background-color .2s;
 		    -webkit-transition: background-color .2s;
 			&:hover
@@ -387,18 +385,18 @@ a.arrowDown{
 	.navbar-nav.mid
 	{
 		.positions(absolute);
-		left:37*@percentage;
+		left:37*@pt;
 	}
 	.navbar-collapse
 	{
 		border-color:@grey;
-		max-height:400*@heightPx;
+		max-height:400*@px;
 	}
 	.navbar-toggle
 	{
 		outline:none;
 		border-color:transparent;
-		margin:20*@marginPx 5*@marginPt 0 0;
+		margin:20*@px 5*@pt 0 0;
 		padding:0;
 		&:active{background-color:transparent;}
 		&:visited{background-color:transparent;}
@@ -408,40 +406,40 @@ a.arrowDown{
 			background-color:transparent;
 			span.icon-bar
 			{
-				background-color:@bg-dark-grey;
+				background-color:@dark-grey;
 			}
 		}
 		span.icon-bar
 		{
-		background-color:@bg-thick-grey;
-		height:3*@heightPx;
-		margin:4*@marginPx 0;
+		background-color:@thick-grey;
+		height:3*@px;
+		margin:4*@px 0;
 		}
 	}
 	i
 	{
-		font-size:13*@pixel;
-		margin-right:15@marginPx;
-		font-size:15*@pixel;
+		font-size:13*@px;
+		margin-right:15@px;
+		font-size:15*@px;
 	}
 	span.glyphicon
 	{
-		font-size:13*@pixel;
-		margin-right:15@marginPx;
+		font-size:13*@px;
+		margin-right:15@px;
 	}
 	a.navbar-brand
 	{
-		font-size:30*@pixel;
-		line-height:70*@pixel;
+		font-size:30*@px;
+		line-height:70*@px;
 		font-weight:normal;
 		color:@light-green;
-		padding:0 0 0 33*@paddingPt;
+		padding:0 0 0 33*@pt;
 		-webkit-transition:.4s;
 		transition:.4s;
 		span.glyphicon
 		{
-			top:4*@pixel;
-			font-size:28*@pixel;
+			top:4*@px;
+			font-size:28*@px;
 		}
 		&:hover
 		{
@@ -464,7 +462,7 @@ a.arrowDown{
 	transition:.4s;
 }
 .navbar.affix-top{
-	top:-70*@pixel;
+	top:-70*@px;
 }
 .navbar.affix{
 	top:0;
@@ -485,10 +483,10 @@ ul.empList
 		text-align:center;
 		a img
 		{
-			border:2*@pixel solid transparent;
+			border:2*@px solid transparent;
 			&:hover
 			{
-				border:2*@pixel solid @light-green;
+				border:2*@px solid @light-green;
 			}
 		}
 	}
@@ -505,7 +503,7 @@ ul.empList
 }
 .tooltip.bottom .tooltip-arrow{
 	border-bottom-color:@light-green;
-	top:-6*@pixel;
+	top:-6*@px;
 }
 
 
@@ -535,12 +533,12 @@ ul.empList
 	{
 		.display(inline-block);
 		cursor:pointer;
-		border:1*@pixel solid @grey;
-		border-radius:50*@percentage;
+		border:1*@px solid @grey;
+		border-radius:50*@pt;
 		&:hover
 		{
 		background:@light-green;
-		border:1*@pixel solid @light-green;
+		border:1*@px solid @light-green;
 		}
 	}
 }
@@ -549,13 +547,13 @@ ul.empList
 	background:@light-green !important;
 }
 .designation-border{
-	border:solid 1*@pixel @light-green !important;
+	border:solid 1*@px @light-green !important;
 }
 .designation-arrow-color{
 	border-top-color:@light-green !important;
 }
 .designation-arrow-size{
-	border-bottom-width:1*@pixel !important;
+	border-bottom-width:1*@px !important;
 }
 .designation-span-background{
 	background: @light-green;
@@ -563,7 +561,7 @@ ul.empList
 }
 
 .image-border{
-	border:2*@pixel solid @light-green !important;
+	border:2*@px solid @light-green !important;
 }
 .popover.top .arrow.designation-arrow-color{
 	border-top-color:@light-green !important;
@@ -571,7 +569,7 @@ ul.empList
 
 .popover{
 	border-radius:0;
-	border:1*@pixel solid @grey;
+	border:1*@px solid @grey;
 	padding:0;
 	z-index:999;
 	&:hover
@@ -584,7 +582,7 @@ h3.popover-title{
 	border-radius:0;
 	.width-percentage(33);
 	text-align:center;
-	.colors(@bg-grey, @white);
+	.colors(@grey, @white);
 }
 .popover-content ul
 {
@@ -601,7 +599,7 @@ h3.popover-title{
 	border-top-color:@grey !important;
 	&:after
 	{
-		border-bottom-width:1*@pixel !important;
+		border-bottom-width:1*@px !important;
 	}
 }
 
@@ -619,7 +617,7 @@ h3.popover-title{
 		margin:0 auto;
 		h3                          
 		{
-			.colors(@bg-grey,@white);
+			.colors(@grey,@white);
 			.display(block);
 		}
 		ul li                       
@@ -633,19 +631,19 @@ h3.popover-title{
 		}
 		a                           
 		{
-			.colors(@bg-grey,@white);
+			.colors(@grey,@white);
 			.display(inline-block);
 		}
 	}
 	.row-eq-height > div[class*='col-'] > div[class*='col-']       
 	{
-		border:1*@pixel solid @grey;
+		border:1*@px solid @grey;
 		text-align:center;
 		padding:0;
 		cursor:pointer;
 		&:hover 	
 		{
-			border:1px solid @light-green;
+			border:1@px solid @light-green;
 		}
 	}
 	.row-eq-height > div[class*='col-'] div[class*='col-']:hover
@@ -674,10 +672,10 @@ h3.popover-title{
 
 div[class*='col-'].pull-right a                     
 {
-	.colors(@bg-grey,@white);
+	.colors(@grey,@white);
 	&:hover               
 	{
-		background-color:#5dc955;
+		background-color:@light-green;
 		-webkit-transition: background-color 500ms linear;
 		 -moz-transition: background-color 500ms linear;
 		 -o-transition: background-color 500ms linear;
@@ -708,12 +706,12 @@ address
 	float:right;
 	text-align:right;
 	color:@black;
-	font-size:16*@pixel;
+	font-size:16*@px;
 	.width-percentage(90); 
 	padding:0;
 	h3 											
 	{
-		font-size:23*@pixel;
+		font-size:23*@px;
 	}
 	&:first-child
 	{
@@ -724,7 +722,7 @@ address
 		a
 		{
 			.display(flex);
-			padding:5*@paddingPt;
+			padding:5*@pt;
 			background:@green;
 			margin-bottom:0;
 			span
@@ -734,7 +732,7 @@ address
 			 	{
 			 		float:left;
 			 		.width-percentage(40);
-			 		padding:7*@paddingPt+@paddingPt/2 0;
+			 		padding:7*@pt+@pt/2 0;
 			 	}
 			 	&:last-child 				
 			 	{
@@ -760,13 +758,13 @@ address
 .badge 												
 {
 	.display(table-cell);
-	height:100*@heightPx;
-	width:100*@widthPx;
+	height:100*@px;
+	width:100*@px;
 	text-align:center;
 	vertical-align:middle;
-	border-radius:50*@percentage;
+	border-radius:50*@pt;
 	background:transparent;
-	border:2*@pixel solid @thick-green;
+	border:2*@px solid @thick-green;
 	font-size:2*@em;
 	font-weight: normal;
 	.display(block);
@@ -783,15 +781,15 @@ address
 	text-align:center; 
 	.width-percentage(100); 
 	.positions(absolute); 
-	bottom:3*@percentage;
+	bottom:3*@pt;
 	p a
 	{
 		color:@light-green;
-		border-bottom:1*@pixel solid @light-green;
+		border-bottom:1*@px solid @light-green;
 		&:hover
 		{
 			color:@light-green;
-			border-bottom:1*@pixel solid @light-green;
+			border-bottom:1*@px solid @light-green;
 		}
 	}
 

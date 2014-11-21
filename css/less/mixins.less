@@ -2,12 +2,12 @@
 
 .width-percentage(@width)
 {
-	width:@width*@widthPt;
+	width:@width*@pt;
 }
 
 .height-percentage(@height)
 {
-	height:@height*@heightPt;
+	height:@height*@pt;
 }
 
 .colors(@bg-color,@color)
@@ -38,42 +38,42 @@
 	{ 
 		ul li a                	
 		{
-			width:70*@widthPx; 
-			height:70*@heightPx;
+			width:70*@px; 
+			height:70*@px;
 		}
 		&:first-child  a         	
 		{
-			background:url('../img/result.png') no-repeat 42*@percentage -8*@percentage;
-			width:70*@widthPx;
-			height:70*@heightPx;
+			background:url('../img/result.png') no-repeat 42*@pt -8*@pt;
+			width:70*@px;
+			height:70*@px;
 		}
 		&:nth-child(2) a         	
 		{
-			background:url('../img/result.png') no-repeat 45*@percentage 24*@percentage;
-			width:70*@widthPx;
-			height:50*@heightPx;
-			margin-top:20*@marginPx;
+			background:url('../img/result.png') no-repeat 45*@pt 24*@pt;
+			width:70*@px;
+			height:50*@px;
+			margin-top:20*@px;
 		}
 		&:nth-child(3) a         	
 		{
-			background:url('../img/result.png') no-repeat 45*@percentage 48*@percentage;
-			width:70*@widthPx;
-			height:80*@heightPx;
-			margin-top:3*@marginPx;
+			background:url('../img/result.png') no-repeat 45*@pt 48*@pt;
+			width:70*@px;
+			height:80*@px;
+			margin-top:3*@px;
 		}
 		&:nth-child(4) a         	
 		{
-			background:url('../img/result.png') no-repeat 45*@percentage 76*@percentage;
-			width:70*@widthPx;
-			height:70*@heightPx;
-			margin-top:10*@marginPx; 
+			background:url('../img/result.png') no-repeat 45*@pt 76*@pt;
+			width:70*@px;
+			height:70*@px;
+			margin-top:10*@px; 
 		}
 		&:last-child a           	
 		{
-			background:url('../img/result.png') no-repeat 45*@percentage 104*@percentage;
-			width:70*@widthPx;
-			height:70*@heightPx;
-			margin-top:12*@marginPx;
+			background:url('../img/result.png') no-repeat 45*@pt 104*@pt;
+			width:70*@px;
+			height:70*@px;
+			margin-top:12*@px;
 		}
 	}
 }
@@ -84,37 +84,37 @@
 	{
 		&:first-child  a:hover   	
 		{
-			background:url('../img/h-result.png') no-repeat 42*@percentage -8*@percentage; 
-			width:70*@widthPx;
-			height:70*@heightPx;
+			background:url('../img/h-result.png') no-repeat 42*@pt -8*@pt; 
+			width:70*@px;
+			height:70*@px;
 		}
 		&:nth-child(2) a:hover   	
 		{
-			background:url('../img/h-result.png') no-repeat 45*@percentage 24*@percentage;
-			width:70*@widthPx;
-			height:50*@heightPx;
-			margin-top:20*@marginPx;
+			background:url('../img/h-result.png') no-repeat 45*@pt 24*@pt;
+			width:70*@px;
+			height:50*@px;
+			margin-top:20*@px;
 		}
 		&:nth-child(3) a:hover   	
 		{
-			background:url('../img/h-result.png') no-repeat 45*@percentage 48*@percentage;
-			width:70*@widthPx;
-			height:80*@heightPx;
-			margin-top: 3*@marginPx;
+			background:url('../img/h-result.png') no-repeat 45*@pt 48*@pt;
+			width:70*@px;
+			height:80*@px;
+			margin-top: 3*@px;
 		}
 		&:nth-child(4) a:hover   	
 		{
-			background:url('../img/h-result.png') no-repeat 45*@percentage 76*@percentage;
-			width:70*@widthPx;
-			height:70*@heightPx;
-			margin-top: 10*@marginPx;
+			background:url('../img/h-result.png') no-repeat 45*@pt 76*@pt;
+			width:70*@px;
+			height:70*@px;
+			margin-top: 10*@px;
 		}
 		&:last-child a:hover     	
 		{
-			background:url('../img/h-result.png') no-repeat 45*@percentage 104*@percentage;
-			width:70*@widthPx;
-			height:70*@heightPx;
-			margin-top: 12*@marginPx;
+			background:url('../img/h-result.png') no-repeat 45*@pt 104*@pt;
+			width:70*@px;
+			height:70*@px;
+			margin-top: 12*@px;
 		}
 	}
 }
@@ -125,42 +125,42 @@
 .contact-responsive-style
 {
 .mapCanvas{
-	height:200*@heightPx;
-	border:1*@pixel solid @grey;
-	margin-bottom: @marginEm;
+	height:200*@px;
+	border:1*@px solid @grey;
+	margin-bottom: @em;
 }
 .paddNone{
 	padding:0;
 }
 address{
-	width:100*@widthPt !important;
-	font-size:14*@pixel !important;
+	width:100*@pt !important;
+	font-size:14*@px !important;
 	h3
 	{
-		font-size:18*@pixel !important;
+		font-size:18*@px !important;
 	}
 	&:last-child a span
 	{
 		&:first-child
 		{
-			width:30*@widthPt !important;
-			padding-top:13*@paddingPt !important;
+			width:30*@pt !important;
+			padding-top:13*@pt !important;
 		}
 		&:last-child
 		{
-			width:70*@widthPt !important;
+			width:70*@pt !important;
 		}
 	}
 }
 .badge{
-	height:60*@heightPx !important;
-	width: 60*@widthPx !important;
+	height:60*@px !important;
+	width: 60*@px !important;
 	line-height:2*@em+3*@em/10 !important;
 	font-size: @em+@em/2 !important;
 }
 .footer{
 	position:relative !important; 
-	height:65*@heightPx;
+	height:65*@px;
 }
 }
 
@@ -170,58 +170,58 @@ address{
 {
 	.Vmiddle
 	{
-		margin-top:80*@marginPx;
+		margin-top:80*@px;
 	}
 	h3 									
 	{
-		font-size:18*@pixel;
+		font-size:18*@px;
 	}
 	p.info 								
 	{
-		font-size:14*@pixel;
+		font-size:14*@px;
 		line-height:1.7; 
-		padding:@paddingEm+@paddingEm/2;
+		padding:@em+@em/2;
 	}
 	.row-eq-height 
 	{
 		display:table;
 		h3 						
 		{
-		padding:@paddingEm/2;
-		font-size:16*@pixel;
+		padding:@em/2;
+		font-size:16*@px;
 		}
 		ul 						
 		{
-			padding:5*@paddingPt 5*@paddingPt 5*@paddingPt 10*@paddingPt;
+			padding:5*@pt 5*@pt 5*@pt 10*@pt;
 			li
 			{
-				font-size:14*@pixel;
+				font-size:14*@px;
 			}
 		}
 		p 
 		{
-			font-size:14*@pixel;
+			font-size:14*@px;
 		}
 		span
 		{
-			padding:10*@paddingPt 0;
+			padding:10*@pt 0;
 		}
 		a 						
 		{
-			font-size:14*@pixel;
-			padding:@paddingEm/2 @paddingEm;
-			margin-top:@marginEm;
+			font-size:14*@px;
+			padding:@em/2 @em;
+			margin-top:@em;
 		}
 	}
 	.row-eq-height > div[class*='col-xs-']:last-child 
 	{
 		border:none; 
-		margin-top:12*@marginPt+@marginPt/2;
+		margin-top:12*@pt+@pt/2;
 	}
 	.row-eq-height > div[class*='col-']	
 	{
 		line-height:1.5;
-		margin: @marginEm @marginEm+@marginEm/2;
+		margin: @em @em+@em/2;
 		&:first-child 
 		{
 			margin-top:0;
@@ -234,10 +234,15 @@ div[class*='col-'].pull-right
 	padding:0;
 	a 				
 	{
-		font-size:16*@pixel;
-		padding:@paddingEm/2 @paddingEm;
-		margin-top:@marginEm+@marginEm/2;
+		font-size:16*@px;
+		padding:@em/2 @em;
+		margin-top:@em+@em/2;
 	}
 }
 
+}
+.margin-padding-zero
+{
+	margin:0;
+	padding:0;
 }

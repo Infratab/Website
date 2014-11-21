@@ -2,17 +2,17 @@
 @import "mixins.less";
 /*desktop mediaQuery*/
 
-@media screen and (min-width:1024*@widthPx) {
+@media screen and (min-width:1024*@px) {
 
 /* Home */
 
 .welcome ul.topNav{
 	.width-percentage(18);
-	top:10*@percentage;
-	right:10*@percentage;
+	top:10*@pt;
+	right:10*@pt;
 }
 .welcome ul.topNav li a{
-	font-size:16*@pixel;
+	font-size:16*@px;
 }
 .welcome ul.topNav li:first-child{
 	.width-percentage(33);
@@ -24,40 +24,40 @@
 	.width-percentage(10);
 }
 .welcome ul.topNav li:first-child span{
-	padding:2*@paddingPt+@paddingPt/2 15*@paddingPt;
+	padding:2*@pt+@pt/2 15*@pt;
 }
 .welcome ul.topNav li:first-child span:after{
 	left:0;
 }
 
 ul.menu li{
-	margin: 0 2*@marginEm;
+	margin: 0 2*@em;
 }
 ul.menu li a{
-	font-size:18*@pixel;
+	font-size:18*@px;
 }
 
 .welcome div.row{
-	padding-bottom:4*@paddingEm;
+	padding-bottom:4*@em;
 }
 .welcome img.mainLogo{
 	.width-percentage(15);
 }
 .welcome h3{
-	font-size:24*@pixel;
+	font-size:24*@px;
 	line-height:1*@em+7*@em/20;
 }
 .welcome a i:before{
-	font-size:40*@pixel;
+	font-size:40*@px;
 }
 
 a.arrowDown{
-	bottom:7*@percentage+@percentage/2;
-	left:49*@percentage+@percentage/4;
+	bottom:7*@pt+@pt/2;
+	left:49*@pt+@pt/4;
 }
 
 .navbar ul.topNav li:first-child span:after{
-	left:1*@pixel;
+	left:1*@px;
 }
 
 /* Team */
@@ -67,37 +67,37 @@ a.arrowDown{
 }
 
 ul.empList{
-	margin-bottom:30*@marginPt !important;
+	margin-bottom:30*@pt !important;
 }
 ul.empList li{
-	margin:@marginPt+@marginPt/2 @marginPt;
-	padding:3*@paddingPx;
-	border-radius:4*@pixel;
+	margin:@pt+@pt/2 @pt;
+	padding:3*@px;
+	border-radius:4*@px;
 }
 ul.empList li img{
-	width:80*@widthPx;
-	height:80*@heightPx;
+	width:80*@px;
+	height:80*@px;
 }
 
 .tooltip{
-	font-size:16*@pixel;
+	font-size:16*@px;
 }
 .tooltip-inner{
-	padding:6*@paddingPx 10*@paddingPx;
+	padding:6*@px 10*@px;
 }
 .tooltip.bottom{
-	margin-top:2*@marginEm+@marginEm/2;
+	margin-top:2*@em+@em/2;
 }
 
 .designation .designation-circle{
-	margin:9*@marginPx 0 20*@marginPx 0;
-	width:100*@widthPx;
-	height:100*@heightPx;
+	margin:9*@px 0 20*@px 0;
+	width:100*@px;
+	height:100*@px;
 }
 
 .designation ul li a{
-	width:70*@widthPx;
-	height:70*@heightPx;
+	width:70*@px;
+	height:70*@px;
 }
 .sprite-style;
 
@@ -105,79 +105,79 @@ ul.empList li img{
 {
 	&:first-child > ul li div.designation-circle:hover  a   	
 	{
-		background:url('../img/h-result.png') no-repeat 42*@percentage -8*@percentage; 
-		width:70*@widthPx;
-		height:70*@heightPx;
+		background:url('../img/h-result.png') no-repeat 42*@pt -8*@pt; 
+		width:70*@px;
+		height:70*@px;
 	}
 	&:nth-child(2) > ul li div.designation-circle:hover  a  	
 	{
-		background:url('../img/h-result.png') no-repeat 45*@percentage 24*@percentage;
-		width:70*@widthPx;
-		height:50*@heightPx;
-		margin-top:20*@marginPx;
+		background:url('../img/h-result.png') no-repeat 45*@pt 24*@pt;
+		width:70*@px;
+		height:50*@px;
+		margin-top:20*@px;
 	}
 	&:nth-child(3) > ul li div.designation-circle:hover a   	
 	{
-		background:url('../img/h-result.png') no-repeat 45*@percentage 48*@percentage;
-		width:70*@widthPx;
-		height:80*@heightPx;
-		margin-top: 3*@marginPx;
+		background:url('../img/h-result.png') no-repeat 45*@pt 48*@pt;
+		width:70*@px;
+		height:80*@px;
+		margin-top: 3*@px;
 	}
 	&:nth-child(4) > ul li div.designation-circle:hover a   	
 	{
-		background:url('../img/h-result.png') no-repeat 45*@percentage 76*@percentage;
-		width:70*@widthPx;
-		height:70*@heightPx;
-		margin-top: 10*@marginPx;
+		background:url('../img/h-result.png') no-repeat 45*@pt 76*@pt;
+		width:70*@px;
+		height:70*@px;
+		margin-top: 10*@px;
 	}
 	&:last-child > ul li div.designation-circle:hover a     	
 	{
-		background:url('../img/h-result.png') no-repeat 45*@percentage 104*@percentage;
-		width:70*@widthPx;
-		height:70*@heightPx;
-		margin-top: 12*@marginPx;
+		background:url('../img/h-result.png') no-repeat 45*@pt 104*@pt;
+		width:70*@px;
+		height:70*@px;
+		margin-top: 12*@px;
 	}
 	&:first-child > ul li div.designation-circle.designation-span-background  a 
 	{
-		background:url('../img/h-result.png') no-repeat 42*@percentage -8*@percentage; 
-		width:70*@widthPx;
-		height:70*@heightPx;
+		background:url('../img/h-result.png') no-repeat 42*@pt -8*@pt; 
+		width:70*@px;
+		height:70*@px;
 	}
 	&:nth-child(2) > ul li div.designation-circle.designation-span-background a
 	{
-		background:url('../img/h-result.png') no-repeat 45*@percentage 24*@percentage;
-		width:70*@widthPx;
-		height:50*@heightPx;
-		margin-top:20*@marginPx;
+		background:url('../img/h-result.png') no-repeat 45*@pt 24*@pt;
+		width:70*@px;
+		height:50*@px;
+		margin-top:20*@px;
 	}
 	&:nth-child(3) > ul li div.designation-circle.designation-span-background a 
 	{
-		background:url('../img/h-result.png') no-repeat 45*@percentage 48*@percentage;
-		width:70*@widthPx;
-		height:80*@heightPx;
-		margin-top: 3*@marginPx;
+		background:url('../img/h-result.png') no-repeat 45*@pt 48*@pt;
+		width:70*@px;
+		height:80*@px;
+		margin-top: 3*@px;
 	}
 	&:nth-child(4) > ul li div.designation-circle.designation-span-background a 
 	{
-		background:url('../img/h-result.png') no-repeat 45*@percentage 76*@percentage;
-		width:70*@widthPx;
-		height:70*@heightPx;
-		margin-top: 10*@marginPx;
+		background:url('../img/h-result.png') no-repeat 45*@pt 76*@pt;
+		width:70*@px;
+		height:70*@px;
+		margin-top: 10*@px;
 	}
 	&:last-child > ul li div.designation-circle.designation-span-background a   
 	{
-		background:url('../img/h-result.png') no-repeat 45*@percentage 104*@percentage;
-		width:70*@widthPx;
-		height:70*@heightPx;
-		margin-top: 12*@marginPx;
+		background:url('../img/h-result.png') no-repeat 45*@pt 104*@pt;
+		width:70*@px;
+		height:70*@px;
+		margin-top: 12*@px;
 	}
 }
 
 .popover{
-	height:270*@heightPx;
+	height:270*@px;
 }
 h3.popover-title{
-	font-size:20*@pixel !important;
+	font-size:20*@px !important;
 	line-height:@em+@em/4;
 }
 .popover-content{
@@ -185,7 +185,7 @@ h3.popover-title{
 }
 .popover-content ul li{
 	line-height:@em+3*@em/4;
-	font-size:16*@pixel;
+	font-size:16*@px;
 }
 
 /* careers */
@@ -194,9 +194,9 @@ h3.popover-title{
 {
 	 p.info 								
 	 {
-	 	font-size:18*@pixel;
+	 	font-size:18*@px;
 	 	line-height:1.7; 
-	 	padding:2*@paddingEm;
+	 	padding:2*@em;
 	 }
 	 .row-eq-height > div[class*='col-']	
 	 {
@@ -206,28 +206,28 @@ h3.popover-title{
 	 {
 	 	a 						
 	 	{
-	 		font-size:16*@pixel;
-	 		padding:@paddingEm/2 @paddingEm;
-	 		margin-top:@marginEm;
+	 		font-size:16*@px;
+	 		padding:@em/2 @em;
+	 		margin-top:@em;
 	 	}
 	 	h3 						
 	 	{
-	 		padding:@paddingEm/2;
+	 		padding:@em/2;
 	 	}
 	 	p
 	 	{
-	 		font-size:18*@pixel;
+	 		font-size:18*@px;
 	 	}
 	 	span 					
 	 	{
-	 		padding: 25*@paddingPt 0;
+	 		padding: 25*@pt 0;
 	 	}
 	 	ul 						
 	 	{
-	 		padding:5*@paddingPt 10*@paddingPt 5*@paddingPt 15*@paddingPt;
+	 		padding:5*@pt 10*@pt 5*@pt 15*@pt;
 	 		li
 	 		{
-	 			font-size:18*@pixel;
+	 			font-size:18*@px;
 	 		}
 	 	}
 	 }
@@ -238,9 +238,9 @@ div[class*='col-'].pull-right
 	padding:0;
 	a 				
 	{
-		font-size:16*@pixel;
-		padding:@paddingEm/2 @paddingEm;
-		margin-top:@marginEm+@marginEm/2;
+		font-size:16*@px;
+		padding:@em/2 @em;
+		margin-top:@em+@em/2;
 	}
 }
 
@@ -248,25 +248,25 @@ div[class*='col-'].pull-right
 
 .mapCanvas
 {
-	height:430*@heightPx;
-	border:1*@pixel solid @grey;
+	height:430*@px;
+	border:1*@px solid @grey;
 }
 .footer p{
-	line-height:25*@pixel;
+	line-height:25*@px;
 }
 .copyright{
-	margin:30*@marginPx 0;
+	margin:30*@px 0;
 }
 
 }
 
-@media screen and (max-width:1600*@widthPx) {
+@media screen and (max-width:1600*@px) {
 
 .welcome
 {
 	h3
 	{
-		width:45*@widthPt !important;
+		width:45*@pt !important;
 	}
 	ul.topNav li:first-child span:after 	
 	{
@@ -274,10 +274,10 @@ div[class*='col-'].pull-right
 	}
 }
 ul.empList{
-	margin-bottom:31*@marginPt !important;
+	margin-bottom:31*@pt !important;
 }
 .navbar ul.topNav li:first-child span:after{
-	left:1*@pixel !important;
+	left:1*@px !important;
 }
 .popover 										
 {
@@ -287,7 +287,7 @@ ul.empList{
 }
 
 
-@media screen and (max-width:1440*@widthPx) 
+@media screen and (max-width:1440*@px) 
 {
 
 .welcome 
@@ -303,7 +303,7 @@ ul.empList{
 }
 ul.empList                  			
 {
-	margin-bottom:30*@marginPt;
+	margin-bottom:30*@pt;
 }
 .navbar ul.topNav li:first-child span:after 	
 {
@@ -318,7 +318,7 @@ ul.empList
 
 
 
-@media screen and (max-width:1366*@widthPx) {
+@media screen and (max-width:1366*@px) {
 
 .welcome
 {
@@ -328,17 +328,17 @@ ul.empList
 	}
 	ul.topNav li:first-child span:after
 	{
-		left:1*@pixel;
+		left:1*@px;
 	}
 }
 ul.empList                  					
 {
-	margin-bottom:30*@marginPt;
+	margin-bottom:30*@pt;
 }
 
 .navbar ul.topNav li:first-child span:after 
 {
-	left:1*@pixel;
+	left:1*@px;
 }
 .popover 										
 {
@@ -347,13 +347,13 @@ ul.empList
 
 }
 
-@media screen and (max-width:1280*@widthPx) {
+@media screen and (max-width:1280*@px) {
 
 .welcome 
 {
 	h3
 	{
-		width:55*@widthPt !important;
+		width:55*@pt !important;
 	}
 	ul.topNav li:first-child span:after
 	{
@@ -362,7 +362,7 @@ ul.empList
 }
 ul.empList                  					
 {
-	margin-bottom:30*@marginPt;
+	margin-bottom:30*@pt;
 }
 
 .navbar ul.topNav li:first-child span:after 	
@@ -375,16 +375,16 @@ ul.empList
 }
 .careers .row-eq-height ul li, .row-eq-height p 
 {
-	font-size:16*@pixel;
+	font-size:16*@px;
 }
 
 }
 
-@media screen and (max-width:1024*@widthPx) {
+@media screen and (max-width:1024*@px) {
 
 .welcome h3                 					
 {
-	width:70*@widthPt !important;
+	width:70*@pt !important;
 }
 .popover 										
 {
@@ -398,50 +398,50 @@ ul.empList
 
 /* Tablet mediaQuery*/
 
-@media screen and (min-width:768*@widthPx) and (max-width:960*@widthPx) {
+@media screen and (min-width:768*@px) and (max-width:960*@px) {
 
 /* Home */
 .welcome
 { 
 	a i:before         			
 	{
-		font-size:50*@pixel;
+		font-size:50*@px;
 	}
 	h3                 			
 	{
-		font-size:30*@pixel;
+		font-size:30*@px;
 		line-height:1*@em+7*@em/20;
 		.width-percentage(100);
 	}
 	img.mainLogo       			
 	{
-		width:35*@widthPt;
+		width:35*@pt;
 	}
 	div.row            			
 	{
-		padding-bottom:7*@paddingEm;
+		padding-bottom:7*@em;
 	}
 	ul.topNav
 	{
 		.width-percentage(36);
-		top:7*@percentage+@percentage/2;
-		right:1*@percentage;
+		top:7*@pt+@pt/2;
+		right:1*@pt;
 		li
 		{
 			a
 			{
-				font-size:20*@pixel
+				font-size:20*@px;
 			}
 			&:first-child
 			{
 			 .width-percentage(40);
 			 span
 			 {
-			 	padding:2*@paddingPt+@paddingPt/2 15*@paddingPt;
+			 	padding:2*@pt+@pt/2 15*@pt;
 			 	&:after
 			 	{
 			 		left:0;
-			 		top:30*@pixel;
+			 		top:30*@px;
 			 	}
 			 }
 			}
@@ -462,12 +462,12 @@ ul.menu li{
 	margin: 0 @em+@em/2;
 	a
 	{
-		font-size:30*@pixel;
+		font-size:30*@px;
 	}
 }
 a.arrowDown{
-	bottom:7*@percentage+@percentage/2;
-	left:48*@percentage;
+	bottom:7*@pt+@pt/2;
+	left:48*@pt;
 }
 
 
@@ -475,11 +475,11 @@ a.arrowDown{
 {
 	.navbar-collapse.in 
 	{
-		height:80*@pixel !important;
+		height:80*@px !important;
 	}
 	.navbar-nav li a 
 	{
-		font-size:22*@pixel !important;
+		font-size:22*@px !important;
 	}
 	.navbar-nav.mid 
 	{
@@ -487,30 +487,30 @@ a.arrowDown{
 	}
 	a.navbar-brand 
 	{
-		padding: 0 0 0 38*@paddingPt !important;
+		padding: 0 0 0 38*@pt !important;
 	}
 	ul.topNav
 	{ 
-		width:30*@widthPt !important;
+		width:30*@pt !important;
 		li
 		{	
 			&:first-child 
 			{
-				width: 40*@widthPt !important;
-				margin-right:5*@marginPt;
+				width: 40*@pt !important;
+				margin-right:5*@pt;
 				span:after 
 				{
-					left:1*@pixel;
-					top:33*@pixel !important;
+					left:1*@px;
+					top:33*@px !important;
 				}
 			}
 			&:nth-child(2)
 			{
-				width:15*@widthPt !important;
+				width:15*@pt !important;
 			}
 			&:nth-child(3)
 			{
-				width:15*@widthPt !important;
+				width:15*@pt !important;
 			}
 		}
 	}
@@ -521,46 +521,46 @@ a.arrowDown{
 
 ul.empList                  			
 {
-	margin-bottom:45*@marginPt; 
-	margin-top:50*@marginPx;
+	margin-bottom:45*@pt; 
+	margin-top:50*@px;
 	li               			
 	{
-		margin:@marginPt+@marginPt/2 @marginPt;
-		padding:3*@paddingPx;
-		border-radius:4*@pixel;
+		margin:@pt+@pt/2 @pt;
+		padding:3*@px;
+		border-radius:4*@px;
 		img           			
 		{
-			width:85*@widthPx;
-			height:85*@heightPx;
+			width:85*@px;
+			height:85*@px;
 		}
 	}
 }
 
 .tooltip                        		
 {
-	font-size:16*@pixel;
+	font-size:16*@px;
 }
 .tooltip-inner                  		
 {
-	padding:6*@paddingPx 10*@paddingPx;
+	padding:6*@px 10*@px;
 }
 .tooltip.bottom                 		
 {
-	margin-top:2*@marginEm+@marginEm/4;
+	margin-top:2*@em+@em/4;
 }
 
 .designation-container > div[class*='col-sm-']:first-child,
 .designation-container > div[class*='col-sm-']:nth-child(2),
 .designation-container > div[class*='col-sm-']:nth-child(3) 	
 {
-	margin-bottom:37*@marginPt+@marginPt/2;
+	margin-bottom:37*@pt+@pt/2;
 }
 
 .designation .designation-circle		
 {
-	margin:9*@marginPx 0 20*@marginPx 0;
-	width:100*@widthPx;
-	height:100*@heightPx;
+	margin:9*@px 0 20*@px 0;
+	width:100*@px;
+	height:100*@px;
 }
 
 .sprite-style;
@@ -569,20 +569,20 @@ ul.empList
 .popover                				
 {
 	.width-percentage(90);
-	height:240*@heightPx;
+	height:240*@px;
 }
 h3.popover-title        				
 {
-	font-size:18*@pixel !important;
+	font-size:18*@px !important;
 	line-height:@em+@em/4;
 }
 .popover-content        				
 {
-	padding: 3*@paddingEm/4 0 3*@paddingEm/4 2*@paddingEm;
+	padding: 3*@em/4 0 3*@em/4 2*@em;
 	ul li  				
 	{
 		line-height:@em+@em/2;
-		font-size:16*@pixel;
+		font-size:16*@px;
 	}
 }
 
@@ -597,36 +597,36 @@ h3.popover-title
 	}
 	p.info 								
 	{
-		font-size:22*@pixel;
+		font-size:22*@px;
 		line-height:2;
-		padding:2*@paddingEm 0;
+		padding:2*@em 0;
 	}
 	.row-eq-height 						
 	{
 		a 						
 		{
-			font-size:16*@pixel;
-			padding:@paddingEm/2 @paddingEm;
-			margin-top:@marginEm;
+			font-size:16*@px;
+			padding:@em/2 @em;
+			margin-top:@em;
 		}
 		span 					
 		{
-			padding:40*@paddingPx 0 0 0;
+			padding:40*@px 0 0 0;
 		}
 		p 
 		{
-			font-size:18*@pixel;
+			font-size:18*@px;
 		}
 		h3
 		{
-			padding:@paddingEm/2;
+			padding:@em/2;
 		}
 		ul 						
 		{
-			padding:5*@paddingPt 5*@paddingPt 5*@paddingPt 10*@paddingPt;
+			padding:5*@pt 5*@pt 5*@pt 10*@pt;
 			li
 			{
-				font-size:18*@pixel;
+				font-size:18*@px;
 			}
 		}
 	}
@@ -638,19 +638,19 @@ h3.popover-title
 	{
 		&:first-child
 		{
-			margin-right:1*@marginEm;
+			margin-right:1*@em;
 		}
 		&:nth-child(2)
 		{
-			margin-right:1*@marginEm;
+			margin-right:1*@em;
 		}
 		&:nth-child(3)
 		{
-			margin-right:1*@marginEm;
+			margin-right:1*@em;
 		}
 		&:nth-child(4)
 		{
-			margin-right:1*@marginEm;
+			margin-right:1*@em;
 		}
 	}
 }
@@ -660,9 +660,9 @@ div[class*='col-'].pull-right
 	padding:0;
 	a 				
 	{
-		font-size:16*@pixel;
-		padding:@paddingEm/2 @paddingEm;
-		margin-top:@marginEm+@marginEm/2;
+		font-size:16*@px;
+		padding:@em/2 @em;
+		margin-top:@em+@em/2;
 	}
 }
 
@@ -674,51 +674,51 @@ div[class*='col-'].pull-right
 
 /* Mobile mediaQuery*/
 
-@media only screen and (min-device-width:320*@widthPx) and (max-device-width:480*@widthPx) and (orientation:portrait) {
+@media only screen and (min-device-width:320*@px) and (max-device-width:480*@px) and (orientation:portrait) {
 
 /* Home */
 .welcome
 { 
 	a i:before         			
 	{
-		font-size:28*@pixel;
+		font-size:28*@px;
 	}
 	h3                 			
 	{
-		font-size:14*@pixel;
+		font-size:14*@px;
 		line-height:2*@em;
 		.width-percentage(100);
 	}
 	img.mainLogo       			
 	{
-		width:40*@widthPt;
+		width:40*@pt;
 	}
 	div.row            			
 	{
-		padding-bottom:@paddingEm+@paddingEm/2;
-		margin-top:2*@marginEm;
+		padding-bottom:@em+@em/2;
+		margin-top:2*@em;
 	}
 	ul.topNav
 	{
 		.width-percentage(78);
-		top:5*@percentage;
-		right:12*@percentage;
+		top:5*@pt;
+		right:12*@pt;
 		li
 		{
 			a
 			{
-				font-size:14*@pixel
+				font-size:14*@px;
 			}
 			&:first-child
 			{
 			 .width-percentage(33);
 			 span
 			 {
-			 	padding:2*@paddingPt+@paddingPt/2 15*@paddingPt;
+			 	padding:2*@pt+@pt/2 15*@pt;
 			 	&:after
 			 	{
 			 		left:0;
-			 		top:22*@pixel;
+			 		top:22*@px;
 			 	}
 			 }
 			}
@@ -739,12 +739,12 @@ ul.menu li{
 	margin: 0 @em/2;
 	a
 	{
-		font-size:14*@pixel;
+		font-size:14*@px;
 	}
 }
 a.arrowDown{
-	bottom:5*@percentage;
-	left:48*@percentage;
+	bottom:5*@pt;
+	left:48*@pt;
 }
 
 .navbar.affix{
@@ -757,16 +757,16 @@ a.arrowDown{
 {
 	a.navbar-brand 					
 	{
-		padding: 0 0 0 5*@paddingPt;
+		padding: 0 0 0 5*@pt;
 	}
 	ul.topNav 						
 	{
 		.width-percentage(70);
-		margin-left: 12*@marginPt; 
+		margin-left: 12*@pt; 
 		.positions(static);
 		li:first-child span:after 
 		{
-			left:1*@pixel;
+			left:1*@px;
 			
 		}
 	}
@@ -776,8 +776,8 @@ a.arrowDown{
 	}
 	.navbar-nav li a 				
 	{
-		margin:10*@marginPx auto; 
-		font-size:14*@pixel;
+		margin:10*@px auto; 
+		font-size:14*@px;
 	}
 	.navbar-nav.mid 				
 	{
@@ -790,53 +790,53 @@ a.arrowDown{
 
 .team .Vmiddle 							
 {
-	margin-top:80*@marginPx;
+	margin-top:80*@px;
 }
 
 ul.empList                  			
 {
-	margin-bottom:25*@marginPt;
+	margin-bottom:25*@pt;
 	li               			
 	{
-		margin:@marginPt+@marginPt/2 7*@marginPt/4 5*@marginPt 7*@marginPt/4;
-		padding:3*@paddingPx;
-		border-radius:4*@pixel; 
+		margin:@pt+@pt/2 7*@pt/4 5*@pt 7*@pt/4;
+		padding:3*@px;
+		border-radius:4*@px; 
 		img           			
 		{
-			width:65*@widthPx;
-			height:65*@heightPx;
+			width:65*@px;
+			height:65*@px;
 		}
 	}
 }
 
 .tooltip                        		
 {
-	font-size:13*@pixel;
+	font-size:13*@px;
 }
 .tooltip-inner                  		
 {
-	padding:4*@paddingPx 5*@paddingPx;
+	padding:4*@px 5*@px;
 }
 .tooltip.bottom                 		
 {
-	margin-top:2*@marginEm;
+	margin-top:2*@em;
 }
 
 .designation 
 {
 	.designation-circle		
 	{
-	margin:5*@marginPx 0 200*@marginPx 0;
-	width:100*@widthPx;
-	height:100*@heightPx;
+	margin:5*@px 0 200*@px 0;
+	width:100*@px;
+	height:100*@px;
 	}
 	&:first-child  
 	{
-		margin-top:150*@marginPx;
+		margin-top:150*@px;
 	}
 	&:last-child .designation-circle 
 	{
-		margin-bottom:30*@marginPx;
+		margin-bottom:30*@px;
 	}
 }
 
@@ -846,22 +846,22 @@ ul.empList
 .popover                				
 {
 	.width-percentage(55);
-	height:175*@heightPx;
+	height:175*@px;
 }
 h3.popover-title        				
 {
-	font-size:14*@pixel !important;
+	font-size:14*@px !important;
 	line-height:@em+@em/4;
-	padding:5*@paddingPx;
+	padding:5*@px;
 }
 .popover-content        				
 {
-	padding: 3*@paddingEm/4 0 3*@paddingEm/4 2*@paddingEm;
+	padding: 3*@em/4 0 3*@em/4 2*@em;
 }
 .popover-content ul li  				
 {
 	line-height:@em+@em/4;
-	font-size:13*@pixel;
+	font-size:13*@px;
 }
 
 
@@ -871,59 +871,59 @@ h3.popover-title
 {
 	.Vmiddle
 	{
-		margin-top:80*@marginPx;
+		margin-top:80*@px;
 	}
 	h3 									
 	{
-		font-size:18*@pixel;
+		font-size:18*@px;
 	}
 	p.info 								
 	{
-		font-size:14*@pixel;
+		font-size:14*@px;
 		line-height:1.7; 
-		padding:@paddingEm+@paddingEm/2;
+		padding:@em+@em/2;
 	}
 	.row-eq-height 
 	{
 		.display(table);
 		h3 						
 		{
-		padding:@paddingEm/2;
-		font-size:14*@pixel;
+		padding:@em/2;
+		font-size:14*@px;
 		}
 		ul 						
 		{
-			padding:5*@paddingPt 5*@paddingPt 5*@paddingPt 10*@paddingPt;
+			padding:5*@pt 5*@pt 5*@pt 10*@pt;
 			li
 			{
-				font-size:14*@pixel;
+				font-size:14*@px;
 			}
 		}
 		p 
 		{
-			font-size:14*@pixel;
+			font-size:14*@px;
 		}
 		span
 		{
-			padding:20*@paddingPt 0;
+			padding:20*@pt 0;
 		}
 		a 						
 		{
-			font-size:14*@pixel;
-			padding:@paddingEm/2 @paddingEm;
-			margin-top:@marginEm;
+			font-size:14*@px;
+			padding:@em/2 @em;
+			margin-top:@em;
 		}
 	}
 	.row-eq-height > div[class*='col-xs-']:last-child 
 	{
 		border:none; 
 		margin-top:0;
-		margin-bottom:30*@marginPt;
+		margin-bottom:30*@pt;
 	}
 	.row-eq-height > div[class*='col-']	
 	{
 		line-height:1.5;
-		margin: @marginEm 3*@marginEm/4;
+		margin: @em 3*@em/4;
 		&:first-child 
 		{
 			margin-top:0;
@@ -936,9 +936,9 @@ div[class*='col-'].pull-right
 	padding:0;
 	a 				
 	{
-		font-size:16*@pixel;
-		padding:@paddingEm/2 @paddingEm;
-		margin-top:@marginEm+@marginEm/2;
+		font-size:16*@px;
+		padding:@em/2 @em;
+		margin-top:@em+@em/2;
 	}
 }
 
@@ -949,7 +949,7 @@ div[class*='col-'].pull-right
 }
 
 
-@media only screen and (min-device-width:480*@widthPx) and (max-device-width:567*@widthPx) and (orientation:landscape) {
+@media only screen and (min-device-width:480*@px) and (max-device-width:567*@px) and (orientation:landscape) {
 
 /* Home */
 
@@ -957,43 +957,43 @@ div[class*='col-'].pull-right
 { 
 	a i:before         			
 	{
-		font-size:28*@pixel;
+		font-size:28*@px;
 	}
 	h3                 			
 	{
-		font-size:14*@pixel;
+		font-size:14*@px;
 		line-height:@em+@em/2;
 		.width-percentage(100);
 	}
 	img.mainLogo       			
 	{
-		width:17*@widthPt+@widthPt/2;
+		width:17*@pt+@pt/2;
 	}
 	div.row            			
 	{
-		padding:@paddingEm;
+		padding:@em;
 	}
 	ul.topNav
 	{
 		.width-percentage(50);
-		top:7*@percentage+@percentage/2;
+		top:7*@pt+@pt/2;
 		right:0;
 		li
 		{
 			a
 			{
-				font-size:14*@pixel
+				font-size:14*@px;
 			}
 			&:first-child
 			{
 			 .width-percentage(20);
 			 span
 			 {
-			 	padding:2*@paddingPt+@paddingPt/2 15*@paddingPt;
+			 	padding:2*@pt+@pt/2 15*@pt;
 			 	&:after
 			 	{
 			 		left:0;
-			 		top:21*@pixel;
+			 		top:21*@px;
 			 	}
 			 }
 			}
@@ -1014,12 +1014,12 @@ ul.menu li{
 	margin: 0 @em/2;
 	a
 	{
-		font-size:14*@pixel;
+		font-size:14*@px;
 	}
 }
 a.arrowDown{
-	bottom:3*@percentage;
-	left:48*@percentage;
+	bottom:3*@pt;
+	left:48*@pt;
 }
 
 .navbar.affix{
@@ -1032,17 +1032,17 @@ a.arrowDown{
 {
 	a.navbar-brand 					
 	{
-		padding: 0 0 0 5*@paddingPt;
+		padding: 0 0 0 5*@pt;
 	}
 	ul.topNav 						
 	{
 		.width-percentage(70);
-		margin-left: 12*@marginPt; 
+		margin-left: 12*@pt; 
 		.positions(static);
 		li:first-child span:after 
 		{
 			left:0;
-			top:28*@pixel;
+			top:28*@px;
 		}
 	}
 	ul.topNav.pull-right 			
@@ -1051,8 +1051,8 @@ a.arrowDown{
 	}
 	.navbar-nav li a 				
 	{
-		margin:10*@marginPx auto; 
-		font-size:14*@pixel;
+		margin:10*@px auto; 
+		font-size:14*@px;
 	}
 	.navbar-nav.mid 				
 	{
@@ -1065,64 +1065,64 @@ a.arrowDown{
 /* Team */
 
 .team .Vmiddle{
-	margin-top:80*@marginPx;
+	margin-top:80*@px;
 }
 ul.empList{
-	margin-bottom:15*@marginPt;
+	margin-bottom:15*@pt;
 	li               			
 	{
-		margin:@marginPt+@marginPt/2 @marginPt/4 5*@marginPt @marginPt/4;
-		border-radius:4*@pixel; 
+		margin:@pt+@pt/2 @pt/4 5*@pt @pt/4;
+		border-radius:4*@px; 
 		img           			
 		{
-			width:60*@widthPx;
-			height:60*@heightPx;
+			width:60*@px;
+			height:60*@px;
 		}
 	}
 }
 .tooltip{
-	font-size:14*@pixel;
+	font-size:14*@px;
 }
 .tooltip-inner{
-	padding:4*@paddingPx 5*@paddingPx;
+	padding:4*@px 5*@px;
 }
 .tooltip.bottom{
-	margin-top:2*@marginEm;
+	margin-top:2*@em;
 }
 .designation
 {
 	.designation-circle
 	{
-		margin:5*@marginPx 0 200*@marginPx 0;
-		width:100*@widthPx;
-		height:100*@heightPx;
+		margin:5*@px 0 200*@px 0;
+		width:100*@px;
+		height:100*@px;
 	}
 	&:first-child  				
 	{
-		margin-top:150*@marginPx;
+		margin-top:150*@px;
 	}
 	&:last-child .designation-circle 
 	{
-		margin-bottom:30*@marginPx;
+		margin-bottom:30*@px;
 	}
 }
 .sprite-style;
 .sprite-hover-style;
 .popover{
 	.width-percentage(96);
-	height:180*@heightPx;
+	height:180*@px;
 }
 h3.popover-title{
-	font-size:14*@pixel !important;
+	font-size:14*@px !important;
 	line-height:@em+@em/4;
-	padding:5*@paddingPx;
+	padding:5*@px;
 }
 .popover-content{
 	padding: 3*@em/4 0 3*@em/4 2*@em;
 }
 .popover-content ul li{
 	line-height:@em+@em/2;
-	font-size:12*@pixel+@pixel/2;
+	font-size:12*@px+@px/2;
 }
 
 /* careers */
@@ -1130,58 +1130,58 @@ h3.popover-title{
 {
 	.Vmiddle
 	{
-		margin-top:80*@marginPx;
+		margin-top:80*@px;
 	}
 	h3 									
 	{
-		font-size:18*@pixel;
+		font-size:18*@px;
 	}
 	p.info 								
 	{
-		font-size:13@pixel+@pixel/2;
+		font-size:13@px+@px/2;
 		line-height:1.7; 
-		padding:@paddingEm+@paddingEm/2 0;
+		padding:@em+@em/2 0;
 	}
 	.row-eq-height 
 	{
 		.display(table);
 		h3 						
 		{
-		padding:@paddingEm/2;
-		font-size:16*@pixel;
+		padding:@em/2;
+		font-size:16*@px;
 		}
 		ul 						
 		{
-			padding:5*@paddingPt 5*@paddingPt 5*@paddingPt 10*@paddingPt;
+			padding:5*@pt 5*@pt 5*@pt 10*@pt;
 			li
 			{
-				font-size:14*@pixel;
+				font-size:14*@px;
 			}
 		}
 		p 
 		{
-			font-size:14*@pixel;
+			font-size:14*@px;
 		}
 		span
 		{
-			padding:10*@paddingPt 0;
+			padding:10*@pt 0;
 		}
 		a 						
 		{
-			font-size:14*@pixel;
-			padding:@paddingEm/2 @paddingEm;
-			margin-top:@marginEm;
+			font-size:14*@px;
+			padding:@em/2 @em;
+			margin-top:@em;
 		}
 	}
 	.row-eq-height > div[class*='col-xs-']:last-child 
 	{
 		border:none; 
-		margin-top:12*@marginPt+@marginPt/2;
+		margin-top:12*@pt+@pt/2;
 	}
 	.row-eq-height > div[class*='col-']	
 	{
 		line-height:1.5;
-		margin: @marginEm @marginEm+@marginEm/4;
+		margin: @em @em+@em/4;
 		&:first-child 
 		{
 			margin-top:0;
@@ -1194,9 +1194,9 @@ div[class*='col-'].pull-right
 	padding:0;
 	a 				
 	{
-		font-size:16*@pixel;
-		padding:@paddingEm/2 @paddingEm;
-		margin-top:@marginEm+@marginEm/2;
+		font-size:16*@px;
+		padding:@em/2 @em;
+		margin-top:@em+@em/2;
 	}
 }
 
@@ -1206,7 +1206,7 @@ div[class*='col-'].pull-right
 
 }
 
-@media only screen and (min-device-width:568px) and (max-device-width:767px) and (orientation:portrait) {
+@media only screen and (min-device-width:568*@px) and (max-device-width:767*@px) and (orientation:portrait) {
 
 /* Home */
 
@@ -1214,43 +1214,43 @@ div[class*='col-'].pull-right
 { 
 	a i:before         			
 	{
-		font-size:28*@pixel;
+		font-size:28*@px;
 	}
 	h3                 			
 	{
-		font-size:16*@pixel;
+		font-size:16*@px;
 		line-height:2*@em;
 		.width-percentage(100);
 	}
 	img.mainLogo       			
 	{
-		width:17*@widthPt+@widthPt/2;
+		width:17*@pt+@pt/2;
 	}
 	div.row            			
 	{
-		padding:@paddingEm+@paddingEm/4;
+		padding:@em+@em/4;
 	}
 	ul.topNav
 	{
 		.width-percentage(50);
-		top:7*@percentage+@percentage/2;
+		top:7*@pt+@pt/2;
 		right:0;
 		li
 		{
 			a
 			{
-				font-size:14*@pixel
+				font-size:14*@px;
 			}
 			&:first-child
 			{
 			 .width-percentage(20);
 			 span
 			 {
-			 	padding:2*@paddingPt+@paddingPt/2 15*@paddingPt;
+			 	padding:2*@pt+@pt/2 15*@pt;
 			 	&:after
 			 	{
 			 		left:0;
-			 		top:22*@pixel;
+			 		top:22*@px;
 			 	}
 			 }
 			}
@@ -1271,12 +1271,12 @@ ul.menu li{
 	margin: 0 @em/2;
 	a
 	{
-		font-size:16*@pixel;
+		font-size:16*@px;
 	}
 }
 a.arrowDown{
-	bottom:3*@percentage;
-	left:48*@percentage;
+	bottom:3*@pt;
+	left:48*@pt;
 }
 
 .navbar.affix{
@@ -1289,17 +1289,17 @@ a.arrowDown{
 {
 	a.navbar-brand 					
 	{
-		padding: 0 0 0 5*@paddingPt;
+		padding: 0 0 0 5*@pt;
 	}
 	ul.topNav 						
 	{
 		.width-percentage(70);
-		margin-left: 12*@marginPt; 
+		margin-left: 12*@pt; 
 		.positions(static);
 		li:first-child span:after 
 		{
-			left:1*@pixel;
-			top:28*@pixel;
+			left:1*@px;
+			top:28*@px;
 		}
 	}
 	ul.topNav.pull-right 			
@@ -1308,8 +1308,8 @@ a.arrowDown{
 	}
 	.navbar-nav li a 				
 	{
-		margin:10*@marginPx auto; 
-		font-size:14*@pixel;
+		margin:10*@px auto; 
+		font-size:14*@px;
 	}
 	.navbar-nav.mid 				
 	{
@@ -1320,46 +1320,46 @@ a.arrowDown{
 
 /* Team */
 .team .Vmiddle{
-	margin-top:80*@marginPx;
+	margin-top:80*@px;
 }
 ul.empList{
-	margin-bottom:15*@marginPt;
+	margin-bottom:15*@pt;
 	li               			
 	{
-		margin:@marginPt+@marginPt/2 @marginPt 5*@marginPt @marginPt;
-		border-radius:4*@pixel; 
-		padding:3*@paddingPx;
+		margin:@pt+@pt/2 @pt 5*@pt @pt;
+		border-radius:4*@px; 
+		padding:3*@px;
 		img           			
 		{
-			width:65*@widthPx;
-			height:65*@heightPx;
+			width:65*@px;
+			height:65*@px;
 		}
 	}
 }
 .tooltip{
-	font-size:14*@pixel;
+	font-size:14*@px;
 }
 .tooltip-inner{
-	padding:4*@paddingPx 5*@paddingPx;
+	padding:4*@px 5*@px;
 }
 .tooltip.bottom{
-	margin-top:2*@marginEm;
+	margin-top:2*@em;
 }
 .designation
 {
 	.designation-circle
 	{
-		margin:5*@marginPx 0 200*@marginPx 0;
-		width:100*@widthPx;
-		height:100*@heightPx;
+		margin:5*@px 0 200*@px 0;
+		width:100*@px;
+		height:100*@px;
 	}
 	&:first-child  				
 	{
-		margin-top:150*@marginPx;
+		margin-top:150*@px;
 	}
 	&:last-child .designation-circle 
 	{
-		margin-bottom:30*@marginPx;
+		margin-bottom:30*@px;
 	}
 }
 .sprite-style;
@@ -1367,19 +1367,19 @@ ul.empList{
 
 .popover{
 	.width-percentage(96);
-	height:180*@heightPx;
+	height:180*@px;
 }
 h3.popover-title{
-	font-size:14*@pixel !important;
+	font-size:14*@px !important;
 	line-height:@em+@em/4;
-	padding:5*@paddingPx;
+	padding:5*@px;
 }
 .popover-content{
 	padding: 3*@em/4 0 3*@em/4 2*@em;
 }
 .popover-content ul li{
 	line-height:@em+@em/2;
-	font-size:12*@pixel+@pixel/2;
+	font-size:12*@px+@px/2;
 }
 /* careers */
 
@@ -1391,7 +1391,7 @@ h3.popover-title{
 
 }
 
-@media only screen and (min-device-width:568*@widthPx) and (max-device-width:767*@widthPx) and (orientation:landscape)  {
+@media only screen and (min-device-width:568*@px) and (max-device-width:767*@px) and (orientation:landscape)  {
 
 /* Home */
 
@@ -1399,43 +1399,43 @@ h3.popover-title{
 { 
 	a i:before         			
 	{
-		font-size:28*@pixel;
+		font-size:28*@px;
 	}
 	h3                 			
 	{
-		font-size:16*@pixel;
+		font-size:16*@px;
 		line-height:2*@em;
 		.width-percentage(100);
 	}
 	img.mainLogo       			
 	{
-		width:17*@widthPt+@widthPt/2;
+		width:17*@pt+@pt/2;
 	}
 	div.row            			
 	{
-		padding:@paddingEm+@paddingEm/4;
+		padding:@em+@em/4;
 	}
 	ul.topNav
 	{
 		.width-percentage(50);
-		top:7*@percentage+@percentage/2;
+		top:7*@pt+@pt/2;
 		right:0;
 		li
 		{
 			a
 			{
-				font-size:14*@pixel
+				font-size:14*@px;
 			}
 			&:first-child
 			{
 			 .width-percentage(20);
 			 span
 			 {
-			 	padding:2*@paddingPt+@paddingPt/2 15*@paddingPt;
+			 	padding:2*@pt+@pt/2 15*@pt;
 			 	&:after
 			 	{
 			 		left:0;
-			 		top:21*@pixel;
+			 		top:21*@px;
 			 	}
 			 }
 			}
@@ -1456,12 +1456,12 @@ ul.menu li{
 	margin: 0 @em/2;
 	a
 	{
-		font-size:16*@pixel;
+		font-size:16*@px;
 	}
 }
 a.arrowDown{
-	bottom:3*@percentage;
-	left:48*@percentage;
+	bottom:3*@pt;
+	left:48*@pt;
 }
 
 .navbar.affix{
@@ -1474,17 +1474,17 @@ a.arrowDown{
 {
 	a.navbar-brand 					
 	{
-		padding: 0 0 0 5*@paddingPt;
+		padding: 0 0 0 5*@pt;
 	}
 	ul.topNav 						
 	{
 		.width-percentage(70);
-		margin-left: 12*@marginPt; 
+		margin-left: 12*@pt; 
 		.positions(static);
 		li:first-child span:after 
 		{
 			left:0;
-			top:28*@pixel;
+			top:28*@px;
 		}
 	}
 	ul.topNav.pull-right 			
@@ -1493,8 +1493,8 @@ a.arrowDown{
 	}
 	.navbar-nav li a 				
 	{
-		margin:10*@marginPx auto; 
-		font-size:14*@pixel;
+		margin:10*@px auto; 
+		font-size:14*@px;
 	}
 	.navbar-nav.mid 				
 	{
@@ -1506,49 +1506,49 @@ a.arrowDown{
 /* Team */
 
 .team .Vmiddle{
-	margin-top:80*@marginPx;
+	margin-top:80*@px;
 }
 
 ul.empList{
-	margin-bottom:15*@marginPt;
+	margin-bottom:15*@pt;
 	li               			
 	{
-		margin:@marginPt+@marginPt/2 3*@marginPt/4 5*@marginPt 3*@marginPt/4;
-		border-radius:4*@pixel; 
+		margin:@pt+@pt/2 3*@pt/4 5*@pt 3*@pt/4;
+		border-radius:4*@px; 
 		img           			
 		{
-			width:65*@widthPx;
-			height:65*@heightPx;
+			width:65*@px;
+			height:65*@px;
 		}
 	}
 }
 
 
 .tooltip{
-	font-size:14*@pixel;
+	font-size:14*@px;
 }
 .tooltip-inner{
-	padding:4*@paddingPx 5*@paddingPx;
+	padding:4*@px 5*@px;
 }
 .tooltip.bottom{
-	margin-top:2*@marginEm;
+	margin-top:2*@em;
 }
 
 .designation
 {
 	.designation-circle
 	{
-		margin:5*@marginPx 0 200*@marginPx 0;
-		width:100*@widthPx;
-		height:100*@heightPx;
+		margin:5*@px 0 200*@px 0;
+		width:100*@px;
+		height:100*@px;
 	}
 	&:first-child  				
 	{
-		margin-top:150*@marginPx;
+		margin-top:150*@px;
 	}
 	&:last-child .designation-circle 
 	{
-		margin-bottom:30*@marginPx;
+		margin-bottom:30*@px;
 	}
 }
 
@@ -1556,19 +1556,19 @@ ul.empList{
 .sprite-hover-style;
 .popover{
 	.width-percentage(96);
-	height:180*@heightPx;
+	height:180*@px;
 }
 h3.popover-title{
-	font-size:14*@pixel !important;
+	font-size:14*@px !important;
 	line-height:@em+@em/4;
-	padding:5*@paddingPx;
+	padding:5*@px;
 }
 .popover-content{
 	padding: 3*@em/4 0 3*@em/4 2*@em;
 }
 .popover-content ul li{
 	line-height:@em+@em/2;
-	font-size:12*@pixel+@pixel/2;
+	font-size:12*@px+@px/2;
 }
 
 /* careers */
