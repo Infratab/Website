@@ -5,7 +5,7 @@
 /* Reset CSS */
 
 html,body{
-	font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+	.font1;
 	.height-percentage(100);
 	.colors(@bg-white, @black);
 }
@@ -36,7 +36,7 @@ body
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
-	font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+	.font1;
 	margin:0;
 	padding:0;
 }
@@ -84,19 +84,19 @@ a{
 /* Web Page CSS */
 
 .section{
-	display:table;
+	.display(table);
 	.width-percentage(100);
 	min-height:100*@heightPt;
 	text-align:center;
 	&:before{
 	content: '';
-	display:inline-block;
+	.display(inline-block);
 	.height-percentage(100);
 	vertical-align:middle;
 	} 
 }
 .Vmiddle{
-	display:inline-block;
+	.display(inline-block);
 	vertical-align:middle;
 	.width-percentage(90);
 }
@@ -118,7 +118,7 @@ a{
 		&:before
 		{
 			color:@black;
-			display:block;
+			.display(block);
 			font-weight:normal;
 		}
 		&:hover:before
@@ -128,7 +128,7 @@ a{
 	}
 	h3
 	{
-		display:block;
+		.display(block);
 		text-align:center;
 		color:@black;
 		margin:0 auto;
@@ -148,23 +148,23 @@ a{
 	}
 	ul.topNav
 	{
-		position:absolute;
+		.positions(absolute);
 		li
 		{
-			display:inline-table;
+			.display(inline-table);
 			text-align:center;
 				&:first-child 
 				{
 					span
 					{
-						position: relative;
+						.positions(relative);
 						text-align: center; 
 						.width-percentage(100);
 						.colors(@bg-grey, @white);
 						&:after
 						{
 							content:'';
-							position:absolute;
+							.positions(absolute);
 							width:0;
 							height:0;
 							top:24*@pixel;
@@ -216,7 +216,7 @@ a{
 
 ul.menu li
 {
-	display:inline-table;
+	.display(inline-table);
 	text-align:center;
 	a
 	{
@@ -234,7 +234,7 @@ ul.menu li
 
 
 a.arrowDown{
-	position:absolute;
+	.positions(absolute);
 	:hover{
 		text-decoration:none;
 		}
@@ -251,10 +251,10 @@ a.arrowDown{
 	{
 		.width-percentage(18);
 		right:0;
-		position:absolute;
+		.positions(absolute);
 		li
 		{
-			display:inline-table;
+			.display(inline-table);
 			text-align:center;
 			a
 			{
@@ -281,7 +281,7 @@ a.arrowDown{
 				}
 				span
 				{
-					position:relative;
+					.positions(relative);
 					text-align:center;
 					.width-percentage(100);
 					padding:2*@paddingPt+@paddingPt/2 15*@paddingPt;
@@ -289,7 +289,7 @@ a.arrowDown{
 					&:after
 					{
 						content:'';
-						position:absolute;
+						.positions(absolute);
 						width:0;
 						height:0;
 						top:24*@pixel;
@@ -386,7 +386,7 @@ a.arrowDown{
 	}
 	.navbar-nav.mid
 	{
-		position:absolute;
+		.positions(absolute);
 		left:37*@percentage;
 	}
 	.navbar-collapse
@@ -457,7 +457,7 @@ a.arrowDown{
 	margin:0;
 }
 .navbar.affix-top,.navbar.affix{
-	position:fixed;
+	.positions(fixed);
 	left:0;
 	right:0;
 	-webkit-transition:.4s;
@@ -481,7 +481,7 @@ ul.empList
 	.width-percentage(100);
 	li
 	{
-		display:inline-block;
+		.display(inline-block);
 		text-align:center;
 		a img
 		{
@@ -500,7 +500,7 @@ ul.empList
 }
 .tooltip-inner{
 	background:@light-green;
-	display:initial;
+	.display(initial);
 	border-radius:0;
 }
 .tooltip.bottom .tooltip-arrow{
@@ -527,13 +527,13 @@ ul.empList
 			margin:0;
 			a
 			{
-				display:inline-block;
+				.display(inline-block);
 			}
 		}
 	}
 	.designation-circle
 	{
-		display:inline-block;
+		.display(inline-block);
 		cursor:pointer;
 		border:1*@pixel solid @grey;
 		border-radius:50*@percentage;
@@ -559,7 +559,7 @@ ul.empList
 }
 .designation-span-background{
 	background: @light-green;
-	position:relative !important;
+	.positions(relative) !important;
 }
 
 .image-border{
@@ -620,7 +620,7 @@ h3.popover-title{
 		h3                          
 		{
 			.colors(@bg-grey,@white);
-			display:block;
+			.display(block);
 		}
 		ul li                       
 		{
@@ -629,12 +629,12 @@ h3.popover-title{
 		}
 		span                        
 		{
-			display:block;
+			.display(block);
 		}
 		a                           
 		{
 			.colors(@bg-grey,@white);
-			display:inline-block;
+			.display(inline-block);
 		}
 	}
 	.row-eq-height > div[class*='col-'] > div[class*='col-']       
@@ -697,10 +697,10 @@ div[class*='col-'].pull-right a
 /* Contact Us */
 .contactUs											
 {
-	position:relative;
+	.positions(relative);
 }
 .mapCanvas{
-	display:inline-table;
+	.display(inline-table);
 }
 
 address     
@@ -723,7 +723,7 @@ address
 	{
 		a
 		{
-			display:flex;
+			.display(flex);
 			padding:5*@paddingPt;
 			background:@green;
 			margin-bottom:0;
@@ -759,7 +759,7 @@ address
 
 .badge 												
 {
-	display:table-cell;
+	.display(table-cell);
 	height:100*@heightPx;
 	width:100*@widthPx;
 	text-align:center;
@@ -769,7 +769,7 @@ address
 	border:2*@pixel solid @thick-green;
 	font-size:2*@em;
 	font-weight: normal;
-	display: block;
+	.display(block);
 	margin:0 auto;
 	line-height: 2*@em+3*@em/4;
 	color:@thick-green;
@@ -782,7 +782,7 @@ address
 	color:@grey;
 	text-align:center; 
 	.width-percentage(100); 
-	position:absolute; 
+	.positions(absolute); 
 	bottom:3*@percentage;
 	p a
 	{
@@ -799,7 +799,7 @@ address
 
 .copy-left 											
 {
-	display:inline-block;
+	.display(inline-block);
 	text-align:right;
 	margin:0; 
 	font-size: @em+3*@em/20;
