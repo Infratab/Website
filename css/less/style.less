@@ -1,8 +1,8 @@
 @import "variable.less";
 @import "mixins.less";
+@import "media-query.less";
 
-
-/* Reset CSS */
+/* Reset less */
 
 html,body{
 	.font1;
@@ -84,7 +84,7 @@ a{
 .section{
 	.display(table);
 	.width-percentage(100);
-	min-height:100*@pt;
+	min-height:(@even*50)@pt;
 	text-align:center;
 	&:before{
 	content: '';
@@ -165,7 +165,7 @@ a{
 							.positions(absolute);
 							width:0;
 							height:0;
-							top:24*@px;
+							top:(@even*12)@px;
 							border:6*@px solid;
 							border-color:@grey transparent transparent @grey;
 						}
@@ -257,7 +257,7 @@ a.arrowDown{
 			a
 			{
 				color:@black;
-				font-size:16*@px;
+				font-size:(@even*8)@px;
 	 			padding:0;
 	 			&:hover{color:@green;}
 			}
@@ -290,7 +290,7 @@ a.arrowDown{
 						.positions(absolute);
 						width:0;
 						height:0;
-						top:24*@px;
+						top:(@even*12)@px;
 						border:6*@px solid;
 						border-color:@grey transparent transparent @grey;
 					}
@@ -366,7 +366,7 @@ a.arrowDown{
 			height:30*@px;
 			line-height:30@px;
 			padding:0 20*@px;
-			font-weight:500;
+			font-weight:250*@even;
 			font-size:16*@px;
 			transition:background-color .2s;
 		    -webkit-transition: background-color .2s;
@@ -390,7 +390,7 @@ a.arrowDown{
 	.navbar-collapse
 	{
 		border-color:@grey;
-		max-height:400*@px;
+		max-height:(200*@even)@px;
 	}
 	.navbar-toggle
 	{
