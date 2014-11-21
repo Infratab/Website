@@ -1,6 +1,6 @@
 @import "variable.less";
 @import "mixins.less";
-/*desktop mediaQuery*/
+
 
 @media screen and (min-width:1024*@px) {
 
@@ -66,19 +66,21 @@ a.arrowDown{
 	.width-percentage(100);
 }
 
-ul.empList{
+ul.empList
+{
 	margin-bottom:30*@pt !important;
-}
-ul.empList li{
-	margin:@pt+@pt/2 @pt;
-	padding:3*@px;
-	border-radius:4*@px;
-}
-ul.empList li img{
-	width:80*@px;
-	height:80*@px;
-}
+	 li{
+			margin:@pt+@pt/2 @pt;
+			padding:3*@px;
+			border-radius:4*@px;
 
+			img
+			{
+				width:80*@px;
+				height:80*@px;
+			}
+		}
+}
 .tooltip{
 	font-size:16*@px;
 }

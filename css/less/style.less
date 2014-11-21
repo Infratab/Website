@@ -22,7 +22,7 @@ body
 		}
 		&::-webkit-scrollbar-thumb{
 		background: @scrol-thumb;
-		height: 50*@px;
+		height:(@even*25)@px;
 		}
 	}
 ::selection{
@@ -65,7 +65,7 @@ a{
 	clear:both;
 }
 .affix{
-	top:70*@px;
+	top:(35*@even)@px;
 }
 
 .row.no-gutters{
