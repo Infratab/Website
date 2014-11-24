@@ -623,7 +623,7 @@ h3.popover-title        				{font-size:14px !important;line-height:1.25em;paddin
 .careers .Vmiddle 								{margin-top:80px;}
 .careers h3 									{font-size:18px;}
 .careers p.info 								{font-size:14px;line-height:1.7; padding:1.5em;}
-.careers .row-eq-height {display:table;}
+.careers .row-eq-height 						{display:table;}
 .careers .row-eq-height > div[class*='col-xs-']:last-child {border:none; margin-top:12.5%;}
 .careers .row-eq-height > div[class*='col-']	{line-height:1.5;margin: 1em 1.5em;}
 .careers .row-eq-height > div[class*='col-']:first-child {margin-top:0;}

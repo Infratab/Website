@@ -22,7 +22,7 @@ body
 		}
 		&::-webkit-scrollbar-thumb{
 		background: @scrol-thumb;
-		height:(@even*25)@px;
+		height:(@even*25)*@px;
 		}
 	}
 ::selection{
@@ -53,11 +53,11 @@ ul{
 a{
 	color:@black;
 	&:hover{
-	color:@light-green;
+	color:@lightgreen;
 	text-decoration:none !important;
 	}
 	&:active{
-	color:@light-green;
+	color:@lightgreen;
 	text-decoration:none !important;
 	}
 }
@@ -65,7 +65,7 @@ a{
 	clear:both;
 }
 .affix{
-	top:(35*@even)@px;
+	top:(35*@even)*@px;
 }
 
 .row.no-gutters{
@@ -84,7 +84,7 @@ a{
 .section{
 	.display(table);
 	.width-percentage(100);
-	min-height:(@even*50)@pt;
+	min-height:(@even*50)*@pt;
 	text-align:center;
 	&:before{
 	content: '';
@@ -132,10 +132,10 @@ a{
 		margin:0 auto;
 		a
 		{
-			color:@light-green;
+			color:@lightgreen;
 			span
 			{
-				border-bottom:1*@px solid @light-green;
+				border-bottom:1*@px solid @lightgreen;
 			}
 			&:hover
 			{
@@ -165,7 +165,7 @@ a{
 							.positions(absolute);
 							width:0;
 							height:0;
-							top:(@even*12)@px;
+							top:(@even*12)*@px;
 							border:6*@px solid;
 							border-color:@grey transparent transparent @grey;
 						}
@@ -187,13 +187,13 @@ a{
 				}
 				&:nth-child(2) a.active span
 				{
-					color:@light-green; 
-					border-bottom:1*@px solid @light-green;
+					color:@lightgreen; 
+					border-bottom:1*@px solid @lightgreen;
 				}
 				&:nth-child(3) a.active span
 				{
-					color:@light-green; 
-					border-bottom:1*@px solid @light-green;
+					color:@lightgreen; 
+					border-bottom:1*@px solid @lightgreen;
 				}
 				a
 				{
@@ -257,7 +257,7 @@ a.arrowDown{
 			a
 			{
 				color:@black;
-				font-size:(@even*8)@px;
+				font-size:(@even*8)*@px;
 	 			padding:0;
 	 			&:hover{color:@green;}
 			}
@@ -290,7 +290,7 @@ a.arrowDown{
 						.positions(absolute);
 						width:0;
 						height:0;
-						top:(@even*12)@px;
+						top:24*@px;
 						border:6*@px solid;
 						border-color:@grey transparent transparent @grey;
 					}
@@ -302,8 +302,8 @@ a.arrowDown{
 			.width-percentage(10);
 			a.active span 
 			{
-				color:@light-green;
-				border-bottom:1*@px solid @light-green;
+				color:@lightgreen;
+				border-bottom:1*@px solid @lightgreen;
 			}
 		}
 		&:nth-child(3)
@@ -315,8 +315,8 @@ a.arrowDown{
 			.width-percentage(10);
 			a.active span 
 			{
-				color:@light-green;
-				border-bottom:1*@px solid @light-green;
+				color:@lightgreen;
+				border-bottom:1*@px solid @lightgreen;
 			}
 		}
 	}}
@@ -325,23 +325,23 @@ a.arrowDown{
 		border-top:none;
 		li a:hover
 		{
-			color:@light-grey;
+			color:@lightgrey;
 		}
 	}
-	.navbar .navbar-nav 
+	.navbar-nav 
 	{
 		li.active a
 		{
 			background:none;
-			color:@light-green;
+			color:@lightgreen;
 			&:hover
 			{
 				background:none;
-				color:@light-green;
+				color:@lightgreen;
 			}
 			span:first-child
 			{
-				border-bottom:1*@px solid @light-green;
+				border-bottom:1*@px solid @lightgreen;
 			}
 			span > span
 			{
@@ -372,7 +372,7 @@ a.arrowDown{
 		    -webkit-transition: background-color .2s;
 			&:hover
 			{
-				color:@light-green;
+				color:@lightgreen;
 				span > span
 				{
 					background:none;
@@ -390,7 +390,7 @@ a.arrowDown{
 	.navbar-collapse
 	{
 		border-color:@grey;
-		max-height:(200*@even)@px;
+		max-height:(200*@even)*@px;
 	}
 	.navbar-toggle
 	{
@@ -432,7 +432,7 @@ a.arrowDown{
 		font-size:30*@px;
 		line-height:70*@px;
 		font-weight:normal;
-		color:@light-green;
+		color:@lightgreen;
 		padding:0 0 0 33*@pt;
 		-webkit-transition:.4s;
 		transition:.4s;
@@ -486,7 +486,7 @@ ul.empList
 			border:2*@px solid transparent;
 			&:hover
 			{
-				border:2*@px solid @light-green;
+				border:2*@px solid @lightgreen;
 			}
 		}
 	}
@@ -497,12 +497,12 @@ ul.empList
 	z-index:999;
 }
 .tooltip-inner{
-	background:@light-green;
+	background:@lightgreen;
 	.display(initial);
 	border-radius:0;
 }
 .tooltip.bottom .tooltip-arrow{
-	border-bottom-color:@light-green;
+	border-bottom-color:@lightgreen;
 	top:-6*@px;
 }
 
@@ -537,34 +537,34 @@ ul.empList
 		border-radius:50*@pt;
 		&:hover
 		{
-		background:@light-green;
-		border:1*@px solid @light-green;
+		background:@lightgreen;
+		border:1*@px solid @lightgreen;
 		}
 	}
 }
 
 .designation-background{
-	background:@light-green !important;
+	background:@lightgreen !important;
 }
 .designation-border{
-	border:solid 1*@px @light-green !important;
+	border:solid 1*@px @lightgreen !important;
 }
 .designation-arrow-color{
-	border-top-color:@light-green !important;
+	border-top-color:@lightgreen !important;
 }
 .designation-arrow-size{
 	border-bottom-width:1*@px !important;
 }
 .designation-span-background{
-	background: @light-green;
+	background: @lightgreen;
 	.positions(relative) !important;
 }
 
 .image-border{
-	border:2*@px solid @light-green !important;
+	border:2*@px solid @lightgreen !important;
 }
 .popover.top .arrow.designation-arrow-color{
-	border-top-color:@light-green !important;
+	border-top-color:@lightgreen !important;
 }
 
 .popover{
@@ -580,7 +580,7 @@ ul.empList
 
 h3.popover-title{
 	border-radius:0;
-	.width-percentage(33);
+	.width-percentage(100);
 	text-align:center;
 	.colors(@grey, @white);
 }
@@ -643,7 +643,7 @@ h3.popover-title{
 		cursor:pointer;
 		&:hover 	
 		{
-			border:1@px solid @light-green;
+			border:1@px solid @lightgreen;
 		}
 	}
 	.row-eq-height > div[class*='col-'] div[class*='col-']:hover
@@ -675,7 +675,7 @@ div[class*='col-'].pull-right a
 	.colors(@grey,@white);
 	&:hover               
 	{
-		background-color:@light-green;
+		background-color:@lightgreen;
 		-webkit-transition: background-color 500ms linear;
 		 -moz-transition: background-color 500ms linear;
 		 -o-transition: background-color 500ms linear;
@@ -706,12 +706,12 @@ address
 	float:right;
 	text-align:right;
 	color:@black;
-	font-size:16*@px;
+	font-size:14*@px;
 	.width-percentage(90); 
 	padding:0;
 	h3 											
 	{
-		font-size:23*@px;
+		font-size:22*@px;
 	}
 	&:first-child
 	{
@@ -744,7 +744,7 @@ address
 			}
 			&:hover 							
 			{
-				background:@light-green;
+				background:@lightgreen;
 				-webkit-transition: background-color 500ms linear;	
 			    -moz-transition: background-color 500ms linear;
 			    -o-transition: background-color 500ms linear;
@@ -784,12 +784,12 @@ address
 	bottom:3*@pt;
 	p a
 	{
-		color:@light-green;
-		border-bottom:1*@px solid @light-green;
+		color:@lightgreen;
+		border-bottom:1*@px solid @lightgreen;
 		&:hover
 		{
-			color:@light-green;
-			border-bottom:1*@px solid @light-green;
+			color:@lightgreen;
+			border-bottom:1*@px solid @lightgreen;
 		}
 	}
 
