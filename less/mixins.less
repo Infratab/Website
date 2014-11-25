@@ -24,12 +24,12 @@
 
 .positions(@position)
 {
-	position:@position;
+	position:@position !important;
 }
 
 .display(@display)
 {
-	display:@display;
+	display:@display !important;
 }
 
 .sprite-style
@@ -127,13 +127,13 @@
 .mapCanvas{
 	height:200*@px;
 	border:1*@px solid @grey;
-	margin-bottom: @em;
+	margin-bottom: @em !important;
 }
 .paddNone{
-	padding:0;
+	padding:0 !important;
 }
 address{
-	width:100*@pt !important;
+	width:100*@pt;
 	font-size:14*@px !important;
 	h3
 	{
@@ -143,18 +143,18 @@ address{
 	{
 		&:first-child
 		{
-			width:30*@pt !important;
+			width:30*@pt;
 			padding-top:13*@pt !important;
 		}
 		&:last-child
 		{
-			width:70*@pt !important;
+			width:70*@pt ;
 		}
 	}
 }
 .badge{
-	height:60*@px !important;
-	width: 60*@px !important;
+	height:60*@px ;
+	width: 60*@px;
 	line-height:2*@em+3*@em/10 !important;
 	font-size: @em+@em/2 !important;
 }
@@ -170,7 +170,7 @@ address{
 {
 	.Vmiddle
 	{
-		margin-top:80*@px;
+		margin-top:80*@px !important;
 	}
 	h3 									
 	{
@@ -180,19 +180,19 @@ address{
 	{
 		font-size:14*@px;
 		line-height:1.7; 
-		padding:@em+@em/2;
+		padding:@em+@em/2 !important;
 	}
 	.row-eq-height 
 	{
-		display:table;
+		display:table !important;
 		h3 						
 		{
-		padding:@em/2;
+		padding:@em/2 !important;
 		font-size:16*@px;
 		}
 		ul 						
 		{
-			padding:5*@pt 5*@pt 5*@pt 10*@pt;
+			padding:5*@pt 5*@pt 5*@pt 10*@pt !important;
 			li
 			{
 				font-size:14*@px;
@@ -204,45 +204,45 @@ address{
 		}
 		span
 		{
-			padding:10*@pt 0;
+			padding:10*@pt 0 !important;
 		}
 		a 						
 		{
 			font-size:14*@px;
-			padding:@em/2 @em;
-			margin-top:@em;
+			padding:@em/2 @em !important;
+			margin-top:@em !important;
 		}
 	}
 	.row-eq-height > div[class*='col-xs-']:last-child 
 	{
 		border:none; 
-		margin-top:12*@pt+@pt/2;
+		margin-top:12*@pt+@pt/2 !important;
 	}
 	.row-eq-height > div[class*='col-']	
 	{
 		line-height:1.5;
-		margin: @em @em+@em/2;
+		margin: @em @em+@em/2 !important;
 		&:first-child 
 		{
-			margin-top:0;
+			margin-top:0 !important;
 		}
 	}
 }
 
 div[class*='col-'].pull-right 					
 {
-	padding:0;
+	padding:0 !important;
 	a 				
 	{
 		font-size:16*@px;
-		padding:@em/2 @em;
-		margin-top:@em+@em/2;
+		padding:@em/2 @em !important;
+		margin-top:@em+@em/2 !important; 
 	}
 }
 
 }
 .margin-padding-zero
 {
-	margin:0;
-	padding:0;
+	margin:0 !important;
+	padding:0 !important;
 }
