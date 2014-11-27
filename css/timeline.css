@@ -70,70 +70,7 @@ header h1 {
   font-size: 18px;
   font-size: 1.125rem;
 }
-@media only screen and (min-width: 1170px) {
-  header {
-    height: 300px;
-    line-height: 300px;
-  }
-  header h1 {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
-}
-
-#cd-timeline {
-  position: relative;
-  padding: 2em 0;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-#cd-timeline::before {
-  /* this is the vertical line */
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 18px;
-  height: 100%;
-  width: 4px;
-  background: #ccc;
-}
-@media only screen and (min-width: 1170px) {
-  #cd-timeline {
-    margin-top: 3em;
-    margin-bottom: 3em;
-  }
-  #cd-timeline::before {
-    left: 50%;
-    margin-left: -2px;
-  }
-}
-
-.cd-timeline-block {
-  position: relative;
-  margin: 2em 0;
-}
-.cd-timeline-block:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.cd-timeline-block:first-child {
-  margin-top: 0;
-}
-.cd-timeline-block:last-child {
-  margin-bottom: 0;
-}
-@media only screen and (min-width: 1170px) {
-  .cd-timeline-block {
-    margin: 4em 0;
-  }
-  .cd-timeline-block:first-child {
-    margin-top: 0;
-  }
-  .cd-timeline-block:last-child {
-    margin-bottom: 0;
-  }
-}
+/*custom code*/
 .cd-timeline-small .cd-timeline-img{
   position:absolute;
   width: 20px;
@@ -167,8 +104,8 @@ header h1 {
   right: 100%;
   height: 0;
   width: 0;
-  border: 15px solid transparent;
-  border-right: 15px solid #eee;
+  border: 12px solid transparent;
+  border-right: 12px solid #eee;
   top: 10px;
   left: 100%;
   border-color: transparent;
@@ -188,8 +125,6 @@ header h1 {
     border-right-color: #eee;
   }
   
-
-
 .cd-timeline-img {
   position: absolute;
   top: 0;
@@ -201,6 +136,122 @@ header h1 {
   background: #fff;
   padding-top: 5px;
  }
+/*custom code*/
+
+#cd-timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#cd-timeline::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: #ccc;
+}
+
+.cd-timeline-block {
+  position: relative;
+  margin: 2em 0;
+}
+.cd-timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-timeline-block:first-child {
+  margin-top: 0;
+}
+.cd-timeline-block:last-child {
+  margin-bottom: 0;
+}
+
+
+.cd-timeline-content {
+  position: relative;
+  margin-left: 60px;
+  background: white;
+  border-radius: 0.25em;
+  padding: 1em;
+  box-shadow: 1px 1px #eee;
+  border:1px solid #eee;
+  border-right:4px solid #4db849;
+  text-align:right;
+}
+
+.cd-timeline-content img{
+  padding-top:10px;
+}
+.cd-timeline-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-timeline-content h2 {
+  color: #303e49;
+}
+.cd-timeline-content p{
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
+.cd-timeline-content p {
+  margin: 1em 0;
+  line-height: 1.6;
+}
+
+.cd-timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 12px solid transparent;
+  border-right: 12px solid #eee;
+}
+
+
+@media only screen and (min-width: 1170px) {
+  header {
+    height: 300px;
+    line-height: 300px;
+  }
+  header h1 {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+
+
+@media only screen and (min-width: 1170px) {
+  #cd-timeline {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  #cd-timeline::before {
+    left: 50%;
+    margin-left: -2px;
+  }
+}
+
+
+@media only screen and (min-width: 1170px) {
+  .cd-timeline-block {
+    margin: 4em 0;
+  }
+  .cd-timeline-block:first-child {
+    margin-top: 0;
+  }
+  .cd-timeline-block:last-child {
+    margin-bottom: 0;
+  }
+}
 
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
@@ -284,49 +335,7 @@ header h1 {
     transform: scale(1);
   }
 }
-.cd-timeline-content {
-  position: relative;
-  margin-left: 60px;
-  background: white;
-  border-radius: 0.25em;
-  padding: 1em;
-  box-shadow: 1px 1px #eee;
-  border:1px solid #eee;
-  border-right:4px solid #4db849;
-  text-align:right;
-}
 
-.cd-timeline-content img{
-  padding-top:10px;
-}
-.cd-timeline-content:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.cd-timeline-content h2 {
-  color: #303e49;
-}
-.cd-timeline-content p{
-  font-size: 13px;
-  font-size: 0.8125rem;
-}
-
-.cd-timeline-content p {
-  margin: 1em 0;
-  line-height: 1.6;
-}
-
-.cd-timeline-content::before {
-  content: '';
-  position: absolute;
-  top: 16px;
-  right: 100%;
-  height: 0;
-  width: 0;
-  border: 12px solid transparent;
-  border-right: 12px solid #eee;
-}
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
     font-size: 18px;
