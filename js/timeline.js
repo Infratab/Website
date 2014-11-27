@@ -16,4 +16,13 @@ jQuery(document).ready(function($){
 			}
 		});
 	});
+	/*for timeline date*/
+
+		$(".cd-timeline-img").click(function(){
+		    $(".cd-timeline-block").removeClass(".cd-timeline-small");
+		});
+
 });
+
+
+
