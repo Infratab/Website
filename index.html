@@ -22,6 +22,14 @@
     <link href="css/responsiveMediaQuery.css" rel="stylesheet">  
     --> 
 
+    <script>
+	$(document).ready(function(){
+	  $(".cd-timeline-img").click(function(){
+	    $("div.cd-timeline-block").removeClass(".cd-timeline-small");
+
+	  });
+	});
+	</script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="70">
@@ -44,6 +52,7 @@
 				<ul class="nav navbar-nav mid">
 					<li><a href="#team"><span>We <span>♥</span> Javascript</span></a></li>
 					<li><a href="#careers"><span>Careers</span></a></li> 
+					<li><a href="#news"><span>News</span></a></li>
 					<li><a href="#contact"><span>Contact</span></a></li> 
 				</ul>
 
@@ -79,7 +88,8 @@
             <div class="row">
                 <ul class="menu">
                     <li><a class="scroll-down" href="#team">We <span>♥</span> Javascript</a></li>
-                    <li><a class="scroll-down" href="#careers">Careers</a></li> 
+                    <li><a class="scroll-down" href="#careers">Careers</a></li>
+                    <li><a class="scroll-down" href="#news">News</a></li> 
                     <li><a class="scroll-down" href="#contact">Contact</a></li> 
                 </ul>
             </div>	                
@@ -275,8 +285,8 @@
     	<div class="Vmiddle">
 	    	<section id="cd-timeline" class="cd-container">
 				<div class="cd-timeline-block">
-					<div class="cd-timeline-img cd-picture">
-						23<br>Nov
+					<div class="cd-timeline-img ">
+						<span>23<br>Nov</span>
 					</div> <!-- cd-timeline-img -->
 
 					<div class="cd-timeline-content">
@@ -285,9 +295,9 @@
 					</div> <!-- cd-timeline-content -->
 				</div> <!-- cd-timeline-block -->
 
-				<div class="cd-timeline-block">
-					<div class="cd-timeline-img cd-movie">
-						24<br>Nov
+				<div class="cd-timeline-block cd-timeline-small">
+					<div class="cd-timeline-img ">
+						<span>24<br>Nov</span>
 					</div> <!-- cd-timeline-img -->
 
 					<div class="cd-timeline-content">
@@ -297,9 +307,9 @@
 					</div> <!-- cd-timeline-content -->
 				</div> <!-- cd-timeline-block -->
 
-				<div class="cd-timeline-block">
-					<div class="cd-timeline-img cd-picture">
-						25<br>Nov
+				<div class="cd-timeline-block cd-timeline-small">
+					<div class="cd-timeline-img ">
+						<span>25<br>Nov</span>
 					</div> <!-- cd-timeline-img -->
 
 					<div class="cd-timeline-content">
@@ -377,8 +387,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/init.js"></script>	
+
     <script src="js/timeline.js"></script> <!-- Resource jQuery -->
 
     <script>
