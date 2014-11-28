@@ -17,11 +17,13 @@ jQuery(document).ready(function($){
 		});
 	});
 	/*for timeline date*/
+		  $(".cd-timeline-img").click(function(){
 
-		$(".cd-timeline-img").click(function(){
-		    $(".cd-timeline-block").toggleClass("cd-timeline-small");
-		});
+                $(this).parent().removeClass('cd-timeline-small');
+                $(".cd-timeline-block.active").removeClass('active').addClass('cd-timeline-small');
+                $(this).parent().addClass('active');        
 
+            });
 });
 
 
