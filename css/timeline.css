@@ -128,6 +128,19 @@ Modules - reusable parts of our design
 .cd-timeline-content::before {content: '';position: absolute; top: 16px;right: 100%;height: 0;width: 0;border: 12px solid transparent;border-right: 12px solid #eee;}
 
 
+
+.cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+.cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+  display: inline-block;
+}
+.cd-timeline-content .cd-date {
+  float: left;
+  padding: .8em 0;
+  opacity: .7;
+}
 @media only screen and (min-width: 1170px) {
   header {
     height: 300px;
@@ -256,7 +269,10 @@ Modules - reusable parts of our design
     font-size: 15px;
    
   }
-  cd
+  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
@@ -269,6 +285,14 @@ Modules - reusable parts of our design
     left: 100%;
     border-color: transparent;
     border-left-color: #4db849;
+  }
+  .cd-timeline-content .cd-date {
+    position: absolute;
+    width: 100%;
+    left: 28%;
+    top: 13px;
+    font-size: 16px;
+    font-size: 1rem;
   }
   
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
@@ -284,7 +308,11 @@ Modules - reusable parts of our design
     border-color: transparent;
     border-right-color: #4db849;
   }
-  
+  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+    left: auto;
+    right: 122%;
+    text-align: right;
+  }
   .cssanimations .cd-timeline-content.is-hidden {
     visibility: hidden;
   }
