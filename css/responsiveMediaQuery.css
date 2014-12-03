@@ -86,7 +86,7 @@ div[class*='col-'].pull-right a 				{font-size:16px;padding:0.5em 1em;margin-top
 @media screen and (max-width:1600px) {
 
 .welcome h3                 					{width:45% !important;}
-ul.empList                  					{margin-bottom:31% !important;}
+ul.empList                  					{margin-bottom:25% !important;}
 .welcome ul.topNav li:first-child span:after 	{left:0 !important;}
 .navbar ul.topNav li:first-child span:after 	{left:1px !important;}
 .popover 										{width: 70%;]
@@ -304,33 +304,6 @@ h3.popover-title        				{font-size:14px !important;line-height:1.25em;paddin
 .popover-content        				{padding: 0.75em 0 0.75em 2em;}
 .popover-content ul li  				{line-height:1.25em;font-size:13px;}
 
-/*
-
-.designation .designation-circle		{margin:5px 0 200px 0;width:80px;height:80px;}
-.designation:first-child, .designation:nth-child(2) {margin-top:150px;}
-.designation:last-child						{margin-left:25%;}
-.designation:last-child .designation-circle {margin-bottom:30px;}
-
-.designation ul 						{margin-left:-3px;}
-.designation ul li a                	{width:70px; height:70px;background-size:60%;}
-.designation:first-child  a         	{background:url('../img/result.png') no-repeat 45% -8%;;width:70px;height:70px;background-size:60%;}
-.designation:nth-child(2) a         	{background:url('../img/result.png') no-repeat 50% 27%;width:70px;height:50px;margin-top:20px;background-size:60%;}
-.designation:nth-child(3) a         	{background:url('../img/result.png') no-repeat 45% 50%;width:70px;height:50px;margin-top:14px;background-size:60%;}
-.designation:nth-child(4) a         	{background:url('../img/result.png') no-repeat 50% 77%;width:70px;height:60px;margin-top:10px;background-size:60%; }
-.designation:last-child a           	{background:url('../img/result.png') no-repeat 45% 114%;width:70px;height:70px;margin-top:14px;background-size:60%;}
-
-.designation:first-child  a:hover   	{background:url('../img/h-result.png') no-repeat 45% -8%; width:70px;height:70px;background-size:60%;}
-.designation:nth-child(2) a:hover   	{background:url('../img/h-result.png') no-repeat 50% 27%;width:70px;height:50px;margin-top:20px;background-size:60%;}
-.designation:nth-child(3) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 50%;width:70px;height:50px;margin-top:14px;background-size:60%;}
-.designation:nth-child(4) a:hover   	{background:url('../img/h-result.png') no-repeat 50% 77%;width:70px;height:60px;margin-top:10px;background-size:60%;}
-.designation:last-child a:hover     	{background:url('../img/h-result.png') no-repeat 45% 114%;width:70px;height:70px;margin-top:14px;background-size:60%;}
-
-.popover                				{width:96%;height:180px;}
-h3.popover-title        				{font-size:14px !important;line-height:1.25em;padding:5px;}
-.popover-content        				{padding: 0.75em 0 0.75em 2em;}
-.popover-content ul li  				{line-height:1.5em;font-size:12.5px;}
-
-*/
 
 /* careers */
 
