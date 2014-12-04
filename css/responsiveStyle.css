@@ -123,7 +123,7 @@ ul.empList li a img                                 {border:2px solid transparen
 ul.empList li a img:hover                           {border:2px solid #50b948;}
 
 .tooltip                                            {z-index:999;}
-.tooltip-inner                                      {background:#50b948;display:initial;border-radius:0;}
+.tooltip-inner                                      {background:#50b948;display:initial;border-radius:0;white-space: nowrap;}
 .tooltip.bottom .tooltip-arrow                      {border-bottom-color:#50b948;top:-4px;}
 
 .designation ul, .designation ul li                 {padding:0; margin:0;}

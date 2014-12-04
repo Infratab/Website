@@ -283,12 +283,13 @@ a.arrowDown                 			{bottom:3%;left:48%;}
 .team .Vmiddle 							{margin-top:80px;}
 
 ul.empList                  			{margin-bottom:15%;}
-ul.empList li               			{margin:1.5% 1% 5% 1%;padding:3px;border-radius:4px; }
+ul.empList li               			{margin:1.5% 0.5% 5% 0.5%;padding:3px;border-radius:4px; }
 ul.empList li img           			{width:65px;height:65px;}
 
 .tooltip                        		{font-size:14px;}
 .tooltip-inner                  		{padding:4px 5px;}
 .tooltip.bottom                 		{margin-top:2em;}
+.tooltip.bottom .tooltip-arrow          {top:-3px;}
 
 .designation .designation-circle		{margin:5px 0 200px 0;width:100px;height:100px;}
 .designation:first-child  {margin-top:150px;}
@@ -324,16 +325,16 @@ h3.popover-title        				{font-size:14px !important;line-height:1.25em;paddin
 .careers .Vmiddle 								{margin-top:80px;}
 .careers h3 									{font-size:18px;}
 .careers p.info 								{font-size:14px;line-height:1.7; padding:1.5em;}
-.careers .row-eq-height {display:table;}
-.careers .row-eq-height > div[class*='col-xs-']:last-child {border:none; margin-bottom:12.5%;}
-.careers .row-eq-height > div[class*='col-']	{line-height:1.5;margin: 1em 1.5em;}
+.careers .row-eq-height 						{display:table;width:100%;}
+.careers .row-eq-height > div[class*='col-xs-']:last-child {border:none; margin-bottom:0;}
+.careers .row-eq-height > div[class*='col-']	{line-height:1.5;margin:0;margin-bottom:1em;}
 .careers .row-eq-height > div[class*='col-']:first-child {margin-top:0;}
 .careers .row-eq-height h3 						{padding:0.5em;font-size:16px;}
 .careers .row-eq-height ul 						{padding:5% 5% 5% 10%;}
 .careers .row-eq-height ul li, .row-eq-height p {font-size:14px;}
 .careers .row-eq-height span 					{padding:10% 0;}
 .careers .row-eq-height a 						{font-size:14px;padding:0.5em 1em;margin-top:1em;}
-div[class*='col-'].pull-right 					{padding:0;}
+div[class*='col-'].pull-right 					{padding:0;float:none !important;text-align: center;margin:0 auto;}
 div[class*='col-'].pull-right a 				{font-size:16px;padding:0.5em 1em;margin-top:1.5em;}
 
 /* Contact Us */
@@ -348,9 +349,7 @@ address:last-child a span:last-child 			{width:70% !important;}
 .badge 											{height:80px !important;width:80px !important;line-height:3.3em !important;font-size: 1.5em !important;}
 .footer 										{position:relative !important; height:65px;}
 
-
  }
-
  
 /* Landscape phones and down */
 @media (max-width: 480px) { 
@@ -394,7 +393,7 @@ ul.empList li               			{margin:1.5% 0.25% 5% 0.25%;border-radius:4px; }
 ul.empList li img           			{width:60px;height:60px;}
 
 .tooltip                        		{font-size:14px;}
-.tooltip-inner                  		{padding:4px 5px; white-space: pre;}
+.tooltip-inner                  		{padding:4px 5px;}
 .tooltip.bottom                 		{margin-top:2em;}
 .tooltip.bottom .tooltip-arrow          {top:-3px;}
 
@@ -415,7 +414,7 @@ ul.empList li img           			{width:60px;height:60px;}
 .designation:nth-child(4) a:hover   	{background:url('../img/h-result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
 .designation:last-child a:hover     	{background:url('../img/h-result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
 
-.popover                				{width:96%;height:180px;}
+.popover                				{width:60%;height:180px;}
 h3.popover-title        				{font-size:14px !important;line-height:1.25em;padding:5px;}
 .popover-content        				{padding: 0.75em 0 0.75em 2em;}
 .popover-content ul li  				{line-height:1.5em;font-size:12.5px;}
@@ -432,23 +431,24 @@ h3.popover-title        				{font-size:14px !important;line-height:1.25em;paddin
 .careers .Vmiddle 								{margin-top:80px;}
 .careers h3 									{font-size:18px;}
 .careers p.info 								{font-size:13.5px;line-height:1.7;padding:1.5em 0}
-.careers .row-eq-height {display:table;}
-.careers .row-eq-height > div[class*='col-xs-']:last-child {border:none; margin-top:12.5%;}
-.careers .row-eq-height > div[class*='col-']	{line-height:1.5;margin: 1em 1.25em;}
+.careers .row-eq-height 						{display:table;width:100%;}
+.careers .row-eq-height > div[class*='col-xs-']:last-child {border:none;}
+.careers .row-eq-height > div[class*='col-']	{line-height:1.5;margin: 0 0 1em 0;}
 .careers .row-eq-height > div[class*='col-']:first-child {margin-top:0;}
 .careers .row-eq-height h3 						{padding:0.5em;font-size:16px;}
 .careers .row-eq-height ul 						{padding:5% 5% 5% 10%;}
 .careers .row-eq-height ul li, .row-eq-height p {font-size:14px;}
 .careers .row-eq-height span 					{padding:10% 0;}
-.careers .row-eq-height a 						{font-size:14px;padding:0.5em 1em;margin-top:1em;}
-div[class*='col-'].pull-right 					{padding:0;}
-div[class*='col-'].pull-right a 				{font-size:16px;padding:0.5em 1em;margin-top:1.5em;}
+.careers .row-eq-height a 						{font-size:14px;padding:0.5em;margin-top:1em;}
+div[class*='col-'].pull-right 					{padding:0;float: none !important;text-align: center;margin: 0 auto;}
+div[class*='col-'].pull-right a 				{font-size:16px;padding:0.5em 1em;margin-top:0;}
 
 /* Contact Us */
 
 .mapCanvas										{height:200px;border:1px solid #bdc3c7; margin-bottom:1em;margin-top: 5em;}
 .paddNone 										{padding:0;}
 address 										{width:100% !important;font-size:14px !important;}
+address:last-child 								{width:100% !important;}
 address h3 										{font-size:18px !important;}
 address:last-child a span:first-child 			{width:30% !important;padding-top:13% !important;}
 address:last-child a span:last-child 			{width:70% !important;}
