@@ -126,6 +126,7 @@ ul.empList li a img:hover                           {border:2px solid #50b948;}
 .tooltip-inner                                      {background:#50b948;display:initial;border-radius:0;white-space: nowrap;}
 .tooltip.bottom .tooltip-arrow                      {border-bottom-color:#50b948;top:-4px;}
 
+.designation-container								{margin-left: 14%;}
 .designation ul, .designation ul li                 {padding:0; margin:0;}
 .designation ul                                     {width:100%;}
 .designation .designation-circle                    {display:inline-block;cursor:pointer;border:1px solid #bdc3c7;border-radius:50%;}
@@ -142,15 +143,15 @@ ul.empList li a img:hover                           {border:2px solid #50b948;}
 
 .designation:first-child > ul li div.designation-circle:hover  a   	{background:url('../img/h-result.png') no-repeat 42% -8%; width:70px;height:70px;}
 .designation:nth-child(2) > ul li div.designation-circle:hover  a  	{background:url('../img/h-result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
-.designation:nth-child(3) > ul li div.designation-circle:hover a   	{background:url('../img/h-result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
-.designation:nth-child(4) > ul li div.designation-circle:hover a   	{background:url('../img/h-result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
-.designation:last-child > ul li div.designation-circle:hover a     	{background:url('../img/h-result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
+.designation:nth-child(3) > ul li div.designation-circle:hover a   	{background:url('../img/h-result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
+.designation:nth-child(4) > ul li div.designation-circle:hover a   	{background:url('../img/h-result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
+/*.designation:last-child > ul li div.designation-circle:hover a     	{background:url('../img/h-result.png') no-repeat }*/
 
 .designation:first-child > ul li div.designation-circle.designation-span-background  a {background:url('../img/h-result.png') no-repeat 42% -8%; width:70px;height:70px;}
 .designation:nth-child(2) > ul li div.designation-circle.designation-span-background  a{background:url('../img/h-result.png') no-repeat 45% 24%;width:70px;height:50px;margin-top:20px;}
-.designation:nth-child(3) > ul li div.designation-circle.designation-span-background a {background:url('../img/h-result.png') no-repeat 45% 48%;width:70px;height:80px;margin-top: 3px;}
-.designation:nth-child(4) > ul li div.designation-circle.designation-span-background a {background:url('../img/h-result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
-.designation:last-child > ul li div.designation-circle.designation-span-background a   {background:url('../img/h-result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
+.designation:nth-child(3) > ul li div.designation-circle.designation-span-background a {background:url('../img/h-result.png') no-repeat 45% 76%;width:70px;height:70px;margin-top: 10px;}
+.designation:nth-child(4) > ul li div.designation-circle.designation-span-background a {background:url('../img/h-result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top: 12px;}
+/*.designation:last-child > ul li div.designation-circle.designation-span-background a   {background:url('../img/h-result.png') no-repeat }*/
 
 .popover                                    {border-radius:0;border:1px solid #bdc3c7;padding:0;z-index:999;}
 .popover:hover                              {cursor:pointer;}
