@@ -68,7 +68,17 @@ div[class*='col-'].pull-right a 				{font-size:16px;padding:0.5em 1em;margin-top
 .copyright 										{margin:30px 0;}
 
  }
+ @media (min-width:992px) and (max-width:1330px) {
+ .designation-container {
+  margin-left: 12% !important;
+  width:97%;
+}
+#bottom
+{
+	bottom:30px;
+}
  
+ }
 @media (min-width:1025px) and (max-width:1280px) {
 
 .welcome h3                 					{width:55% !important;}
@@ -158,7 +168,10 @@ ul.empList li img           			{width:75px;height:75px;}
 .tooltip                        		{font-size:16px;}
 .tooltip-inner                  		{padding:6px 10px;}
 .tooltip.bottom                 		{margin-top:2.5em;}
-
+.designation-container {
+  margin-left: 9%;
+  margin-right: 9%;
+}
 .designation-container > div[class*='col-sm-']:first-child,
 .designation-container > div[class*='col-sm-']:nth-child(2),
 .designation-container > div[class*='col-sm-']:nth-child(3) 	{margin-bottom:37.5%;}
@@ -218,7 +231,7 @@ address h3 										{font-size:18px !important;}
 address:last-child a span:first-child 			{width:30% !important;padding-top:7.5% !important;}
 address:last-child a span:last-child 			{width:70% !important;}
 .badge 											{height:80px !important;width:80px !important;line-height:3.3em !important;font-size: 1.5em !important;}
-.footer 										{position:relative !important; height:65px;}
+.footer 										{position:relative !important; height:65px; top:10px;}
 
 }
 
@@ -290,7 +303,10 @@ ul.empList li img           			{width:65px;height:65px;}
 .tooltip-inner                  		{padding:4px 5px;}
 .tooltip.bottom                 		{margin-top:2em;}
 .tooltip.bottom .tooltip-arrow          {top:-3px;}
-
+.designation-container {
+  margin-left: 9%;
+  margin-right: 9%;
+}
 .designation .designation-circle		{margin:5px 0 200px 0;width:100px;height:100px;}
 .designation:first-child  {margin-top:150px;}
 .designation:last-child .designation-circle {margin-bottom:30px;}
@@ -347,7 +363,7 @@ address h3 										{font-size:18px !important;}
 address:last-child a span:first-child 			{width:30% !important;padding-top:7.5% !important;}
 address:last-child a span:last-child 			{width:70% !important;}
 .badge 											{height:80px !important;width:80px !important;line-height:3.3em !important;font-size: 1.5em !important;}
-.footer 										{position:relative !important; height:65px;}
+.footer 										{position:relative !important; height:65px; top:10px;}
 
  }
  
@@ -396,7 +412,10 @@ ul.empList li img           			{width:60px;height:60px;}
 .tooltip-inner                  		{padding:4px 5px;}
 .tooltip.bottom                 		{margin-top:2em;}
 .tooltip.bottom .tooltip-arrow          {top:-3px;}
-
+.designation-container {
+  margin-left: 9%;
+  margin-right: 9%;
+}
 .designation .designation-circle		{margin:5px 0 200px 0;width:100px;height:100px;}
 .designation:first-child  {margin-top:150px;}
 .designation:last-child .designation-circle {margin-bottom:30px;}
@@ -453,6 +472,6 @@ address h3 										{font-size:18px !important;}
 address:last-child a span:first-child 			{width:30% !important;padding-top:13% !important;}
 address:last-child a span:last-child 			{width:70% !important;}
 .badge 											{height:60px !important;width: 60px !important;line-height:2.3em !important;font-size: 1.5em !important;}
-.footer 										{position:relative !important; height:65px;}
+.footer 										{position:relative !important; height:65px; top:10px;}
 
 }
