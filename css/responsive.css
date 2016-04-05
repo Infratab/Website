@@ -1,1160 +1,1077 @@
-/* Large desktop */
 
-@media (min-width: 1024px) and (max-width: 1920px) {
-    /* Home */
-    
+@media (min-width:1024px) and (max-width:1920px) {
     .welcome ul.topNav {
         width: 18%;
         top: 10%;
-        right: 10%;
+        right: 10%
     }
     .welcome ul.topNav li a {
-        font-size: 16px;
+        font-size: 16px
     }
     .welcome ul.topNav li:first-child {
-        width: 33%;
+        width: 33%
     }
+    .welcome ul.topNav li:last-child,
     .welcome ul.topNav li:nth-child(2) {
-        width: 10%;
-    }
-    .welcome ul.topNav li:last-child {
-        width: 10%;
+        width: 10%
     }
     .welcome ul.topNav li:first-child span {
-        padding: 2.5% 15%;
+        padding: 2.5% 15%
     }
     .welcome ul.topNav li:first-child span:after {
-        left: 0;
+        left: 0
     }
     ul.menu li {
-        margin: 0 2em;
+        margin: 0 2em
     }
     ul.menu li a {
-        font-size: 18px;
+        font-size: 18px
     }
     .welcome div.row {
-        padding-bottom: 4em;
+        padding-bottom: 4em
     }
     .welcome img.mainLogo {
-        width: 15%;
+        width: 15%
     }
     .welcome h3 {
         font-size: 24px;
         line-height: 1.35em;
-        width: 70% !important;
+        width: 70%!important
     }
     .welcome a i:before {
-        font-size: 40px;
+        font-size: 40px
     }
     a.arrowDown {
         bottom: 7.5%;
-        left: 49.25%;
+        left: 49.25%
     }
     .navbar ul.topNav li:first-child span:after {
         left: 0;
-        top: 19px !important;
+        top: 19px!important
     }
-    /* Team */
-    
     .team .Vmiddle {
-        width: 100%;
+        width: 100%
     }
     ul.empList {
-        margin-bottom: 32% !important;
+        margin-bottom: 32%!important
     }
     ul.empList li {
         margin: 1.5% 1%;
         padding: 3px;
-        border-radius: 4px;
+        border-radius: 4px
     }
     ul.empList li img {
         width: 80px;
-        height: 80px;
+        height: 80px
     }
     .tooltip {
-        font-size: 16px;
+        font-size: 16px
     }
     .tooltip-inner {
-        padding: 6px 10px;
+        padding: 6px 10px
     }
     .tooltip.bottom {
-        margin-top: 2.5em;
+        margin-top: 2.5em
     }
     .designation .designation-circle {
-        margin: 9px 0px 20px 0px;
+        margin: 9px 0 20px;
         width: 100px;
-        height: 100px;
+        height: 100px
     }
     .designation ul li a {
         width: 70px;
-        height: 70px;
+        height: 70px
     }
     .designation:first-child a {
-        background: url('../img/result.png') no-repeat 42% -8%;
-        ;
+        background: url(../img/result.png) 42% -8% no-repeat;
         width: 70px;
-        height: 70px;
+        height: 70px
     }
     .designation:nth-child(2) a {
-        background: url('../img/result.png') no-repeat 45% 24%;
+        background: url(../img/result.png) 45% 24% no-repeat;
         width: 70px;
         height: 50px;
-        margin-top: 20px;
+        margin-top: 20px
     }
     .designation:nth-child(3) a {
-        background: url('../img/result.png') no-repeat 45% 76%;
+        background: url(../img/result.png) 45% 76% no-repeat;
         width: 70px;
         height: 70px;
-        margin-top: 10px;
+        margin-top: 10px
     }
     .designation:nth-child(4) a {
-        background: url('../img/result.png') no-repeat 45% 104%;
+        background: url(../img/result.png) 45% 104% no-repeat;
         width: 70px;
         height: 70px;
-        margin-top: 12px;
+        margin-top: 12px
     }
-    /*.designation:last-child a           	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top:12px;}*/
-    
     .popover {
         height: 270px;
-        width: 96%;
+        width: 96%
     }
     h3.popover-title {
-        font-size: 20px !important;
-        line-height: 1.25em;
+        font-size: 20px!important;
+        line-height: 1.25em
     }
     .popover-content {
-        padding: 0.75em 0 0.75em 2em;
+        padding: .75em 0 .75em 2em
     }
     .popover-content ul li {
         line-height: 1.75em;
-        font-size: 16px;
+        font-size: 16px
     }
-    /* careers */
-    
     .careers p.info {
         font-size: 18px;
         line-height: 1.7;
-        padding: 2em;
+        padding: 2em
     }
-    .careers .row-eq-height > div[class*='col-'] {
-        line-height: 2;
+    .careers .row-eq-height>div[class*=col-] {
+        line-height: 2
     }
     .careers .row-eq-height h3 {
-        padding: 0.5em;
+        padding: .5em
     }
     .careers .row-eq-height ul {
-        padding: 5% 10% 5% 15%;
+        padding: 5% 10% 5% 15%
     }
     .careers .row-eq-height ul li,
     .row-eq-height p {
-        font-size: 18px;
+        font-size: 18px
     }
     .careers .row-eq-height span {
-        padding: 25% 0;
+        padding: 25% 0
     }
     .careers .row-eq-height a {
         font-size: 16px;
-        padding: 0.5em 1em;
-        margin-top: 1em;
+        padding: .5em 1em;
+        margin-top: 1em
     }
-    div[class*='col-'].pull-right {
-        padding: 0;
+    div[class*=col-].pull-right {
+        padding: 0
     }
-    div[class*='col-'].pull-right a {
+    div[class*=col-].pull-right a {
         font-size: 16px;
-        padding: 0.5em 1em;
-        margin-top: 1.5em;
+        padding: .5em 1em;
+        margin-top: 1.5em
     }
-    /* Contact Us */
-    
     .mapCanvas {
         height: 430px;
-        border: 1px solid #bdc3c7;
+        border: 1px solid #bdc3c7
     }
     .footer p {
-        line-height: 25px;
+        line-height: 25px
     }
     .copyright {
-        margin: 30px 0;
+        margin: 30px 0
     }
 }
-@media (min-width: 992px) and (max-width: 1330px) {
-    .designation-container {
-        margin-left: 12% !important;
-        width: 88%;
-    }
+
+@media (min-width:992px) and (max-width:1330px) {
+   /* .designation-container {
+        margin-left: 12%!important;
+        width: 88%
+    }*/
     #bottom {
-        bottom: 30px;
+        bottom: 30px
     }
 }
-@media (min-width: 1025px) and (max-width: 1280px) {
+
+@media (min-width:1025px) and (max-width:1280px) {
     .welcome h3 {
-        width: 55% !important;
+        width: 55%!important
     }
     ul.empList {
-        margin-bottom: 25% !important;
-        ;
+        margin-bottom: 25%!important
     }
-    .welcome ul.topNav li:first-child span:after,
-    .navbar ul.topNav li:first-child span:after {
-        left: 0 !important;
+    .navbar ul.topNav li:first-child span:after,
+    .welcome ul.topNav li:first-child span:after {
+        left: 0!important
     }
     .popover {
-        width: 85%;
+        width: 85%
     }
     .careers .row-eq-height ul li,
     .row-eq-height p {
-        font-size: 16px;
+        font-size: 16px
     }
     .mapCanvas {
-        height: 415px !important;
+        height: 415px!important
     }
 }
-@media (min-width: 1280px) and (max-width: 1366px) {
-    .welcome h3 {
-        width: 50% !important;
-    }
-    ul.empList {
-        margin-bottom: 23.5% !important;
-    }
-    .welcome ul.topNav li:first-child span:after {
-        left: 0 !important;
-    }
-    .navbar ul.topNav li:first-child span:after {
-        left: 1px !important;
-    }
-    .popover {
-        width: 75%;
-    }
-    .mapCanvas {
-        height: 420px !important;
-    }
-}
-@media (min-width: 1366px) and (max-width: 1440px) {
-    .welcome h3 {
-        width: 50% !important;
-    }
-    ul.empList {
-        margin-bottom: 23.5% !important;
-    }
-    .welcome ul.topNav li:first-child span:after,
-    .navbar ul.topNav li:first-child span:after {
-        left: 0 !important;
-    }
-    .popover {
-        width: 75%;
-    }
-    .mapCanvas {
-        height: 425px !important;
-    }
-}
-@media (min-width: 1440px) and (max-width: 1600px) {
-    .welcome h3 {
-        width: 45% !important;
-    }
-    ul.empList {
-        margin-bottom: 22.5% !important;
-    }
-    .welcome ul.topNav li:first-child span:after {
-        left: 1px !important;
-    }
-    .navbar ul.topNav li:first-child span:after {
-        left: 1px !important;
-    }
-    .popover {
-        width: 70%;
-    }
-    .mapCanvas {
-        height: 435px !important;
-    }
-}
-/* Portrait tablet to landscape and desktop */
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    /* Home */
-    
+@media (min-width:1280px) and (max-width:1366px) {
+    .welcome h3 {
+        width: 50%!important
+    }
+    ul.empList {
+        margin-bottom: 23.5%!important
+    }
+    .welcome ul.topNav li:first-child span:after {
+        left: 0!important
+    }
+    .navbar ul.topNav li:first-child span:after {
+        left: 1px!important
+    }
+    .popover {
+        width: 75%
+    }
+    .mapCanvas {
+        height: 420px!important
+    }
+}
+
+@media (min-width:1366px) and (max-width:1440px) {
+    .welcome h3 {
+        width: 50%!important
+    }
+    ul.empList {
+        margin-bottom: 23.5%!important
+    }
+    .navbar ul.topNav li:first-child span:after,
+    .welcome ul.topNav li:first-child span:after {
+        left: 0!important
+    }
+    .popover {
+        width: 75%
+    }
+    .mapCanvas {
+        height: 425px!important
+    }
+}
+
+@media (min-width:1440px) and (max-width:1600px) {
+    .welcome h3 {
+        width: 45%!important
+    }
+    ul.empList {
+        margin-bottom: 22.5%!important
+    }
+    .navbar ul.topNav li:first-child span:after,
+    .welcome ul.topNav li:first-child span:after {
+        left: 1px!important
+    }
+    .popover {
+        width: 70%
+    }
+    .mapCanvas {
+        height: 435px!important
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
     .welcome ul.topNav {
         width: 36%;
         top: 7.5%;
-        right: 1%;
+        right: 1%
     }
     .welcome ul.topNav li a {
-        font-size: 20px;
+        font-size: 20px
     }
     .welcome ul.topNav li:first-child {
-        width: 40%;
+        width: 40%
     }
+    .welcome ul.topNav li:last-child,
     .welcome ul.topNav li:nth-child(2) {
-        width: 20%;
-    }
-    .welcome ul.topNav li:last-child {
-        width: 20%;
+        width: 20%
     }
     .welcome ul.topNav li:first-child span {
-        padding: 2.5% 15%;
+        padding: 2.5% 15%
     }
     .welcome ul.topNav li:first-child span:after {
-        left: 0px;
-        top: 28px;
+        left: 0;
+        top: 28px
     }
     ul.menu li {
-        margin: 0 1.5em;
+        margin: 0 1.5em
     }
     ul.menu li a {
-        font-size: 24px;
+        font-size: 24px
     }
     .welcome div.row {
-        padding-bottom: 4em;
+        padding-bottom: 4em
     }
     .welcome img.mainLogo {
-        width: 35%;
+        width: 35%
     }
     .welcome h3 {
         font-size: 28px;
         line-height: 1.35em;
-        width: 100%;
+        width: 100%
     }
     .welcome a i:before {
-        font-size: 50px;
+        font-size: 50px
     }
     a.arrowDown {
         bottom: 7.5%;
-        left: 48%;
+        left: 48%
     }
     .navbar a.navbar-brand {
-        padding: 0 0 0 38% !important;
+        padding: 0 0 0 38%!important
     }
     .navbar ul.topNav li:first-child span:after {
         left: 0;
+        top: 24px!important
     }
     .navbar .navbar-collapse.in {
-        height: 80px !important;
+        height: 80px!important
     }
     .navbar .navbar-nav.mid {
-        left: 0 !important;
+        left: 0!important
     }
     .navbar .navbar-nav li a {
-        font-size: 18px !important;
+        font-size: 18px!important
     }
     .navbar ul.topNav {
-        width: 30% !important;
-    }
-    .navbar ul.topNav li:first-child span:after {
-        top: 24px !important;
+        width: 30%!important
     }
     .navbar ul.topNav li:first-child {
-        width: 40% !important;
-        margin-right: 5%;
+        width: 40%!important;
+        margin-right: 5%
     }
     .navbar ul.topNav li:nth-child(2),
     .navbar ul.topNav li:nth-child(3) {
-        width: 15% !important;
+        width: 15%!important
     }
-    /* Team */
-    
     ul.empList {
         margin-bottom: 42.5%;
-        margin-top: 50px;
+        margin-top: 50px
     }
     ul.empList li {
         margin: 1.5% 2%;
         padding: 3px;
-        border-radius: 4px;
+        border-radius: 4px
     }
     ul.empList li img {
         width: 75px;
-        height: 75px;
+        height: 75px
     }
     .tooltip {
-        font-size: 16px;
+        font-size: 16px
     }
     .tooltip-inner {
-        padding: 6px 10px;
+        padding: 6px 10px
     }
     .tooltip.bottom {
-        margin-top: 2.5em;
+        margin-top: 2.5em
     }
-    .designation-container {
+    /*.designation-container {
         margin-left: 9%;
-        margin-right: 9%;
-    }
-    .designation-container > div[class*='col-sm-']:first-child,
-    .designation-container > div[class*='col-sm-']:nth-child(2),
-    .designation-container > div[class*='col-sm-']:nth-child(3) {
-        margin-bottom: 37.5%;
+        margin-right: 9%
+    }*/
+    .designation-container>div[class*=col-sm-]:first-child,
+    .designation-container>div[class*=col-sm-]:nth-child(2),
+    .designation-container>div[class*=col-sm-]:nth-child(3) {
+        margin-bottom: 37.5%
     }
     .designation .designation-circle {
-        margin: 9px 0px 20px 0px;
+        margin: 9px 0 20px;
         width: 100px;
-        height: 100px;
+        height: 100px
     }
     .designation ul li a {
         width: 70px;
-        height: 70px;
+        height: 70px
     }
     .designation:first-child a {
-        background: url('../img/result.png') no-repeat 42% -8%;
-        ;
+        background: url(../img/result.png) 42% -8% no-repeat;
         width: 70px;
-        height: 70px;
+        height: 70px
     }
     .designation:nth-child(2) a {
-        background: url('../img/result.png') no-repeat 45% 24%;
+        background: url(../img/result.png) 45% 24% no-repeat;
         width: 70px;
         height: 50px;
-        margin-top: 20px;
+        margin-top: 20px
     }
     .designation:nth-child(3) a {
-        background: url('../img/result.png') no-repeat 45% 76%;
+        background: url(../img/result.png) 45% 76% no-repeat;
         width: 70px;
         height: 70px;
-        margin-top: 10px;
+        margin-top: 10px
     }
     .designation:nth-child(4) a {
-        background: url('../img/result.png') no-repeat 45% 104%;
+        background: url(../img/result.png) 45% 104% no-repeat;
         width: 70px;
         height: 70px;
-        margin-top: 12px;
+        margin-top: 12px
     }
-    /*.designation:last-child a           	{background:url('../img/result.png') no-repeat 45% 104%;width:70px;height:70px;margin-top:12px;}*/
-    
     .designation:first-child a:hover {
-        background: url('../img/h-result.png') no-repeat 42% -8%;
+        background: url(../img/h-result.png) 42% -8% no-repeat;
         width: 70px;
-        height: 70px;
+        height: 70px
     }
     .designation:nth-child(2) a:hover {
-        background: url('../img/h-result.png') no-repeat 45% 24%;
+        background: url(../img/h-result.png) 45% 24% no-repeat;
         width: 70px;
         height: 50px;
-        margin-top: 20px;
+        margin-top: 20px
     }
     .designation:nth-child(3) a:hover {
-        background: url('../img/h-result.png') no-repeat 45% 76%;
+        background: url(../img/h-result.png) 45% 76% no-repeat;
         width: 70px;
         height: 70px;
-        margin-top: 10px;
+        margin-top: 10px
     }
-    /*45% 48%;width:70px;height:80px;margin-top: 3px;*/
-    
     .designation:nth-child(4) a:hover {
-        background: url('../img/h-result.png') no-repeat 45% 104%;
+        background: url(../img/h-result.png) 45% 104% no-repeat;
         width: 70px;
         height: 70px;
-        margin-top: 12px;
+        margin-top: 12px
     }
-    /*.designation:last-child a:hover     	{background:url('../img/h-result.png') no-repeat }*/
-    
     .popover {
         width: 90%;
-        height: 225px;
+        height: 225px
     }
     h3.popover-title {
-        font-size: 16px !important;
-        line-height: 1.25em;
+        font-size: 16px!important;
+        line-height: 1.25em
     }
     .popover-content {
-        padding: 0.75em 0 0.75em 2em;
+        padding: .75em 0 .75em 2em
     }
     .popover-content ul li {
         line-height: 1.5em;
-        font-size: 15px;
+        font-size: 15px
     }
-    /* News */
-    
-    a.all > .cd-timeline-block {
-        margin: 3em 0 0 0;
+    a.all>.cd-timeline-block {
+        margin: 3em 0 0
     }
     .cd-timeline-img {
         width: 50px;
         height: 50px;
-        left: -5px;
+        left: -5px
     }
     .cd-timeline-img span {
         left: 20%;
-        top: 15%;
+        top: 15%
     }
     .cd-timeline-content .cd-date {
-        display: none;
+        display: none
     }
-    /* careers */
-    
     .careers h3 {
-        font-size: 1.75em;
+        font-size: 1.75em
     }
     .careers p.info {
         font-size: 18px;
         line-height: 2;
-        padding: 1.5em 0 0 0;
+        padding: 1.5em 0 0
     }
     .careers .row-eq-height {
-        width: 100%;
+        width: 100%
     }
-    .careers .row-eq-height > div[class*='col-sm-']:first-child,
-    .careers .row-eq-height > div[class*='col-sm-']:nth-child(2),
-    .careers .row-eq-height > div[class*='col-sm-']:nth-child(3),
-    .careers .row-eq-height > div[class*='col-sm-']:nth-child(4) {
+    .careers .row-eq-height>div[class*=col-sm-]:first-child,
+    .careers .row-eq-height>div[class*=col-sm-]:nth-child(2),
+    .careers .row-eq-height>div[class*=col-sm-]:nth-child(3),
+    .careers .row-eq-height>div[class*=col-sm-]:nth-child(4) {
         margin-top: 1.5em
     }
-    .careers .row-eq-height > div[class*='col-'] {
-        line-height: 2;
+    .careers .row-eq-height>div[class*=col-] {
+        line-height: 2
     }
     .careers .row-eq-height h3 {
-        padding: 0.5em;
+        padding: .5em
     }
     .careers .row-eq-height ul {
-        padding: 5% 5% 5% 10%;
+        padding: 5% 5% 5% 10%
     }
     .careers .row-eq-height ul li,
     .row-eq-height p {
-        font-size: 18px;
+        font-size: 18px
     }
     .careers .row-eq-height span {
-        padding: 20% 0;
+        padding: 20% 0
     }
     .careers .row-eq-height a {
         font-size: 16px;
-        padding: 0.5em 1em;
-        margin-top: 1em;
+        padding: .5em 1em;
+        margin-top: 1em
     }
-    div[class*='col-'].pull-right {
-        padding: 0;
+    div[class*=col-].pull-right {
+        padding: 0
     }
-    div[class*='col-'].pull-right a {
+    div[class*=col-].pull-right a {
         font-size: 16px;
-        padding: 0.5em 1em;
-        margin-top: 1.5em;
+        padding: .5em 1em;
+        margin-top: 1.5em
     }
-    /* Contact Us */
-    
     .mapCanvas {
         height: 200px;
         border: 1px solid #bdc3c7;
         margin-bottom: 1em;
-        margin-top: 5em;
+        margin-top: 5em
     }
     .paddNone {
-        padding: 0;
+        padding: 0
     }
     address {
-        width: 100% !important;
-        font-size: 14px !important;
+        width: 100%!important;
+        font-size: 14px!important
     }
-    address:last-child {
-        width: 51% !important;
-    }
+   /* address:last-child {
+        width: 51%!important
+    }*/
     address h3 {
-        font-size: 18px !important;
+        font-size: 18px!important
     }
     address:last-child a span:first-child {
-        width: 30% !important;
-        padding-top: 7.5% !important;
+        width: 30%!important;
+        padding-top: 7.5%!important
     }
     address:last-child a span:last-child {
-        width: 70% !important;
+        width: 70%!important
     }
     .badge {
-        height: 80px !important;
-        width: 80px !important;
-        line-height: 3.3em !important;
-        font-size: 1.5em !important;
+        height: 80px!important;
+        width: 80px!important;
+        line-height: 3.3em!important;
+        font-size: 1.5em!important
     }
     .footer {
-        position: relative !important;
+        position: relative!important;
         height: 65px;
-        top: 10px;
+        top: 10px
     }
 }
-@media only screen and (min-width: 768px) {
-    /* news */
-    
+
+@media only screen and (min-width:768px) {
     .cd-timeline-content h2 {
-        font-size: 1.25em;
+        font-size: 1.25em
     }
     .cd-timeline-content p {
-        font-size: 1em;
+        font-size: 1em
     }
-    .cd-timeline-content .cd-read-more,
-    .cd-timeline-content .cd-date {
+    .cd-timeline-content .cd-date,
+    .cd-timeline-content .cd-read-more {
         font-size: 14px;
         font-size: 1.15em;
-        font-weight: bold;
+        font-weight: 700
     }
 }
-@media only screen and (max-width: 768px) {
-    /* news */
-    
-    .a.all > .cd-timeline-block {
-        margin: 4em 0;
+
+@media only screen and (max-width:768px) {
+    .a.all>.cd-timeline-block {
+        margin: 4em 0
     }
     .cd-timeline-content img {
         width: 100%;
-        padding-top: 1em;
+        padding-top: 1em
     }
     a .cd-timeline-block .cd-timeline-content {
         border-left: 4px solid #d7e4ed;
         -moz-box-shadow: 2px 3px 1px -1px #d7e4ed;
         -webkit-box-shadow: 2px 3px 1px -1px #d7e4ed;
-        box-shadow: 2px 3px 1px -1px #d7e4ed;
+        box-shadow: 2px 3px 1px -1px #d7e4ed
     }
     a .cd-timeline-block .cd-timeline-content::before {
         border-right-color: #d7e4ed;
-        right: 100.5%;
+        right: 100.5%
     }
-    a.all:hover > .cd-timeline-block .cd-timeline-content {
+    a.all:hover>.cd-timeline-block .cd-timeline-content {
         border-left: 4px solid #50b948;
         -moz-box-shadow: 2px 3px 1px -1px #d7e4ed;
         -webkit-box-shadow: 2px 3px 1px -1px #d7e4ed;
-        box-shadow: 2px 3px 1px -1px #d7e4ed;
+        box-shadow: 2px 3px 1px -1px #d7e4ed
     }
-    a.all:hover > .cd-timeline-block .cd-timeline-content::before {
+    a.all:hover>.cd-timeline-block .cd-timeline-content::before {
         border-right-color: #50b948;
         right: 100.5%
     }
 }
-/* Landscape phone to portrait tablet */
 
-@media (max-width: 767px) {
-    /* Home */
-    
+@media (max-width:767px) {
     .welcome ul.topNav {
         width: 50%;
         top: 7.5%;
-        right: 0;
+        right: 0
     }
     .welcome ul.topNav li a {
-        font-size: 14px;
+        font-size: 14px
+    }
+    .welcome h3,
+    ul.menu li a {
+        font-size: 16px
     }
     .welcome ul.topNav li:first-child {
-        width: 20%;
+        width: 20%
     }
+    .welcome ul.topNav li:last-child,
     .welcome ul.topNav li:nth-child(2) {
-        width: 15%;
-    }
-    .welcome ul.topNav li:last-child {
-        width: 15%;
+        width: 15%
     }
     .welcome ul.topNav li:first-child span {
-        padding: 2.5% 15%;
+        padding: 2.5% 15%
     }
     .welcome ul.topNav li:first-child span:after {
         left: 0;
-        top: 17px;
+        top: 17px
     }
     ul.menu li {
-        margin: 0 0.5em;
-    }
-    ul.menu li a {
-        font-size: 16px;
+        margin: 0 .5em
     }
     .welcome div.row {
-        padding: 1.25em;
+        padding: 1.25em
     }
     .welcome img.mainLogo {
-        width: 17.5%;
+        width: 17.5%
     }
     .welcome h3 {
-        font-size: 16px;
         line-height: 2em;
-        width: 100%;
+        width: 100%
     }
     .welcome a i:before {
-        font-size: 28px;
+        font-size: 28px
     }
     a.arrowDown {
         bottom: 3%;
-        left: 48%;
+        left: 48%
     }
     .navbar.affix {
-        z-index: 9999;
+        z-index: 9999
     }
     .navbar a.navbar-brand {
-        padding: 0 0 0 5%;
+        padding: 0 0 0 5%
     }
     .navbar-nav {
-        margin: 0;
+        margin: 0
     }
     .navbar ul.topNav {
         width: 70%;
         margin-left: 12%;
-        position: static;
+        position: static
     }
     .navbar ul.topNav.pull-right {
-        float: left !important;
+        float: left!important
     }
     .navbar .navbar-nav li a {
         margin: 10px auto;
-        font-size: 14px;
+        font-size: 14px
     }
     .navbar .navbar-nav.mid {
         position: inherit;
-        left: 0;
+        left: 0
     }
     .navbar ul.topNav li:first-child span:after {
         left: -1px;
-        top: 28px;
+        top: 28px
     }
-    /* Team */
-    
     .team .Vmiddle {
-        margin-top: 80px;
+        margin-top: 80px
     }
     ul.empList {
-        margin-bottom: 15%;
+        margin-bottom: 15%
     }
     ul.empList li {
-        margin: 1.5% 0.5% 5% 0.5%;
+        margin: 1.5% .5% 5%;
         padding: 3px;
-        border-radius: 4px;
+        border-radius: 4px
     }
     ul.empList li img {
         width: 65px;
-        height: 65px;
+        height: 65px
     }
     .tooltip {
-        font-size: 14px;
+        font-size: 14px
     }
     .tooltip-inner {
-        padding: 4px 5px;
+        padding: 4px 5px
     }
     .tooltip.bottom {
-        margin-top: 2em;
+        margin-top: 2em
     }
     .tooltip.bottom .tooltip-arrow {
-        top: -3px;
+        top: -3px
     }
     .designation-container {
         margin-left: 9%;
-        margin-right: 9%;
+        margin-right: 9%
     }
     .designation .designation-circle {
-        margin: 5px 0 200px 0;
+        margin: 5px 0 200px;
         width: 100px;
-        height: 100px;
+        height: 100px
     }
     .designation:first-child {
-        margin-top: 150px;
+        margin-top: 150px
     }
     .designation:last-child .designation-circle {
-        margin-bottom: 30px;
+        margin-bottom: 30px
     }
     .designation ul li a {
         width: 70px;
-        height: 70px;
+        height: 70px
     }
     .designation:first-child a {
-        background: url('../img/result.png') no-repeat 42% -8%;
-        ;
+        background: url(../img/result.png) 42% -8% no-repeat;
         width: 70px;
-        height: 70px;
+        height: 70px
     }
     .designation:nth-child(2) a {
-        background: url('../img/result.png') no-repeat 45% 24%;
+        background: url(../img/result.png) 45% 24% no-repeat;
         width: 70px;
         height: 50px;
-        margin-top: 20px;
+        margin-top: 20px
     }
     .designation:nth-child(3) a {
-        background: url('../img/result.png') no-repeat 45% 76%;
+        background: url(../img/result.png) 45% 76% no-repeat;
         width: 70px;
         height: 70px;
-        margin-top: 10px;
+        margin-top: 10px
     }
-    /*45% 48%;width:70px;height:80px;margin-top:3px;*/
-    
     .designation:nth-child(4) a {
-        background: url('../img/result.png') no-repeat 45% 104%;
+        background: url(../img/result.png) 45% 104% no-repeat;
         width: 70px;
         height: 70px;
-        margin-top: 12px;
+        margin-top: 12px
     }
-    /*.designation:last-child a           	{background:url('../img/result.png') no-repeat }*/
-    
     .designation:first-child a:hover {
-        background: url('../img/h-result.png') no-repeat 42% -8%;
+        background: url(../img/h-result.png) 42% -8% no-repeat;
         width: 70px;
-        height: 70px;
+        height: 70px
     }
     .designation:nth-child(2) a:hover {
-        background: url('../img/h-result.png') no-repeat 45% 24%;
+        background: url(../img/h-result.png) 45% 24% no-repeat;
         width: 70px;
         height: 50px;
-        margin-top: 20px;
+        margin-top: 20px
     }
     .designation:nth-child(3) a:hover {
-        background: url('../img/h-result.png') no-repeat 45% 76%;
+        background: url(../img/h-result.png) 45% 76% no-repeat;
         width: 70px;
         height: 70px;
-        margin-top: 10px;
+        margin-top: 10px
     }
-    /*45% 48%;width:70px;height:80px;margin-top: 3px;*/
-    
     .designation:nth-child(4) a:hover {
-        background: url('../img/h-result.png') no-repeat 45% 104%;
+        background: url(../img/h-result.png) 45% 104% no-repeat;
         width: 70px;
         height: 70px;
-        margin-top: 12px;
+        margin-top: 12px
     }
-    /*.designation:last-child a:hover     	{background:url('../img/h-result.png') no-repeat }*/
-    
     .popover {
         width: 96%;
-        height: 180px;
+        height: 180px
     }
     h3.popover-title {
-        font-size: 14px !important;
+        font-size: 14px!important;
         line-height: 1.25em;
-        padding: 5px;
+        padding: 5px
     }
     .popover-content {
-        padding: 0.75em 0 0.75em 2em;
+        padding: .75em 0 .75em 2em
     }
     .popover-content ul li {
         line-height: 1.5em;
-        font-size: 12.5px;
+        font-size: 12.5px
     }
-    /* news */
-    
     .cd-timeline-content h2 {
         font-size: 13px;
-        font-weight: bold;
+        font-weight: 700
     }
     .cd-timeline-content p {
-        font-size: 12px;
+        font-size: 12px
     }
     .cd-timeline-content .cd-date {
-        display: none;
+        display: none !important;
     }
     .cd-timeline-img span {
-        font-size: 12px;
-        left: 17%;
+        font-size: 12px !important;
+        left: 15% !important;
     }
-    /* careers */
-    
     .careers .Vmiddle {
-        margin-top: 80px;
+        margin-top: 80px
     }
     .careers h3 {
-        font-size: 18px;
+        font-size: 18px
     }
     .careers p.info {
         font-size: 14px;
         line-height: 1.7;
-        padding: 1.5em;
+        padding: 1.5em
     }
     .careers .row-eq-height {
         display: table;
-        width: 100%;
+        width: 100%
     }
-    .careers .row-eq-height > div[class*='col-xs-']:last-child {
+    .careers .row-eq-height>div[class*=col-xs-]:last-child {
         border: none;
-        margin-bottom: 0;
+        margin-bottom: 0
     }
-    .careers .row-eq-height > div[class*='col-'] {
+    .careers .row-eq-height>div[class*=col-] {
         line-height: 1.5;
-        margin: 0;
-        margin-bottom: 1em;
+        margin: 0 0 1em
     }
-    .careers .row-eq-height > div[class*='col-']:first-child {
-        margin-top: 0;
+    .careers .row-eq-height>div[class*=col-]:first-child {
+        margin-top: 0
     }
     .careers .row-eq-height h3 {
-        padding: 0.5em;
-        font-size: 16px;
+        padding: .5em;
+        font-size: 16px
     }
     .careers .row-eq-height ul {
-        padding: 5% 5% 5% 10%;
+        padding: 5% 5% 5% 10%
     }
     .careers .row-eq-height ul li,
     .row-eq-height p {
-        font-size: 14px;
+        font-size: 14px
     }
     .careers .row-eq-height span {
-        padding: 10% 0;
+        padding: 10% 0
     }
     .careers .row-eq-height a {
         font-size: 14px;
-        padding: 0.5em 1em;
-        margin-top: 1em;
+        padding: .5em 1em;
+        margin-top: 1em
     }
-    div[class*='col-'].pull-right {
+    div[class*=col-].pull-right {
         padding: 0;
-        float: none !important;
+        float: none!important;
         text-align: center;
-        margin: 0 auto;
+        margin: 0 auto
     }
-    div[class*='col-'].pull-right a {
+    div[class*=col-].pull-right a {
         font-size: 16px;
-        padding: 0.5em 1em;
-        margin-top: 1.5em;
+        padding: .5em 1em;
+        margin-top: 1.5em
     }
-    /* Contact Us */
-    
     .mapCanvas {
         height: 200px;
         border: 1px solid #bdc3c7;
         margin-bottom: 1em;
-        margin-top: 5em;
+        margin-top: 5em
     }
     .paddNone {
-        padding: 0;
+        padding: 0
     }
     address {
-        width: 100% !important;
-        font-size: 14px !important;
+        width: 100%!important;
+        font-size: 14px!important
     }
-    address:last-child {
-        width: 70% !important;
+    address:last-child,
+    address:last-child a span:last-child {
+        width: 70%!important
     }
     address h3 {
-        font-size: 18px !important;
+        font-size: 18px!important
     }
     address:last-child a span:first-child {
-        width: 30% !important;
-        padding-top: 7.5% !important;
-    }
-    address:last-child a span:last-child {
-        width: 70% !important;
+        width: 30%!important;
+        padding-top: 7.5%!important
     }
     .badge {
-        height: 80px !important;
-        width: 80px !important;
-        line-height: 3.3em !important;
-        font-size: 1.5em !important;
+        height: 80px!important;
+        width: 80px!important;
+        line-height: 3.3em!important;
+        font-size: 1.5em!important
     }
     .footer {
-        position: relative !important;
+        position: relative!important;
         height: 65px;
-        top: 10px;
+        top: 10px
     }
 }
-/* Landscape phones and down */
 
-@media (max-width: 480px) {
-    /* Home */
-    
+@media (max-width:480px) {
+    .welcome ul.topNav li a,
+    ul.menu li a {
+        font-size: 14px
+    }
     .welcome ul.topNav {
         width: 50%;
         top: 7.5%;
-        right: 0;
-    }
-    .welcome ul.topNav li a {
-        font-size: 14px;
+        right: 0
     }
     .welcome ul.topNav li:first-child {
-        width: 20%;
+        width: 20%
     }
+    .welcome ul.topNav li:last-child,
     .welcome ul.topNav li:nth-child(2) {
-        width: 15%;
-    }
-    .welcome ul.topNav li:last-child {
-        width: 15%;
+        width: 15%
     }
     .welcome ul.topNav li:first-child span {
-        padding: 2.5% 15%;
+        padding: 2.5% 15%
     }
     .welcome ul.topNav li:first-child span:after {
         left: 0;
-        top: 17px;
+        top: 17px
     }
     ul.menu {
-        width: 100%;
+        width: 100%
     }
     ul.menu li {
-        margin: 0 0.25em;
-    }
-    ul.menu li a {
-        font-size: 14px;
+        margin: 0 .25em
     }
     .welcome div.row {
-        padding: 1em 0;
+        padding: 1em 0
     }
     .welcome img.mainLogo {
-        width: 45%;
+        width: 45%
     }
     .welcome h3 {
         font-size: 16px;
         line-height: 1.5em;
-        width: 100%;
+        width: 100%
     }
     .welcome a i:before {
-        font-size: 28px;
+        font-size: 28px
     }
     a.arrowDown {
         bottom: 3%;
-        left: 48%;
+        left: 48%
     }
     .navbar.affix {
-        z-index: 9999;
+        z-index: 9999
     }
     .navbar a.navbar-brand {
-        padding: 0 0 0 5%;
+        padding: 0 0 0 5%
     }
     .navbar-nav {
-        margin: 0;
+        margin: 0
     }
     .navbar ul.topNav {
         width: 70%;
         margin-left: 12%;
-        position: static;
+        position: static
     }
     .navbar ul.topNav.pull-right {
-        float: left !important;
+        float: left!important
     }
     .navbar .navbar-nav li a {
         margin: 10px auto;
-        font-size: 14px;
+        font-size: 14px
     }
     .navbar .navbar-nav.mid {
         position: inherit;
-        left: 0;
+        left: 0
     }
     .navbar ul.topNav li:first-child span:after {
         left: 0;
-        top: 28px;
+        top: 28px
     }
-    /* Team */
-    
     .team .Vmiddle {
-        margin-top: 80px;
+        margin-top: 80px
     }
     ul.empList {
-        margin-bottom: 25%;
+        margin-bottom: 25%
     }
     ul.empList li {
-        margin: 1.5% 0.25% 5% 0.25%;
-        border-radius: 4px;
+        margin: 1.5% .25% 5%;
+        border-radius: 4px
     }
     ul.empList li img {
         width: 60px;
-        height: 60px;
+        height: 60px
     }
     .tooltip {
-        font-size: 14px;
+        font-size: 14px
     }
     .tooltip-inner {
-        padding: 4px 5px;
+        padding: 4px 5px
     }
     .tooltip.bottom {
-        margin-top: 2em;
+        margin-top: 2em
     }
     .tooltip.bottom .tooltip-arrow {
-        top: -3px;
+        top: -3px
     }
     .designation-container {
         margin-left: 9%;
-        margin-right: 9%;
+        margin-right: 9%
     }
     .designation .designation-circle {
-        margin: 5px 0 200px 0;
+        margin: 5px 0 200px;
         width: 100px;
-        height: 100px;
+        height: 100px
     }
     .designation:first-child {
-        margin-top: 150px;
+        margin-top: 150px
     }
     .designation:last-child .designation-circle {
-        margin-bottom: 30px;
+        margin-bottom: 30px
     }
     .designation ul li a {
         width: 70px;
-        height: 70px;
+        height: 70px
     }
     .designation:first-child a {
-        background: url('../img/result.png') no-repeat 42% -8%;
-        ;
+        background: url(../img/result.png) 42% -8% no-repeat;
         width: 70px;
-        height: 70px;
+        height: 70px
     }
     .designation:nth-child(2) a {
-        background: url('../img/result.png') no-repeat 45% 24%;
+        background: url(../img/result.png) 45% 24% no-repeat;
         width: 70px;
         height: 50px;
-        margin-top: 20px;
+        margin-top: 20px
     }
     .designation:nth-child(3) a {
-        background: url('../img/result.png') no-repeat 45% 76%;
+        background: url(../img/result.png) 45% 76% no-repeat;
         width: 70px;
         height: 70px;
-        margin-top: 10px;
+        margin-top: 10px
     }
-    /*45% 48%;width:70px;height:80px;margin-top:3px;*/
-    
     .designation:nth-child(4) a {
-        background: url('../img/result.png') no-repeat 45% 104%;
+        background: url(../img/result.png) 45% 104% no-repeat;
         width: 70px;
         height: 70px;
-        margin-top: 12px;
+        margin-top: 12px
     }
-    /*.designation:last-child a           	{background:url('../img/result.png') no-repeat }*/
-    
     .designation:first-child a:hover {
-        background: url('../img/h-result.png') no-repeat 42% -8%;
+        background: url(../img/h-result.png) 42% -8% no-repeat;
         width: 70px;
-        height: 70px;
+        height: 70px
     }
     .designation:nth-child(2) a:hover {
-        background: url('../img/h-result.png') no-repeat 45% 24%;
+        background: url(../img/h-result.png) 45% 24% no-repeat;
         width: 70px;
         height: 50px;
-        margin-top: 20px;
+        margin-top: 20px
     }
     .designation:nth-child(3) a:hover {
-        background: url('../img/h-result.png') no-repeat 45% 76%;
+        background: url(../img/h-result.png) 45% 76% no-repeat;
         width: 70px;
         height: 70px;
-        margin-top: 10px;
+        margin-top: 10px
     }
-    /*45% 48%;width:70px;height:80px;margin-top: 3px;*/
-    
     .designation:nth-child(4) a:hover {
-        background: url('../img/h-result.png') no-repeat 45% 104%;
+        background: url(../img/h-result.png) 45% 104% no-repeat;
         width: 70px;
         height: 70px;
-        margin-top: 12px;
+        margin-top: 12px
     }
-    /*.designation:last-child a:hover     	{background:url('../img/h-result.png') no-repeat }*/
-    
     .popover {
         width: 60%;
-        height: 180px;
+        height: 180px
     }
     h3.popover-title {
-        font-size: 14px !important;
+        font-size: 14px!important;
         line-height: 1.25em;
-        padding: 5px;
+        padding: 5px
     }
     .popover-content {
-        padding: 0.75em 0 0.75em 2em;
+        padding: .75em 0 .75em 2em
     }
     .popover-content ul li {
         line-height: 1.5em;
-        font-size: 12.5px;
+        font-size: 12.5px
     }
-    /* news */
-    
     .cd-timeline-content h2 {
         font-size: 13px;
-        font-weight: bold;
+        font-weight: 700
     }
     .cd-timeline-content p {
-        font-size: 12px;
+        font-size: 12px
     }
     .cd-timeline-content .cd-date {
-        display: none;
+        display: none !important;
     }
     .cd-timeline-img span {
         font-size: 12px;
-        left: 17%;
+        left: 17%
     }
-    /* careers */
-    
     .careers .Vmiddle {
-        margin-top: 80px;
+        margin-top: 80px
     }
     .careers h3 {
-        font-size: 18px;
+        font-size: 18px
     }
     .careers p.info {
         font-size: 13.5px;
@@ -1163,85 +1080,83 @@
     }
     .careers .row-eq-height {
         display: table;
-        width: 100%;
+        width: 100%
     }
-    .careers .row-eq-height > div[class*='col-xs-']:last-child {
-        border: none;
+    address,
+    address:last-child {
+        width: 100%!important
     }
-    .careers .row-eq-height > div[class*='col-'] {
+    .careers .row-eq-height>div[class*=col-xs-]:last-child {
+        border: none
+    }
+    .careers .row-eq-height>div[class*=col-] {
         line-height: 1.5;
-        margin: 0 0 1em 0;
+        margin: 0 0 1em
     }
-    .careers .row-eq-height > div[class*='col-']:first-child {
-        margin-top: 0;
+    .careers .row-eq-height>div[class*=col-]:first-child {
+        margin-top: 0
     }
     .careers .row-eq-height h3 {
-        padding: 0.5em;
-        font-size: 16px;
+        padding: .5em;
+        font-size: 16px
     }
     .careers .row-eq-height ul {
-        padding: 5% 5% 5% 10%;
+        padding: 5% 5% 5% 10%
     }
     .careers .row-eq-height ul li,
     .row-eq-height p {
-        font-size: 14px;
+        font-size: 14px
     }
     .careers .row-eq-height span {
-        padding: 10% 0;
+        padding: 10% 0
     }
     .careers .row-eq-height a {
         font-size: 14px;
-        padding: 0.5em;
-        margin-top: 1em;
+        padding: .5em;
+        margin-top: 1em
     }
-    div[class*='col-'].pull-right {
+    div[class*=col-].pull-right {
         padding: 0;
-        float: none !important;
+        float: none!important;
         text-align: center;
-        margin: 0 auto;
+        margin: 0 auto
     }
-    div[class*='col-'].pull-right a {
+    div[class*=col-].pull-right a {
         font-size: 16px;
-        padding: 0.5em 1em;
-        margin-top: 0;
+        padding: .5em 1em;
+        margin-top: 0
     }
-    /* Contact Us */
-    
     .mapCanvas {
         height: 200px;
         border: 1px solid #bdc3c7;
         margin-bottom: 1em;
-        margin-top: 5em;
+        margin-top: 5em
     }
     .paddNone {
-        padding: 0;
+        padding: 0
     }
     address {
-        width: 100% !important;
-        font-size: 14px !important;
-    }
-    address:last-child {
-        width: 100% !important;
+        font-size: 14px!important
     }
     address h3 {
-        font-size: 18px !important;
+        font-size: 18px!important
     }
     address:last-child a span:first-child {
-        width: 30% !important;
-        padding-top: 13% !important;
+        width: 30%!important;
+        padding-top: 13%!important
     }
     address:last-child a span:last-child {
-        width: 70% !important;
+        width: 70%!important
     }
     .badge {
-        height: 60px !important;
-        width: 60px !important;
-        line-height: 2.3em !important;
-        font-size: 1.5em !important;
+        height: 60px!important;
+        width: 60px!important;
+        line-height: 2.3em!important;
+        font-size: 1.5em!important
     }
     .footer {
-        position: relative !important;
+        position: relative!important;
         height: 65px;
-        top: 10px;
+        top: 10px
     }
 }
