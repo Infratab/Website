@@ -463,7 +463,8 @@
     .careers .row-eq-height>div[class*=col-sm-]:first-child,
     .careers .row-eq-height>div[class*=col-sm-]:nth-child(2),
     .careers .row-eq-height>div[class*=col-sm-]:nth-child(3),
-    .careers .row-eq-height>div[class*=col-sm-]:nth-child(4) {
+    .careers .row-eq-height>div[class*=col-sm-]:nth-child(4),
+    .careers .row-eq-height>div[class*=col-sm-]:nth-child(5) {
         margin-top: 1.5em
     }
     .careers .row-eq-height>div[class*=col-] {
@@ -1125,7 +1126,6 @@
     div[class*=col-].pull-right a {
         font-size: 16px;
         padding: .5em 1em;
-        margin-top: 0
     }
     .mapCanvas {
         height: 200px;
