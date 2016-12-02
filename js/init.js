@@ -72,7 +72,7 @@
 function initialize() {
         var mapCanvas = document.getElementById('map_canvas');
         var mapOptions = {
-          center: new google.maps.LatLng(12.9610223,77.5944856),
+          center: new google.maps.LatLng(12.912864, 77.585906),
           zoom: 18,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
@@ -83,7 +83,7 @@ function initialize() {
                 '</div>'+
                 '<h5 id="firstHeading" class="firstHeading">Infratab Banglore Pvt Ltd.</h5>'+
                 '<div id="bodyContent">'+
-                '<p><br>#206, Money Chambers,<br> K.H. Road,<br> Bangalore - 560027.<br> Phone: <a href="tel:918064543666">(+91) 80 6454 3666.</a><br> Website: <a href="http://infratab.in" target="_blank">http://infratab.in</a></p>'+
+                '<p><br>#20, 24th Main Road,<br> 2nd Phase, JP Nagar <br> Bangalore - 560068.<br> Phone: <a href="tel:918064543666">(+91) 80 6454 3666.</a><br> Website: <a href="http://infratab.in" target="_blank">http://infratab.in</a></p>'+
                 '</div>'+
                 '</div>';
             var infowindow = new google.maps.InfoWindow({
@@ -91,7 +91,7 @@ function initialize() {
             });
 			
 		
-		var point= new google.maps.LatLng(12.9610223,77.5944856)
+		var point= new google.maps.LatLng(12.912864, 77.585906)
 		var marker=new google.maps.Marker({
 		position: point,
 		map:map
