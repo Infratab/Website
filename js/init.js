@@ -76,14 +76,14 @@ function initialize() {
           zoom: 18,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var map = new google.maps.Map(mapCanvas, mapOptions)vi fab
 		
 		  var contentString = '<div id="content">'+
                 '<div id="siteNotice">'+
                 '</div>'+
                 '<h5 id="firstHeading" class="firstHeading">Infratab Banglore Pvt Ltd.</h5>'+
                 '<div id="bodyContent">'+
-                '<p><br>#20, 24th Main Road,<br> 2nd Phase, JP Nagar <br> Bangalore - 560068.<br> Phone: <a href="tel:918064543666">(+91) 80 6454 3666.</a><br> Website: <a href="http://infratab.in" target="_blank">http://infratab.in</a></p>'+
+                '<p><br>#20, 24th Main Road,<br> 2nd Phase, JP Nagar <br> Bangalore - 560068.<br> Phone: <a href="tel:918040929250">(+91) 80 4092 9250</a><br> Website: <a href="http://infratab.in" target="_blank">http://infratab.in</a></p>'+
                 '</div>'+
                 '</div>';
             var infowindow = new google.maps.InfoWindow({
