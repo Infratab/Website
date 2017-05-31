@@ -1,0 +1,48 @@
+body,
+html {
+  margin: 0;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+a,
+li,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.navbar {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0 5%;
+  position: fixed;
+  width: 100%;
+}
+
+.brand-logo {
+  img {
+    width: 250px;
+  }
+}
+
+.landing-page {
+  height: 700px;
+  width: 100%;
+}
+
+.short-video {
+  width: 100%;
+}
