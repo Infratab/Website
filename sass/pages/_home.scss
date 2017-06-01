@@ -57,6 +57,7 @@ li {
   padding: 0 5%;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 .navbar.scrolled {
@@ -66,13 +67,15 @@ li {
 
 .brand-logo {
   img {
-    width: 250px;
+    margin-top: 20px;
+    width: 200px;
   }
 }
 
 .landing-page {
   height: 650px;
   overflow: hidden;
+  position: relative;
   width: 100%;
 }
 
@@ -80,6 +83,37 @@ li {
   width: 100%;
 }
 
+.video-overlay {
+  background-color: $overlay-color;
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.landing-page-center {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%)translateY(-50%);
+  z-index: 20;
+  text-align: center;
+
+  p {
+    color: $white-color;
+    font-size: $font-40;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+  }
+}
+
+.modal-content {
+    height: 70%;
+    width: 70%;
+    margin: auto;
+}
 .know-us {
   height: 100%;
   padding: $padding-5;
