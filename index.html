@@ -8,14 +8,6 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="dest/css/style.css">
-  <!-- 1. skin -->
-  <link rel="stylesheet" href="https://releases.flowplayer.org/7.0.4/skin/skin.css">
-   
-  <!-- 2. jquery library - required for video tag based installs -->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-   
-  <!-- 3. flowplayer -->
-  <script src="https://releases.flowplayer.org/7.0.4/flowplayer.min.js"></script>
 
 </head>
 <body>
@@ -36,14 +28,7 @@
   </nav>
 
   <section class="landing-page">
-    <div data-ratio="0.4167" class="flowplayer">
-    <script async src="//flowplayer.org/7/flowplayer.js">
-        { "src":"./img/short.mp4","background": true, "brand": { "color": "#00a7c8", "skin": "functional" } }
-      </script>
-      <video autoplay muted loop background=true id="content" adaptiveRatio = true> 
-        <source type="video/webm" src="./img/short.mp4">
-       </video>
-    </div>
+    <video class="short-video" src="./img/short.mp4" autoplay loop muted ></video>
   </section>
 
   </div>
