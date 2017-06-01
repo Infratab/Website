@@ -59,6 +59,11 @@ li {
   width: 100%;
 }
 
+.navbar.scrolled {
+  background-color: $black-color;
+  color: $white-color;
+}
+
 .brand-logo {
   img {
     width: 250px;
@@ -156,8 +161,50 @@ li {
   color: $light-grey-color;
   letter-spacing: .4px;
   line-height: 30px;
-  margin: auto;
+  margin: 0 auto 5%;
   text-align: center;
   width: 60%;
 }
 
+.feature-box {
+  height: 120px;
+  margin: 30px 0;
+  text-align: center;
+
+  img {
+    width: 55%;
+  }
+}
+
+.footer-content {
+  margin: auto;
+  width: 80%;
+}
+
+.footer-heading {
+  font-size: $font-16;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: $grey-color;
+  display: block;
+  line-height: 25px;
+}
+
+.footer-logo {
+  margin-top: 40px;
+  width: 200px;
+}
+
+.horizontal-line {
+  border-bottom: .6px solid $line-color;
+  margin: 30px auto;
+}
+
+.footer-copyright {
+  color: $light-grey-color;
+  font-size: 13px;
+  margin: auto;
+  text-align: center;
+}
