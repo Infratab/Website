@@ -12,23 +12,16 @@ Gulp.task('styles', function() {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(Gulp.dest('dest/css'));
-});
-
-// JavaScript processing
-Gulp.task('js', function() {
-  Gulp.src('js/main.js')
-      .pipe(Gulp.dest('dest/js'));
+        .pipe(Gulp.dest('css'));
 });
 
 // watch for changes
 Gulp.task('watch', ['build'], function() {
     Gulp.watch('./sass/**/*', ['styles']);
-    Gulp.watch('./js/**/*', ['js']);
 });
 
-Gulp.task('build', ['styles', 'js']);
+Gulp.task('build', ['styles']);
 
 // run all tasks
-Gulp.task('run', ['styles', 'js']);
-Gulp.task('default', ['run', 'watch']);
+Gulp.task('run', ['styles']);
+Gulp.task('default', ['styles', 'watch']);
