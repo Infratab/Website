@@ -1,6 +1,6 @@
 // navbar scroll color
 function checkScroll(){
-    var startY = $('.landing-page').height() - 200  ; //The point where the navbar changes in px
+    var startY = $('.scroll').height() - 200  ; //The point where the navbar changes in px
     if($(window).scrollTop() > startY){
         $('.navbar').addClass("scrolled");
     }else{

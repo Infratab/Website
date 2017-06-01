@@ -6763,3 +6763,104 @@ li {
   font-size: 13px;
   margin: auto;
   text-align: center; }
+
+.team {
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.team-image {
+  background: url("../img/team.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+.team-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.team-center {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 20; }
+
+.team-caption {
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  word-spacing: 5px; }
+
+.team-button {
+  background-color: #7cc48d;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 18px;
+  margin: 20px auto;
+  padding: 5px 16px;
+  text-transform: uppercase;
+  width: 100px; }
+
+.life {
+  height: 100%;
+  padding: 5%;
+  width: 100%; }
+
+.green-color {
+  color: #7cc48d; }
+
+.blue-color {
+  color: #1d579d; }
+
+.life-info-heading {
+  color: #555;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin-bottom: 20px; }
+
+.life-info {
+  color: #555;
+  font-size: 16px;
+  line-height: 28px;
+  width: 90%; }
+
+.join-us {
+  height: 100%;
+  padding: 0 5% 5%;
+  width: 100%; }
+
+.hiring-box {
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 16px;
+  width: 90%; }
+
+.hiring-heading {
+  color: #555;
+  font-size: 24px;
+  padding-bottom: 16px; }
+
+.hiring-require {
+  color: #555;
+  font-size: 14px;
+  letter-spacing: .3px;
+  line-height: 22px; }
+
+.hiring-button {
+  color: #7cc48d;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 16px;
+  text-transform: uppercase; }

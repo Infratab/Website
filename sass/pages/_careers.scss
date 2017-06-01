@@ -1,0 +1,116 @@
+.team {
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.team-image {
+  background: url('../img/team.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.team-overlay {
+  background-color: $overlay-color;
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.team-center {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateX(-50%)translateY(-50%);
+  z-index: 20;
+}
+
+.team-caption {
+  color: $white-color;
+  font-size: $font-40;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+}
+
+.team-button {
+  background-color: $green-color;
+  border-radius: 3px;
+  color: $white-color;
+  font-size: 18px;
+  margin: 20px auto;
+  padding: 5px 16px;
+  text-transform: uppercase;
+  width: 100px;
+}
+
+.life {
+  height: 100%;
+  padding: 5%;
+  width: 100%;
+}
+
+.green-color {
+  color: $green-color;
+}
+
+.blue-color {
+  color: $blue-color;
+}
+
+.life-info-heading {
+  color: $grey-color;
+  font-size: $font-18;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin-bottom: 20px;
+}
+
+.life-info {
+  color: $grey-color;
+  font-size: $font-16;
+  line-height: 28px;
+  width: 90%;
+}
+
+.join-us {
+  height: 100%;
+  padding: 0 5% 5%;
+  width: 100%;
+}
+
+.hiring-box {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: $padding-16;
+  width: 90%;
+}
+
+.hiring-heading {
+  color: $grey-color;
+  font-size: $font-24;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.hiring-require {
+  color: $grey-color;
+  font-size: $font-14;
+  letter-spacing: .3px;
+  line-height: 22px;
+}
+
+.hiring-button {
+  color: $green-color;
+  font-size: $font-14;
+  font-weight: 600;
+  padding-top: 16px;
+  text-transform: uppercase;
+}
+
