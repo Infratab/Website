@@ -1,0 +1,41 @@
+.mapbox {
+  height: 650px;
+  position: relative;
+  width: 100%;
+}
+
+.map-image {
+  background: url('../img/map.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.map-center {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateX(-50%)translateY(-50%);
+  z-index: 20;
+}
+
+.map-caption {
+  color: $white-color;
+  font-size: $font-40;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+}
+
+.contact {
+  background-color: $white-color;
+  border: 1px solid;
+  bottom: 100px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  width: 50%;
+}

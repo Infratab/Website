@@ -10,8 +10,8 @@
   background-position: center;
   background-size: cover;
   height: 100%;
-  width: 100%;
   overflow: hidden;
+  width: 100%;
 }
 
 .team-overlay {
@@ -86,7 +86,7 @@
 }
 
 .hiring-box {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px $overlay-color;
   height: 100%;
   padding: $padding-16;
   width: 90%;

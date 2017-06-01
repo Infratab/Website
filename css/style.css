@@ -6620,7 +6620,7 @@ li {
 
 .brand-logo img {
   margin-top: 20px;
-  width: 200px; }
+  width: 150px; }
 
 .landing-page {
   height: 650px;
@@ -6642,11 +6642,11 @@ li {
 .landing-page-center {
   left: 50%;
   position: absolute;
+  text-align: center;
   top: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  z-index: 20;
-  text-align: center; }
+  z-index: 20; }
   .landing-page-center p {
     color: #fff;
     font-size: 40px;
@@ -6654,10 +6654,17 @@ li {
     text-transform: uppercase;
     word-spacing: 5px; }
 
-.modal-content {
-  height: 70%;
-  width: 70%;
-  margin: auto; }
+.modal {
+  height: 100%; }
+
+.modal .modal-content {
+  height: 100%;
+  padding: 0; }
+
+.modal-content iframe {
+  border: 0;
+  height: 100%;
+  width: 100%; }
 
 .know-us {
   height: 100%;
@@ -6733,8 +6740,15 @@ li {
 .feature-box {
   height: 120px;
   margin: 30px 0;
+  position: relative;
   text-align: center; }
   .feature-box img {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 55%; }
 
 .footer-content {
@@ -6778,8 +6792,8 @@ li {
   background-position: center;
   background-size: cover;
   height: 100%;
-  width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%; }
 
 .team-overlay {
   background-color: rgba(0, 0, 0, 0.4);
@@ -6844,8 +6858,8 @@ li {
   width: 100%; }
 
 .hiring-box {
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   height: 100%;
   padding: 16px;
   width: 90%; }
@@ -6877,3 +6891,41 @@ li {
 .contact-link {
   color: #1d579d;
   font-size: 14px; }
+
+.mapbox {
+  height: 650px;
+  position: relative;
+  width: 100%; }
+
+.map-image {
+  background: url("../img/map.png");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  width: 100%; }
+
+.map-center {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 20; }
+
+.map-caption {
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  word-spacing: 5px; }
+
+.contact {
+  background-color: #fff;
+  border: 1px solid;
+  bottom: 100px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  width: 50%; }
