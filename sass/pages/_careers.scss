@@ -52,7 +52,7 @@
 
 .life {
   height: 100%;
-  padding: 5%;
+  padding: 4% 5%;
   width: 100%;
 }
 
@@ -94,7 +94,7 @@
 
 .hiring-heading {
   color: $grey-color;
-  font-size: $font-24;
+  font-size: $font-22;
   padding-bottom: 16px;
   text-transform: uppercase;
 }
@@ -114,3 +114,13 @@
   text-transform: uppercase;
 }
 
+.join-us-cv {
+  color: $light-grey-color;
+  margin: 5% auto 0;
+  text-align: center;
+}
+
+.contact-link {
+  color: $blue-color;
+  font-size: $font-14;
+}

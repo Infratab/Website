@@ -6741,6 +6741,9 @@ li {
   margin: auto;
   width: 80%; }
 
+.wave-image {
+  width: 100%; }
+
 .footer-heading {
   font-size: 16px;
   margin-bottom: 10px; }
@@ -6813,7 +6816,7 @@ li {
 
 .life {
   height: 100%;
-  padding: 5%;
+  padding: 4% 5%;
   width: 100%; }
 
 .green-color {
@@ -6849,8 +6852,9 @@ li {
 
 .hiring-heading {
   color: #555;
-  font-size: 24px;
-  padding-bottom: 16px; }
+  font-size: 22px;
+  padding-bottom: 16px;
+  text-transform: uppercase; }
 
 .hiring-require {
   color: #555;
@@ -6864,3 +6868,12 @@ li {
   font-weight: 600;
   padding-top: 16px;
   text-transform: uppercase; }
+
+.join-us-cv {
+  color: #777;
+  margin: 5% auto 0;
+  text-align: center; }
+
+.contact-link {
+  color: #1d579d;
+  font-size: 14px; }
