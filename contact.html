@@ -25,21 +25,93 @@
     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">MENUs</i></a>
   </div>
 </nav>
-<section class="mapbox">
+<section class="mapbox scroll">
     <div class="map-image"></div>
     <div class="map-center">
-        <p class="map-caption">Contact us we are waiting</p>
+        <p class="map-caption">Good things in business may be done by individuals but great things are done by teams </p>
     </div>
 </section>
 <section class="contact">
-    <div class="row">
-        <div class="col l9">
-           <p class="">Send us a message</p>
-            
+    <div class="row margin-bottom-0">
+        <div class="col s7">
+           <header class="margin-top-5 contact-header">Send us a message</header>
+           <form>
+                <div class="input-field">
+                    <input id="email" type="email" class="validate" required="required">
+                    <label for="email">Your email *</label>
+                </div>
+               <div class="input-field">
+                 <input id="icon_telephone" type="tel" class="validate">
+                 <label for="icon_telephone"  data-error="wrong" data-success="right">Your Number *</label>
+                </div>
+                <div class="input-field">
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Your message</label>
+                </div>
+                <div class="file-field input-field display">
+                  <div class="btn-flat btn-style">
+                    <span>Your Cv</span>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                  </div>
+                </div>
+                <button class="btn waves-effect waves-light margin-top-5
+                " type="submit" name="action">Send us message
+                  </button>
+           </form> 
         </div>
-        <div class="col l3"></div>
+        <div class="col s5 padding-0">
+            <div class="contact-info">
+                <header>Contact Information</header>
+                <div class="info-box">
+                    <div class="info-details">
+                        <i class="fa fa-map-marker"></i> 
+                        <p>
+                        #20, 24th Main Road <br/>
+                        2nd Phase, JP nagar, <br />
+                        Bangalore - 560078, <br />
+                        Karnataka, India </p>
+                    </div>
+                    <div class="info-details">
+                        <i class="fa fa-phone""></i> 
+                        <p>: (+91) 80 4092 9250</p>
+                    </div>
+                    <div class="info-details">
+                        <i class="fa fa-envelope"></i> 
+                        <p>: info@infrab.in</p>
+                    </div>
+            </div>
+            </div>
+        </div>
     </div>
 </section>
+
+<footer class="footer">
+  <img src="img/waves.png" class="wave-image">
+  <div class="footer-content">
+    <div class="row">
+      <div class="col l2 m2 s2">
+        <p class="footer-heading">Company</p>
+        <a href=# class="footer-link">Home</a>
+        <a href=# class="footer-link">Careers</a>
+        <a href=# class="footer-link">Contact</a>
+      </div>
+      <div class="col l8 m8 s8 center">
+        <img src="img/infratab-logo.png" class="footer-logo">
+      </div>
+      <div class="col l2 m2 s2">
+         <p class="footer-heading">Contact</p>
+         <a class="footer-link"><i class="fa fa-envelope"></i> : info@infratab.in</a>
+         <a class="footer-link"><i class="fa fa-phone""></i> : (+91) 80 4092 9250</a>
+         <a class="footer-link"><i class="fa fa-globe"></i> : www.infratab.com</a>
+      </div>
+    </div>
+    <p class="horizontal-line"></p>
+    <p class="footer-copyright"><i class="fa fa-copyright"></i>Infratab Bangalore Pvt. Ltd. 2002-2017</p>
+  </div>
+</footer>
 <!--  Scripts-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>

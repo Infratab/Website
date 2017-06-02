@@ -6916,16 +6916,53 @@ li {
 
 .map-caption {
   color: #fff;
-  font-size: 40px;
+  font-size: 24px;
   letter-spacing: .4px;
+  line-height: 38px;
   text-transform: uppercase;
   word-spacing: 5px; }
 
 .contact {
   background-color: #fff;
-  border: 1px solid;
+  -webkit-box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.3), 4px 6px 8px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.3), 4px 6px 8px 0 rgba(0, 0, 0, 0.1);
   bottom: 100px;
-  height: 100%;
+  height: 500px;
   margin: auto;
   position: relative;
   width: 50%; }
+
+.contact-header {
+  color: #1d579d;
+  font-size: 20px; }
+
+.display {
+  display: table; }
+
+.btn-style {
+  display: table-cell;
+  padding: 0; }
+
+.contact-info {
+  background-color: #1d579d;
+  height: 500px;
+  width: 100%; }
+  .contact-info header {
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 20px 10px; }
+
+.info-details {
+  margin: 20px; }
+  .info-details i {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 25px;
+    vertical-align: top; }
+  .info-details p {
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 20px; }
+
+.padding-0 {
+  padding: 0 !important; }
