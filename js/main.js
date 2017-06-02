@@ -22,10 +22,10 @@ $('#modal1').modal('open');
 
 //join us scroll
 $(document).ready(function($) {
-   $("#js-join-scroll").on("click", function(e) {
+   $("#jsJoinScroll").on("click", function(e) {
        e.preventDefault();
        $("body, html").animate({
-           scrollTop: $("#js-join-us").offset().top - 100
+           scrollTop: $("#jsJoinUs").offset().top - 100
        }, 600);
    });
 });
