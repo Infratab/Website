@@ -55,27 +55,6 @@ li {
   text-transform: uppercase;
 }
 
-.navbar {
-  background-color: transparent;
-  box-shadow: none;
-  padding: 0 5%;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-}
-
-.navbar.scrolled {
-  background-color: $black-color;
-  color: $white-color;
-}
-
-.brand-logo {
-  img {
-    margin-top: 20px;
-    width: 150px;
-  }
-}
-
 .landing-page {
   height: 100%;
   overflow: hidden;
