@@ -228,6 +228,8 @@ li {
   margin: 30px 0;
   position: relative;
   text-align: center;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 
   img {
     bottom: 0;
@@ -240,10 +242,10 @@ li {
   }
 }
 
-.footer-content {
-  margin: auto;
-  width: 80%;
-}
+// .footer-content {
+//   margin: auto;
+//   width: 80%;
+// }
 
 .wave-image {
   width: 100%;
@@ -335,6 +337,3 @@ li {
     font-size: 10px;
   }
 }
-
-
-
