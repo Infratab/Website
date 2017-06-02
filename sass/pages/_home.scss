@@ -109,6 +109,14 @@ li {
   }
 }
 
+.down-arrow {
+  color:$white-color;
+  display: inherit;
+  font-size: 30px;
+  position: relative;
+  top: 100px;
+}
+
 .modal {
   height: 100%;
 }
@@ -241,7 +249,7 @@ li {
 
 .footer-heading {
   font-size: $font-16;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .footer-link {

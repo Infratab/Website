@@ -11,18 +11,18 @@
 </head>
 <body>
   <nav class="navbar">
-    <div><a id="logo-container" href="#" class="brand-logo"><img src= "./img/infratab-white-logo.png"></a>
+    <div><a id="logo-container" href="index.html" class="brand-logo"><img src= "./img/infratab-white-logo.png"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.html">HOME</a></li>
         <li><a href="careers.html">CAREERS</a></li>
         <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="www.infratab.com" target="_blank"><i class="fa fa-globe"></i></a></li>
+        <li><a href="http://infratab.com" target="_blank"><i class="fa fa-globe"></i></a></li>
       </ul>
       <ul id="nav-mobile" class="side-nav">
         <li><a href="index.html">HOME</a></li>
         <li><a href="careers.html">CAREERS</a></li>
         <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="www.infratab.com"><i class="fa fa-globe"></i></a></li>
+        <li><a href="http://infratab.com"><i class="fa fa-globe"></i></a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">MENUs</i></a>
     </div>
@@ -34,6 +34,7 @@
     <div class="landing-page-center">
       <p>Answering, How fresh is it?</p>
       <a class="waves-effect waves-light" href="#modal1"><img src="img/play.png"></a>
+      <a class="down-arrow" id="jsArrowScroll"><i class="fa fa-chevron-down"></i></a>
     </div>
     <!--modal structure -->
     <div id="modal1" class="modal">
@@ -43,14 +44,15 @@
   </div>     
   </section>
 
-  <section class="know-us container">
+  <section class="know-us container" id="jsKnowUs">
     <h1 class="section-heading">Know us</h1>
     <p class="heading-bottom-line"></p>
     <div class="row">
       <div class="col s12 m6 l6">
         <p class="know-us-info">
-          Infratab is an Internet-of-Things company providing a quality monitoring solution for perishables* supply chains. Our purpose at Infratab is ambitious yet simple: to measure Freshness and provide our customers tools to make better decisions about their inventory.<br/><br/></p>
-         <p class="footer-note"> *perishables - include dairy, flowers, seafood, ingredients, pharmaceuticals </p>
+          Infratab is an Internet-of-Things company providing a Quality Monitoring <b>platform</b> for the perishables* industries.<br/> 
+         Our purpose at Infratab is ambitious yet simple: to measure Freshness and provide our customers the tools to make better decisions about their inventory.<br/></p>
+         <p class="footer-note">*perishables are items like fruits, flowers, dairy, produce, fish, meat, vaccines, adhesives etc…</p>
       </div>
       <div class="col s12 m6 l6">
         <img src="img/iot.svg">
@@ -69,8 +71,9 @@
     <div class="row margin-top-10">
       <div class="col s12 m6 l6">
         <p class="know-us-info margin-top-5">
-          Food <span class="highlight">wasted </span>in the world in <span class="bold">13</span> seconds since you landed here!
+          Food <span class="highlight">wasted* </span>in the world in <span class="bold">13</span> seconds since you landed here! <br/>
         </p>
+        <p class="footer-note">* Check out <a href="http://worldfoodclock.com" target="_blank">World Food Clock</a></p>
       </div>
       <div class="col s12 m6 l6 center">
         <p class="know-us-counter">7,878</p>
@@ -153,22 +156,24 @@
       <div class="row">
         <div class="col l2 m2 s2">
           <p class="footer-heading">Company</p>
-          <a href=# class="footer-link">Home</a>
-          <a href=# class="footer-link">Careers</a>
-          <a href=# class="footer-link">Contact</a>
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="careers.html" class="footer-link">Careers</a>
+          <a href="contact.html" class="footer-link">Contact</a>
         </div>
         <div class="col l8 m8 s8 center">
           <img src="img/infratab-logo.png" class="footer-logo">
         </div>
         <div class="col l2 m2 s2">
            <p class="footer-heading">Contact</p>
-           <a class="footer-link"><i class="fa fa-envelope"></i> : info@infratab.in</a>
-           <a class="footer-link"><i class="fa fa-phone""></i> : (+91) 80 4092 9250</a>
-           <a class="footer-link"><i class="fa fa-globe"></i> : www.infratab.com</a>
+           <a class="footer-link" href="mailto:info@infratab.in"><i class="fa fa-envelope"></i> : info@infratab.in</a>
+           <a class="footer-link" href="tel:+91-8040929250"><i class="fa fa-phone""></i> : (+91) 80 4092 9250</a>
+           <a href="http://infratab.com" class="footer-link" target="_blank"><i class="fa fa-globe"></i> : www.infratab.com</a>
         </div>
       </div>
       <hr class="horizontal-line"></hr>
-      <p class="footer-copyright"><i class="fa fa-copyright"></i>Infratab Bangalore Pvt. Ltd. 2002-2017</p>
+      <p class="footer-copyright">This website is available under 
+        <a href="https://github.com/Infratab/Website-IN/blob/master/LICENSE" target="_blank"> Copyleft © </a>
+      </p>
     </div>
   </footer>
 <!--  Scripts-->

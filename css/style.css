@@ -8860,6 +8860,13 @@ li {
     text-transform: uppercase;
     word-spacing: 5px; }
 
+.down-arrow {
+  color: #fff;
+  display: inherit;
+  font-size: 30px;
+  position: relative;
+  top: 100px; }
+
 .modal {
   height: 100%; }
 
@@ -8966,7 +8973,7 @@ li {
 
 .footer-heading {
   font-size: 16px;
-  margin-bottom: 10px; }
+  margin-bottom: 5px; }
 
 .footer-link {
   color: #555;
@@ -9133,6 +9140,11 @@ li {
     font-size: 25px;
     vertical-align: top; }
   .info-details p {
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 20px; }
+  .info-details a {
     color: rgba(255, 255, 255, 0.6);
     display: inline-block;
     font-size: 16px;

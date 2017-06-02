@@ -28,4 +28,12 @@ $(document).ready(function($) {
            scrollTop: $("#jsJoinUs").offset().top - 100
        }, 600);
    });
+   $("#jsArrowScroll").on("click", function(e) {
+       e.preventDefault();
+       $("body, html").animate({
+           scrollTop: $("#jsKnowUs").offset().top - 100
+       }, 600);
+   });
 });
+
+//arrow scroll
