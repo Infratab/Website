@@ -1,3 +1,41 @@
+.navbar {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0 5%;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  .color-logo {
+    display: none;
+  }
+
+  &.scrolled {
+    background-color: $white-color;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+
+    .color-logo {
+      display: initial !important;
+    }
+
+    .white-logo {
+      display: none;
+    }
+
+    li {
+      a {
+        color: $black-color !important;
+      }
+    }
+  }
+}
+
+.brand-logo {
+  img {
+    width: 150px;
+  }
+}
+
 .footer {
   background-image: url('../img/waves.png');
 }
