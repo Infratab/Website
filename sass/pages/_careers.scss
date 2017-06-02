@@ -113,14 +113,29 @@
   .media-hide {
     display: none;
   }
+
   .hide-init {
     display: block;
   }
+
   .team-caption {
     font-size: $font-24;
   }
+
   .section-subline {
     width: 90%;
+  }
+
+  .footer-logo {
+    width: 200px;
+  }
+
+  .know-us-image {
+    margin-top: 30px;
+  } 
+
+  .contact-section {
+    margin-top: 20px;
   }
 }
 

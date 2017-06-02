@@ -33,7 +33,7 @@
     <div class="video-overlay"></div>
     <div class="landing-page-center">
       <p>Answering, How fresh is it?</p>
-      <a class="waves-effect waves-light" href="#modal1"><img src="img/play.png"></a>
+      <a class="waves-effect waves-light" href="#modal1"><img class=" play-button" src="img/play.png"></a> <br/> <br/>
       <a class="down-arrow" id="jsArrowScroll"><i class="fa fa-chevron-down"></i></a>
     </div>
     <!--modal structure -->
@@ -47,25 +47,35 @@
   <section class="know-us container" id="jsKnowUs">
     <h1 class="section-heading">Know us</h1>
     <p class="heading-bottom-line"></p>
-    <div class="row">
+    <div class="row margin-top-10">
       <div class="col s12 m6 l6">
         <p class="know-us-info">
-          Infratab is an Internet-of-Things company providing a Quality Monitoring <b>platform</b> for the perishables* industries.<br/> 
+          Infratab is an Internet-of-Things company providing a Quality Monitoring <b>platform</b> for the perishables* industries.
          Our purpose at Infratab is ambitious yet simple: to measure Freshness and provide our customers the tools to make better decisions about their inventory.<br/></p>
          <p class="footer-note">*perishables are items like fruits, flowers, dairy, produce, fish, meat, vaccines, adhesives etc…</p>
       </div>
       <div class="col s12 m6 l6">
-        <img src="img/iot.svg">
+        <img src="img/iot.svg" class="know-us-image" style="width: 100%">
       </div>
     </div>
-    <div class="row margin-top-10">
+    <div class="row margin-top-10 media-hide">
       <div class="col s6 center">
-        <img src="img/machine.svg">
+        <img src="img/machine.svg" class="know-us-image">
       </div>
       <div class="col s12 m6 l6">
         <p class="know-us-info">
           Our Freshtime suite of Sensors, Software & Analytics together help our customers in making better decisions in efficiently handling their perishables supply chains to reduce spoilage, protect and improve their brand’s identity.
         </p>
+      </div>
+    </div>
+    <div class="row margin-top-20 hide-init">
+      <div class="col s12 m6 l6">
+        <p class="know-us-info">
+          Our Freshtime suite of Sensors, Software & Analytics together help our customers in making better decisions in efficiently handling their perishables supply chains to reduce spoilage, protect and improve their brand’s identity.
+        </p>
+      </div>
+      <div class="col s12 center">
+        <img src="img/machine.svg" class="know-us-image">
       </div>
     </div>
     <div class="row margin-top-10">
@@ -86,23 +96,23 @@
     <p class="section-heading">Awards</p>
     <p class="heading-bottom-line"></p>
     <div class="row">
-      <div class="col l1 m1 s1"></div>
-      <div class="col l2 m2 s3">
+      <div class="col s1"></div>
+      <div class="col s2">
         <img src="./img/award1.png" class="award1">
       </div>
-      <div class="col l2 m2 s3">
+      <div class="col s2">
         <img src="./img/award2.png" class="award-image award2">
       </div>
-      <div class="col l2 m2 s3">
+      <div class="col s2">
         <img src="./img/award3.png" class="award3">
       </div>
-      <div class="col l2 m2 s3">
+      <div class="col s2">
         <img src="./img/award4.png" class="award-image award4">
       </div>
-      <div class="col l2 m2 s3">
+      <div class="col s2">
         <img src="./img/award5.png" class="award5">
       </div>
-      <div class="col l1 m1 s1"></div>
+      <div class="col s1"></div>
     </div>
   </section>
 
@@ -154,20 +164,23 @@
     <img src="img/waves.png" class="wave-image">
     <div class="footer-content">
       <div class="row">
-        <div class="col l2 m2 s2">
+        <div class="col s12 m4 l4  center">
           <p class="footer-heading">Company</p>
           <a href="index.html" class="footer-link">Home</a>
           <a href="careers.html" class="footer-link">Careers</a>
           <a href="contact.html" class="footer-link">Contact</a>
         </div>
-        <div class="col l8 m8 s8 center">
+        <div class="col s12 m4 l4 center media-hide">
           <img src="img/infratab-logo.png" class="footer-logo">
         </div>
-        <div class="col l2 m2 s2">
+        <div class="col s12 m4 l4 center contact-section">
            <p class="footer-heading">Contact</p>
-           <a class="footer-link" href="mailto:info@infratab.in"><i class="fa fa-envelope"></i> : info@infratab.in</a>
-           <a class="footer-link" href="tel:+91-8040929250"><i class="fa fa-phone""></i> : (+91) 80 4092 9250</a>
-           <a href="http://infratab.com" class="footer-link" target="_blank"><i class="fa fa-globe"></i> : www.infratab.com</a>
+           <a class="footer-link"><i class="fa fa-envelope"></i> : info@infratab.in</a>
+           <a class="footer-link" href="tel:+91-8040929250"><i class="fa fa-phone""></i> : +91 8040929250</a>
+           <a class="footer-link" href="http://infratab.com" target="_blank"><i class="fa fa-globe"></i> : www.infratab.com</a>
+        </div>
+        <div class="col s12 m4 l4 center hide-init">
+          <img src="img/infratab-logo.png" class="footer-logo">
         </div>
       </div>
       <hr class="horizontal-line"></hr>
