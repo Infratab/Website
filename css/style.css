@@ -8829,7 +8829,7 @@ li {
   width: 150px; }
 
 .landing-page {
-  height: 650px;
+  height: 100vh;
   overflow: hidden;
   position: relative;
   width: 100%; }
@@ -8995,7 +8995,7 @@ li {
   text-align: center; }
 
 .team {
-  height: 650px;
+  height: 100vh;
   overflow: hidden;
   position: relative;
   width: 100%; }
@@ -9055,6 +9055,9 @@ li {
   line-height: 28px;
   width: 90%; }
 
+.group-image {
+  width: 100%; }
+
 .join-us {
   height: 100%;
   padding: 0 5% 5%;
@@ -9069,6 +9072,11 @@ li {
 .contact-link {
   color: #1d579d;
   font-size: 14px; }
+
+.card-heading {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 20px; }
 
 .green-color {
   color: #7cc48d !important; }

@@ -20,14 +20,15 @@ $(document).ready(function(){
 });
 $('#modal1').modal('open');
 
-//join us scroll
 $(document).ready(function($) {
+    //join us scroll
    $("#jsJoinScroll").on("click", function(e) {
        e.preventDefault();
        $("body, html").animate({
            scrollTop: $("#jsJoinUs").offset().top - 100
        }, 600);
    });
+   //arrow scroll
    $("#jsArrowScroll").on("click", function(e) {
        e.preventDefault();
        $("body, html").animate({
@@ -36,4 +37,3 @@ $(document).ready(function($) {
    });
 });
 
-//arrow scroll

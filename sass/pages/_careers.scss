@@ -1,5 +1,5 @@
 .team {
-  height: 650px;
+  height: 100vh;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -68,6 +68,10 @@
   width: 90%;
 }
 
+.group-image {
+  width: 100%;
+}
+
 .join-us {
   height: 100%;
   padding: 0 5% 5%;
@@ -86,3 +90,12 @@
   color: $blue-color;
   font-size: $font-14;
 }
+
+.card-heading {
+  font-size: $font-18;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+//media queries
+
