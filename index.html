@@ -29,7 +29,7 @@
   </nav>
 
   <section class="landing-page scroll">
-    <video class="short-video" src="./img/short.mp4" autoplay loop muted></video>
+    <video class="short-video" src="./img/short.mp4" loop muted></video>
     <div class="video-overlay"></div>
     <div class="landing-page-center">
       <p>Answering, How fresh is it?</p>
@@ -81,12 +81,12 @@
     <div class="row margin-top-10">
       <div class="col s12 m6 l6">
         <p class="know-us-info margin-top-5">
-          Food <span class="highlight">wasted* </span>in the world in <span class="bold">13</span> seconds since you landed here! <br/>
+          Food <span class="highlight">wasted* </span>in the world in <span class="bold" id="jsFoodSeconds"></span> seconds since you landed here! <br/>
         </p>
         <p class="footer-note">* Check out <a href="http://worldfoodclock.com" target="_blank">World Food Clock</a></p>
       </div>
       <div class="col s12 m6 l6 center">
-        <p class="know-us-counter">7,878</p>
+        <p class="know-us-counter" id = "jsAverageFood"></p>
         <p class="counter-tonnes">tonnes</p>
       </div>
     </div>
