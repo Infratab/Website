@@ -97,5 +97,35 @@
   padding-bottom: 20px;
 }
 
+.hide-init {
+  display: none;
+}
+
 //media queries
+@media only screen and (max-width: 1000px) {
+  .card {
+    margin:30px auto;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .media-hide {
+    display: none;
+  }
+  .hide-init {
+    display: block;
+  }
+  .team-caption {
+    font-size: $font-24;
+  }
+  .section-subline {
+    width: 90%;
+  }
+}
+
+
+
+
+
 

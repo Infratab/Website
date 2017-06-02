@@ -8982,7 +8982,7 @@ li {
 
 .footer-logo {
   margin-top: 40px;
-  width: 200px; }
+  width: 100%; }
 
 .horizontal-line {
   border-color: rgba(0, 0, 0, 0.2);
@@ -9077,6 +9077,24 @@ li {
   font-size: 18px;
   font-weight: 400;
   padding-bottom: 20px; }
+
+.hide-init {
+  display: none; }
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    margin: 30px auto;
+    width: 70%; } }
+
+@media only screen and (max-width: 600px) {
+  .media-hide {
+    display: none; }
+  .hide-init {
+    display: block; }
+  .team-caption {
+    font-size: 24px; }
+  .section-subline {
+    width: 90%; } }
 
 .green-color {
   color: #7cc48d !important; }
