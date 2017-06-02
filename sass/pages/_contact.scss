@@ -42,7 +42,7 @@
   height: 500px;
   margin: auto;
   position: relative;
-  width: 50%;
+  width: 60%;
 }
 
 .contact-header {
@@ -63,7 +63,7 @@
   background-color: $blue-color;
   height: 500px;
   width: 100%;
-  
+
   header {
     color: $white-color;
     font-size: $font-18;
@@ -72,19 +72,21 @@
 }
 
 .info-details {
-  margin: 20px;
+  margin: 20px 5px;
+
   i {
     color: $light-white-color;
     font-size: 25px;
     vertical-align: top;
   }
+
   p {
     color: $light-white-color;
     display: inline-block;
     font-size: $font-16;
     margin: 0 20px;
   }
-  
+
   a {
     color: $light-white-color;
     display: inline-block;
@@ -97,3 +99,38 @@
   padding: 0 !important;
 }
 
+//media queries
+
+@media only screen and (max-width: 900px) {
+  .contact {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .info-details p {
+    margin: 0 10px;
+}
+
+  .info-details a {
+    margin: 0 10px;
+}
+
+  .map-center {
+    width: 70%;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-info {
+    box-shadow: 0 6px 9px 0 rgba(0,0,0, 0.3), 4px 6px 8px 0 rgba(0,0,0, 0.1);
+    height: 100%;
+    margin-top: 40px;
+    padding: 10px 20px;
+}
+
+  .map-caption {
+    font-size: $font-18;
+    line-height: 30px;
+ }
+}
