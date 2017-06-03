@@ -180,7 +180,7 @@
 }
 
 .feature-box {
-  height: 150px;
+  height: 250px;
   position: relative;
   text-align: center;
   border-right: 1px solid #ddd;
@@ -193,7 +193,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 55%;
+    width: auto;
     padding: 20px;
   }
 }
