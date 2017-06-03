@@ -55,6 +55,16 @@ li {
   text-transform: uppercase;
 }
 
+.modal {
+  background: #000 !important;
+   box-shadow: 10px 10px 5px #000;
+  overflow: hidden !important;
+}
+
+.modal-overlay {
+  opacity: 1 !important;
+}
+
 .landing-page {
   height: 100%;
   overflow: hidden;
