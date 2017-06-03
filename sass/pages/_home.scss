@@ -102,7 +102,6 @@
 
 .section-header {
   color: $black-color;
-  font-size: $font-24;
   margin: 20px auto;
   text-align: center;
   text-transform: uppercase;
@@ -118,13 +117,15 @@
 .know-us-info {
   color: $grey-color;
   font-size: $font-16;
-  line-height: 28px;
-  width: 90%;
+  line-height: 24px;
+  padding: 0 10px;
+  text-align: justify;
 }
 
 .footer-note {
   color: $light-grey-color;
-  font-size: font-14 - 1;
+  font-size: 14px;
+  padding: 10px;
 }
 
 .know-us-counter {
