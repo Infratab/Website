@@ -9,6 +9,12 @@
   .color-logo {
     display: none;
   }
+  li.active {
+    a {
+      color: $green-color !important;
+      text-decoration: underline;
+    }
+  }
 
   &.scrolled {
     background-color: $white-color;
@@ -25,6 +31,12 @@
     li {
       a {
         color: $black-color !important;
+      }
+      &.active {
+        a {
+          color: $green-color !important;
+          text-decoration: underline;
+        }
       }
     }
   }
