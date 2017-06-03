@@ -45,7 +45,7 @@
 }
 
 .video-overlay {
-  background-color: $overlay-color;
+  background-image: url('../img/overlay.png');
   bottom: 0;
   height: 100%;
   position: absolute;
@@ -196,43 +196,6 @@
     width: auto;
     padding: 20px;
   }
-}
-
-// .footer-content {
-//   margin: auto;
-//   width: 80%;
-// }
-
-.wave-image {
-  width: 100%;
-}
-
-.footer-heading {
-  font-size: $font-16;
-  margin-bottom: 5px;
-}
-
-.footer-link {
-  color: $grey-color;
-  display: block;
-  line-height: 25px;
-}
-
-.footer-logo {
-  margin-top: 40px;
-  width: 100%;
-}
-
-.horizontal-line {
-  border-color: $line-color;
-  margin: 30px auto;
-}
-
-.footer-copyright {
-  color: $light-grey-color;
-  font-size: 13px;
-  margin: auto;
-  text-align: center;
 }
 
 //media query

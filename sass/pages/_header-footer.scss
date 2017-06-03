@@ -35,12 +35,51 @@
     width: 150px;
   }
 }
-
+//===================================== FOOTER =================================//
 .footer {
-  background-image: url('../img/waves.png');
+  // background-image: url('../img/waves.png');
+  background: #fcfcff;
+
+  .footer-content {
+    h4 {
+      margin-bottom: 12px;
+    }
+
+    a {
+      display: block;
+      color: $grey-color;
+    }
+  }
 
   hr {
-    border: 1px solid #ddd;
+    border: 1px solid $line-color;
     width: 80%;
+  }
+}
+
+.wave-image {
+  width: 100%;
+}
+
+.footer-link {
+  color: $grey-color;
+  display: block;
+  line-height: 25px;
+}
+
+.footer-logo {
+  margin-top: 25px;
+  width: 70%;
+}
+
+.footer-copyright {
+  color: $light-grey-color;
+  font-size: 13px;
+  padding: 10px;
+  text-align: center;
+
+  a {
+    display: inline !important;
+    color: $green-color;
   }
 }
