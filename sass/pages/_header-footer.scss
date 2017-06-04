@@ -81,6 +81,9 @@
     a {
       display: block;
       color: $grey-color;
+      &:hover {
+        color: #f44336 $important;
+      }
     }
   }
 
@@ -112,7 +115,8 @@
   text-align: center;
 
   a {
-    color: $green-color;
+    font-size: 15px $important;
+    color: $green-color $important;
     display: inline $important;
   }
 }
