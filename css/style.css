@@ -2373,11 +2373,11 @@ a {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
 }
 
-.z-depth-3 {
+.z-depth-3, .modal-close {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
 }
 
-.z-depth-4, .modal {
+.z-depth-4, .modal, .modal {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
 }
 
@@ -8438,12 +8438,11 @@ table tr td {
   line-height: 100px;
 }
 .play-button .icon-play {
-  font-size: 60px;
+  font-size: 50px;
   color: #fff;
 }
 .play-button .icon-play:hover {
-  font-size: 70px;
-  color: #7cc48d;
+  font-size: 60px;
 }
 
 .margin-top-10 {
@@ -8473,12 +8472,27 @@ table tr td {
 
 .modal {
   background: #000 !important;
-  box-shadow: 10px 10px 5px #000;
   overflow: hidden !important;
+  border: 1px solid #fff;
 }
 
 .modal-overlay {
   opacity: 1 !important;
+}
+
+.modal-close {
+  background: #888;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  line-height: 40px;
+  right: 5px;
+  z-index: 999999;
+  margin-top: 5px;
 }
 
 .landing-page {
