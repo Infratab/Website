@@ -8526,7 +8526,6 @@ table tr td {
   color: #fff;
   font-size: 40px;
   letter-spacing: .4px;
-  text-transform: uppercase;
   word-spacing: 5px;
 }
 
@@ -8749,6 +8748,7 @@ table tr td {
   text-align: center;
 }
 .footer-copyright a {
+  font-size: 15px !important;
   color: #7cc48d !important;
   display: inline !important;
 }
@@ -8790,14 +8790,16 @@ nav ul a:hover {
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 20;
+  width: 100%;
 }
 
 .team-caption {
   color: #fff;
-  font-size: 40px;
   letter-spacing: .4px;
+  font-size: 30px;
   text-transform: uppercase;
   word-spacing: 5px;
+  margin-bottom: 25px;
 }
 
 .life {
