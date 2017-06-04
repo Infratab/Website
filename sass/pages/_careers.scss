@@ -15,7 +15,7 @@
 }
 
 .team-overlay {
-  background-color: $overlay-color;
+  background-color: $overlay;
   bottom: 0;
   position: absolute;
   top: 0;
@@ -33,7 +33,7 @@
 }
 
 .team-caption {
-  color: $white-color;
+  color: $white;
   letter-spacing: .4px;
   font-size: 30px;
   text-transform: uppercase;
@@ -48,15 +48,15 @@
 }
 
 .green-color {
-  color: $green-color;
+  color: $green;
 }
 
 .blue-color {
-  color: $blue-color;
+  color: $blue;
 }
 
 .life-info-heading {
-  color: $grey-color;
+  color: $grey;
   font-size: $font-18;
   font-weight: 600;
   letter-spacing: .5px;
@@ -64,7 +64,7 @@
 }
 
 .life-info {
-  color: $grey-color;
+  color: $grey;
   font-size: $font-16;
   line-height: 28px;
   width: 90%;
@@ -84,12 +84,12 @@
   margin: 5% auto 0;
   text-align: center;
   p {
-    color: $light-grey-color;
+    color: $light-grey;
   }
 }
 
 .contact-link {
-  color: $blue-color;
+  color: $blue;
   font-size: $font-14;
 }
 

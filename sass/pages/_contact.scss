@@ -1,5 +1,5 @@
 .green-color {
-  color: $green-color !important;
+  color: $green $important;
 }
 
 .mapbox {
@@ -27,7 +27,7 @@
 }
 
 .map-caption {
-  color: $white-color;
+  color: $white;
   font-size: $font-24;
   letter-spacing: .4px;
   line-height: 38px;
@@ -36,7 +36,7 @@
 }
 
 .contact {
-  background-color: $white-color;
+  background-color: $white;
   box-shadow: 0 6px 9px 0 rgba(0,0,0, 0.3), 4px 6px 8px 0 rgba(0,0,0, 0.1); 
   bottom: 100px;
   height: 500px;
@@ -46,7 +46,7 @@
 }
 
 .contact-header {
-  color: $blue-color;
+  color: $blue;
   font-size: $font-20;
 }
 
@@ -60,12 +60,12 @@
 }
 
 .contact-info {
-  background-color: $blue-color;
+  background-color: $blue;
   height: 500px;
   width: 100%;
 
   header {
-    color: $white-color;
+    color: $white;
     font-size: $font-18;
     padding: 20px 20px 10px;
     }
@@ -96,7 +96,7 @@
 }
 
 .padding-0 {
-  padding: 0 !important;
+  padding: 0 $important;
 }
 
 //media queries
