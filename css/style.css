@@ -8719,6 +8719,9 @@ table tr td {
   display: block;
   color: #555;
 }
+.footer .footer-content a:hover {
+  color: #f44336 !important;
+}
 .footer hr {
   border: 1px solid rgba(0, 0, 0, 0.2);
   width: 80%;
@@ -8746,7 +8749,7 @@ table tr td {
   text-align: center;
 }
 .footer-copyright a {
-  color: #7cc48d;
+  color: #7cc48d !important;
   display: inline !important;
 }
 
