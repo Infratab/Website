@@ -125,8 +125,8 @@
 
 .video-overlay {
   background-image: url('../img/overlay.png');
-  bottom: 0;
-  height: 100%;
+  bottom: 5px;
+  // height: 100%;
   position: absolute;
   top: 0;
   width: 100%;
@@ -279,60 +279,3 @@
 }
 
 //media query
-@media only screen and (max-width: 1000px) {
-  .landing-page-center p {
-    font-size: $font-24;
-  }
-
-  .play-button {
-    width: 50px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .feature-box {
-    height: 80px;
-    margin:10px 0;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .landing-page-center p {
-    font-size: $font-20;
-  }
-
-  .play-button {
-    width: 30px;
-  }
-
-  .down-arrow {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .awards {
-    padding: 5% 0;
-  }
-
-  .feature-box {
-    height: 60px;
-    margin:5px 0;
-  }
-
-  .landing-page-center {
-    height: 15%;
-  }
-
-  .landing-page-center p {
-    font-size: $font-16;
-  }
-
-  .play-button {
-    width: 20px;
-  }
-
-  .down-arrow {
-    font-size: 10px;
-  }
-}
