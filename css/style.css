@@ -8666,9 +8666,25 @@ table tr td {
 .navbar .color-logo {
   display: none;
 }
+.navbar li .menu {
+  line-height: 32px;
+  margin: 15px;
+  letter-spacing: 1px;
+  padding: 0 !important;
+}
+.navbar li .menu:hover {
+  color: #f44336 !important;
+  border-bottom: 2px solid #f44336;
+}
+.navbar li span {
+  font-size: 18px !important;
+}
+.navbar li span:hover {
+  color: #f44336 !important;
+}
 .navbar li.active a {
-  color: #1d579d !important;
-  text-decoration: underline;
+  color: #f44336 !important;
+  border-bottom: 2px solid #f44336;
 }
 .navbar.scrolled {
   background-color: #fff;
@@ -8684,8 +8700,8 @@ table tr td {
   color: #000 !important;
 }
 .navbar.scrolled li.active a {
-  color: #7cc48d !important;
-  text-decoration: underline;
+  color: #f44336 !important;
+  border-bottom: 2px solid #f44336;
 }
 
 .brand-logo img {
@@ -8730,10 +8746,12 @@ table tr td {
   text-align: center;
 }
 .footer-copyright a {
-  display: inline !important;
   color: #7cc48d;
+  display: inline !important;
 }
 
+nav ul a,
+nav ul li.active,
 nav ul a:hover {
   background: transparent !important;
 }
