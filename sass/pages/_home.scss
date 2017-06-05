@@ -1,0 +1,348 @@
+body,
+html {
+  margin: 0;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+a,
+li,
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.margin-top-10 {
+  margin-top: 10%;
+}
+
+.margin-top-20 {
+  margin-top: 20%;
+}
+
+.margin-top-5 {
+  margin-top: 5%;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.highlight {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0 5%;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar.scrolled {
+  background-color: $black-color;
+  color: $white-color;
+}
+
+.brand-logo-container {
+  background-image: url("./../img/infratab-white-logo.png");
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 50px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.brand-logo-container.scrolled {
+  background-image: url("./../img/infratab-logo.png");
+}
+
+
+.landing-page {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.short-video {
+  width: 100%;
+}
+
+.video-overlay {
+  background-color: $overlay-color;
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.landing-page-center {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateX(-50%)translateY(-50%);
+  z-index: 20;
+
+  p {
+    color: $white-color;
+    font-size: $font-40;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+  }
+}
+
+.down-arrow {
+  color:$white-color;
+  display: inherit;
+  font-size: 30px;
+}
+
+.modal {
+  height: 100%;
+}
+
+.modal .modal-content {
+  height: 100%;
+  padding: 0;
+}
+
+.modal-content {
+
+  iframe {
+    border: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.know-us {
+  height: 100%;
+  padding: $padding-5;
+  width: 100%;
+}
+
+.section-heading {
+  color: $black-color;
+  font-size: $font-24;
+  margin: 20px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading-bottom-line {
+  border-bottom: 3px solid $green-color;
+  margin: auto;
+  margin-bottom: $margin-5;
+  width: 50px;
+}
+
+.know-us-info {
+  color: $grey-color;
+  font-size: $font-16;
+  line-height: 28px;
+  width: 90%;
+}
+
+.footer-note {
+  color: $light-grey-color;
+  font-size: font-14 - 1;
+}
+
+.know-us-counter {
+  color: $green-color;
+  font-size: $font-60;
+}
+
+.counter-tonnes {
+  font-size: $font-16;
+}
+
+.awards {
+  background-color: $light-green-color;
+  height: 100%;
+  padding: $padding-5;
+  width: 100%;
+}
+
+.award1 {
+  width: 70%;
+}
+
+.award3 {
+  width: 100%;
+}
+
+.award2,
+.award4 {
+  margin-top: 30%;
+}
+
+.award5 {
+  margin-top: 10%;
+  width: 65%;
+}
+
+.award-image {
+  width: 90%;
+}
+
+.featured {
+  height: 100%;
+  padding: 5%;
+  width: 100%;
+}
+
+.section-subline {
+  color: $light-grey-color;
+  letter-spacing: .4px;
+  line-height: 30px;
+  margin: 0 auto 5%;
+  text-align: center;
+  width: 60%;
+}
+
+.feature-box {
+  height: 100px;
+  margin: 30px 0;
+  position: relative;
+  text-align: center;
+
+  img {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55%;
+  }
+}
+
+.footer-content {
+  margin: auto;
+  width: 80%;
+}
+
+.wave-image {
+  width: 100%;
+}
+
+.footer-heading {
+  font-size: $font-16;
+  margin-bottom: 5px;
+}
+
+.footer-link {
+  color: $grey-color;
+  display: block;
+  line-height: 25px;
+}
+
+.footer-logo {
+  margin-top: 40px;
+  width: 250px;
+}
+
+.horizontal-line {
+  border-color: $line-color;
+  margin: 30px auto;
+}
+
+.footer-copyright {
+  color: $light-grey-color;
+  font-size: 13px;
+  margin: auto;
+  text-align: center;
+}
+
+//media query
+@media only screen and (max-width: 1000px) {
+  .landing-page-center p {
+    font-size: $font-24;
+  }
+
+  .play-button {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .feature-box {
+    height: 80px;
+    margin:10px 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .landing-page-center p {
+    font-size: $font-20;
+  }
+
+  .play-button {
+    width: 30px;
+  }
+
+  .down-arrow {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .awards {
+    padding: 5% 0;
+  }
+
+  .feature-box {
+    height: 60px;
+    margin:5px 0;
+  }
+
+  .landing-page-center {
+    height: 15%;
+  }
+
+  .landing-page-center p {
+    font-size: $font-16;
+  }
+
+  .play-button {
+    width: 20px;
+  }
+
+  .down-arrow {
+    font-size: 10px;
+  }
+}
+
+
+

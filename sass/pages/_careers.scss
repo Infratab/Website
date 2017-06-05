@@ -1,0 +1,146 @@
+.team {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.team-image {
+  background: url('../img/team.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.team-overlay {
+  background-color: $overlay-color;
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.team-center {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateX(-50%)translateY(-50%);
+  z-index: 20;
+}
+
+.team-caption {
+  color: $white-color;
+  font-size: $font-40;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+}
+
+.life {
+  height: 100%;
+  padding: 4% 5%;
+  width: 100%;
+}
+
+.green-color {
+  color: $green-color;
+}
+
+.blue-color {
+  color: $blue-color;
+}
+
+.life-info-heading {
+  color: $grey-color;
+  font-size: $font-18;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin-bottom: 20px;
+}
+
+.life-info {
+  color: $grey-color;
+  font-size: $font-16;
+  line-height: 28px;
+  width: 90%;
+}
+
+.group-image {
+  width: 100%;
+}
+
+.join-us {
+  height: 100%;
+  padding: 0 5% 5%;
+  width: 100%;
+}
+
+.join-us-cv {
+  margin: 5% auto 0;
+  text-align: center;
+  p {
+    color: $light-grey-color;
+  }
+}
+
+.contact-link {
+  color: $blue-color;
+  font-size: $font-14;
+}
+
+.card-heading {
+  font-size: $font-18;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.hide-init {
+  display: none;
+}
+
+//media queries
+@media only screen and (max-width: 1000px) {
+  .card {
+    margin:30px auto;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .media-hide {
+    display: none;
+  }
+
+  .hide-init {
+    display: block;
+  }
+
+  .team-caption {
+    font-size: $font-24;
+  }
+
+  .section-subline {
+    width: 90%;
+  }
+
+  .footer-logo {
+    width: 200px;
+  }
+
+  .know-us-image {
+    margin-top: 30px;
+  } 
+
+  .contact-section {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+

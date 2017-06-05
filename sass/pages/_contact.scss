@@ -1,0 +1,141 @@
+.green-color {
+  color: $green-color !important;
+}
+
+.mapbox {
+  height: 650px;
+  position: relative;
+  width: 100%;
+}
+
+.map-image {
+  background: url('../img/map.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.map-center {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateX(-50%)translateY(-50%);
+  z-index: 20;
+}
+
+.map-caption {
+  color: $white-color;
+  font-size: $font-24;
+  letter-spacing: .4px;
+  line-height: 38px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+}
+
+.contact {
+  background-color: $white-color;
+  box-shadow: 0 6px 9px 0 rgba(0,0,0, 0.3), 4px 6px 8px 0 rgba(0,0,0, 0.1); 
+  bottom: 100px;
+  height: 500px;
+  margin: auto;
+  position: relative;
+  width: 60%;
+}
+
+.contact-header {
+  color: $blue-color;
+  font-size: $font-20;
+}
+
+.display {
+  display: table;
+}
+
+.btn-style {
+  display: table-cell;
+  padding: 0;
+}
+
+.contact-info {
+  background-color: $blue-color;
+  height: 500px;
+  width: 100%;
+
+  header {
+    color: $white-color;
+    font-size: $font-18;
+    padding: 20px 20px 10px;
+    }
+}
+
+.info-box {
+  margin: 30px auto;
+  width: 250px;
+}
+
+.info-details {
+  margin: 20px 5px;
+
+  i {
+    color: $light-white-color;
+    font-size: 25px;
+    vertical-align: top;
+  }
+
+  p {
+    color: $light-white-color;
+    display: inline-block;
+    font-size: $font-16;
+    margin: 0 20px;
+  }
+
+  a {
+    color: $light-white-color;
+    display: inline-block;
+    font-size: $font-16;
+    margin: 0 20px;
+}
+}
+
+.padding-0 {
+  padding: 0 !important;
+}
+
+//media queries
+
+@media only screen and (max-width: 900px) {
+  .contact {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .info-details p {
+    margin: 0 10px;
+}
+
+  .info-details a {
+    margin: 0 10px;
+}
+
+  .map-center {
+    width: 70%;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-info {
+    box-shadow: 0 6px 9px 0 rgba(0,0,0, 0.3), 4px 6px 8px 0 rgba(0,0,0, 0.1);
+    height: 100%;
+    margin-top: 40px;
+    padding: 10px 20px;
+}
+
+  .map-caption {
+    font-size: $font-18;
+    line-height: 30px;
+ }
+}
