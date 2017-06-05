@@ -8827,9 +8827,17 @@ li {
   background-color: #000;
   color: #fff; }
 
-.brand-logo img {
-  margin-top: 20px;
-  width: 150px; }
+.brand-logo-container {
+  background-image: url("./../img/infratab-white-logo.png");
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 50px;
+  display: inline-block;
+  margin-top: 10px; }
+
+.brand-logo-container.scrolled {
+  background-image: url("./../img/infratab-logo.png"); }
 
 .landing-page {
   height: 100%;
@@ -8983,7 +8991,7 @@ li {
 
 .footer-logo {
   margin-top: 40px;
-  width: 100%; }
+  width: 250px; }
 
 .horizontal-line {
   border-color: rgba(0, 0, 0, 0.2);
@@ -9199,6 +9207,10 @@ li {
     color: #fff;
     font-size: 18px;
     padding: 20px 20px 10px; }
+
+.info-box {
+  margin: 30px auto;
+  width: 250px; }
 
 .info-details {
   margin: 20px 5px; }
