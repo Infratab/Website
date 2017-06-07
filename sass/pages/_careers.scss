@@ -1,29 +1,26 @@
 .team {
-
   overflow: hidden;
   position: relative;
   width: 100%;
 }
 
 .team-image {
-  img{
+
+  img {
+    height: auto $important;
     max-width: 100%;
-    height: auto !important;
   }
-  
-  
-}
-.card{
-  height: 144px !important;
 }
 
-.card { 
-  transition: box-shadow 2s !important;
+.card {
+  height: 144px $important;
+  transition: box-shadow 2s $important;
+
   &:hover {
-    box-shadow: rgba(0,0,0,.1) 0 0 10px 3px !important;
+    box-shadow: rgba(0, 0, 0, .1) 0 0 10px 3px $important;
   }
-}
 
+}
 
 .team-overlay {
   background-color: $overlay;
@@ -41,18 +38,19 @@
   text-align: center;
   top: 50%;
   transform: translateX(-50%)translateY(-50%);
-  z-index: 20;
   width: 100%;
+  z-index: 20;
 }
 
 .team-caption {
   color: $white;
-  letter-spacing: .4px;
   font-size: 30px;
-  text-transform: uppercase;
-  word-spacing: 5px;
+  letter-spacing: .4px;
   margin-bottom: 50px;
   margin-top: -170px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+
 }
 
 .life {
@@ -97,6 +95,7 @@
 .join-us-cv {
   margin: 5% auto 0;
   text-align: center;
+
   p {
     color: $light-grey;
   }
@@ -120,7 +119,7 @@
 //media queries
 @media only screen and (max-width: 1000px) {
   .card {
-    margin:30px auto;
+    margin: 30px auto;
     width: 70%;
   }
 }
@@ -156,37 +155,41 @@
 }
 
 @media only screen and (max-width: 600px) {
-.team-caption {
-  letter-spacing: 0.4px;
-  font-size: 14px;
-  padding: 9px;
-  margin-bottom: 15px;
-  word-spacing: 3px;
-}
+  .team-caption {
+    font-size: 14px;
+    letter-spacing: .4px;
+    margin-bottom: 15px;
+    padding: 9px;
+    word-spacing: 3px;
+  }
 
-.team-center {
-  .btn {
-padding: 0 0.5rem !important;
-line-height: 30px !important;
-height: 30px !important;
-font-size: 1rem !important;
-}
-}
+  .team-center {
+
+    .btn {
+      font-size: 1rem $important;
+      height: 30px $important;
+      line-height: 30px $important;
+      padding: 0 .5rem $important;
+    }
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
-  .brand-logo img {
-    width: 140px;
+  .brand-logo {
+    img {
+      width: 140px;
+    }
   }
-  .team-caption{
-    margin-top: 0 !important;
+
+  .team-caption {
+    margin-top: 0 $important;
   }
 
 
-  for-mob{
-    row{
-      col{
-        &:nth-child(2n){
+  .for-mob {
+    .row {
+      .col {
+        &:nth-child(2n) {
           margin-bottom: 30px;
         }
       }
@@ -195,26 +198,30 @@ font-size: 1rem !important;
 }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
-  .brand-logo img {
-    width: 180px;
+  .brand-logo {
+    img {
+      width: 180px;
+    }
   }
 
-.team-caption {
-  font-size: 22px;
-  padding: 10px;
-margin-top: 0 !important;
-margin-bottom: 30px !important;
-}
+  .team-caption {
+    font-size: 22px;
+    margin-bottom: 30px $important;
+    margin-top: 0 $important;
+    padding: 10px;
+  }
 
 }
 
 
 @media only screen and (min-width: 993px)  {
-.team-center{
-  .btn{
- font-size: 25px !important;
-    padding: 15px 20px !important;
-    height: 46px !important;
-    line-height: 0px; }
+  .team-center {
+    .btn {
+      font-size: 25px $important;
+      height: 46px $important;
+      line-height: 0;
+      padding: 15px 20px $important;
+    }
+  }
 }
-}
+

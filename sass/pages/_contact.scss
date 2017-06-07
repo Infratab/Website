@@ -3,19 +3,16 @@
 }
 
 .mapbox {
- 
   position: relative;
   width: 100%;
 }
 
 .map-image {
-  
-  img {
-    max-width: 100% !important;
-    height: auto !important;
-  }
-  
 
+  img {
+    height: auto $important;
+    max-width: 100% $important;
+  }
 }
 
 
@@ -33,16 +30,16 @@
   font-size: $font-24;
   letter-spacing: .4px;
   line-height: 38px;
+  position: relative;
   text-transform: uppercase;
+  top: -25px;
   word-spacing: 5px;
-position: relative;
-top:-25px;
 }
 
 .contact {
   background-color: $white;
-  box-shadow: 0 6px 9px 0 rgba(0,0,0, 0.3), 4px 6px 8px 0 rgba(0,0,0, 0.1); 
   bottom: 100px;
+  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, .3), 4px 6px 8px 0 rgba(0, 0, 0, .1);
   height: 500px;
   margin: auto;
   position: relative;
@@ -112,163 +109,160 @@ top:-25px;
 }
 
 @media only screen and (max-width: 900px) {
-  .info-details p {
-    margin: 0 10px;
-}
+  .info-details {
+    p {
+      margin: 0 10px;
+    }
 
-  .info-details a {
-    margin: 0 10px;
-}
+    a {
+      margin: 0 10px;
+    }
+  }
 
   .map-center {
     width: 70%;
-}
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .contact-info {
-    box-shadow: 0 6px 9px 0 rgba(0,0,0, 0.3), 4px 6px 8px 0 rgba(0,0,0, 0.1);
+    box-shadow: 0 6px 9px 0 rgba(0, 0, 0, .3), 4px 6px 8px 0 rgba(0, 0, 0, .1);
     height: 100%;
-    //margin-top: 40px;
     padding: 10px 20px;
-}
-
-
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .map-cation {
-    font-size: 12px !important;
-    line-height: 15px !important;
-    position: relative !important;
-    top: -28px !important;
-
+  .map-caption {
+    font-size: 12px $important;
+    line-height: 15px $important;
+    position: relative $important;
+    top: -28px $important;
   }
 
   .contact {
-    bottom:90px;
+    bottom: 90px;
     height:
-    auto !important;
+    auto $important;
 
     .col {
       &:nth-child(2) {
-      form {
-        padding-bottom: 20px;
+
+        form {
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    .row {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer-content {
+    .row {
+      width: 89% $important;
+
+      .col {
+        //text-align: left $important;
       }
     }
   }
-  .row {
-    margin-bottom: 0;
-  }
-  }
 
-.footer {
-img {
-//margin-top: -30px !important;
-}
-}
-
-
-.footer-content {
-  .row{
-    width: 89% !important;
-  .col{
-    text-align: left !important;
-  }
-  }
-
-}
-
-  .contact-info{
-         color: white;
-    padding-top: 10px;
+  .contact-info {
+    color: $white;
     font-size: 20px;
+    padding-top: 10px;
   }
-  .info-box{
 
-    width: 239px;
+  .info-box {
     margin-left: auto;
     margin-right: auto;
+    width: 239px;
+
     h5 {
-          padding: 10px;
-          font-size: 22px;
+      font-size: 22px;
+      padding: 10px;
     }
-    .info-details{
-          margin: 6px 15px;
-          
-          p{
-                margin: 0px 50px;
-                margin-top: -33px;
-                width: 151px;
-          }
+
+    .info-details {
+      margin: 6px 15px;
+
+      p {
+        margin: 0 50px;
+        margin-top: -33px;
+        width: 151px;
+      }
     }
   }
 }
 
 
 @media only screen and (min-width: 601px) and (max-width: 767px) {
-  .map-cation {
-         font-size: 20px;
+  .map-caption {
+    font-size: 20px;
     letter-spacing: .4px;
     line-height: 26px;
-    
-    word-spacing: 4px;
     padding: 10px;
     position: relative;
     top: -28px;
+    word-spacing: 4px;
 
   }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 690px) {
-
-  .info-box{
-    h5{
-      font-size: 19px !important;
+  .info-box {
+    h5 {
+      font-size: 19px $important;
     }
   }
-  .info-details{
-    i{
-font-size: 23px;
+
+  .info-details {
+    i {
+      font-size: 23px;
     }
-    p{
- font-size: 14px;
+
+    p {
+      font-size: 14px;
     }
   }
 }
+
 @media only screen and (min-width: 691px) {
-  .contact-info{
-    
+  .contact-info {
     font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 601px) {
-.contact-info{
-         color: white;
+  .contact-info {
+    color: $white;
     padding-top: 30px;
-    
   }
-  .info-box{
 
-    width: 239px;
+  .info-box {
     margin-left: auto;
     margin-right: auto;
+    width: 239px;
+
     h5 {
-          padding: 10px;
-          font-size: 22px;
-          margin-bottom:15px;
+      font-size: 22px;
+      margin-bottom: 15px;
+      padding: 10px;
     }
-    .info-details{
-      width:230px;
-          margin: 6px 15px 50px 15px;
-          
-          p{
-                margin: 0px 50px;
-                margin-top: -33px;
-                width: 151px;
-          }
+
+    .info-details {
+      margin: 6px 15px 50px 15px;
+      width: 230px;
+
+      p {
+        margin: 0 50px;
+        margin-top: -33px;
+        width: 151px;
+      }
     }
   }
 
 }
+
