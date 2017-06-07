@@ -13,11 +13,14 @@
   
   
 }
+.card{
+  height: 144px !important;
+}
 
-.card-content { 
-  transition: all .2s ease-in-out !important;
+.card { 
+  transition: box-shadow 2s !important;
   &:hover {
-    box-shadow: rgba(0,0,0,.1) 1px 1px 20px 6px !important;
+    box-shadow: rgba(0,0,0,.1) 0 0 10px 3px !important;
   }
 }
 
@@ -48,7 +51,8 @@
   font-size: 30px;
   text-transform: uppercase;
   word-spacing: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
+  margin-top: -170px;
 }
 
 .life {
@@ -149,4 +153,68 @@
   .contact-section {
     margin-top: 20px;
   }
+}
+
+@media only screen and (max-width: 600px) {
+.team-caption {
+  letter-spacing: 0.4px;
+  font-size: 14px;
+  padding: 9px;
+  margin-bottom: 15px;
+  word-spacing: 3px;
+}
+
+.team-center {
+  .btn {
+padding: 0 0.5rem !important;
+line-height: 30px !important;
+height: 30px !important;
+font-size: 1rem !important;
+}
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .brand-logo img {
+    width: 140px;
+  }
+  .team-caption{
+    margin-top: 0 !important;
+  }
+
+
+  for-mob{
+    row{
+      col{
+        &:nth-child(2n){
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .brand-logo img {
+    width: 180px;
+  }
+
+.team-caption {
+  font-size: 22px;
+  padding: 10px;
+margin-top: 0 !important;
+margin-bottom: 30px !important;
+}
+
+}
+
+
+@media only screen and (min-width: 993px)  {
+.team-center{
+  .btn{
+ font-size: 25px !important;
+    padding: 15px 20px !important;
+    height: 46px !important;
+    line-height: 0px; }
+}
 }

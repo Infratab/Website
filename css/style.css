@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Materialize v0.98.2 (http://materializecss.com)
  * Copyright 2014-2015 Materialize
@@ -8251,44 +8252,48 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-global-o:before {
+  content: "";
+}
+
 .icon-play2:before {
-  content: "\e909";
+  content: "";
 }
 
 .icon-phone-o:before {
-  content: "\e900";
+  content: "";
 }
 
 .icon-play:before {
-  content: "\e908";
+  content: "";
 }
 
 .icon-globe:before {
-  content: "\e901";
+  content: "";
+}
+
+.icon-location2:before {
+  content: "";
 }
 
 .icon-hamburger:before {
-  content: "\e907";
+  content: "";
 }
 
 .icon-down-arrow:before {
-  content: "\e902";
+  content: "";
 }
 
 .icon-envelope-o:before {
-  content: "\e903";
+  content: "";
 }
 
 .icon-envelope:before {
-  content: "\e904";
+  content: "";
 }
 
 .icon-phone:before {
-  content: "\e905";
-}
-
-.icon-global-o:before {
-  content: "\e906";
+  content: "";
 }
 
 body,
@@ -8856,13 +8861,18 @@ img-hi {
     margin-top: 13% !important;
   }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 601px) and (max-width: 992px) {
   .feature-box:nth-child(3n) {
     border-right: 0;
   }
 
   .feature-box:nth-last-child(3) {
     border-bottom: 0;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .footer-content .row {
+    width: 92%;
   }
 }
 .chars {
@@ -8939,6 +8949,14 @@ img-hi {
   .feature-box img {
     max-width: 85%;
     padding: 20px;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .featured .feature-box:nth-child(4n) {
+    border-right: 0 !important;
+  }
+  .featured .feature-box:nth-last-child(3), .featured .feature-box:nth-last-child(4) {
+    border-bottom: 0 !important;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -9028,7 +9046,7 @@ img-hi {
     height: 200px;
   }
   .feature-box img {
-    max-width: 51%;
+    max-width: 70%;
   }
 }
 @media only screen and (min-width: 993px) {
@@ -9085,6 +9103,9 @@ img-hi {
 }
 .navbar.scrolled .white-logo {
   display: none;
+}
+.navbar.scrolled .button-collapse i {
+  color: gray !important;
 }
 .navbar.scrolled li a {
   color: #000 !important;
@@ -9161,11 +9182,15 @@ nav ul a:hover {
   height: auto !important;
 }
 
-.card-content {
-  transition: all .2s ease-in-out !important;
+.card {
+  height: 144px !important;
 }
-.card-content:hover {
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 20px 6px !important;
+
+.card {
+  transition: box-shadow 2s !important;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px 3px !important;
 }
 
 .team-overlay {
@@ -9192,7 +9217,8 @@ nav ul a:hover {
   font-size: 30px;
   text-transform: uppercase;
   word-spacing: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
+  margin-top: -170px;
 }
 
 .life {
@@ -9292,23 +9318,67 @@ nav ul a:hover {
     margin-top: 20px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .team-caption {
+    letter-spacing: 0.4px;
+    font-size: 14px;
+    padding: 9px;
+    margin-bottom: 15px;
+    word-spacing: 3px;
+  }
+
+  .team-center .btn {
+    padding: 0 0.5rem !important;
+    line-height: 30px !important;
+    height: 30px !important;
+    font-size: 1rem !important;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .brand-logo img {
+    width: 140px;
+  }
+
+  .team-caption {
+    margin-top: 0 !important;
+  }
+
+  for-mob row col:nth-child(2n) {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .brand-logo img {
+    width: 180px;
+  }
+
+  .team-caption {
+    font-size: 22px;
+    padding: 10px;
+    margin-top: 0 !important;
+    margin-bottom: 30px !important;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .team-center .btn {
+    font-size: 25px !important;
+    padding: 15px 20px !important;
+    height: 46px !important;
+    line-height: 0px;
+  }
+}
 .green-color {
   color: #7cc48d !important;
 }
 
 .mapbox {
-  height: 650px;
   position: relative;
   width: 100%;
 }
 
-.map-image {
-  background: url("../img/map.png");
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
+.map-image img {
+  max-width: 100% !important;
+  height: auto !important;
 }
 
 .map-center {
@@ -9327,6 +9397,8 @@ nav ul a:hover {
   line-height: 38px;
   text-transform: uppercase;
   word-spacing: 5px;
+  position: relative;
+  top: -25px;
 }
 
 .contact {
@@ -9411,13 +9483,111 @@ nav ul a:hover {
   .contact-info {
     box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.3), 4px 6px 8px 0 rgba(0, 0, 0, 0.1);
     height: 100%;
-    margin-top: 40px;
     padding: 10px 20px;
   }
+}
+@media only screen and (max-width: 600px) {
+  .map-cation {
+    font-size: 12px !important;
+    line-height: 15px !important;
+    position: relative !important;
+    top: -28px !important;
+  }
 
-  .map-caption {
-    font-size: 18px;
-    line-height: 30px;
+  .contact {
+    bottom: 90px;
+    height: auto !important;
+  }
+  .contact .col:nth-child(2) form {
+    padding-bottom: 20px;
+  }
+  .contact .row {
+    margin-bottom: 0;
+  }
+
+  .footer-content .row {
+    width: 89% !important;
+  }
+  .footer-content .row .col {
+    text-align: left !important;
+  }
+
+  .contact-info {
+    color: white;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+
+  .info-box {
+    width: 239px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .info-box h5 {
+    padding: 10px;
+    font-size: 22px;
+  }
+  .info-box .info-details {
+    margin: 6px 15px;
+  }
+  .info-box .info-details p {
+    margin: 0px 50px;
+    margin-top: -33px;
+    width: 151px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .map-cation {
+    font-size: 20px;
+    letter-spacing: .4px;
+    line-height: 26px;
+    word-spacing: 4px;
+    padding: 10px;
+    position: relative;
+    top: -28px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 690px) {
+  .info-box h5 {
+    font-size: 19px !important;
+  }
+
+  .info-details i {
+    font-size: 23px;
+  }
+  .info-details p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 691px) {
+  .contact-info {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .contact-info {
+    color: white;
+    padding-top: 30px;
+  }
+
+  .info-box {
+    width: 239px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .info-box h5 {
+    padding: 10px;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .info-box .info-details {
+    width: 230px;
+    margin: 6px 15px 50px 15px;
+  }
+  .info-box .info-details p {
+    margin: 0px 50px;
+    margin-top: -33px;
+    width: 151px;
   }
 }
 

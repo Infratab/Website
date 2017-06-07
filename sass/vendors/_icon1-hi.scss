@@ -1,0 +1,83 @@
+@import "variables1";
+
+@font-face {
+  font-family: 'icon';
+  src:  url('../fonts/icon.eot?lbo7ev');
+  src:  url('../fonts/icon.eot?lbo7ev#iefix') format('embedded-opentype'),
+    url('../fonts/icon.ttf?lbo7ev') format('truetype'),
+    url('../fonts/icon.woff?lbo7ev') format('woff'),
+    url('../fonts/icon.svg?lbo7ev#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-global-o {
+  &:before {
+    content: $icon-global-o;
+  }
+}
+.icon-play2 {
+  &:before {
+    content: $icon-play2;
+  }
+}
+.icon-phone-o {
+  &:before {
+    content: $icon-phone-o;
+  }
+}
+.icon-play {
+  &:before {
+    content: $icon-play;
+  }
+}
+.icon-globe {
+  &:before {
+    content: $icon-globe;
+  }
+}
+.icon-location2 {
+  &:before {
+    content: $icon-location2;
+  }
+}
+.icon-hamburger {
+  &:before {
+    content: $icon-hamburger;
+  }
+}
+.icon-down-arrow {
+  &:before {
+    content: $icon-down-arrow;
+  }
+}
+.icon-envelope-o {
+  &:before {
+    content: $icon-envelope-o;
+  }
+}
+.icon-envelope {
+  &:before {
+    content: $icon-envelope;
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone;
+  }
+}
+

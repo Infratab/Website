@@ -48,6 +48,12 @@
       display: none;
     }
 
+    .button-collapse {
+       i {
+      color: gray !important;
+    }
+  }
+
     li {
       a {
         color: $black $important;

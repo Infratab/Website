@@ -3,19 +3,21 @@
 }
 
 .mapbox {
-  height: 650px;
+ 
   position: relative;
   width: 100%;
 }
 
 .map-image {
-  background: url('../img/map.png');
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
+  
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+
 }
+
 
 .map-center {
   left: 50%;
@@ -33,6 +35,8 @@
   line-height: 38px;
   text-transform: uppercase;
   word-spacing: 5px;
+position: relative;
+top:-25px;
 }
 
 .contact {
@@ -125,12 +129,146 @@
   .contact-info {
     box-shadow: 0 6px 9px 0 rgba(0,0,0, 0.3), 4px 6px 8px 0 rgba(0,0,0, 0.1);
     height: 100%;
-    margin-top: 40px;
+    //margin-top: 40px;
     padding: 10px 20px;
 }
 
-  .map-caption {
-    font-size: $font-18;
-    line-height: 30px;
- }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .map-cation {
+    font-size: 12px !important;
+    line-height: 15px !important;
+    position: relative !important;
+    top: -28px !important;
+
+  }
+
+  .contact {
+    bottom:90px;
+    height:
+    auto !important;
+
+    .col {
+      &:nth-child(2) {
+      form {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .row {
+    margin-bottom: 0;
+  }
+  }
+
+.footer {
+img {
+//margin-top: -30px !important;
+}
+}
+
+
+.footer-content {
+  .row{
+    width: 89% !important;
+  .col{
+    text-align: left !important;
+  }
+  }
+
+}
+
+  .contact-info{
+         color: white;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .info-box{
+
+    width: 239px;
+    margin-left: auto;
+    margin-right: auto;
+    h5 {
+          padding: 10px;
+          font-size: 22px;
+    }
+    .info-details{
+          margin: 6px 15px;
+          
+          p{
+                margin: 0px 50px;
+                margin-top: -33px;
+                width: 151px;
+          }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .map-cation {
+         font-size: 20px;
+    letter-spacing: .4px;
+    line-height: 26px;
+    
+    word-spacing: 4px;
+    padding: 10px;
+    position: relative;
+    top: -28px;
+
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 690px) {
+
+  .info-box{
+    h5{
+      font-size: 19px !important;
+    }
+  }
+  .info-details{
+    i{
+font-size: 23px;
+    }
+    p{
+ font-size: 14px;
+    }
+  }
+}
+@media only screen and (min-width: 691px) {
+  .contact-info{
+    
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+.contact-info{
+         color: white;
+    padding-top: 30px;
+    
+  }
+  .info-box{
+
+    width: 239px;
+    margin-left: auto;
+    margin-right: auto;
+    h5 {
+          padding: 10px;
+          font-size: 22px;
+          margin-bottom:15px;
+    }
+    .info-details{
+      width:230px;
+          margin: 6px 15px 50px 15px;
+          
+          p{
+                margin: 0px 50px;
+                margin-top: -33px;
+                width: 151px;
+          }
+    }
+  }
+
 }

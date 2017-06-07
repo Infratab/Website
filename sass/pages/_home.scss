@@ -544,8 +544,7 @@ margin-top: 6px !important;
     margin-top: 13% !important;
   }
 }
-
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 601px) and (max-width: 992px) {
   .feature-box:nth-child(3n) {
     border-right: 0;
   }
@@ -556,6 +555,15 @@ margin-top: 6px !important;
     }
   }
 
+
+}
+
+@media only screen and (min-width: 601px) {
+.footer-content{
+  .row{
+    width: 92%;
+  }
+}
 }
 
 .chars {
@@ -658,6 +666,23 @@ z-index:3;
    }
 }
 
+
+@media only screen and (min-width: 993px) {
+.featured {
+  
+    .feature-box {
+      &:nth-child(4n) {
+        border-right: 0 !important;
+      }
+      &:nth-last-child(3),
+      &:nth-last-child(4){
+        border-bottom: 0 !important;
+      }
+    }
+}
+
+}
+
 @media only screen and (min-width: 1024px) {
   .know-us-image-1{
     max-width: 97%;
@@ -731,7 +756,12 @@ z-index:3;
 .infra {
 margin-top:2.5%;
 }
+
+
 }
+
+
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 .feature-box {
   height: 210px;
@@ -757,7 +787,7 @@ img{
 .feature-box {
   height: 200px;
 img{
-  max-width: 51%;
+  max-width: 70%;
 }
 }
 }
