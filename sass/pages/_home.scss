@@ -62,6 +62,20 @@
     color: $white;
     font-size: 40px;
   }
+
+  .play-button {
+    .icon-play-o {
+      color: $white;
+      font-size: 50px;
+
+      &:hover {
+        &:before {
+          content: '\e90c';
+          font-size: 52px;
+        }
+      }
+    }
+  }
 }
 //======================= Home Banner Ends ========================//
 
