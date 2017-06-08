@@ -1,0 +1,92 @@
+body,
+html {
+  margin: 0;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li,
+a,
+button,
+input,
+select,
+textarea,
+table tr td {
+  margin: 0;
+  padding: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+h1 {font-size: 24px;}
+h2 {font-size: 22px;}
+h3 {font-size: 20px;}
+h4 {font-size: 18px;}
+h5 {font-size: 16px;}
+h6 {font-size: 14px;}
+p,
+ul li,
+a,
+button,
+input,
+label,
+select,
+textarea,
+table tr td {
+  font-size: 16px;
+}
+
+.section-wrapper {
+  margin: 5% auto;
+  width: 85%;
+
+  .wrapper {
+    margin: 5% 0 3%;
+
+    .content {
+      color: $grey;
+      font-size: 16px;
+      padding: 10px;
+      text-align: justify;
+    }
+
+    .footer-note {
+      color: $light-grey;
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+}
+
+.section-header {
+  text-align: center;
+}
+
+.header-underline {
+  border-bottom: 3px solid $theme-green;
+  margin: 10px auto 25px;
+  width: 50px;
+}
