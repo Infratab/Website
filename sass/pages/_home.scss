@@ -37,3 +37,22 @@
   color: $theme-green;
   font-size: 60px;
 }
+//====================== Know us Ends=================================//
+
+//====================== Award =================================//
+.award {
+  background: $sky-blue;
+  margin-bottom: 5%;
+  padding: 5%;
+
+  img {
+    width: 100%;
+  }
+
+  .img-section {
+    height: 200px;
+    line-height: 200px;
+    vertical-align: middle;
+  }
+}
+//====================== Award Ends=================================//
