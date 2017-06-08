@@ -9553,22 +9553,28 @@ nav .nav-big a:hover {
 }
 
 .map-center {
+  height: 114px;
   left: 50%;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 46%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 20;
+}
+.map-center h3 {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-left: 2px;
 }
 
 .map-caption {
   color: #fff;
-  font-size: 24px;
+  font-size: 30px;
   letter-spacing: .4px;
   line-height: 38px;
-  position: relative;
+  padding-bottom: 10px;
   text-transform: uppercase;
-  top: -25px;
   word-spacing: 5px;
 }
 
@@ -9651,10 +9657,6 @@ nav .nav-big a:hover {
   }
   .info-details a {
     margin: 0 10px;
-  }
-
-  .map-center {
-    width: 70%;
   }
 }
 @media only screen and (max-width: 600px) {
