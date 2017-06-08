@@ -4,6 +4,44 @@
   overflow: hidden;
   position: relative;
   width: 100%;
+
+  .modal {
+    background: $black $important;
+    border: 1px solid $white;
+    height: 100%;
+    overflow: hidden $important;
+
+    .modal-content {
+      height: 100%;
+      padding: 0;
+
+      iframe {
+        border: 0;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .modal-close {
+      background: $black;
+      border: 2px solid $white;
+      border-radius: 50%;
+      color: $white;
+      font-size: 24px;
+      height: 40px;
+      line-height: 40px;
+      margin-top: 5px;
+      position: absolute;
+      right: 5px;
+      text-align: center;
+      width: 40px;
+      z-index: 9999;
+    }
+  }
+
+  .modal-overlay {
+    opacity: 1 $important;
+  }
 }
 
 .video {
@@ -24,7 +62,6 @@
     color: $white;
     font-size: 40px;
   }
-
 }
 //======================= Home Banner Ends ========================//
 
