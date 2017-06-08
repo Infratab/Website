@@ -34,3 +34,10 @@ $important: !important;
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+@-webkit-keyframes bounce {
+	0%, 20%, 60%, 100% { -webkit-transform: translateY(0);}
+  40% { -webkit-transform: translateY(-20px);}
+	80% { -webkit-transform: translateY(-10px);}
+}

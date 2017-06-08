@@ -77,6 +77,22 @@
     }
   }
 }
+
+.down-arrow {
+  -webkit-animation: bounce 2s infinite ease-in-out;
+  color: $white;
+  cursor: pointer;
+  font-size: 40px;
+  height: 40px;
+  left: 0;
+  line-height: 40px;
+  margin: auto;
+  margin-top: 10%;
+  position: absolute;
+  right: 0;
+  width: 40px;
+}
+
 //======================= Home Banner Ends ========================//
 
 //====================== Know us =================================//
