@@ -8976,6 +8976,49 @@ table tr td {
   .footer-content .col:nth-child(1) .col {
     margin-left: 55% !important;
   }
+
+  .awards .col {
+    height: 200px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  .award-img-1 {
+    margin-top: 53px !important;
+    max-width: 80% !important;
+    width: 100%;
+  }
+
+  .award-img-2 {
+    margin-top: 51px !important;
+    max-width: 81% !important;
+  }
+
+  .hide-on-md .award-img-3 {
+    margin-top: 27px !important;
+    max-width: 57% !important;
+  }
+
+  .award-img-4 {
+    margin-top: 19% !important;
+    max-width: 45% !important;
+    width: 100% !important;
+  }
+
+  .award-img-5 {
+    margin-top: 20px !important;
+    width: 75% !important;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  .award-img-5 {
+    margin-top: 17px;
+  }
+}
+@media only screen and (min-width: 1210px) {
+  .award-img-4 {
+    margin-top: 36px !important;
+  }
 }
 @media only screen and (min-width: 601px) {
   .footer-content .col a {
