@@ -8255,23 +8255,27 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   content: "\e906";
 }
 
-.icon-play2:before {
-  content: "\e909";
-}
-
 .icon-phone-o:before {
   content: "\e900";
 }
 
+.icon-play-o:before {
+  content: "\e90b";
+}
+
 .icon-play:before {
-  content: "\e908";
+  content: "\e90c";
+}
+
+.icon-close:before {
+  content: "\e90a";
 }
 
 .icon-globe:before {
   content: "\e901";
 }
 
-.icon-location2:before {
+.icon-location:before {
   content: "\e948";
 }
 
@@ -8514,12 +8518,13 @@ table tr td {
   line-height: 100px;
   width: 100px;
 }
-.play-button .icon-play {
+.play-button .icon-play-o {
   color: #fff;
   font-size: 50px;
 }
-.play-button .icon-play:hover {
-  font-size: 60px;
+.play-button .icon-play-o:hover:before {
+  content: '\e90c';
+  font-size: 52px;
 }
 
 .down-arrow {
@@ -8552,10 +8557,11 @@ table tr td {
 }
 
 .modal-close {
-  background: #888;
+  background: #000;
   border: 2px solid #fff;
   border-radius: 50%;
   color: #fff;
+  font-size: 24px;
   height: 40px;
   line-height: 40px;
   margin-top: 5px;

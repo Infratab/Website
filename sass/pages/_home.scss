@@ -142,12 +142,16 @@
   line-height: 100px;
   width: 100px;
 
-  .icon-play {
+  .icon-play-o {
     color: $white;
     font-size: 50px;
 
     &:hover {
-      font-size: 60px;
+
+      &:before {
+        content: '\e90c';
+        font-size: 52px;
+      }
     }
   }
 }
@@ -185,10 +189,11 @@
 }
 
 .modal-close {
-  background: $grey;
+  background: $black;
   border: 2px solid $white;
   border-radius: 50%;
   color: $white;
+  font-size: 24px;
   height: 40px;
   line-height: 40px;
   margin-top: 5px;
@@ -913,5 +918,3 @@
     }
   }
 }
-
-
