@@ -1,3 +1,4 @@
+//scss-lint:disable SelectorDepth NestingDepth
 .green-color {
   color: $green $important;
 }
@@ -167,13 +168,14 @@ text-transform: capitalize;
 
   .footer-content {
     .row {
-      width: 89% $important;
+      //width: 89% $important;
 
       .col {
         //text-align: left $important;
       }
     }
   }
+
 
   .contact-info {
     color: $white;

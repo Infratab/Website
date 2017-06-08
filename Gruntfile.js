@@ -15,9 +15,8 @@ module.exports = function (grunt) {
 
       scsslint: {
           src: [
-            'sass/abstracts/*.scss',
-            'sass/components/*.scss',
-            'sass/pages/*.scss'
+           
+            'sass/pages/_home.scss'
             
          ],
         options: {

@@ -8380,10 +8380,10 @@ table tr td {
 
 @-moz-keyframes bounce {
   0%,
-   20%,
-    50%,
-     80%,
-      100% {
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     transform: translateY(0);
   }
@@ -8397,7 +8397,11 @@ table tr td {
   }
 }
 @-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -8411,7 +8415,11 @@ table tr td {
   }
 }
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -webkit-transform: translateY(0);
@@ -8495,10 +8503,19 @@ table tr td {
   word-spacing: 5px;
 }
 
+.footer-logo {
+  padding-bottom: 10px !important;
+}
+.footer-logo img {
+  width: 100% !important;
+}
+
 .arrow {
   cursor: pointer;
+  font-size: 50px;
+  left: 48%;
   margin-left: -20px;
-  margin-top: 20%;
+  margin-top: 35%;
   padding: 2%;
   position: fixed;
 }
@@ -8529,7 +8546,10 @@ table tr td {
 }
 
 .modal {
+  background: #000 !important;
+  border: 1px solid #fff;
   height: 100%;
+  overflow: hidden !important;
 }
 .modal .modal-content {
   height: 100%;
@@ -8539,12 +8559,6 @@ table tr td {
   border: 0;
   height: 100%;
   width: 100%;
-}
-
-.modal {
-  background: #000 !important;
-  border: 1px solid #fff;
-  overflow: hidden !important;
 }
 
 .modal-overlay {
@@ -8566,6 +8580,10 @@ table tr td {
   z-index: 999999;
 }
 
+.featured {
+  height: 100%;
+  width: 100%;
+}
 .featured .row {
   padding: 0 20px;
 }
@@ -8653,11 +8671,6 @@ table tr td {
   margin-top: 40%;
 }
 
-.featured {
-  height: 100%;
-  width: 100%;
-}
-
 .section-subline {
   color: #777;
   letter-spacing: .4px;
@@ -8696,24 +8709,22 @@ table tr td {
   border-bottom: 0 !important;
 }
 
-.footer-logo {
-  padding-bottom: 10px !important;
+.footer-content .col {
+  padding: 0 !important;
 }
 
 .footer .col {
-  border: 1px solid red;
   padding-bottom: 10px;
 }
 .footer h4 {
   padding-top: 15px;
 }
 
-.arrow {
-  font-size: 50px;
-  left: 48%;
-  margin-top: 35%;
+@media only screen and (min-width: 481) and (max-width: 600px) {
+  .footer-content .col:nth-child(1) .col {
+    margin-left: 34.6667% !important;
+  }
 }
-
 @media only screen and (min-width: 0) and (max-width: 600px) {
   .feature-box:nth-child(2n) {
     border-right: 0;
@@ -8856,13 +8867,23 @@ table tr td {
     border-bottom: 0;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+  .footer-content .col:nth-child(1) .col {
+    margin-left: 69% !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .footer-content .col:nth-child(1) .col {
+    margin-left: 55% !important;
+  }
+}
 @media only screen and (min-width: 601px) {
   .footer-content .col a {
     font-size: 14px;
   }
   .footer-content .row {
-    width: 100%;
     margin-bottom: 0;
+    width: 100%;
   }
   .footer-content .row:nth-child(2) .col {
     padding-left: 20px;
@@ -8870,21 +8891,21 @@ table tr td {
   .footer-content .row .col:nth-child(3) {
     padding-left: 47px;
   }
-}
-.know-us-md .row {
-  display: table;
-  width: 100%;
-}
-.know-us-md .row .inner {
-  display: table-cell;
-  height: 110px;
-  width: 50%;
-}
-.know-us-md .row:nth-child(3) .inner:nth-child(2) {
-  position: relative;
-  top: -60px;
-}
 
+  .know-us-md .row {
+    display: table;
+    width: 100%;
+  }
+  .know-us-md .row .inner {
+    display: table-cell;
+    height: 110px;
+    width: 50%;
+  }
+  .know-us-md .row:nth-child(3) .inner:nth-child(2) {
+    position: relative;
+    top: -60px;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .footer-note {
     font-size: 12px;
@@ -9088,9 +9109,9 @@ table tr td {
   display: none;
 }
 .navbar .nav-big li .menu {
+  letter-spacing: 1px;
   line-height: 32px;
   margin: 15px;
-  letter-spacing: 1px;
   padding: 0 !important;
 }
 .navbar .nav-big li .menu:hover {
@@ -9118,14 +9139,14 @@ table tr td {
   display: none;
 }
 .navbar.scrolled .button-collapse i {
-  color: gray !important;
+  color: #A9A9A9 !important;
 }
 .navbar.scrolled li a {
   color: #000 !important;
 }
 .navbar.scrolled li.active a {
-  color: #f44336 !important;
   border-bottom: 2px solid #f44336;
+  color: #f44336 !important;
 }
 
 .brand-logo img {
@@ -9520,10 +9541,6 @@ nav .nav-big a:hover {
   }
   .contact .row {
     margin-bottom: 0;
-  }
-
-  .footer-content .row {
-    width: 89% !important;
   }
 
   .contact-info {
