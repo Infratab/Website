@@ -21,7 +21,7 @@ $(document).ready(function($) {
        }, 600);
    });
    //arrow scroll
-   $(".js-arrow-scroll").on("click", function(e) {
+   $("#jsArrowScroll").on("click", function(e) {
        e.preventDefault();
        $("body, html").animate({
            scrollTop: $("#jsKnowUs").offset().top - 100
