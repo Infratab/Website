@@ -1,4 +1,5 @@
 module.exports = function (grunt) {
+  var environment = grunt.option('target') || 'dev';
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         sass: {
@@ -11,12 +12,28 @@ module.exports = function (grunt) {
             }
           }
       },
-      watch: {
-        files: ["sass/**/*.scss"],
-        tasks: ["sass"]
-      }
-    });
+
+      scsslint: {
+          src: [
+            'sass/abstracts/*.scss',
+            'sass/components/*.scss',
+            'sass/pages/*.scss'
+            
+         ],
+        options: {
+          config: 'sass-lint.yml',
+          colorizeOutput: true
+        }
+      },
+        watch: {
+          files: ["sass/**/*.scss"],
+          tasks: ["scsslint", "sass"]
+        }
+      });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-scss-lint');
+     grunt.registerTask( "default", ["scsslint", "sass", "watch"]);
+    grunt.registerTask("deploy", ['scsslint', 'sass', + environment ]);
 };
