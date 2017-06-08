@@ -56,3 +56,39 @@
   }
 }
 //====================== Award Ends=================================//
+
+//====================== Featured =================================//
+.featured {
+  .feature-img {
+    border-bottom: 1px solid $gray;
+    border-right: 1px solid $gray;
+    height: 200px;
+    position: relative;
+    text-align: center;
+
+    &:nth-child(4),
+    &:nth-child(8),
+    &:nth-child(12) {
+      border-right: 0;
+    }
+
+    &:nth-child(9),
+    &:nth-child(10),
+    &:nth-child(11),
+    &:nth-child(12) {
+      border-bottom: 0;
+    }
+
+    img {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      max-width: 80%;
+      padding: 20px;
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+  }
+}
+//====================== Featured Ends =================================//

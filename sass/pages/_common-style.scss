@@ -86,6 +86,13 @@ table tr td {
   text-transform: uppercase;
 }
 
+.section-subheader {
+  color: $grey;
+  margin: 5% auto;
+  text-align: center;
+  width: 60%;
+}
+
 .header-underline {
   border-bottom: 3px solid $theme-green;
   margin: 10px auto 25px;
