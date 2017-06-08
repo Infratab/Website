@@ -1,0 +1,88 @@
+//scss-lint:disable NestingDepth SelectorDepth
+nav {
+  background-color: $transparent;
+  box-shadow: none;
+  padding: 0 5%;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+
+  .brand-logo {
+    img {
+      margin-top: 10px;
+      width: 200px;
+    }
+  }
+
+  .color-logo {
+    display: none;
+  }
+
+  .nav-menu {
+
+    li {
+      .menu-item {
+        letter-spacing: 1px;
+        line-height: 32px;
+        margin: 15px;
+        padding: 0;
+
+        &:hover {
+          background: $transparent $important;
+          border-bottom: 2px solid $active-menu;
+          color: $active-menu;
+        }
+      }
+
+      span {
+        font-size: 18px;
+
+        &:hover {
+          color: $active-menu;
+        }
+      }
+
+      &.active {
+        background: $transparent $important;
+
+        a {
+          background: $transparent $important;
+          border-bottom: 2px solid $active-menu;
+          color: $active-menu;
+        }
+      }
+    }
+  }
+
+  &.navbar-white {
+    background-color: $white $important;
+    box-shadow: 0 2px 2px 0 $black-14, 0 1px 5px 0 $black-12, 0 3px 1px -2px $black-2;
+
+    .color-logo {
+      display: initial;
+    }
+
+    .white-logo {
+      display: none;
+    }
+
+    li {
+      .menu-item {
+        color: $black;
+      }
+
+      &.active {
+        .menu-item {
+          border-bottom: 2px solid $active-menu;
+          color: $active-menu;
+        }
+      }
+    }
+
+    .button-collapse {
+      i {
+        color: $black $important;
+      }
+    }
+  }
+}

@@ -7,3 +7,13 @@ $black-12: rgba(0, 0, 0, .12);
 $black-2: rgba(0, 0, 0, .2);
 
 $important: !important;
+
+%overlay {
+  bottom: 5px;
+  font-size: 38px;
+  font-weight: 300;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
