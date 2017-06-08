@@ -16,6 +16,8 @@
 
   .overlay-content {
     @extend %center-wrapper;
+    width: 100%;
+    z-index: 10;
   }
 
   p {

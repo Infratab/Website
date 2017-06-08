@@ -27,4 +27,8 @@ setInterval(function(){
 
 },1000);
 
+/* Modal*/
+	$('#modal1').modal('open');
+  $('.modal').modal();
+
 });
