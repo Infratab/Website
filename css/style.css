@@ -8511,7 +8511,7 @@ table tr td {
   padding-bottom: 10px !important;
 }
 .footer-logo img {
-  width: 100% !important;
+  width: 65% !important;
 }
 
 .arrow {
@@ -9238,7 +9238,7 @@ table tr td {
     margin-top: 1% !important;
   }
   .footer-logo img {
-    max-width: 55%;
+    max-width: 55% !important;
   }
 }
 .navbar {
