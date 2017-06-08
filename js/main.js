@@ -1,6 +1,6 @@
 $(document).ready(function($) {
 	function checkScroll(){
-	    var startY = $('.scroll').height() - 50  ; //The point where the navbar changes in px
+	    var startY = $('.scroll').height() - 200  ; //The point where the navbar changes in px
 	    if($(window).scrollTop() > startY){
 	        $('.navbar').addClass("scrolled");
 	    }else{
@@ -39,7 +39,7 @@ $(document).ready(function($) {
         $('.js-food-seconds').text(seconds);
         var foodWastage = Number(parseInt(seconds * averageFoodWastage)).toLocaleString();
         $('.js-average-food').text(foodWastage);
-      
+
     },1000);
 
     $('#modal1').modal('open');
