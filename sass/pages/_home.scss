@@ -1,6 +1,10 @@
 // Bounce
 @-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+   20%,
+    50%,
+     80%,
+      100% {
     -moz-transform: translateY(0);
     transform: translateY(0);
   }
@@ -48,35 +52,6 @@
   }
 }
 
-.arrow {
-  cursor: pointer;
-  margin-left: -20px;
-  margin-top: 20%;
-  padding: 2%;
-  position: fixed;
-}
-
-.icon-down-arrow {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-}
-
-.play-button {
-  height: 100px;
-  line-height: 100px;
-  width: 100px;
-
-  .icon-play {
-    color: $white;
-    font-size: 50px;
-
-    &:hover {
-      font-size: 60px;
-    }
-  }
-}
-
 //Bounce end
 .margin-top-10 {
   margin-top: 10%;
@@ -98,39 +73,12 @@
   font-weight: 600;
 }
 
-.highlight {
+.highlight-text {
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.modal {
-  @extend .z-depth-4;
-  background: $black $important;
-  border: 1px solid $white;
-  overflow: hidden $important;
-  }
-
-.modal-overlay {
-  opacity: 1 $important;
-}
-
-.modal-close {
-  background: $grey;
-  border: 2px solid $white;
-  border-radius: 50%;
-  color: $white;
-  height: 40px;
-  line-height: 40px;
-  margin-top: 5px;
-  position: absolute;
-  right: 5px;
-  @extend .z-depth-3;
-  text-align: center;
-  width: 40px;
-  z-index: 999999;
-
-}
-
+//landing-page section
 .landing-page {
   height: 100%;
   overflow: hidden;
@@ -175,8 +123,33 @@
   }
 }
 
-.padd {
-  padding: 0 20px;
+.arrow {
+  cursor: pointer;
+  margin-left: -20px;
+  margin-top: 20%;
+  padding: 2%;
+  position: fixed;
+}
+
+.icon-down-arrow {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+.play-button {
+  height: 100px;
+  line-height: 100px;
+  width: 100px;
+
+  .icon-play {
+    color: $white;
+    font-size: 50px;
+
+    &:hover {
+      font-size: 60px;
+    }
+  }
 }
 
 .down-arrow {
@@ -200,6 +173,43 @@
   }
 }
 
+.modal {
+  @extend .z-depth-4;
+  background: $black $important;
+  border: 1px solid $white;
+  overflow: hidden $important;
+  }
+
+.modal-overlay {
+  opacity: 1 $important;
+}
+
+.modal-close {
+  background: $grey;
+  border: 2px solid $white;
+  border-radius: 50%;
+  color: $white;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 5px;
+  position: absolute;
+  right: 5px;
+  @extend .z-depth-3;
+  text-align: center;
+  width: 40px;
+  z-index: 999999;
+
+}
+
+//know-us -section
+.featured {
+
+  .row {
+    padding: 0 20px;
+  }
+}
+
+
 .know-us {
   height: 100%;
   padding: $padding-5;
@@ -213,27 +223,38 @@
   text-transform: uppercase;
 }
 
-.conta {
-  margin-bottom: -50px;
+.know-us-md {
+
+  .content {
+    max-width: 220px;
+    padding: 0 20px;
+    position: relative;
+    top: -82px;
+  }
+
+  .row {
+
+    &:nth-child(2) {
+
+      .inner {
+
+        img {
+          max-width: 100%;
+          width: 300px;
+        }
+      }
+    }
+  }
 }
 
 
-img-hi {
-  padding: 0 20px;
-}
+
 
 .heading-bottom-line {
   border-bottom: 3px solid $green;
   margin: auto;
   margin-bottom: $margin-5;
   width: 50px;
-}
-
-.text1 {
-  max-width: 220px $important;
-  padding: 0 20px $important;
-  position: relative;
-  top: -82px;
 }
 
 .know-us-info {
@@ -258,12 +279,14 @@ img-hi {
   font-size: $font-16;
 }
 
+
+
+//awards
 .awards {
   background-color: $light-green;
   padding: $padding-5;
 
-  .col.s2 {
-    border: 1px solid blue;
+  .col {
     text-align: center;
     width: 20% $important;
 
@@ -273,21 +296,21 @@ img-hi {
   }
 }
 
-.award-1 {
+.award-img-1 {
   margin-top: 30px;
 }
 
-.award-5 {
+.award-img-5 {
   margin-top: 40px;
   width: 64% $important;
 }
 
-.award-3 {
+.award-img-3 {
   width: 60%;
 }
 
-.award-2,
-.award-4 {
+.award-img-2,
+.award-img-4 {
   margin-top: 40%;
 }
 
@@ -338,15 +361,6 @@ img-hi {
 }
 
 
-.know-us-image-1 {
-  max-width: 100%;
-  width: 500px;
-}
-
-.know-us-image {
-  max-width: 100%;
-  width: 300px;
-}
 
 
 .footer-logo {
@@ -377,6 +391,37 @@ img-hi {
       border-right: 0;
     }
   }
+
+  .know-us-sm {
+
+    .col {
+
+      &:nth-child(1) {
+
+        img {
+          max-width: 100%;
+          width: 500px;
+        }
+      }
+    }
+
+    .row {
+
+      &:nth-child(2) {
+
+        .col {
+
+          &:nth-child(1) {
+
+            img {
+              max-width: 62%;
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -397,15 +442,15 @@ img-hi {
 }
 
 @media only screen and (min-width: 540px) and (max-width: 767px) {
-  .award-2,
-  .award-4 {
+  .award-img-2,
+  .award-img-4 {
     margin-top: 15% $important;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 539px) {
-  .award-2,
-  .award-4 {
+  .award-img-2,
+  .award-img-4 {
     margin-top: 28% $important;
   }
 
@@ -415,7 +460,8 @@ img-hi {
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .awards {
-    .col.s2 {
+
+    .col {
       height: 140px $important;
       margin: 0 auto $important;
       text-align: center $important;
@@ -427,23 +473,23 @@ img-hi {
     }
   }
 
-  .award-1,
-  .award-2,
-  .award-3,
-  .award-4 {
+  .award-img-1,
+  .award-img-2,
+  .award-img-3,
+  .award-img-4 {
     max-width: 100% $important;
     width: 110px $important;
   }
 
-  .award-1 {
+  .award-img-1 {
     margin-top: 15px $important;
   }
 
-  .award-3 {
+  .award-img-3 {
     margin-top: 6px $important;
   }
 
-  .award-5 {
+  .award-img-5 {
     margin-top: 27px $important;
     max-width: 100% $important;
     width: 70px $important;
@@ -451,7 +497,7 @@ img-hi {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 600px) {
-.footer-content {
+  .footer-content {
 
     h4 {
       font-size: 22px;
@@ -481,7 +527,8 @@ img-hi {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .awards {
-    .col.s2 {
+
+    .col {
       height: 140px $important;
       margin: 0 auto $important;
       text-align: center $important;
@@ -499,34 +546,34 @@ img-hi {
     }
   }
 
-  .award-1,
-  .award-2,
-  .award-3,
-  .award-4 {
+  .award-img-1,
+  .award-img-2,
+  .award-img-3,
+  .award-img-4 {
     max-width: 100% $important;
     width: 110px $important;
   }
 
-  .award-1 {
+  .award-img-1 {
     margin-top: 15px $important;
   }
 
-  .award-3 {
+  .award-img-3 {
     margin-top: 6px $important;
   }
 
-  .award-5 {
+  .award-img-5 {
     margin-top: 27px $important;
     max-width: 100% $important;
     width: 70px $important;
   }
 
-  .award-2 {
+  .award-img-2 {
     margin-top: 19% $important;
 
   }
 
-  .award-4 {
+  .award-img-4 {
     margin-top: 13% $important;
   }
 }
@@ -541,49 +588,63 @@ img-hi {
       border-bottom: 0;
     }
   }
-
- 
 }
 
 @media only screen and (min-width: 601px) {
   .footer-content {
-    .col{
-      a{
+    .col {
+      a {
         font-size: 14px;
+      }
     }
-    }
+
     .row {
       width: 100%;
       margin-bottom: 0;
-     &:nth-child(2) {
-       .col {
-        padding-left: 20px;
-       }
-     }
-     .col {
-      &:nth-child(3) {
-        padding-left: 47px;
-        .row {
-          .col {
-                    }
+
+      &:nth-child(2) {
+
+        .col {
+          padding-left: 20px;
         }
       }
-     }
+
+      .col {
+
+        &:nth-child(3) {
+          padding-left: 47px;
+        }
+      }
     }
   }
 }
 
-.chars {
-  display: table;
-  width: 100%;
+.know-us-md {
 
-  .inner {
-    display: table-cell;
-    height: 110px;
-    width: 50%;
+  .row {
+    display: table;
+    width: 100%;
+
+    .inner {
+      display: table-cell;
+      height: 110px;
+      width: 50%;
+    }
+
+    &:nth-child(3) {
+
+      .inner {
+
+        &:nth-child(2) {
+          position: relative;
+          top: -60px
+        }
+      }
+    }
   }
-}
 
+
+}
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .footer-note {
@@ -600,9 +661,9 @@ img-hi {
     font-size: 45px;
   }
 
-  .hide-on-med-and-up {
+  .know-us-sm {
     .row {
-      .col.s12 {
+      .col {
 
         img {
           margin-bottom: 30px $important;
@@ -618,7 +679,6 @@ img-hi {
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .landing-page-center {
-    background-color: pink;
     height: 64px;
     max-width: 250px;
     top: 52%;
@@ -638,7 +698,7 @@ img-hi {
     }
   }
 
-  .play-button .icon-play {
+  .icon-play {
     font-size: 25px;
     position: relative;
     top: -28px;
@@ -657,11 +717,11 @@ img-hi {
   .feature-box {
     height: 146px;
 
-      img {
-        max-width: 85%;
-        padding: 20px;
-      }
+    img {
+      max-width: 85%;
+      padding: 20px;
     }
+  }
 }
 
 
@@ -689,8 +749,11 @@ img-hi {
     max-width: 97%;
   }
 
-  .chars {
-    width: 82% $important;
+  .know-us-md {
+
+    .row {
+      width: 82% $important;
+    }
   }
 }
 
@@ -716,7 +779,6 @@ img-hi {
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .landing-page-center {
-    background-color: red;
     height: 112px;
     max-width: 430px;
     top: 39%;
@@ -729,7 +791,7 @@ img-hi {
       word-spacing: 3px;
     }
 
-    .play-button .icon-play {
+    .icon-play {
       font-size: 32px;
     }
   }
@@ -747,22 +809,48 @@ img-hi {
     width: 150px;
   }
 
-  .know-us-image {
-    max-width: 62%;
-    width: 300px;
-  }
+
 }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
   .know-us-image {
-    max-width: 70%;
-    width: 300px;
+    max-width: 70% $important;
+    width: 300px $important;
   }
 
 
   .know-us-image-1 {
     max-width: 95%;
     width: 485px;
+  }
+
+
+  .know-us-md {
+
+    .row {
+
+      &:nth-child(1) {
+
+        .inner {
+
+          img {
+            max-width: 95%;
+            width: 485px;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+
+        .inner {
+
+          img {
+            max-width: 60%;
+            width: 300px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -772,7 +860,7 @@ img-hi {
     height: 187px;
   }
 
-  .infra {
+  .footer-logo {
     margin-top: 2.5%;
   }
 }
@@ -788,7 +876,7 @@ img-hi {
     }
   }
 
-  .infra {
+  .footer-logo {
     margin-top: 1.8%;
   }
 
@@ -811,18 +899,18 @@ img-hi {
 }
 
 @media only screen and (min-width: 993px) {
-  .infra {
+  .footer-logo {
     margin-top: 2%;
   }
 }
 
 @media only screen and (min-width: 1250px) {
-  .infra {
-    margin-top: 1% $important;
-  }
-
   .footer-logo {
-    max-width: 55%;
+    margin-top: 1% $important;
+
+    img {
+      max-width: 55%;
+    }
   }
 }
 

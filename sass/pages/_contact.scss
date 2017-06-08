@@ -40,7 +40,7 @@
   background-color: $white;
   bottom: 100px;
   box-shadow: 0 6px 9px 0 rgba(0, 0, 0, .3), 4px 6px 8px 0 rgba(0, 0, 0, .1);
-  height: 500px;
+  height: 570px;
   margin: auto;
   position: relative;
   width: 60%;
@@ -59,10 +59,16 @@
   display: table-cell;
   padding: 0;
 }
+.btn-flat {
+text-transform: capitalize;
+}
+.btn-style{
+      padding: 0 10px;
+}
 
 .contact-info {
   background-color: $blue;
-  height: 500px;
+  height: 570px;
   width: 100%;
 
   header {
@@ -176,7 +182,6 @@
   }
 
   .info-box {
-    margin-left: auto;
     margin-right: auto;
     width: 239px;
 
@@ -241,6 +246,18 @@
     padding-top: 30px;
   }
 
+  .contact-header {
+    padding-top: 25px;
+    padding-left: 17px;
+  }
+
+  form {
+    padding: 10px 40px;
+    .input-field {
+      padding-top: 10px;
+    }
+  }
+
   .info-box {
     margin-left: auto;
     margin-right: auto;
@@ -266,3 +283,16 @@
 
 }
 
+/*@media only screen and (min-width: 430px) and (max-width: 600px) {
+.contact{
+  .col{
+
+    &:nth-child(1){
+  width: 70%;
+  background-color: $blue !important;
+  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, .3), 4px 6px 8px 0 rgba(0, 0, 0, .1);
+ 
+  }
+  }
+}
+}8*/

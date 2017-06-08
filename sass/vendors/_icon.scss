@@ -9,6 +9,7 @@
   font-style: normal;
 }
 
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icon' !important;
@@ -24,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-global-o:before {
+  content: "\e906";
+}
 .icon-play2:before {
   content: "\e909";
 }
@@ -35,6 +39,12 @@
 }
 .icon-globe:before {
   content: "\e901";
+}
+.icon-location2:before {
+  content: "\e948";
+}
+.icon-attachment:before {
+  content: "\e9cd";
 }
 .icon-hamburger:before {
   content: "\e907";
@@ -50,7 +60,4 @@
 }
 .icon-phone:before {
   content: "\e905";
-}
-.icon-global-o:before {
-  content: "\e906";
 }

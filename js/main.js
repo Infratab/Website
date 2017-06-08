@@ -21,7 +21,7 @@ $(document).ready(function($) {
        }, 600);
    });
    //arrow scroll
-   $("#jsArrowScroll").on("click", function(e) {
+   $(".js-arrow-scroll").on("click", function(e) {
        e.preventDefault();
        $("body, html").animate({
            scrollTop: $("#jsKnowUs").offset().top - 100
@@ -36,9 +36,10 @@ $(document).ready(function($) {
     var seconds = 0;
     setInterval(function(){
         seconds++;
-        $('#jsFoodSeconds').text(seconds);
+        $('.js-food-seconds').text(seconds);
         var foodWastage = Number(parseInt(seconds * averageFoodWastage)).toLocaleString();
-        $('#jsAverageFood').text(foodWastage);
+        $('.js-average-food').text(foodWastage);
+      
     },1000);
 
     $('#modal1').modal('open');

@@ -1,5 +1,3 @@
-@import "variables1";
-
 @font-face {
   font-family: 'icon';
   src:  url('../fonts/icon.eot?lbo7ev');
@@ -10,6 +8,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icon' !important;
@@ -25,59 +25,39 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-global-o {
-  &:before {
-    content: $icon-global-o;
-  }
+.icon-global-o:before {
+  content: "\e906";
 }
-.icon-play2 {
-  &:before {
-    content: $icon-play2;
-  }
+.icon-play2:before {
+  content: "\e909";
 }
-.icon-phone-o {
-  &:before {
-    content: $icon-phone-o;
-  }
+.icon-phone-o:before {
+  content: "\e900";
 }
-.icon-play {
-  &:before {
-    content: $icon-play;
-  }
+.icon-play:before {
+  content: "\e908";
 }
-.icon-globe {
-  &:before {
-    content: $icon-globe;
-  }
+.icon-globe:before {
+  content: "\e901";
 }
-.icon-location2 {
-  &:before {
-    content: $icon-location2;
-  }
+.icon-location2:before {
+  content: "\e948";
 }
-.icon-hamburger {
-  &:before {
-    content: $icon-hamburger;
-  }
+.icon-attachment:before {
+  content: "\e9cd";
 }
-.icon-down-arrow {
-  &:before {
-    content: $icon-down-arrow;
-  }
+.icon-hamburger:before {
+  content: "\e907";
 }
-.icon-envelope-o {
-  &:before {
-    content: $icon-envelope-o;
-  }
+.icon-down-arrow:before {
+  content: "\e902";
 }
-.icon-envelope {
-  &:before {
-    content: $icon-envelope;
-  }
+.icon-envelope-o:before {
+  content: "\e903";
 }
-.icon-phone {
-  &:before {
-    content: $icon-phone;
-  }
+.icon-envelope:before {
+  content: "\e904";
 }
-
+.icon-phone:before {
+  content: "\e905";
+}
