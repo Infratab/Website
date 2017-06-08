@@ -15,13 +15,7 @@
   background-image: url('../img/overlay.png');
 
   .overlay-content {
-    bottom: auto;
-    left: 50% $important;
-    max-height: calc(100% - 100px);
-    position: absolute;
-    right: auto;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    @extend %center-wrapper;
   }
 
   p {
