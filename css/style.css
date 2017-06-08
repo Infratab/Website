@@ -8590,6 +8590,7 @@ table tr td {
 }
 .featured .row {
   padding: 0 20px;
+  width: 80%;
 }
 
 .know-us {
