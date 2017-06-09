@@ -1,6 +1,12 @@
 .footer {
   background: $footer-bg;
 
+  a {
+    &:hover {
+      color: $active-menu $important;
+    }
+  }
+
   .footer-img {
     width: 100%;
   }
@@ -12,7 +18,26 @@
 
   .footer-logo {
     img {
+      margin-top: 6px;
       max-width: 80%;
+    }
+  }
+
+  h5 {
+    color: $grey;
+    margin-bottom: 6px;
+  }
+
+  li {
+    height: 25px;
+    line-height: 25px;
+
+    a {
+      color: $light-grey;
+    }
+
+    i {
+      margin-right: 5px;
     }
   }
 }

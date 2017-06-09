@@ -56,7 +56,7 @@ label,
 select,
 textarea,
 table tr td {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .section-wrapper {
@@ -95,6 +95,6 @@ table tr td {
 
 .header-underline {
   border-bottom: 3px solid $theme-green;
-  margin: 10px auto 25px;
+  margin: 25px auto;
   width: 50px;
 }
