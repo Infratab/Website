@@ -93,6 +93,22 @@
   width: 40px;
 }
 
+@media only screen and (min-width:320px) and (max-width:600px) {
+  .overlay-content {
+    p {
+      font-size: 22px;
+    }
+
+    .icon-play-o {
+      font-size: 35px;
+    }
+
+    .down-arrow {
+      font-size: 30px;
+      margin-top: 3%;
+    }
+  }
+}
 //======================= Home Banner Ends ========================//
 
 //====================== Know us =================================//
@@ -176,6 +192,27 @@
     height: 200px;
     line-height: 200px;
     margin-top: 3%;
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+  .award {
+    padding: 5% 2.5%;
+
+    .img-section {
+      height: 150px;
+      line-height: 150px;
+      margin-top: 1%;
+
+      .award3,
+      .award4 {
+        width: 50%;
+      }
+
+      .award5 {
+        width: 40%;
+      }
+    }
   }
 }
 //====================== Award Ends=================================//
