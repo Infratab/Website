@@ -118,3 +118,24 @@ table tr td {
     width: 80% $important;
   }
 }
+
+@media only screen and (min-width:320px) and (max-width:600px)   {
+  .section-wrapper {
+    width: 98%;
+
+    .content {
+      font-size: 14px;
+      padding: 0;
+    }
+
+    .footer-note {
+      font-size: 12px;
+      padding-top: 5px;
+    }
+  }
+
+  .section-subheader {
+    margin-bottom: 20px;
+    width: 94% $important;
+  }
+}
