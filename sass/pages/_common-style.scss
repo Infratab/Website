@@ -65,19 +65,19 @@ table tr td {
 
   .wrapper {
     margin: 5% 0 3%;
+  }
 
-    .content {
-      color: $grey;
-      font-size: 16px;
-      padding: 10px;
-      text-align: justify;
-    }
+  .content {
+    color: $grey;
+    font-size: 16px;
+    padding: 10px;
+    text-align: justify;
+  }
 
-    .footer-note {
-      color: $light-grey;
-      font-size: 14px;
-      padding: 10px;
-    }
+  .footer-note {
+    color: $light-grey;
+    font-size: 14px;
+    padding: 10px;
   }
 }
 
@@ -97,4 +97,24 @@ table tr td {
   border-bottom: 3px solid $theme-green;
   margin: 25px auto;
   width: 50px;
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px)   {
+  .section-wrapper {
+    width: 96%;
+
+    .content {
+      font-size: 14px;
+      padding: 0 0 5px 5px;
+    }
+
+    .footer-note {
+      font-size: 12px;
+      padding: 0 0 5px 5px;
+    }
+  }
+
+  .section-subheader {
+    width: 80% $important;
+  }
 }
