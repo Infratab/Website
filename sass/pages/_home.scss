@@ -119,6 +119,24 @@
   color: $theme-green;
   font-size: 60px;
 }
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  .knowus {
+
+    .iot-section {
+      img {
+        height: 140px;
+        max-width: 100%;
+      }
+    }
+
+    .machine-section {
+      img {
+        height: 140px;
+      }
+    }
+  }
+}
 //====================== Know us Ends=================================//
 
 //====================== Award =================================//
@@ -148,19 +166,6 @@
     position: relative;
     text-align: center;
 
-    &:nth-child(4),
-    &:nth-child(8),
-    &:nth-child(12) {
-      border-right: 0;
-    }
-
-    &:nth-child(9),
-    &:nth-child(10),
-    &:nth-child(11),
-    &:nth-child(12) {
-      border-bottom: 0;
-    }
-
     img {
       bottom: 0;
       left: 0;
@@ -171,6 +176,70 @@
       right: 0;
       top: 0;
    }
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .featured {
+    .feature-img {
+      height: 200px;
+
+      &:nth-child(4),
+      &:nth-child(8),
+      &:nth-child(12) {
+        border-right: 0;
+      }
+
+      &:nth-child(9),
+      &:nth-child(10),
+      &:nth-child(11),
+      &:nth-child(12) {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  .featured {
+    .feature-img {
+      height: 200px;
+
+      &:nth-child(3),
+      &:nth-child(6),
+      &:nth-child(9),
+      &:nth-child(12) {
+        border-right: 0;
+      }
+
+      &:nth-child(10),
+      &:nth-child(11),
+      &:nth-child(12) {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:767px)   {
+  .featured {
+    .feature-img {
+      height: 150px;
+
+      &:nth-child(2),
+      &:nth-child(4),
+      &:nth-child(6),
+      &:nth-child(8),
+      &:nth-child(10),
+      &:nth-child(12) {
+        border-right: 0;
+      }
+
+      &:nth-child(11),
+      &:nth-child(12) {
+        border-bottom: 0;
+      }
+    }
   }
 }
 //====================== Featured Ends =================================//
