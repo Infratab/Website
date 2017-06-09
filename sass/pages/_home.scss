@@ -96,6 +96,25 @@
 //======================= Home Banner Ends ========================//
 
 //====================== Know us =================================//
+.knowus {
+
+  .iot-section {
+    img {
+      max-width: 94%;
+    }
+  }
+
+  .machine-section {
+    .content {
+      margin-top: 27px;
+    }
+
+    img {
+      height: 180px;
+    }
+  }
+}
+
 .waste-counter {
   color: $theme-green;
   font-size: 60px;
