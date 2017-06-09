@@ -23,7 +23,7 @@ $(document).ready(function($) {
 		seconds++;
 		$('#foodSeconds').text(seconds);
 		var foodWastage = Number(parseInt(seconds * averageFoodWastage)).toLocaleString();
-		$('#averageFood').text(foodWastage);
+		$('.averageFood').text(foodWastage);
 
 	},1000);
 
