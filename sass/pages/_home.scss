@@ -299,7 +299,7 @@
   .landing-page-center {
     height: 64px;
     max-width: 250px;
-    top: 52%;
+    top: 42%;
     width: 100%;
     z-index: 3;
 
@@ -313,14 +313,14 @@
   .icon-play-o {
     font-size: 25px $important;
     position: relative;
-    top: -28px;
+    top: -38px;
    }
 
   .arrow {
     cursor: pointer;
     font-size: 30px;
     left: 51.4%;
-    margin-top: 20%;
+    margin-top: 13%;
     padding: 2%;
     position: fixed;
     text-align: center;
@@ -579,7 +579,7 @@
     height: 170px;
 
     img {
-      max-width: 80%;
+      max-width: 90%;
       padding: 27px;
     }
   }
@@ -750,29 +750,29 @@
 
 @media only screen and (min-width: 481px) and (max-width: 624px) {
   .arrow {
-    margin-top: 27%;
+   // margin-top: 14%;
   }
 }
 
 @media only screen and (min-width: 625px) and (max-width: 1023px) {
   .arrow {
-    margin-top: 38%;
+  //  margin-top: 25%;
   }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .arrow {
-    margin-top: 44%;
+    //margin-top: 44%;
   }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .landing-page-center {
-    height: 112px;
+    height: 0;
     max-width: 430px;
-    top: 39%;
+    top: 14% $important;
     width: 100%;
-    z-index: 3;
+    z-index: 3 $important;
 
     p {
       font-size: 30px;
@@ -782,6 +782,8 @@
 
     .icon-play-o {
       font-size: 32px;
+      position: relative;
+      top: -27px;
     }
   }
 
@@ -800,18 +802,6 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
-  .know-us-image {
-    max-width: 70% $important;
-    width: 300px $important;
-  }
-
-
-  .know-us-image-1 {
-    max-width: 95%;
-    width: 485px;
-  }
-
-
   .know-us-md {
 
     .row {
