@@ -25,6 +25,7 @@
   text-align: center;
   top: 46%;
   transform: translateX(-50%)translateY(-50%);
+  width: 392px;
   z-index: 20;
 
   h3 {
@@ -236,6 +237,19 @@ text-transform: capitalize;
         font-size: 20px;
       }
     }
+  }
+
+  .btn-sm {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 801px) {
+  .btn-style {
+    padding: 0 5px;
+    width: 97px;
   }
 }
 

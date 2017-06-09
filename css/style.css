@@ -9522,6 +9522,7 @@ nav .nav-big a:hover {
   text-align: center;
   top: 46%;
   transform: translateX(-50%) translateY(-50%);
+  width: 392px;
   z-index: 20;
 }
 .map-center h3 {
@@ -9704,6 +9705,17 @@ nav .nav-big a:hover {
   }
   .info-box .info-details i {
     font-size: 20px;
+  }
+
+  .btn-sm {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 801px) {
+  .btn-style {
+    padding: 0 5px;
+    width: 97px;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 767px) {
