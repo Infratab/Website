@@ -8467,6 +8467,20 @@ table tr td {
   text-transform: uppercase;
 }
 
+.heading-bottom-line {
+  border-bottom: 3px solid #7cc48d;
+  margin: auto;
+  margin-bottom: 5%;
+  width: 50px;
+}
+
+.section-header {
+  color: #000;
+  margin: 20px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .landing-page {
   height: 100%;
   overflow: hidden;
@@ -8599,13 +8613,6 @@ table tr td {
   width: 100%;
 }
 
-.section-header {
-  color: #000;
-  margin: 20px auto;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .know-us-md .content {
   max-width: 220px;
   padding: 0 20px;
@@ -8615,13 +8622,6 @@ table tr td {
 .know-us-md .row:nth-child(2) .inner img {
   max-width: 100%;
   width: 300px;
-}
-
-.heading-bottom-line {
-  border-bottom: 3px solid #7cc48d;
-  margin: auto;
-  margin-bottom: 5%;
-  width: 50px;
 }
 
 .know-us-info {
@@ -8706,14 +8706,6 @@ table tr td {
   border-bottom: 0;
 }
 
-.border-right-zero {
-  border-right: 0 !important;
-}
-
-.border-bottom-zero {
-  border-bottom: 0 !important;
-}
-
 .footer-content .col {
   padding: 0 !important;
 }
@@ -8747,6 +8739,10 @@ table tr td {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .feature-box {
     height: 115px;
+  }
+  .feature-box img {
+    max-width: 85%;
+    padding: 20px;
   }
 
   .footer-content h4 {
@@ -8928,37 +8924,6 @@ table tr td {
     margin-top: 23px !important;
     width: 42% !important;
   }
-
-  /*.award-img-1,
-  .award-img-2,
-  .award-img-3,
-  .award-img-4 {
-    max-width: 100% $important;
-    width: 110px $important;
-  }
-
-  .award-img-1 {
-    margin-top: 15px $important;
-  }
-
-  .award-img-3 {
-    margin-top: 6px $important;
-  }
-
-  .award-img-5 {
-    margin-top: 27px $important;
-    max-width: 100% $important;
-    width: 70px $important;
-  }
-
-  .award-img-2 {
-    margin-top: 19% $important;
-
-  }
-
-  .award-img-4 {
-    margin-top: 13% $important;
-  }*/
 }
 @media only screen and (min-width: 601px) and (max-width: 992px) {
   .feature-box:nth-child(3n) {
@@ -9089,8 +9054,8 @@ table tr td {
     padding: 0 20px !important;
   }
 
-  .icon-play {
-    font-size: 25px;
+  .icon-play-o {
+    font-size: 25px !important;
     position: relative;
     top: -28px;
   }
@@ -9103,14 +9068,6 @@ table tr td {
     padding: 2%;
     position: fixed;
     text-align: center;
-  }
-
-  .feature-box {
-    height: 146px;
-  }
-  .feature-box img {
-    max-width: 85%;
-    padding: 20px;
   }
 }
 @media only screen and (min-width: 993px) {
@@ -9158,7 +9115,7 @@ table tr td {
     letter-spacing: .4px;
     word-spacing: 3px;
   }
-  .landing-page-center .icon-play {
+  .landing-page-center .icon-play-o {
     font-size: 32px;
   }
 
@@ -9485,10 +9442,6 @@ nav .nav-big a:hover {
     width: 90%;
   }
 
-  .footer-logo {
-    width: 200px;
-  }
-
   .know-us-image {
     margin-top: 30px;
   }
@@ -9536,6 +9489,16 @@ nav .nav-big a:hover {
     margin-bottom: 30px !important;
     margin-top: 0 !important;
     padding: 10px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .footer-logo {
+    width: 170px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .footer-logo {
+    width: 190px;
   }
 }
 .green-color {
@@ -9667,26 +9630,49 @@ nav .nav-big a:hover {
   }
 
   .contact-header {
+    padding-left: 10px;
     padding-top: 30px;
   }
-}
-@media only screen and (max-width: 600px) {
+
   .map-caption {
-    font-size: 12px !important;
-    line-height: 15px !important;
-    position: relative !important;
-    top: -28px !important;
+    font-size: 15px !important;
+    line-height: 11px !important;
+  }
+
+  .map-center {
+    height: 84px;
+    left: 50%;
+    top: 62%;
+  }
+  .map-center h3 {
+    font-size: 12px;
+    font-weight: 500;
+    max-width: 100%;
+    width: 252px;
   }
 
   .contact {
-    bottom: 90px;
+    bottom: 56px;
     height: auto !important;
   }
   .contact .col:nth-child(2) form {
-    padding-bottom: 20px;
+    padding: 0 15px 20px;
   }
   .contact .row {
     margin-bottom: 0;
+  }
+
+  .btn-style {
+    font-size: 12px;
+    height: 0 !important;
+    line-height: 0 !important;
+    padding: 0 !important;
+    width: 74px;
+  }
+
+  .btn-flat i {
+    font-size: 12px;
+    line-height: 1;
   }
 
   .contact-info {
@@ -9700,16 +9686,24 @@ nav .nav-big a:hover {
     width: 239px;
   }
   .info-box h5 {
-    font-size: 22px;
+    font-size: 20px;
+    margin-left: 10px;
     padding: 10px;
   }
   .info-box .info-details {
     margin: 6px 15px;
   }
   .info-box .info-details p {
+    font-size: 14px;
     margin: 0 50px;
     margin-top: -33px;
     width: 151px;
+  }
+  .info-box .info-details a {
+    font-size: 14px;
+  }
+  .info-box .info-details i {
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 767px) {
@@ -9717,10 +9711,42 @@ nav .nav-big a:hover {
     font-size: 20px;
     letter-spacing: .4px;
     line-height: 26px;
-    padding: 10px;
-    position: relative;
-    top: -28px;
+    padding-left: 8px;
     word-spacing: 4px;
+  }
+
+  .map-center {
+    height: 83px;
+    left: 50%;
+    top: 43%;
+  }
+  .map-center h3 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    max-width: 100%;
+    padding-left: 2px;
+    width: 348px;
+  }
+
+  form {
+    padding: 10px 13px;
+  }
+
+  .contact-header {
+    padding-left: 7px;
+  }
+
+  .btn-style {
+    font-size: 13px;
+    height: 0 !important;
+    line-height: 0 !important;
+    padding: 0 !important;
+    width: 74px;
+  }
+
+  .btn-flat i {
+    font-size: 12px;
+    line-height: 1;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 690px) {
@@ -9748,12 +9774,8 @@ nav .nav-big a:hover {
 
   .contact-header {
     padding-top: 25px;
-    padding-left: 17px;
   }
 
-  form {
-    padding: 10px 40px;
-  }
   form .input-field {
     padding-top: 10px;
   }
@@ -9778,18 +9800,14 @@ nav .nav-big a:hover {
     width: 151px;
   }
 }
-/*@media only screen and (min-width: 430px) and (max-width: 600px) {
-.contact{
-  .col{
-
-    &:nth-child(1){
-  width: 70%;
-  background-color: $blue !important;
-  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, .3), 4px 6px 8px 0 rgba(0, 0, 0, .1);
- 
+@media only screen and (min-width: 768px) {
+  .contact-header {
+    padding-left: 17px;
   }
+
+  form {
+    padding: 10px 40px;
   }
 }
-}8*/
 
 /*# sourceMappingURL=style.css.map */
