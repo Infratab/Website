@@ -1,3 +1,4 @@
+//scss-lint:disable NestingDepth SelectorDepth
 .navbar {
   background-color: transparent;
   box-shadow: none;
@@ -17,26 +18,25 @@
         letter-spacing: 1px;
         line-height: 32px;
         margin: 15px;
-        padding: 0 $important;
+        padding: 0;
 
         &:hover {
-          color: #f44336 $important;
-          border-bottom: 2px solid #f44336;
+          border-bottom: 2px solid $red;
+          color: $red;
         }
       }
 
       span {
-        font-size: 18px $important;
+        font-size: 18px;
 
         &:hover {
-          color: #f44336 $important;
+          color: $red;
         }
       }
 
       &.active {
         a {
-          color: #f44336 $important;
-          border-bottom: 2px solid #f44336;
+          border-bottom: 2px solid $red;
         }
       }
     }
@@ -44,10 +44,10 @@
 
   &.scrolled {
     background-color: $white;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 $gray4, 0 1px 5px 0 $gray3, 0 3px 1px -2px $gray5;
 
     .color-logo {
-      display: initial $important;
+      display: initial;
     }
 
     .white-logo {
@@ -57,19 +57,19 @@
     .button-collapse {
 
       i {
-        color: $gray $important;
+        color: $gray;
       }
     }
 
     li {
       a {
-        color: $black $important;
+        color: $black;
       }
 
       &.active {
         a {
-          border-bottom: 2px solid #f44336;
-          color: #f44336 $important;
+          border-bottom: 2px solid $red;
+          color: $red;
         }
       }
     }
@@ -82,10 +82,10 @@
     width: 200px;
   }
 }
-//===================================== FOOTER =================================//
+
+
 .footer {
-  // background-image: url('../img/waves.png');
-  background: #fcfcff;
+  background: $ghost-white;
 
   .footer-content {
     h4 {
@@ -93,16 +93,17 @@
     }
 
     a {
-      display: block;
       color: $grey;
+      display: block;
+
       &:hover {
-        color: #f44336 $important;
+        color: $red;
       }
     }
   }
 
   hr {
-    border: 1px solid $line;
+    border: 1px solid $gray5;
     width: 80%;
   }
 }
@@ -129,14 +130,30 @@
   text-align: center;
 
   a {
-    font-size: 15px $important;
     color: $green $important;
     display: inline $important;
+    font-size: 15px $important;
   }
 }
 
-nav .nav-big a,
-nav .nav-big li.active,
-nav .nav-big a:hover {
-  background: transparent $important;
+nav {
+
+  .nav-big {
+
+    a {
+      background: transparent $important;
+
+      &:hover {
+        background: transparent $important;
+      }
+    }
+
+    li {
+
+      &.active {
+        background: transparent $important;
+      }
+    }
+  }
 }
+

@@ -4,8 +4,7 @@ html {
 }
 
 * {
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+  @include font-smoothing;
 }
 
 h1,
@@ -23,38 +22,105 @@ button,
 input,
 select,
 textarea,
-table tr td {
-  margin: 0;
-  padding: 0;
+table {
+
+  tr {
+
+    td {
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
 
 em {
   font-style: normal;
 }
 
-ul li {
-  list-style: none;
+ul {
+
+  li {
+    list-style: none;
+  }
 }
 
 a {
-  text-decoration: none;
   color: $black;
+  text-decoration: none;
+  }
+
+h1 {
+  font-size: 24px;
+  }
+
+h2 {
+  font-size: 22px;
+  }
+
+h3 {
+  font-size: 20px;
 }
 
-h1 {font-size: 24px;}
-h2 {font-size: 22px;}
-h3 {font-size: 20px;}
-h4 {font-size: 18px;}
-h5 {font-size: 16px;}
-h6 {font-size: 14px;}
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
 p,
-ul li,
+ul > li,
 a,
 button,
 input,
 label,
 select,
 textarea,
-table tr td {
+table > tr > td {
   font-size: 16px;
 }
+
+.margin-top-10 {
+  margin-top: 10%;
+}
+
+.margin-top-20 {
+  margin-top: 20%;
+}
+
+.margin-top-5 {
+  margin-top: 5%;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.highlight-text {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.heading-bottom-line {
+  border-bottom: 3px solid $green;
+  margin: auto;
+  margin-bottom: $margin-5;
+  width: 50px;
+}
+
+.section-header {
+  color: $black;
+  margin: 20px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+

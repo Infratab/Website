@@ -16,9 +16,9 @@ module.exports = function (grunt) {
       scsslint: {
           src: [
            
-            'sass/pages/_home.scss'
-            
-         ],
+            'sass/abstracts/*.scss',
+            'sass/pages/*.scss',
+          ],
         options: {
           config: 'sass-lint.yml',
           colorizeOutput: true
