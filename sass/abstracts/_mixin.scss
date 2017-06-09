@@ -1,26 +1,7 @@
 //scss-lint:disable DuplicateProperty VendorPrefix PropertySpelling NameFormat
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -webkit-inline-box;
-  display: flex;
-  display: inline-flex;
-}
 
-@mixin not-last-child($selector) {
-  & #{$selector}:not(:last-child) {
-    @content;
-  }
-}
 
-@mixin scrollbars($size) {
 
-  ::-webkit-scrollbar {
-    width: $size;
-  }
-}
 
 @mixin border-radius($radius) {
   border-radius: $radius;
@@ -65,17 +46,7 @@
 
 
 
-@mixin box-shadow($shadow1, $shadow2:false, $shadow3:false, $shadow4:false, $shadow5:false) {
-  $params: $shadow1;
-  @if $shadow2 { $params: $shadow1, $shadow2; }
-  @if $shadow3 != false { $params: $shadow1, $shadow2, $shadow3; }
-  @if $shadow4 != false { $params: $shadow1, $shadow2, $shadow3, $shadow4; }
-  @if $shadow5 != false { $params: $shadow1, $shadow2, $shadow3, $shadow4, $shadow5; }
-  -webkit-box-shadow: $params;
-  -moz-box-shadow: $params;
-  box-shadow: $params;
 
-}
 
 @mixin opacity($value) {
   $IEValue: $value * 100;
@@ -107,14 +78,6 @@
 }
 
 
-@mixin user-select {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 @mixin box-sizing($box-model) {
   -webkit-box-sizing: $box-model; // Safari <= 5
@@ -122,14 +85,6 @@
   box-sizing: $box-model;
 }
 
-@mixin overflow-scroll {
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  -moz-overflow-scrolling: touch;
-  -o-overflow-scrolling: touch;
-  -ms-overflow-scrolling: touch;
-  overflow-scrolling: touch;
-}
 
 
 
