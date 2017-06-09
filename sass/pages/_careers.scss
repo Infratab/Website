@@ -18,7 +18,7 @@
   transition: box-shadow 2s $important;
 
   &:hover {
-    box-shadow: rgba(0, 0, 0, .1) 0 0 10px 3px $important;
+    box-shadow: $gray2 0 0 10px 3px $important;
   }
 
 }
@@ -114,7 +114,7 @@
 }
 
 .card-content {
-  padding: 36px !important;
+  padding: 36px $important;
 }
 
 .hide-init {
@@ -138,15 +138,9 @@
     display: block;
   }
 
-  .team-caption {
-    font-size: $font-24;
-  }
-
   .section-subline {
     width: 90%;
   }
-
- 
 
   .know-us-image {
     margin-top: 30px;

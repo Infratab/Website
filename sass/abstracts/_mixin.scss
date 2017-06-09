@@ -1,8 +1,4 @@
-//scss-lint:disable DuplicateProperty VendorPrefix PropertySpelling NameFormat
-
-
-
-
+//scss-lint:disable DuplicateProperty VendorPrefix NameFormat
 @mixin border-radius($radius) {
   border-radius: $radius;
   -webkit-border-radius: $radius;
@@ -44,10 +40,6 @@
   transition-delay: $delay;
 }
 
-
-
-
-
 @mixin opacity($value) {
   $IEValue: $value * 100;
   opacity: $value;
@@ -67,17 +59,6 @@
   @include transform(translate($x, $y));
 }
 
-@mixin linear-gradient($from, $to) {
-  background: $to;
-  background: -moz-linear-gradient(top, $from 0%, $to 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $from), color-stop(100%, $to));
-  background: -webkit-linear-gradient(top, $from 0%, $to 100%);
-  background: -o-linear-gradient(top, $from 0%, $to 100%);
-  background: linear-gradient(to bottom, $from 0%, $to 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$from}, endColorstr=#{$to});
-}
-
-
 
 @mixin box-sizing($box-model) {
   -webkit-box-sizing: $box-model; // Safari <= 5
@@ -85,7 +66,38 @@
   box-sizing: $box-model;
 }
 
+@mixin keyframes($animation-name) {
 
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
 
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
 
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  -webkit-animation: #{$str};
+  animation: #{$str};
+}
+
+@mixin font-smoothing($value: antialiased) {
+  -webkit-font-smoothing: $value;
+}
 

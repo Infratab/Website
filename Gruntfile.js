@@ -16,7 +16,8 @@ module.exports = function (grunt) {
       scsslint: {
           src: [
            
-            'sass/pages/_home.scss'
+            'sass/abstracts/_mixin.scss',
+            'sass/pages/_header-footer.scss'
             
          ],
         options: {
