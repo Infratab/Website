@@ -38,40 +38,40 @@
       z-index: 9999;
     }
   }
-}
 
-.video {
-  width: 100%;
-}
+  .overlay {
+    @extend %overlay;
+    background-image: url('../img/overlay.png');
 
-.overlay {
-  @extend %overlay;
-  background-image: url('../img/overlay.png');
+    .overlay-content {
+      @extend %center-wrapper;
+      width: 100%;
+      z-index: 10;
+    }
 
-  .overlay-content {
-    @extend %center-wrapper;
-    width: 100%;
-    z-index: 10;
-  }
-
-  p {
-    color: $white;
-    font-size: 40px;
-  }
-
-  .play-button {
-    .icon-play-o {
+    p {
       color: $white;
-      font-size: 50px;
+      font-size: 40px;
+    }
 
-      &:hover {
-        &:before {
-          content: '\e90c';
-          font-size: 52px;
+    .play-button {
+      .icon-play-o {
+        color: $white;
+        font-size: 50px;
+
+        &:hover {
+          &:before {
+            content: '\e90c';
+            font-size: 52px;
+          }
         }
       }
     }
   }
+}
+
+.video {
+  width: 100%;
 }
 
 .down-arrow {
