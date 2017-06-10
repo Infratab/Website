@@ -57,3 +57,14 @@
     font-size: 14px $important;
   }
 }
+
+@media only screen and (min-width:1440px) {
+  .footer {
+    .footer-logo {
+      img {
+        margin-top: 0;
+        max-width: 65%;
+      }
+    }
+  }
+}
