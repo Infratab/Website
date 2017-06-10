@@ -184,14 +184,21 @@
   margin-bottom: 5%;
   padding: 5%;
 
-  img {
-    width: 100%;
-  }
-
   .img-section {
     height: 200px;
-    line-height: 200px;
-    margin-top: 3%;
+    position: relative;
+    text-align: center;
+
+    img {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      max-width: 80%;
+      padding: 20px;
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
   }
 }
 
@@ -221,10 +228,18 @@
 .featured {
   .feature-img {
     border-bottom: 1px solid $gray;
+    border-left: 1px solid $transparent;
     border-right: 1px solid $gray;
+    border-top: 1px solid $transparent;
+    cursor: pointer;
     height: 200px;
     position: relative;
     text-align: center;
+
+    &:hover {
+      background-color: $sky-blue;
+      border: 1px solid $theme-green $important;
+    }
 
     img {
       bottom: 0;
@@ -247,14 +262,14 @@
       &:nth-child(4),
       &:nth-child(8),
       &:nth-child(12) {
-        border-right: 0;
+        border-right: 1px solid $transparent;
       }
 
       &:nth-child(9),
       &:nth-child(10),
       &:nth-child(11),
       &:nth-child(12) {
-        border-bottom: 0;
+        border-bottom: 1px solid $transparent;
       }
     }
   }
@@ -269,13 +284,13 @@
       &:nth-child(6),
       &:nth-child(9),
       &:nth-child(12) {
-        border-right: 0;
+        border-right: 1px solid $transparent;
       }
 
       &:nth-child(10),
       &:nth-child(11),
       &:nth-child(12) {
-        border-bottom: 0;
+        border-bottom: 1px solid $transparent;
       }
     }
   }
@@ -298,12 +313,12 @@
       &:nth-child(8),
       &:nth-child(10),
       &:nth-child(12) {
-        border-right: 0;
+        border-right: 1px solid $transparent;
       }
 
       &:nth-child(11),
       &:nth-child(12) {
-        border-bottom: 0;
+        border-bottom: 1px solid $transparent;
       }
     }
   }
