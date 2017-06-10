@@ -99,6 +99,12 @@ table tr td {
   width: 50px;
 }
 
+@media only screen and (min-width:993px) and (max-width:1365px)   {
+  .section-wrapper {
+    width: 94%;
+  }
+}
+
 @media only screen and (min-width:601px) and (max-width:992px)   {
   .section-wrapper {
     width: 96%;
