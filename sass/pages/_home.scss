@@ -186,6 +186,7 @@
 
   .award-img {
     height: 200px;
+    margin-top: 3%;
     position: relative;
     text-align: center;
 
@@ -193,12 +194,50 @@
       bottom: 0;
       left: 0;
       margin: auto;
-      max-width: 80%;
+      max-width: 90%;
       padding: 20px;
       position: absolute;
       right: 0;
       top: 0;
    }
+  }
+}
+
+@media only screen and (min-width:993px) and (max-width:1366px) {
+  .award {
+
+    .award-img {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width:992px) {
+  .award {
+    padding: 5% 2.5%;
+
+    .award-img {
+      margin-top: 1%;
+
+      .award1,
+      .award2 {
+        padding: 0;
+        width: 90%;
+      }
+
+      .award3 {
+        padding: 30px;
+        width: 70%;
+      }
+
+      .award5,
+      .award4 {
+        padding: 35px;
+        width: 70%;
+      }
+    }
   }
 }
 
