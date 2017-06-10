@@ -99,6 +99,24 @@ table tr td {
   width: 50px;
 }
 
+@media only screen and (min-width:1367px) {
+  .section-wrapper {
+
+    .content {
+      font-size: 18px;
+    }
+
+    .footer-note {
+      font-size: 16px;
+    }
+  }
+
+  .section-subheader {
+    width: 50%;
+    font-size: 18px;
+  }
+}
+
 @media only screen and (min-width:993px) and (max-width:1365px)   {
   .section-wrapper {
     width: 94%;
