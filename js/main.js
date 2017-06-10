@@ -32,11 +32,19 @@ $(document).ready(function($) {
   $('.modal').modal();
 
 /* Know scroll */
-//arrow scroll
-	$("#joinScroll").on("click", function(e) {
+	$("#scrollKnowus").on("click", function(e) {
 			e.preventDefault();
 			$("body, html").animate({
 					scrollTop: $("#knowUs").offset().top - 100
+			}, 600);
+	});
+
+/* Scroll to join us */
+//join us scroll
+	$("#scrollJoin").on("click", function(e) {
+			e.preventDefault();
+			$("body, html").animate({
+					scrollTop: $("#joinUs").offset().top - 100
 			}, 600);
 	});
 
