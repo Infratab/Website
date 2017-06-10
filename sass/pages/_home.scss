@@ -182,9 +182,9 @@
 .award {
   background: $sky-blue;
   margin-bottom: 5%;
-  padding: 5%;
+  padding: 5% 0;
 
-  .img-section {
+  .award-img {
     height: 200px;
     position: relative;
     text-align: center;
@@ -206,7 +206,7 @@
   .award {
     padding: 5% 2.5%;
 
-    .img-section {
+    .award-img {
       height: 150px;
       line-height: 150px;
       margin-top: 1%;
