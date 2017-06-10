@@ -70,6 +70,14 @@ nav {
     li {
       .menu-item {
         color: $black;
+
+        &.com-website {
+          color: $theme-blue $important;
+
+          &:hover {
+            border-bottom: none $important;
+          }
+        }
       }
 
       &.active {
@@ -78,6 +86,7 @@ nav {
           color: $active-menu;
         }
       }
+
     }
 
     .button-collapse {
