@@ -39,6 +39,10 @@ ul li {
 a {
   color: $black;
   text-decoration: none;
+
+  &:hover {
+    color: $theme-blue;
+  }
 }
 
 h1 {font-size: 24px;}
