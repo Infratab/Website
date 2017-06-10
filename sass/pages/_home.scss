@@ -38,10 +38,6 @@
       z-index: 9999;
     }
   }
-
-  .modal-overlay {
-    opacity: 1 $important;
-  }
 }
 
 .video {
@@ -93,19 +89,57 @@
   width: 40px;
 }
 
+
+.modal-overlay {
+  opacity: 1 $important;
+}
+
+@media only screen and (min-width:1024px) {
+  .home-banner {
+    .overlay-content {
+      p {
+        font-size: 55px;
+        padding-bottom: 20px;
+      }
+
+      .icon-play-o {
+        font-size: 60px $important;
+      }
+
+      .down-arrow {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width:320px) and (max-width:600px) {
-  .overlay-content {
-    p {
-      font-size: 22px;
+  .home-banner {
+    .modal {
+      height: auto;
+
+      .modal-close {
+        font-size: 20px;
+        height: 30px;
+        line-height: 30px;
+        width: 30px;
+
+      }
     }
 
-    .icon-play-o {
-      font-size: 35px $important;
-    }
+    .overlay-content {
+      p {
+        font-size: 22px;
+      }
 
-    .down-arrow {
-      font-size: 30px;
-      margin-top: 3%;
+      .icon-play-o {
+        font-size: 35px $important;
+      }
+
+      .down-arrow {
+        font-size: 30px;
+        margin-top: 3%;
+      }
     }
   }
 }
@@ -209,6 +243,7 @@
     .award-img {
       img {
         max-width: 100%;
+        padding: 10px;
       }
     }
   }
