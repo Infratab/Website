@@ -185,6 +185,8 @@
   }
 }
 //======================= Life Ends ========================//
+
+//======================= Join us ========================//
 .joinus {
   .card {
     cursor: pointer;
@@ -218,3 +220,21 @@
     }
   }
 }
+
+//======================= Joinus Ends ========================//
+
+//======================= career contact ========================//
+.career-contact {
+  text-align: center;
+
+  p {
+    color: $grey;
+    font-size: 18px;
+  }
+
+  a {
+    color: $theme-green;
+    font-size: 20px;
+  }
+}
+//======================= career contact Ends ========================//
