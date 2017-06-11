@@ -27,9 +27,19 @@ $(document).ready(function($) {
 
 	},1000);
 
-/* Modal*/
-	$('#modal1').modal('open');
-  $('.modal').modal();
+	$('#playVideo').click(function () {
+		$('#modal1').modal('open');
+		$('.modal').modal();
+		$('.modal').modal({
+	      dismissible: false
+		});
+		$('.modal-content').append('<iframe src="https://www.youtube.com/embed/9yc8u471NNw?rel=0&amp;controls=0;autoplay=1"></iframe>');
+	});
+
+	$('#closeVideo').click(function () {
+		$('#modal1').modal('close');
+		$('.modal-content iframe').remove();
+	})
 
 /* Know scroll */
 	$("#scrollKnowus").on("click", function(e) {
