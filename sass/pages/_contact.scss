@@ -27,7 +27,7 @@
       font-size: 35px;
       font-weight: 400;
       margin: 0 auto 2%;
-      width: 44%;
+      width: 70%;
     }
   }
 }
@@ -108,6 +108,30 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1365px) {
+  .contact {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width:993px) and (max-width:1199px) {
+  .contact {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width:992px) {
+  .contact {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+  .contact {
+    width: 94%;
   }
 }
 //======================= Contact Ends ========================//
