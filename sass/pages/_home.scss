@@ -85,12 +85,7 @@
 
   .icon-play-o {
     color: $white;
-    font-size: 50px;
     position: relative;
-
-    &:hover {
-      font-size: 60px;
-    }
   }
 }
 
@@ -209,7 +204,9 @@
   padding: $padding-5;
 
   .col {
+    margin: 0 auto;
     text-align: center;
+
     width: 20% $important;
 
     img {
@@ -312,7 +309,7 @@
   }
 
   .icon-play-o {
-    font-size: 25px $important;
+    font-size: 25px;
     top: -38px;
    }
 
@@ -515,9 +512,7 @@
   .awards {
 
     .col {
-      height: 140px $important;
-      margin: 0 auto $important;
-      text-align: center $important;
+      height: 140px;
       width: 50% $important;
 
       &:last-child {
@@ -545,7 +540,7 @@
       .col {
 
         img {
-          margin-bottom: 30px $important;
+          margin-bottom: 30px;
         }
       }
     }
@@ -571,7 +566,7 @@
 
   .featured {
     .row {
-      padding: 0 40px $important;
+      padding: 0 40px;
     }
   }
 
@@ -590,9 +585,7 @@
   .awards {
 
     .col {
-      height: 200px $important;
-      margin: 0 auto $important;
-      text-align: center $important;
+      height: 200px;
 
       &:first-child,
       &:nth-child(2),
@@ -608,33 +601,32 @@
   }
 
   .award-img-1 {
-    margin-top: 60px $important;
-    max-width: 60% $important;
+    margin-top: 60px;
+    max-width: 60%;
     width: 100%;
 
   }
 
   .award-img-2 {
-    margin-top: 59px $important;
-    max-width: 62% $important;
+    margin-top: 59px;
+    max-width: 62%;
   }
 
   .hide-on-sm {
 
     .award-img-3 {
-      margin-top: 38px $important;
-      max-width: 36% $important;
+      margin-top: 38px;
+      max-width: 36%;
     }
   }
 
   .award-img-4 {
-    margin-top: 9.5% $important;
-    max-width: 25% $important;
-    width: 120px $important;
+    margin-top: 9.5%;
+    max-width: 25%;
   }
 
   .award-img-5 {
-    margin-top: 23px $important;
+    margin-top: 23px;
     width: 42% $important;
   }
 
@@ -651,7 +643,7 @@
       &:nth-child(1) {
 
         .col {
-          margin-left: 69% $important;
+          margin-left: 69%;
         }
       }
     }
@@ -738,7 +730,7 @@
 
       &:nth-last-child(3),
       &:nth-last-child(4) {
-        border-bottom: 0 $important;
+        border-bottom: 0;
       }
     }
   }
@@ -752,9 +744,9 @@
 @media only screen and (min-width: 601px) and (max-width: 767px) {
   .landing-page-center {
     max-width: 500px;
-    top: 14% $important;
+    top: 14%;
     width: 100%;
-    
+
     p {
       font-size: 30px;
       letter-spacing: .4px;
@@ -778,9 +770,9 @@
   .landing-page-center {
     height: 0;
     max-width: 500px;
-    top: 14% $important;
+    top: 14%;
     width: 100%;
-    
+
     p {
       font-size: 38px;
       letter-spacing: .4px;
@@ -801,10 +793,10 @@
 }
 
 
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) {
   .landing-page-center {
     max-width: 600px;
-    top: 27% $important;
+    top: 27%;
     width: 100%;
 
     p {
@@ -832,9 +824,9 @@
 @media only screen and (min-width: 481px) and (max-width: 600px) {
   .landing-page-center {
     max-width: 430px;
-    top: 14% $important;
+    top: 14%;
     width: 100%;
-    
+
     p {
       font-size: 30px;
       letter-spacing: .4px;
@@ -949,7 +941,7 @@
       &:nth-child(1) {
 
         .col {
-          margin-left: 55% $important;
+          margin-left: 55%;
         }
       }
     }
@@ -958,47 +950,44 @@
   .awards {
 
     .col {
-      height: 200px $important;
-      margin: 0 auto $important;
-      text-align: center $important;
+      height: 200px;
     }
   }
 
   .award-img-1 {
-    margin-top: 53px $important;
-    max-width: 80% $important;
+    margin-top: 53px;
+    max-width: 80%;
     width: 100%;
 
   }
 
   .award-img-2 {
-    margin-top: 51px $important;
-    max-width: 81% $important;
+    margin-top: 51px;
+    max-width: 81%;
   }
 
   .hide-on-md {
 
     .award-img-3 {
-      margin-top: 27px $important;
-      max-width: 57% $important;
+      margin-top: 27px;
+      max-width: 57%;
     }
   }
 
   .award-img-4 {
-    margin-top: 19% $important;
-    max-width: 45% $important;
-    width: 100% $important;
+    margin-top: 19%;
+    max-width: 45%;
   }
 
   .award-img-5 {
-    margin-top: 20px $important;
+    margin-top: 20px;
     width: 75% $important;
   }
 
   .know-us-md {
 
     .row {
-      width: 82% $important;
+      width: 82%;
     }
   }
 }
@@ -1008,7 +997,7 @@
     margin-top: 1% $important;
 
     img {
-      max-width: 55% $important;
+      max-width: 55%;
     }
   }
 }
