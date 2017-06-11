@@ -77,33 +77,33 @@
     <div class="col s12 m6 l7 form-section">
       <div class="">
         <h2 class="header text-blue">Looking for an Opportunity?</h2>
-        <form>
+        <form method="POST" action="http://formspree.io/careers@infratab.in">
           <div class="input-field">
-            <input id="email" placeholder="johnsnow@wall.com" type="email" class="validate" required="required">
+            <input id="email" placeholder="johnsnow@wall.com" type="email" name="email" class="validate" required="required">
             <label for="email">Your email <span class="red-text">*</span></label>
           </div>
 
           <div class="input-field">
-            <input id="telephone" type="tel" placeholder="+91 1234568790" class="validate">
+            <input id="telephone" name="telephone" type="tel" placeholder="+91 1234568790" class="validate">
             <label for="telephone" data-error="Enter correct phone number" data-success="right">Your Number <span class="red-text">*</span></label>
           </div>
 
           <div class="input-field">
-            <textarea id="textarea1" placeholder="Lord Commander of the Night’s Watch" class="materialize-textarea"></textarea>
+            <textarea id="textarea1" name="message" placeholder="Lord Commander of the Night’s Watch" class="materialize-textarea"></textarea>
             <label for="textarea1">Tell us about yourself</label>
           </div>
 
           <div class="file-field input-field">
             <div class="btn">
               <span><i class="icon-attachment"></i> Attach CV</span>
-              <input type="file" accept=".pdf,.doc,.docx">
+              <input type="file" name="attachment" accept=".pdf,.doc,.docx">
             </div>
             <div class="file-path-wrapper">
               <input class="file-path validate" type="text">
             </div>
           </div>
 
-          <button class="btn waves-effect waves-light" type="submit" name="action">Write to Us</button>
+          <button class="btn waves-effect waves-light" type="submit">Write to Us</button>
         </form>
       </div>
     </div>
