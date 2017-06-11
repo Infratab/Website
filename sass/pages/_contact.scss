@@ -33,6 +33,19 @@
   }
 }
 
+@media only screen and (min-width:601px) and (max-width:992px) {
+  .contact-banner {
+    .overlay {
+      .overlay-content {
+        p {
+          font-size: 30px;
+          width: 94%;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (min-width:320px) and (max-width:600px) {
   .contact-banner {
     .overlay {
@@ -125,6 +138,7 @@
   }
 }
 
+
 @media only screen and (min-width:1200px) and (max-width:1365px) {
   .contact {
     width: 65%;
@@ -139,9 +153,46 @@
 
 @media only screen and (min-width:601px) and (max-width:992px) {
   .contact {
-    width: 80%;
+    width: 90%;
   }
 }
+
+@media only screen and (min-width:601px) and (max-width:992px) {
+  .contact {
+
+    .header {
+      font-size: 20px;
+    }
+
+    .form-section {
+      padding: 0 15px;
+    }
+
+    .contact-section {
+
+      .header {
+        padding-left: 15px;
+      }
+
+        p {
+          font-size: 17px $important;
+        }
+      }
+
+      .icon {
+        font-size: 22px $important;
+        padding: 0 15px 0 10px $important;
+      }
+
+      .info {
+        margin-bottom: 10px;
+
+        a {
+          font-size: 17px $important;
+        }
+      }
+    }
+  }
 
 @media only screen and (min-width:320px) and (max-width:600px) {
   .contact {
