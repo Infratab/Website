@@ -42,9 +42,35 @@
   position: relative;
   width: 60%;
 
+  .header {
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .form-section {
+    padding: 0 30px;
+
+    .btn {
+      background-color: $theme-green;
+    }
+
+    .file-field {
+      margin-bottom: 35px;
+      
+      .btn {
+        background: transparent $important;
+        box-shadow: none;
+        color: $black;
+        padding: 0;
+        text-transform: capitalize;
+      }
+    }
+
+  }
+
   .contact-section {
     background-color: $theme-blue;
-    padding: 0;
+    height: 570px;
   }
 }
 //======================= Contact Ends ========================//
