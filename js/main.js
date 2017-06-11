@@ -33,7 +33,7 @@ $(document).ready(function($) {
 		$('.modal').modal({
 	      dismissible: false
 		});
-		$('.modal-content').append('<iframe src="https://www.youtube.com/embed/9yc8u471NNw?rel=0&amp;controls=0;autoplay=1"></iframe>');
+		$('.modal-content').append('<iframe src="https://www.youtube.com/embed/9yc8u471NNw?rel=0&amp;autoplay=1"></iframe>');
 	});
 
 	$('#closeVideo').click(function () {
