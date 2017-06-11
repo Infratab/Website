@@ -40,7 +40,7 @@
   height: 570px;
   margin: -6% auto 0;
   position: relative;
-  width: 60%;
+  width: 50%;
 
   .header {
     margin-top: 40px;
@@ -56,7 +56,7 @@
 
     .file-field {
       margin-bottom: 35px;
-      
+
       .btn {
         background: transparent $important;
         box-shadow: none;
@@ -71,6 +71,43 @@
   .contact-section {
     background-color: $theme-blue;
     height: 570px;
+
+    .header {
+      padding-left: 20px;
+    }
+    
+    .address {
+      display: inline-flex;
+      padding-bottom: 20px;
+
+      p {
+        color: $white;
+        font-size: 21px;
+      }
+    }
+
+    .icon {
+      color: $contact-icon;
+      font-size: 30px;
+      padding: 0 20px 0 15px;
+    }
+
+    .info {
+      margin-bottom: 20px;
+
+      span {
+        vertical-align: middle;
+      }
+
+      a {
+        color: $white;
+        font-size: 21px;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
   }
 }
 //======================= Contact Ends ========================//
