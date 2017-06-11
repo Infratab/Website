@@ -1,0 +1,50 @@
+//======================= Contact Banner ========================//
+.contact-banner {
+  height: auto;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .banner {
+    height: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .overlay {
+    @extend %overlay;
+
+    .overlay-content {
+      @extend %center-wrapper;
+      width: 100%;
+      z-index: 10;
+    }
+
+    p {
+      color: $white;
+      font-size: 35px;
+      font-weight: 400;
+      margin: 0 auto 2%;
+      width: 44%;
+    }
+  }
+}
+//======================= Contact Banner Ends ========================//
+
+//====================== Conatct =================================//
+.contact {
+  background-color: $white;
+  bottom: 100px;
+  height: 570px;
+  margin: -6% auto 0;
+  position: relative;
+  width: 60%;
+
+  .contact-section {
+    background-color: $theme-blue;
+    padding: 0;
+  }
+}
+//======================= Contact Ends ========================//
