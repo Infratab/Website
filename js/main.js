@@ -27,19 +27,62 @@ $(document).ready(function($) {
 
 	},1000);
 
+	function pauseVideo() {
+		var div = document.getElementById("popupVideo");
+		var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+		div.style.display='hide';
+		var func = 'pauseVideo';
+		iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
+	}
+	$('.modal').modal({
+	      dismissible: true,
+	      complete: function () {
+	      	console.log('modal close');
+	      	pauseVideo();
+	      }
+		});
+
 	$('#playVideo').click(function () {
 		$('#modal1').modal('open');
 		$('.modal').modal();
 		$('.modal').modal({
-	      dismissible: false
+	      dismissible: true,
+	      complete: function () {
+	      	console.log('modal close');
+	      	pauseVideo();
+	      }
 		});
-		$('.modal-content').append('<iframe src="https://www.youtube.com/embed/9yc8u471NNw?rel=0&amp;controls=0;autoplay=1"></iframe>');
+		var div = document.getElementById("popupVideo");
+		var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+		div.style.display='';
+		var func = 'playVideo';
+		iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
 	});
 
 	$('#closeVideo').click(function () {
 		$('#modal1').modal('close');
-		$('.modal-content iframe').remove();
-	})
+		var div = document.getElementById("popupVideo");
+		var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+		div.style.display='none';
+		var func = 'pauseVideo';
+		iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
+	});
+
+	
+
+	// $('#playVideo').click(function () {
+	// 	$('#modal1').modal('open');
+	// 	$('.modal').modal();
+	// 	$('.modal').modal({
+	//       dismissible: false
+	// 	});
+	// 	$('.modal-content').append('<iframe src="https://www.youtube.com/embed/9yc8u471NNw?rel=0&amp;controls=0;autoplay=1"></iframe>');
+	// });
+
+	// $('#closeVideo').click(function () {
+	// 	$('#modal1').modal('close');
+	// 	$('.modal-content iframe').remove();
+	// })
 
 /* Know scroll */
 //arrow scroll
