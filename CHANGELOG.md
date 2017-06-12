@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - SASS preprocessor has been added instead of LESS
 - Grunt has been added for compiling SASS
 
-### CHANGED
+### Changed
 - Website has undergone a complete makeover
 
 
