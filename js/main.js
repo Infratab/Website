@@ -27,20 +27,20 @@ $(document).ready(function($) {
 
 	},1000);
 
-	function pauseVideo() {
+	function infratabVideo(state) {
 		var div = document.getElementById("popupVideo");
 		var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
-		div.style.display='hide';
-		var func = 'pauseVideo';
+		div.style.display= state;
+		var func = state=='hide' ? 'pauseVideo' : 'playVideo';
 		iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
 	}
+
 	$('.modal').modal({
 	      dismissible: true,
 	      complete: function () {
-	      	console.log('modal close');
-	      	pauseVideo();
+	      	infratabVideo('hide');
 	      }
-		});
+	});
 
 	$('#playVideo').click(function () {
 		$('#modal1').modal('open');
@@ -48,20 +48,15 @@ $(document).ready(function($) {
 		$('.modal').modal({
 	      dismissible: true,
 	      complete: function () {
-	      	console.log('modal close');
-	      	pauseVideo();
+	      	infratabVideo('hide');
 	      }
 		});
-		var div = document.getElementById("popupVideo");
-		var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
-		div.style.display='';
-		var func = 'playVideo';
-		iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
+		infratabVideo('');
 	});
 
 	$('#closeVideo').click(function () {
 		$('#modal1').modal('close');
-		pauseVideo();
+		infratabVideo('hide');
 	});
 
 	
