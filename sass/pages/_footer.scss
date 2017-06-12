@@ -24,8 +24,9 @@
   }
 
   h5 {
-    color: $grey;
-    margin-bottom: 6px;
+    // color: $grey;
+    font-size: 20px;
+    margin-bottom: 8px;
   }
 
   li {
@@ -55,5 +56,16 @@
     color: $theme-blue $important;
     display: inline $important;
     font-size: 14px $important;
+  }
+}
+
+@media only screen and (min-width:1440px) {
+  .footer {
+    .footer-logo {
+      img {
+        margin-top: 0;
+        max-width: 65%;
+      }
+    }
   }
 }

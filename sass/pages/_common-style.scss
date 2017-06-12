@@ -39,6 +39,10 @@ ul li {
 a {
   color: $black;
   text-decoration: none;
+
+  &:hover {
+    color: $theme-blue;
+  }
 }
 
 h1 {font-size: 24px;}
@@ -56,7 +60,15 @@ label,
 select,
 textarea,
 table tr td {
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.text-blue {
+  color: $theme-blue;
+}
+
+.text-green {
+  color: $theme-green;
 }
 
 .section-wrapper {
@@ -99,12 +111,41 @@ table tr td {
   width: 50px;
 }
 
-@media only screen and (min-width:601px) and (max-width:1023px)   {
+@media only screen and (min-width:1367px) {
+  .section-wrapper {
+
+    .content {
+      font-size: 18px;
+    }
+
+    .footer-note {
+      font-size: 16px;
+    }
+  }
+
+  .section-subheader {
+    font-size: 18px;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width:993px) and (max-width:1365px)   {
+  .section-wrapper {
+    width: 94%;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width:992px)   {
   .section-wrapper {
     width: 96%;
 
     .content {
       font-size: 14px;
+      padding: 0 0 5px 5px;
+    }
+
+    h3 {
+      margin-bottom: 20px;
       padding: 0 0 5px 5px;
     }
 
@@ -119,7 +160,8 @@ table tr td {
   }
 }
 
-@media only screen and (min-width:320px) and (max-width:600px)   {
+
+@media only screen and (min-width:320px) and (max-width:600px) {
   .section-wrapper {
     width: 98%;
 
@@ -130,7 +172,7 @@ table tr td {
 
     .footer-note {
       font-size: 12px;
-      padding-top: 5px;
+      padding: 10px 0 0;
     }
   }
 
