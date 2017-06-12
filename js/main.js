@@ -61,11 +61,7 @@ $(document).ready(function($) {
 
 	$('#closeVideo').click(function () {
 		$('#modal1').modal('close');
-		var div = document.getElementById("popupVideo");
-		var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
-		div.style.display='none';
-		var func = 'pauseVideo';
-		iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
+		pauseVideo();
 	});
 
 	
