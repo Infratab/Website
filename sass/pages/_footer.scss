@@ -11,9 +11,17 @@
     width: 100%;
   }
 
-  hr {
-    border: 1px solid $gray;
+  .footer-container {
+    border-bottom: 2px solid $gray;
     width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px !important;
+    padding-bottom: 10px;
+
+    .contact-footer {
+      float: right;
+      width: 180px;
+    }
   }
 
   .footer-logo {
