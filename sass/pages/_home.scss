@@ -255,23 +255,6 @@
 
     .award-img {
       margin-top: 1%;
-
-      .award1,
-      .award2 {
-        padding: 0;
-        width: 90%;
-      }
-
-      .award3 {
-        padding: 30px;
-        width: 70%;
-      }
-
-      .award5,
-      .award4 {
-        padding: 35px;
-        width: 70%;
-      }
     }
   }
 }
@@ -280,21 +263,8 @@
   .award {
     padding: 5% 2.5%;
 
-    .award-img {
-      margin-top: 1%;
-
-      .award1,
-      .award2,
-      .award3,
-      .award4 {
-        padding: 0;
-        width: 90%;
-      }
-
-      .award5 {
-        padding: 35px;
-        width: 70%;
-      }
+    .award-img img {
+      padding: 30px;
     }
   }
 }
