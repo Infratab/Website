@@ -1,6 +1,6 @@
 //scss-lint:disable NestingDepth SelectorDepth
 //======================= Contact Banner ========================//
-.contact-banner {
+.map-banner {
   height: auto;
   max-width: 100%;
   overflow: hidden;
@@ -14,50 +14,11 @@
     }
   }
 
-  .overlay {
-    @extend %overlay;
-
-    .overlay-content {
-      @extend %center-wrapper;
-      width: 100%;
-      z-index: 10;
-    }
-
-    p {
-      color: $white;
-      font-size: 35px;
-      font-weight: 400;
-      margin: 0 auto 2%;
-      width: 70%;
-    }
+  .mapboxgl-control-container {
+    display: none;
   }
 }
 
-@media only screen and (min-width:601px) and (max-width:992px) {
-  .contact-banner {
-    .overlay {
-      .overlay-content {
-        p {
-          font-size: 30px;
-          width: 94%;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width:320px) and (max-width:600px) {
-  .contact-banner {
-    .overlay {
-      .overlay-content {
-        p {
-          font-size: 22px;
-          width: 94%;
-        }
-      }
-    }
-  }
-}
 //======================= Contact Banner Ends ========================//
 
 //====================== Conatct =================================//
