@@ -1,3 +1,4 @@
+//scss-lint:disable SelectorDepth NestingDepth VendorPrefix
 //======================= Home Banner ========================//
 .home-banner {
   height: 100%;
@@ -60,7 +61,7 @@
         font-size: 50px;
 
         &:hover {
-          &:before {
+          &::before {
             content: '\e90c';
           }
         }
@@ -311,13 +312,23 @@
     position: relative;
     text-align: center;
 
-    &:hover {
-      background-color: $sky-blue;
-      border: 1px solid $theme-green $important;
+    &:hover img {
+      -webkit-filter: grayscale(0%);
+      -webkit-transition: .5s ease-in-out;
+      -moz-filter: grayscale(0%);
+      -moz-transition: .5s ease-in-out;
+      -o-filter: grayscale(0%);
+      -o-transition: .5s ease-in-out;
     }
 
     img {
       bottom: 0;
+      -webkit-filter: grayscale(100%);
+      -webkit-transition: .5s ease-in-out;
+      -moz-filter: grayscale(100%);
+      -moz-transition: .5s ease-in-out;
+      -o-filter: grayscale(100%);
+      -o-transition: .5s ease-in-out;
       left: 0;
       margin: auto;
       max-width: 80%;
