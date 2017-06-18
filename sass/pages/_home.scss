@@ -8,7 +8,7 @@
 
   .modal {
     background: $black $important;
-    border: 1px solid $white;
+    // border: 1px solid $white;
     height: 100%;
     overflow: hidden $important;
 
@@ -24,11 +24,12 @@
     }
 
     .modal-close {
-      background: $black;
-      border: 2px solid $white;
+      // background: $black;
+      // border: 2px solid $white;
       border-radius: 50%;
       color: $white;
-      font-size: 24px;
+      font-size: 30px;
+      font-weight: bold;
       height: 40px;
       line-height: 40px;
       margin-top: 5px;
@@ -91,6 +92,7 @@
 
 
 .modal-overlay {
+  background-color: $white $important;
   opacity: 1 $important;
 }
 
