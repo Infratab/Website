@@ -188,6 +188,17 @@
 
 //======================= Join us ========================//
 .joinus {
+
+  .card-hover {
+    &:hover {
+      color: $theme-blue;
+    }
+
+    .card:hover {
+      @extend .z-depth-3;
+    }
+  }
+
   .card {
     cursor: pointer;
 
