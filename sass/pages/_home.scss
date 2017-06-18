@@ -264,8 +264,12 @@
   .award {
     padding: 5% 2.5%;
 
-    .award-img img {
-      padding: 30px;
+    .award-img {
+      height: 100px;
+
+      img {
+        padding: 30px;
+      }
     }
   }
 }
