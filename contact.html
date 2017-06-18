@@ -79,13 +79,13 @@
         <h2 class="header text-blue">Looking for an Opportunity?</h2>
         <form method="POST" action="http://formspree.io/careers@infratab.in">
           <div class="input-field">
-            <input id="email" placeholder="johnsnow@thewall.com" type="email" name="email" class="validate" required="required">
-            <label for="email">Your email <span class="red-text">*</span></label>
+            <input id="email" placeholder="johnsnow@thewall.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" type="email" name="email" class="validate" required="required">
+            <label for="email" data-error="Enter valid emailid">Your email <span class="red-text">*</span></label>
           </div>
 
           <div class="input-field">
-            <input id="telephone" name="telephone" type="tel" placeholder="+91 8040929250" class="validate">
-            <label for="telephone" data-error="Enter correct phone number" data-success="right">Your Number <span class="red-text">*</span></label>
+            <input id="telephone" name="telephone" type="tel" pattern="^[0-9\-\+\s\(\)]*$" placeholder="+91 8040929250" class="validate" required="required">
+            <label for="telephone" data-error="Enter valid number">Your Number <span class="red-text">*</span></label>
           </div>
 
           <div class="input-field">
@@ -96,7 +96,7 @@
           <div class="file-field input-field">
             <div class="btn">
               <span><i class="icon-attachment"></i> Attach CV</span>
-              <input type="file" name="attachment" accept=".pdf,.doc,.docx">
+              <input type="file" name="attachment" accept=".pdf,.doc,.docx" required="required">
             </div>
             <div class="file-path-wrapper">
               <input class="file-path validate" type="text">
