@@ -42,15 +42,29 @@
       background-color: $theme-green;
     }
 
+    .materialize-textarea {
+      max-height: 80px;
+      padding-bottom: 0 $important;
+    }
+
     .file-field {
       margin-bottom: 35px;
 
       .btn {
-        background: transparent $important;
+        background-color: $theme-blue $important;
+        cursor: pointer;
+        padding: 0 12px;
+
+        span,
+        i {
+          font-size: 14px;
+        }
+
+      }
+
+      .file-path {
+        border: none;
         box-shadow: none;
-        color: $black;
-        padding: 0;
-        text-transform: capitalize;
       }
     }
 
@@ -60,28 +74,40 @@
     background-color: $theme-blue;
     height: 570px;
 
-    .header {
-      padding-left: 20px;
+
+    .location-header {
+      color: $white;
+      font-size: 20px;
+      padding: 15px 10px;
+      text-decoration: underline;
+    }
+
+    .indian-address {
+      margin-top: 15px;
+    }
+
+    .headquater-address {
+      margin-top: 25px;
     }
 
     .address {
       display: inline-flex;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
 
       p {
         color: $white;
-        font-size: 18px;
+        font-size: 16px;
       }
     }
 
     .icon {
       color: $contact-icon;
-      font-size: 30px;
+      font-size: 22px;
       padding: 0 20px 0 15px;
     }
 
     .info {
-      margin-bottom: 30px;
+      margin-bottom: 10px;
 
       span {
         vertical-align: middle;
@@ -89,7 +115,7 @@
 
       a {
         color: $white;
-        font-size: 18px;
+        font-size: 17px;
 
         &:hover {
           color: $white;
