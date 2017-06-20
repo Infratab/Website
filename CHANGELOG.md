@@ -6,14 +6,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## [2.0.0] - 2017-6-20
 ### Added
 - More award has been added in award section
-- Real map has been added instead of map image in contact page.
+- Real map has been added instead of map image in contact page
+- Form validation has been
+
+### Updated
+- Life at infratab section image layout has been updated
 
 ### Changed
 - Team page banner image has been changed
 - Hover effect on featured section has been changed
-
-### Updated
-- Life at infratab section image layout has been updated
 
 ### Fixed
 - Now footer is responsive for all the screens.
