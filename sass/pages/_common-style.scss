@@ -41,7 +41,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: $theme-blue;
+    color: $active-menu;
   }
 }
 
@@ -82,14 +82,22 @@ table tr td {
   .content {
     color: $grey;
     font-size: 16px;
-    padding: 10px;
+    padding: 5px 10px;
     text-align: justify;
   }
 
   .footer-note {
-    color: $light-grey;
+    color: darken($theme-green, 10%);
     font-size: 14px;
-    padding: 10px;
+    padding: 5px 10px;
+
+    a {
+      color: $theme-blue;
+
+      &:hover {
+        color: $active-menu;
+      }
+    }
   }
 }
 

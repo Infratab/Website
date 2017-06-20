@@ -1,3 +1,4 @@
+//scss-lint:disable SelectorDepth NestingDepth VendorPrefix
 //======================= Home Banner ========================//
 .home-banner {
   height: 100%;
@@ -7,7 +8,7 @@
 
   .modal {
     background: $black $important;
-    border: 1px solid $white;
+    // border: 1px solid $white;
     height: 100%;
     overflow: hidden $important;
 
@@ -23,11 +24,12 @@
     }
 
     .modal-close {
-      background: $black;
-      border: 2px solid $white;
+      // background: $black;
+      // border: 2px solid $white;
       border-radius: 50%;
       color: $white;
-      font-size: 24px;
+      font-size: 30px;
+      font-weight: bold;
       height: 40px;
       line-height: 40px;
       margin-top: 5px;
@@ -60,7 +62,7 @@
         font-size: 50px;
 
         &:hover {
-          &:before {
+          &::before {
             content: '\e90c';
           }
         }
@@ -90,6 +92,7 @@
 
 
 .modal-overlay {
+  background-color: $white $important;
   opacity: 1 $important;
 }
 
@@ -167,6 +170,7 @@
 .waste-counter {
   color: $theme-green;
   font-size: 60px;
+  margin-top: -20px;
 }
 
 @media only screen and (min-width:601px) and (max-width:992px) {
@@ -242,7 +246,7 @@
     .award-img {
       img {
         max-width: 100%;
-        padding: 10px;
+        padding: 20px;
       }
     }
   }
@@ -254,23 +258,6 @@
 
     .award-img {
       margin-top: 1%;
-
-      .award1,
-      .award2 {
-        padding: 0;
-        width: 90%;
-      }
-
-      .award3 {
-        padding: 30px;
-        width: 70%;
-      }
-
-      .award5,
-      .award4 {
-        padding: 35px;
-        width: 70%;
-      }
     }
   }
 }
@@ -280,19 +267,10 @@
     padding: 5% 2.5%;
 
     .award-img {
-      margin-top: 1%;
+      height: 100px;
 
-      .award1,
-      .award2,
-      .award3,
-      .award4 {
-        padding: 0;
-        width: 90%;
-      }
-
-      .award5 {
-        padding: 35px;
-        width: 70%;
+      img {
+        padding: 30px;
       }
     }
   }
@@ -311,13 +289,23 @@
     position: relative;
     text-align: center;
 
-    &:hover {
-      background-color: $sky-blue;
-      border: 1px solid $theme-green $important;
+    &:hover img {
+      -webkit-filter: grayscale(0%);
+      -webkit-transition: .5s ease-in-out;
+      -moz-filter: grayscale(0%);
+      -moz-transition: .5s ease-in-out;
+      -o-filter: grayscale(0%);
+      -o-transition: .5s ease-in-out;
     }
 
     img {
       bottom: 0;
+      -webkit-filter: grayscale(100%);
+      -webkit-transition: .5s ease-in-out;
+      -moz-filter: grayscale(100%);
+      -moz-transition: .5s ease-in-out;
+      -o-filter: grayscale(100%);
+      -o-transition: .5s ease-in-out;
       left: 0;
       margin: auto;
       max-width: 80%;
@@ -334,17 +322,17 @@
     .feature-img {
       height: 200px;
 
-      &:nth-child(4),
-      &:nth-child(8),
-      &:nth-child(12) {
+      &.feature-4,
+      &.feature-8,
+      &.feature-12 {
         border-right: 1px solid $transparent;
       }
 
-      &:nth-child(9),
-      &:nth-child(10),
-      &:nth-child(11),
-      &:nth-child(12) {
-        border-bottom: 1px solid $transparent;
+      &.feature-9,
+      &.feature-10,
+      &.feature-11,
+      &.feature-12 {
+        border-bottom: 1px solid $transparent $important;
       }
     }
   }
@@ -355,16 +343,16 @@
     .feature-img {
       height: 160px;
 
-      &:nth-child(3),
-      &:nth-child(6),
-      &:nth-child(9),
-      &:nth-child(12) {
+      &.feature-3,
+      &.feature-6,
+      &.feature-9,
+      &.feature-12 {
         border-right: 1px solid $transparent;
       }
 
-      &:nth-child(10),
-      &:nth-child(11),
-      &:nth-child(12) {
+      &.feature-10,
+      &.feature-11,
+      &.feature-12 {
         border-bottom: 1px solid $transparent;
       }
     }
@@ -382,17 +370,17 @@
         padding: 30px;
       }
 
-      &:nth-child(2),
-      &:nth-child(4),
-      &:nth-child(6),
-      &:nth-child(8),
-      &:nth-child(10),
-      &:nth-child(12) {
+      &.feature-2,
+      &.feature-4,
+      &.feature-6,
+      &.feature-8,
+      &.feature-10,
+      &.feature-12 {
         border-right: 1px solid $transparent;
       }
 
-      &:nth-child(11),
-      &:nth-child(12) {
+      &.feature-11,
+      &.feature-12 {
         border-bottom: 1px solid $transparent;
       }
     }
