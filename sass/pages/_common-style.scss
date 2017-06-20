@@ -87,12 +87,16 @@ table tr td {
   }
 
   .footer-note {
-    color: darken($theme-green, 10%); 
+    color: darken($theme-green, 10%);
     font-size: 14px;
     padding: 5px 10px;
 
     a {
       color: $theme-blue;
+
+      &:hover {
+        color: $active-menu;
+      }
     }
   }
 }

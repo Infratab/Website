@@ -6,6 +6,8 @@
   <title>Infratab | Conatct</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -36,23 +38,15 @@
     </nav>
   </div>
 
-  <div class="contact-banner scroll">
-    <div class="overlay">
-      <div class="overlay-content">
-        <p>Looking for an Opportunity?</p>
-      </div>
-    </div>
-    <div class="banner">
-      <img src="img/map.png" alt="Map">
-    </div>
-
+  <div class="map-banner scroll">
+    <div id="map" class="map"></div>
   </div>
 
 <div class="contact z-depth-3">
   <div class="row">
     <div class="col s12 hide-on-med-and-up contact-section">
       <div class="indian-address">
-        <h2 class="location-header">INDIA</h2>
+        <h2 class="location-header">India Development Center</h2>
           <div class="address">
             <i class="icon-location icon"></i>
             <p>
@@ -74,11 +68,11 @@
           </div>
         </div>
         <div class="headquater-address">
-          <h2 class="location-header">HEADQUATER</h2>
+          <h2 class="location-header">Headquater</h2>
             <div class="address">
               <i class="icon-location icon"></i>
               <p>
-                <strong>Infratab,Inc</strong><br>
+                <strong>Infratab, Inc</strong><br>
                 4347 Raytheon Road<br>
                 Oxnard, California<br>
                 USA-93033<br>
@@ -98,7 +92,7 @@
         <form method="POST" action="http://formspree.io/careers@infratab.in">
           <div class="input-field">
             <input id="email" placeholder="johnsnow@thewall.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" type="email" name="email" class="validate" required="required">
-            <label for="email" data-error="Enter valid emailid">Your email <span class="red-text">*</span></label>
+            <label for="email" data-error="Enter valid email address">Your email <span class="red-text">*</span></label>
           </div>
 
           <div class="input-field">
@@ -128,7 +122,7 @@
 
     <div class="col s12 m6 l5 hide-on-small-only contact-section">
       <div class="indian-address">
-        <h2 class="location-header">INDIA</h2>
+        <h2 class="location-header">Development Center</h2>
           <div class="address">
             <i class="icon-location icon"></i>
             <p>
@@ -150,11 +144,11 @@
           </div>
         </div>
         <div class="headquater-address">
-          <h2 class="location-header">HEADQUATER</h2>
+          <h2 class="location-header">Headquater</h2>
             <div class="address">
               <i class="icon-location icon"></i>
               <p>
-                <strong>Infratab,Inc</strong><br>
+                <strong>Infratab, Inc</strong><br>
                 4347 Raytheon Road<br>
                 Oxnard, California<br>
                 USA-93033<br>
@@ -217,6 +211,7 @@
   <script src="js/materialize.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
 
   </body>
 </html>
