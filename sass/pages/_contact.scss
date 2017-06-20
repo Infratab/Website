@@ -6,12 +6,9 @@
   overflow: hidden;
   position: relative;
 
-  .banner {
-    height: 100%;
-
-    img {
-      width: 100%;
-    }
+  .map {
+    height: 100vh;
+    width: 100%;
   }
 
   .mapboxgl-control-container {
@@ -19,6 +16,21 @@
   }
 }
 
+@media only screen and (min-width:601px) and (max-width:992px) {
+  .map-banner {
+    .map {
+      height: 70vh;
+    }
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+  .map-banner {
+    .map {
+      height: 50vh;
+    }
+  }
+}
 //======================= Contact Banner Ends ========================//
 
 //====================== Conatct =================================//
@@ -146,7 +158,8 @@
 
 @media only screen and (min-width:601px) and (max-width:992px) {
   .contact {
-
+    margin-top: 10%;
+    
     .header {
       font-size: 20px;
     }
