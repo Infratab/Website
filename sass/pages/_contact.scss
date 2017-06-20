@@ -26,7 +26,7 @@
   background-color: $white;
   bottom: 100px;
   height: 570px;
-  margin: -6% auto 0;
+  margin: -10% auto 0;
   position: relative;
   width: 60%;
 
@@ -77,9 +77,8 @@
 
     .location-header {
       color: $white;
-      font-size: 20px;
+      font-size: 22px;
       padding: 15px 10px;
-      text-decoration: underline;
     }
 
     .indian-address {
@@ -87,7 +86,8 @@
     }
 
     .headquater-address {
-      margin-top: 25px;
+      border: 1px solid lighten($white, 20%);
+      margin-top: 30px;
     }
 
     .address {
