@@ -8,7 +8,7 @@ style: 'mapbox://styles/infratab/cj457sqhy08im2rpjfjp6fnuh',
 map.on('load', function () {
 
     map.addLayer({
-        "id": "points",
+        "id": "symbols",
         "type": "symbol",
         "source": {
             "type": "geojson",
@@ -16,23 +16,21 @@ map.on('load', function () {
                 "type": "FeatureCollection",
                 "features": [{
                     "type": "Feature",
+                    "properties": {
+                        "icon": "circle"
+                    },
                     "geometry": {
                         "type": "Point",
                         "coordinates": [77.585906, 12.912864]
-                    },
-                    "properties": {
-                        // "title": "Infratab",
-                        "icon": "marker"
                     }
                 }, {
                     "type": "Feature",
+                    "properties": {
+                        "icon": "circle"
+                    },
                     "geometry": {
                         "type": "Point",
                         "coordinates": [-119.10619300000002, 34.143765]
-                    },
-                    "properties": {
-                        // "title": "Infratab Inc",
-                        "icon": "marker"
                     }
                 }]
             }
@@ -45,5 +43,19 @@ map.on('load', function () {
             "text-offset": [0, 0.6],
             "text-anchor": "top"
         }
+    });
+
+    map.on('click', 'symbols', function (e) {
+      map.flyTo({center: e.features[0].geometry.coordinates});
+    });
+
+  // Change the cursor to a pointer when the it enters a feature in the 'symbols' layer.
+    map.on('mouseenter', 'symbols', function () {
+      map.getCanvas().style.cursor = 'pointer';
+    });
+
+  // Change it back to a pointer when it leaves.
+    map.on('mouseleave', 'symbols', function () {
+      map.getCanvas().style.cursor = '';
     });
 });
