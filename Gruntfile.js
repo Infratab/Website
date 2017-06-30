@@ -14,7 +14,7 @@ module.exports = function (grunt) {
       
       watch: {
         files: ["sass/**/*.scss"],
-        tasks: ["sass"]
+        tasks: ["scsslint", "sass"]
       },
       
       uglify: {
@@ -23,6 +23,17 @@ module.exports = function (grunt) {
             'js/main.min.js': ["js/jquery-2.1.1.min.js", "js/materialize.min.js", "js/init.js", "js/main.js"]
           }
         }
+      },
+
+      scsslint: {
+        sass: [
+          'sass/pages/*.scss',
+          'sass/abstracts/*.scss'
+        ],
+        options: {
+          config: 'sass-lint.yml',
+          colorizeOutput: true
+        }
       }
 
     });
@@ -30,6 +41,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-scss-lint');
 
-    grunt.registerTask( "default", ["sass", "uglify"]);
+    grunt.registerTask( "default", ["scsslint", "sass", "uglify"]);
 };
