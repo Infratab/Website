@@ -219,10 +219,10 @@
 .award {
   background: $sky-blue;
   margin-bottom: 5%;
-  padding: 5% 0;
+  padding: 5% 0 3%;
 
   .award-img {
-    height: 200px;
+    height: 150px;
     margin-top: 3%;
     position: relative;
     text-align: center;
@@ -231,8 +231,8 @@
       bottom: 0;
       left: 0;
       margin: auto;
-      max-width: 90%;
-      padding: 20px;
+      max-width: 100%;
+      padding:15px;
       position: absolute;
       right: 0;
       top: 0;
@@ -245,7 +245,6 @@
 
     .award-img {
       img {
-        max-width: 100%;
         padding: 20px;
       }
     }
@@ -256,8 +255,22 @@
   .award {
     padding: 5% 2.5%;
 
+    .col.offset-m2 {
+      margin-left: 2% $important;
+    }
+
+    .col.m1 {
+      width: 12% $important;
+    }
+
     .award-img {
-      margin-top: 1%;
+      margin: 5% 0;
+      height: auto $important;
+
+      img {
+        padding: 5px;
+      }
+
     }
   }
 }
