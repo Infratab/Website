@@ -330,6 +330,17 @@
   }
 }
 
+@media only screen and (min-width:1600px) {
+  .featured {
+    .feature-img {
+      img {
+        max-width: 60%
+      }
+    }
+  }
+
+}
+
 @media only screen and (min-width:993px) {
   .featured {
     .feature-img {
