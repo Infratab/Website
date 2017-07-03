@@ -223,7 +223,7 @@
 
   .award-img {
     height: 150px;
-    margin-top: 3%;
+    margin-top: 1%;
     position: relative;
     text-align: center;
 
@@ -240,13 +240,28 @@
   }
 }
 
-@media only screen and (min-width:993px) and (max-width:1366px) {
+@media only screen and (min-width:1366px) {
   .award {
 
-    .award-img {
-      img {
-        padding: 20px;
-      }
+    .col.offset-m2 {
+      margin-left: 10% $important;
+    }
+
+    .col.m1 {
+      width: 10% $important;
+    }
+  }
+}
+
+@media only screen and (max-width:1365px) {
+  .award {
+
+    .col.offset-m2 {
+      margin-left: 5% $important;
+    }
+
+    .col.m1 {
+      width: 11.25% $important;
     }
   }
 }
