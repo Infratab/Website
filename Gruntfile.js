@@ -2,27 +2,38 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         sass: {
-          development: {
+          dev: {
             options: {
-              style: 'expanded'
+              style: 'compressed'
             },
             files: {
-              "css/style.css": "sass/style.scss"
+              "dist/css/style.css": "sass/style.scss"
             }
           }
       },
       
       watch: {
         files: ["sass/**/*.scss"],
-        tasks: ["scsslint", "sass"]
+        tasks: ["scsslint", "sass", "uglify:dev"]
       },
       
       uglify: {
-        development: {
+        dev: {
           files: {
-            'js/main.min.js': ["js/jquery-2.1.1.min.js", "js/materialize.min.js", "js/init.js", "js/main.js"]
+            'dist/js/main.min.js': ["js/jquery-2.1.1.min.js", "js/materialize.min.js", "js/init.js", "js/main.js"]
+          }
+        },
+        staging: {
+          files: {
+            'dist/js/main.min.js': ["js/jquery-2.1.1.min.js", "js/materialize.min.js", "js/init.js", "js/main.js"]
+          }
+        },
+        production: {
+          files: {
+            'dist/js/main.min.js': ["js/jquery-2.1.1.min.js", "js/materialize.min.js", "js/init.js", "js/main.js"]
           }
         }
+
       },
 
       scsslint: {
@@ -43,5 +54,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-scss-lint');
 
-    grunt.registerTask( "default", ["scsslint", "sass", "uglify"]);
+    grunt.registerTask( "default", ["watch", "scsslint", "sass", "uglify:dev"]);
+    grunt.registerTask("deploy-staging", ['scsslint', 'sass', 'uglify:staging' ]);
+    grunt.registerTask("deploy-production", ['scsslint', 'sass', 'uglify:production' ]);
 };
