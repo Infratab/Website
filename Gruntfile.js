@@ -55,6 +55,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-scss-lint');
 
     grunt.registerTask( "default", ["scsslint", "sass", "uglify:dev"]);
-    grunt.registerTask("deploy-staging", ['scsslint', 'sass', 'uglify:staging' ]);
-    grunt.registerTask("deploy-production", ['scsslint', 'sass', 'uglify:production' ]);
+    grunt.registerTask("deploy-staging", ['sass', 'uglify:staging' ]);
+    grunt.registerTask("deploy-production", ['sass', 'uglify:production' ]);
 };
