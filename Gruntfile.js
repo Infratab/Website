@@ -7,7 +7,7 @@ module.exports = function (grunt) {
               style: 'compressed'
             },
             files: {
-              "dist/css/style.css": "sass/style.scss"
+              "css/style.css": "sass/style.scss"
             }
           }
       },
@@ -54,7 +54,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-scss-lint');
 
-    grunt.registerTask( "default", ["watch", "scsslint", "sass", "uglify:dev"]);
+    grunt.registerTask( "default", ["scsslint", "sass", "uglify:dev"]);
     grunt.registerTask("deploy-staging", ['scsslint', 'sass', 'uglify:staging' ]);
     grunt.registerTask("deploy-production", ['scsslint', 'sass', 'uglify:production' ]);
 };
