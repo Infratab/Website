@@ -26,15 +26,15 @@ module.exports = function (grunt) {
       },
 
       scsslint: {
-        sass: [
-          'sass/pages/*.scss',
-          'sass/abstracts/*.scss'
-        ],
-        options: {
-          config: 'sass-lint.yml',
-          colorizeOutput: true
-        }
+      src: [
+        'sass/pages/common/*.scss',
+        'sass/abstracts/*.scss'
+      ],
+      options: {
+        config: 'sass-lint.yml',
+        colorizeOutput: true
       }
+    }
 
     });
 
