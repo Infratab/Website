@@ -1,5 +1,5 @@
   $(document).ready(function(){
-  	mixpanel.init("afb672ef8b057d8aae64ad1a7d4be2d5");
+  	mixpanel.init("f0201f4e31bd69669f4412c3b03f7084");
 
   	// Navigation menu item
     var menuItem;
