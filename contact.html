@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Infratab | Conatct</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <script src="https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js"></script>
   <link href="https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css" rel="stylesheet" />
   <!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
@@ -171,39 +171,39 @@ for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElemen
 
   <footer class="footer">
     <img src="img/footer-bg.png" class="footer-img">
-    <div class="row footer-container">
+    <div class="footer-padding">
+      <div class="row section-wrapper footer-container">
+        <div class="col s5 m3 l4 no-padding">
+          <h5>Company</h5>
+          <ul>
+            <li><a  href="index.html">Home</a></li>
+            <li><a  href="careers.html">Careers</a></li>
+            <li><a  href="contact.html">Contact</a></li>
+          </ul>
+        </div>
 
-      <div class="col s5 m3 l4 no-padding">
-        <h5>Company</h5>
-        <ul>
-          <li><a  href="index.html">Home</a></li>
-          <li><a  href="careers.html">Careers</a></li>
-          <li><a  href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+        <div class="col m5 l4 center hide-on-small-only footer-logo">
+          <img src="img/logo-ans.png">
+        </div>
 
-      <div class="col m5 l4 hide-on-small-only footer-logo">
-        <img src="img/logo-ans.png">
-      </div>
+        <div class="col s7 m4 no-padding">
+          <div class="contact-footer">
+          <h5>Contact</h5>
+          <ul>
+            <li><a  href="mailto:info@infratab.in"><i class="icon-envelope"></i>: info@infratab.in</a></li>
+            <li><a  href="tel:+91-8040929250"><i class="icon-phone"></i>: (+91) 804 0929 250</a></li>
+            <li><a  href="http://infratab.com/" target="_blank"><i class="icon-globe"></i>: www.infratab.com</a></li>
+          </ul>
+          </div>
+        </div>
 
-      <div class="col s7 m4 no-padding">
-        <div class="contact-footer">
-        <h5 >Contact</h5>
-        <ul>
-          <li><a  href="mailto:info@infratab.in"><i class="icon-envelope"></i>: info@infratab.in</a></li>
-          <li><a  href="tel:+91-8040929250"><i class="icon-phone"></i>: (+91) 804 0929 250</a></li>
-          <li><a  href="http://infratab.com/" target="_blank"><i class="icon-globe"></i>: www.infratab.com</a></li>
-        </ul>
+        <div class="col s12 hide-on-med-and-up center footer-logo">
+          <img src="img/logo-ans.png">
         </div>
       </div>
-
-      <div class="col s12 hide-on-med-and-up center footer-logo">
-        <img src="img/logo-ans.png">
-      </div>
-
     </div>
 
-    <div class="footer-copyright">
+    <div class="section-wrapper footer-copyright">
       <div class="container center">
         <p>This website is available under <a href="https://github.com/Infratab/Website-IN/blob/master/LICENSE" target="_blank"> Copyleft © </a></p>
         <p>The code is available at <a href="https://github.com/Infratab/Website-IN" target="_blank">GitHub</a></p>
@@ -211,11 +211,7 @@ for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElemen
     </div>
   </footer>
 
-  <script src="js/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.min.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/mixpanel.js"></script>
+  <script src="dist/js/main.min.js"></script>
   <script src="js/map.js"></script>
 
   </body>

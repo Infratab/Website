@@ -75,7 +75,7 @@
       }
 
       .file-path {
-        border: none;
+        border: 0;
         box-shadow: none;
       }
     }
@@ -174,25 +174,25 @@
         padding-left: 15px;
       }
 
-        p {
-          font-size: 17px $important;
-        }
+      p {
+        font-size: 17px $important;
       }
+    }
 
-      .icon {
-        font-size: 22px $important;
-        padding: 0 15px 0 10px $important;
-      }
+    .icon {
+      font-size: 22px $important;
+      padding: 0 15px 0 10px $important;
+    }
 
-      .info {
-        margin-bottom: 10px;
+    .info {
+      margin-bottom: 10px;
 
-        a {
-          font-size: 17px $important;
-        }
+      a {
+        font-size: 17px $important;
       }
     }
   }
+}
 
 @media only screen and (min-width:320px) and (max-width:600px) {
   .contact {

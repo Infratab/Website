@@ -1,5 +1,7 @@
+//scss-lint:disable NestingDepth
 body,
 html {
+  @extend %scroll;
   margin: 0;
 }
 
