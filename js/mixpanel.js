@@ -13,7 +13,7 @@
     // Play infratab video
     var playVideo;
       	$('#playVideo').click(function(){
-         	mixpanel.track("Play-Video", {
+         	mixpanel.track("Play Video", {
         	"Play Video": playVideo
     	});
     });
@@ -21,7 +21,7 @@
     // Scroll to know us section
     var ScrollToKnow;
       	$('#scrollKnowus').click(function(){
-         	mixpanel.track("Scroll-Know", {
+         	mixpanel.track("Scroll Know Us", {
         	"Scroll Know": ScrollToKnow
     	});
     });
@@ -48,6 +48,42 @@
           footerItem = $(this).text();
           mixpanel.track("Footer", {
           "Footer Item": footerItem
+      });
+    });
+
+    // Joinus Scroll
+    var ScrollTojoinUs;
+        $('#scrollJoin').click(function(){
+          mixpanel.track("Join Us Scroll", {
+          "Scroll To Joinus": ScrollTojoinUs
+      });
+    });
+
+
+    // Job opening
+    var joinus;
+        $('.joinUsItem').click(function(){
+          joinUsItem = $(this).text();
+          mixpanel.track("Join Us", {
+          "Job Title": joinUsItem
+      });
+    });
+
+     // Career Mail to
+    var careerMailTo;
+        $('.careerMailTo').click(function(){
+          careerMailTo = $(this).text();
+          mixpanel.track("Career Mail", {
+          "Career Mail": careerMailTo
+      });
+    });
+
+    // Contact
+    var contactDetails;
+        $('.contactInfo').click(function(){
+          contactDetails = $(this).text();
+          mixpanel.track("Contact", {
+          "Contact Item": contactDetails
       });
     });
 
