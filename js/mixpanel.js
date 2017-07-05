@@ -5,7 +5,7 @@
     var menuItem;
       	$('.menuItem').click(function(){
         	menuItem = $(this).text();
-         	mixpanel.track("Navigation-bar", {
+         	mixpanel.track("Navigation", {
         	"Menu Item": menuItem
     	});
     });
@@ -28,11 +28,27 @@
 
     // Award images
     var awards;
-      	$('.award-img').click(function(){
-        	awards = $(this).text();
+      	$('.awardImg').click(function(){
          	mixpanel.track("Awards", {
         	"Awards": awards
     	});
+    });
+
+    // Featured images
+    var featured;
+        $('.featureImg').click(function(){
+          mixpanel.track("Featured In", {
+          "Featured In": featured
+      });
+    });
+
+     // Footer item
+    var footer;
+        $('.footerItem').click(function(){
+          footerItem = $(this).text();
+          mixpanel.track("Footer", {
+          "Footer Item": footerItem
+      });
     });
 
    
