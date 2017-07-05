@@ -220,19 +220,24 @@
   background: $sky-blue;
   padding-top: 4%;
 
+  .section-wrapper {
+    margin: 35px auto;
+  }
+
   .award-continer {
     @extend %scroll;
     display: block;
-    height: 230px;
+    // height: 230px;
     overflow-x: auto;
     overflow-y: hidden;
+    text-align: center;
     white-space: nowrap;
   }
 
   .award-img {
     display: inline-block;
-    height: 150px;
-    margin-top: 1%;
+    height: 190px;
+    margin-bottom: 20px;
     position: relative;
     text-align: center;
     width: 188px $important;
