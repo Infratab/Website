@@ -7,7 +7,7 @@ module.exports = function (grunt) {
               style: 'compressed'
             },
             files: {
-              "css/style.css": "sass/style.scss"
+              "css/style.min.css": "sass/style.scss"
             }
           }
       },
@@ -20,17 +20,17 @@ module.exports = function (grunt) {
       uglify: {
         dev: {
           files: {
-            'dist/js/main.min.js': ["js/jquery-2.1.1.min.js", "js/materialize.min.js", "js/init.js", "js/main.js"]
+            'dist/js/main.min.js': ["js/vendors/*.js", "js/main.js"]
           }
         },
         staging: {
           files: {
-            'dist/js/main.min.js': ["js/jquery-2.1.1.min.js", "js/materialize.min.js", "js/init.js", "js/main.js"]
+            'dist/js/main.min.js': ["js/vendors/*.js", "js/main.js"]
           }
         },
         production: {
           files: {
-            'dist/js/main.min.js': ["js/jquery-2.1.1.min.js", "js/materialize.min.js", "js/init.js", "js/main.js"]
+            'dist/js/main.min.js': ["js/vendors/*.js", "js/main.js"]
           }
         }
 
