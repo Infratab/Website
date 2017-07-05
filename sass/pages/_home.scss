@@ -218,11 +218,12 @@
 //====================== Award =================================//
 .award {
   background: $sky-blue;
-  // margin-bottom: 5%;
-  // padding: 5% 0 3%;
+  padding-top: 4%;
+
   .award-continer {
+    @extend %scroll;
     display: block;
-    height: 220px;
+    height: 230px;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
