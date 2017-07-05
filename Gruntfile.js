@@ -13,7 +13,7 @@ module.exports = function (grunt) {
       },
       
       watch: {
-        files: ["sass/**/*.scss"],
+        files: ["sass/**/*.scss", "js/*.js", "js/vendors/*.js"],
         tasks: ["scsslint", "sass", "uglify:dev"]
       },
       
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
         },
         production: {
           files: {
-            'dist/js/main.min.js': ["js/vendors/*.js", "js/main.js"]
+            'dist/js/main.min.js': ["js/vendors/*.js", "js/main.js", "js/mixpanel.js"]
           }
         }
 
