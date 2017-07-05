@@ -27,6 +27,27 @@ $important: !important;
   width: 100%;
 }
 
+%scroll {
+  &::-webkit-scrollbar {
+    background: $gray;
+    // border-radius: 10px;
+    cursor: pointer;
+    height: 8px;
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: lighten($grey, 20%);
+    border-radius: 10px;
+  // box-shadow: inset 0 0 6px $scroll-shadow;
+    cursor: pointer;
+  }
+
+    // &:hover::-webkit-scrollbar {
+    //   background: $grey;
+    // }
+}
+
 %center-wrapper {
   bottom: auto;
   left: 50%;
