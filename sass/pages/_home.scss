@@ -221,12 +221,13 @@
   // margin-bottom: 5%;
   // padding: 5% 0 3%;
   .award-continer {
+    display: block;
     height: 220px;
-    white-space: nowrap;
-      display: block;
-      overflow-y: hidden;
     overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
   }
+
   .award-img {
     display: inline-block;
     height: 150px;
