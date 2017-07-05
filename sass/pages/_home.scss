@@ -118,7 +118,7 @@
 @media only screen and (min-width:320px) and (max-width:600px) {
   .home-banner {
     .modal {
-      height: auto;
+      height: 50%;
 
       .modal-close {
         font-size: 20px;
@@ -145,6 +145,22 @@
     }
   }
 }
+
+@media only screen and (min-width:320px) and (max-width:360px) {
+  .home-banner {
+    height: 230px $important;
+
+    .overlay .overlay-content {
+      margin-top: 22px $important;
+    }
+
+    .video {
+      height: 230px $important;
+      width: auto;
+    }
+  }
+}
+
 //======================= Home Banner Ends ========================//
 
 //====================== Know us =================================//
