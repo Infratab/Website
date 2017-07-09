@@ -49,9 +49,13 @@
 
     // Featured images
     var featured;
-        $('.featureImg').click(function(){
+        $('.featureImg img').click(function(){
+          featuredAlt = $(this).attr('alt');
+          featured = $(this).attr('src').split('/');
+          var featuredImg = featured[featured.length - 1];
           mixpanel.track("Featured In", {
-          "Featured In": featured
+          "Featured img": featuredImg,
+          "Featured": featuredAlt
       });
     });
 
