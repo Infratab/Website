@@ -63,6 +63,13 @@
     var footer;
         $('.footerItem').click(function(){
           footerItem = $(this).text();
+
+          if (footerItem = $(this).text()) {
+              footerItem;
+          } else {
+              footerItem = "infratab logo";
+          }
+
           mixpanel.track("Footer", {
           "Footer Item": footerItem
       });
