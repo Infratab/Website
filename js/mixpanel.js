@@ -4,7 +4,16 @@
   	// Navigation menu item
     var menuItem;
       	$('.menuItem').click(function(){
-        	menuItem = $(this).text();
+        	// menuItem = $(this).text();
+          
+          if (menuItem = $(this).text()) {
+              menuItem;
+          } else if (menuItem = $(this).attr('alt')) {
+              menuItem;
+          } else {
+              menuItem = "Global";
+          }
+
          	mixpanel.track("Navigation", {
         	"Menu Item": menuItem
     	});
@@ -28,9 +37,13 @@
 
     // Award images
     var awards;
-      	$('.awardImg').click(function(){
+      	$('.awardImg img').click(function(){
+          awardsAlt = $(this).attr('alt');
+          awards = $(this).attr('src').split('/');
+          var image = awards[awards.length - 1];
          	mixpanel.track("Awards", {
-        	"Awards": awards
+        	"Awards img": image,
+          "Awards": awardsAlt
     	});
     });
 
