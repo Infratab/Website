@@ -38,14 +38,14 @@ module.exports = function (grunt) {
         },
         staging: {
           files: {
-            'dist/js/main.min.js': ["js/vendors/*.js", "js/main.js", "js/mixpanel.js"],
+            'dist/js/main.min.js': ["js/vendors/*.js", "js/main.js"],
             'dist/js/mixpanel.js': ["dist/js/mixpanel.js"],
             'dist/js/map.js': ["dist/js/map.js"]
           }
         },
         production: {
           files: {
-            'dist/js/main.min.js': ["js/vendors/*.js", "js/main.js", "js/mixpanel.js"],
+            'dist/js/main.min.js': ["js/vendors/*.js", "js/main.js"],
             'dist/js/mixpanel.js': ["dist/js/mixpanel.js"],
             'dist/js/map.js': ["dist/js/map.js"]
           }
