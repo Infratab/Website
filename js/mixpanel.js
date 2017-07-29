@@ -1,5 +1,5 @@
   $(document).ready(function(){
-  	mixpanel.init("f0201f4e31bd69669f4412c3b03f7084");
+  	// mixpanel_token
 
   	// Navigation menu item
     var menuItem;
