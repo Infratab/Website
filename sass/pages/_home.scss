@@ -115,8 +115,27 @@
   }
 }
 
+@media only screen and (min-width:601px) {
+  .home-banner {
+    .video {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width:320px) and (max-width:600px) {
   .home-banner {
+    // height: 100vh;
+
+    .video {
+      img {
+        height: 60vh;
+        width: 100%;
+      }
+    }
+
     .modal {
       height: 50%;
 
@@ -130,6 +149,7 @@
     }
 
     .overlay-content {
+
       p {
         font-size: 22px;
       }
@@ -140,23 +160,7 @@
 
       .down-arrow {
         font-size: 30px;
-        margin-top: 3%;
       }
-    }
-  }
-}
-
-@media only screen and (min-width:320px) and (max-width:360px) {
-  .home-banner {
-    height: 230px $important;
-
-    .overlay .overlay-content {
-      margin-top: 22px $important;
-    }
-
-    .video {
-      height: 230px $important;
-      width: auto;
     }
   }
 }
