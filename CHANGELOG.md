@@ -10,7 +10,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Added javascript minification for staging and production.
 
 ### Changed
-- Changed award section layout to suppoert horizontal scroll for the awards.
+- Changed award section layout to support horizontal scroll for the awards.
 
 ### Fixed
 - Fixed minor UI bugs
