@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Added
 - Mixpanel has been added to track the click events
 - Animated gif has been added for mobile and tablet instead of loading video.
+- Added javascript minification for staging and production.
+
+### Changed
+- Changed award section layout to suppoert horizontal scroll for the awards.
 
 ### Fixed
 - Fixed minor UI bugs
