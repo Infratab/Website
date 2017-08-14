@@ -120,8 +120,10 @@
     // height: 100vh;
 
     .video {
-      // height: 100vh;
-      width: auto;
+      img {
+        height: 60vh;
+        width: 100%;
+      }
     }
 
     .modal {
@@ -137,9 +139,6 @@
     }
 
     .overlay-content {
-      .overlay {
-        bottom: 0;
-      }
 
       p {
         font-size: 22px;
