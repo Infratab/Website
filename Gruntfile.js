@@ -27,25 +27,22 @@ module.exports = function (grunt) {
       
       watch: {
         files: ["sass/**/*.scss", "js/*.js", "js/vendors/*.js"],
-        tasks: ["copy", "scsslint", "sass", "node-minify:dev"]
+        tasks: ["copy", "scsslint", "sass"]
       },
       
       'node-minify': {
-        dev: {
-          files: {
-            'dist/js/main.min.js': ["js/vendors/*.js", "js/main.js"]
-          }
-        },
         staging: {
           files: {
-            'dist/js/main.min.js': ["js/vendors/*.js", "js/main.js"],
+            'dist/js/main.js': ["js/main.js"],
+            'dist/js/foodcounter.js': ["js/foodcounter.js"],
             'dist/js/mixpanel.js': ["dist/js/mixpanel.js"],
             'dist/js/map.js': ["dist/js/map.js"]
           }
         },
         production: {
           files: {
-            'dist/js/main.min.js': ["js/vendors/*.js", "js/main.js"],
+            'dist/js/main.js': ["js/main.js"],
+            'dist/js/foodcounter.js': ["js/foodcounter.js"],
             'dist/js/mixpanel.js': ["dist/js/mixpanel.js"],
             'dist/js/map.js': ["dist/js/map.js"]
           }
@@ -102,7 +99,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-regex-replace');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask( "default", ["copy", "scsslint", "sass",'regex-replace:dev', "node-minify:dev"]);
+    grunt.registerTask( "default", ["copy", "scsslint", "sass",'regex-replace:dev']);
     grunt.registerTask( "deploy-staging", ["copy", "sass",'regex-replace:staging', "node-minify:staging"]);
     grunt.registerTask( "deploy-production", ["copy",  "sass",'regex-replace:production', "node-minify:production"]);
 };
