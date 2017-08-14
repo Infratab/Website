@@ -14,18 +14,29 @@ $(document).ready(function($) {
 	}
 
 	/*Food wastage counter */
-	var totalFoodWastage = 1300000000 ;
+	var totalFoodWastage = 1300000000;
 	var totalSec = 31536000;
 	var averageFoodWastage = totalFoodWastage/totalSec;
-	console.log(averageFoodWastage);
 	var seconds = 0;
-	setInterval(function(){
-		seconds++;
-		$('#foodSeconds').text(seconds);
-		var foodWastage = Number(parseInt(seconds * averageFoodWastage)).toLocaleString();
-		$('.averageFood').text(foodWastage);
+	var foodCounterOffset = Math.floor($('#foodCounter').offset().top);
+	var counterTrigger = true;
 
-	},1000);
+	function foodCounter() {
+		setInterval(function(){
+			seconds++;
+			$('#foodSeconds').text(seconds);
+			var foodWastage = Number(parseInt(seconds * averageFoodWastage)).toLocaleString();
+			$('.averageFood').text(foodWastage);
+		},1000);
+	}
+
+	$(window).scroll(function() {
+		var windowOffset = $(window).scrollTop();
+		if((windowOffset >= foodCounterOffset - 500) && counterTrigger) {
+			counterTrigger = false;
+			foodCounter();
+		}
+	})
 
 	function infratabVideo(state) {
 		var div = document.getElementById("popupVideo");
@@ -93,3 +104,5 @@ $(document).ready(function($) {
 	});
 
 });
+
+	

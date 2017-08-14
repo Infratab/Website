@@ -18,7 +18,7 @@ map.on('load', function () {
                     "type": "Feature",
                     "properties": {
                         "description": "<strong> Infratab Bangalore Pvt Ltd </strong><br>#20, 24th Main Road <br>2nd Phase, JP nagar, <br>Bangalore - 560078, <br>Karnataka, India",
-                        "icon": "circle"
+                        "icon": "marker"
                     },
                     "geometry": {
                         "type": "Point",
@@ -28,7 +28,7 @@ map.on('load', function () {
                     "type": "Feature",
                     "properties": {
                         "description": "<strong> Infratab, Inc</strong><br>4347 Raytheon Road <br>Oxnard, California, <br>USA-93033",
-                        "icon": "circle"
+                        "icon": "marker"
                     },
                     "geometry": {
                         "type": "Point",

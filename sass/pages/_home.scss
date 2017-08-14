@@ -118,7 +118,7 @@
 @media only screen and (min-width:320px) and (max-width:600px) {
   .home-banner {
     .modal {
-      height: auto;
+      height: 50%;
 
       .modal-close {
         font-size: 20px;
@@ -145,6 +145,22 @@
     }
   }
 }
+
+@media only screen and (min-width:320px) and (max-width:360px) {
+  .home-banner {
+    height: 230px $important;
+
+    .overlay .overlay-content {
+      margin-top: 22px $important;
+    }
+
+    .video {
+      height: 230px $important;
+      width: auto;
+    }
+  }
+}
+
 //======================= Home Banner Ends ========================//
 
 //====================== Know us =================================//
@@ -218,21 +234,36 @@
 //====================== Award =================================//
 .award {
   background: $sky-blue;
-  margin-bottom: 5%;
-  padding: 5% 0;
+  padding-top: 4%;
+
+  .section-wrapper {
+    margin: 35px auto;
+  }
+
+  .award-continer {
+    @extend %scroll;
+    display: block;
+    // height: 230px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-align: center;
+    white-space: nowrap;
+  }
 
   .award-img {
-    height: 200px;
-    margin-top: 3%;
+    display: inline-block;
+    height: 190px;
+    margin-bottom: 20px;
     position: relative;
     text-align: center;
+    width: 188px $important;
 
     img {
       bottom: 0;
       left: 0;
       margin: auto;
-      max-width: 90%;
-      padding: 20px;
+      max-width: 100%;
+      padding: 15px;
       position: absolute;
       right: 0;
       top: 0;
@@ -240,41 +271,6 @@
   }
 }
 
-@media only screen and (min-width:993px) and (max-width:1366px) {
-  .award {
-
-    .award-img {
-      img {
-        max-width: 100%;
-        padding: 20px;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width:601px) and (max-width:992px) {
-  .award {
-    padding: 5% 2.5%;
-
-    .award-img {
-      margin-top: 1%;
-    }
-  }
-}
-
-@media only screen and (min-width:320px) and (max-width:600px) {
-  .award {
-    padding: 5% 2.5%;
-
-    .award-img {
-      height: 100px;
-
-      img {
-        padding: 30px;
-      }
-    }
-  }
-}
 //====================== Award Ends=================================//
 
 //====================== Featured =================================//
@@ -284,28 +280,24 @@
     border-left: 1px solid $transparent;
     border-right: 1px solid $gray;
     border-top: 1px solid $transparent;
-    cursor: pointer;
     height: 200px;
     position: relative;
     text-align: center;
 
     &:hover img {
-      -webkit-filter: grayscale(0%);
-      -webkit-transition: .5s ease-in-out;
       -moz-filter: grayscale(0%);
-      -moz-transition: .5s ease-in-out;
       -o-filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+      -moz-transition: .5s ease-in-out;
       -o-transition: .5s ease-in-out;
+      -webkit-transition: .5s ease-in-out;
     }
 
     img {
       bottom: 0;
-      -webkit-filter: grayscale(100%);
-      -webkit-transition: .5s ease-in-out;
       -moz-filter: grayscale(100%);
-      -moz-transition: .5s ease-in-out;
       -o-filter: grayscale(100%);
-      -o-transition: .5s ease-in-out;
+      -webkit-filter: grayscale(100%);
       left: 0;
       margin: auto;
       max-width: 80%;
@@ -313,8 +305,22 @@
       position: absolute;
       right: 0;
       top: 0;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      -webkit-transition: .5s ease-in-out;
    }
   }
+}
+
+@media only screen and (min-width:1600px) {
+  .featured {
+    .feature-img {
+      img {
+        max-width: 60%;
+      }
+    }
+  }
+
 }
 
 @media only screen and (min-width:993px) {
