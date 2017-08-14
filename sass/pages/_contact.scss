@@ -1,0 +1,247 @@
+//scss-lint:disable NestingDepth SelectorDepth
+//======================= Contact Banner ========================//
+.map-banner {
+  height: auto;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .map {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .mapboxgl-control-container {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width:992px) {
+  .map-banner {
+    .map {
+      height: 70vh;
+    }
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+  .map-banner {
+    .map {
+      height: 50vh;
+    }
+  }
+}
+//======================= Contact Banner Ends ========================//
+
+//====================== Conatct =================================//
+.contact {
+  background-color: $white;
+  bottom: 100px;
+  height: 570px;
+  margin: -10% auto 0;
+  position: relative;
+  width: 60%;
+
+  .header {
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .form-section {
+    padding: 0 30px;
+
+    .btn {
+      background-color: $theme-green;
+    }
+
+    .materialize-textarea {
+      max-height: 80px;
+      padding-bottom: 0 $important;
+    }
+
+    .file-field {
+      margin-bottom: 35px;
+
+      .btn {
+        background-color: $theme-blue $important;
+        cursor: pointer;
+        padding: 0 12px;
+
+        span,
+        i {
+          font-size: 14px;
+        }
+
+      }
+
+      .file-path {
+        border: 0;
+        box-shadow: none;
+      }
+    }
+
+  }
+
+  .contact-section {
+    background-color: $theme-blue;
+    height: 570px;
+
+
+    .location-header {
+      color: $white;
+      font-size: 22px;
+      padding: 15px 10px;
+    }
+
+    .indian-address {
+      margin-top: 15px;
+    }
+
+    .headquater-address {
+      // border: 1px solid lighten($white, 20%);
+      margin-top: 30px;
+    }
+
+    .address {
+      display: inline-flex;
+      margin-bottom: 10px;
+
+      p {
+        color: $white;
+        font-size: 16px;
+      }
+    }
+
+    .icon {
+      color: $contact-icon;
+      font-size: 22px;
+      padding: 0 20px 0 15px;
+    }
+
+    .info {
+      margin-bottom: 10px;
+
+      span {
+        vertical-align: middle;
+      }
+
+      a {
+        color: $white;
+        font-size: 17px;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width:1200px) and (max-width:1365px) {
+  .contact {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width:993px) and (max-width:1199px) {
+  .contact {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width:992px) {
+  .contact {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width:992px) {
+  .contact {
+    margin-top: 10%;
+
+    .header {
+      font-size: 20px;
+    }
+
+    .form-section {
+      padding: 0 15px;
+    }
+
+    .contact-section {
+
+      .header {
+        padding-left: 15px;
+      }
+
+      p {
+        font-size: 17px $important;
+      }
+    }
+
+    .icon {
+      font-size: 22px $important;
+      padding: 0 15px 0 10px $important;
+    }
+
+    .info {
+      margin-bottom: 10px;
+
+      a {
+        font-size: 17px $important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+  .contact {
+    height: 100%;
+    margin-top: 15%;
+    width: 94%;
+
+    .header {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .form-section {
+      padding: 0 25px;
+
+      .file-field {
+        margin-bottom: 15px;
+      }
+    }
+
+    .contact-section {
+      height: inherit $important;
+      padding-bottom: 10px;
+
+      .header {
+        padding-left: 15px;
+      }
+
+      .address {
+        margin-bottom: 10px;
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .icon {
+        font-size: 20px;
+        padding: 0 15px 0 10px;
+      }
+
+      .info {
+        margin-bottom: 10px;
+
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+//======================= Contact Ends ========================//

@@ -1,0 +1,279 @@
+//scss-lint:disable NestingDepth SelectorDepth PlaceholderInExtend
+//======================= Career Banner ========================//
+.career-banner {
+  height: auto;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .btn-large {
+    height: 46px;
+    line-height: 48px;
+  }
+
+  .banner {
+    height: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .overlay {
+    @extend %overlay;
+    background-color: $black-2;
+
+    .overlay-content {
+      @extend %center-wrapper;
+      width: 100%;
+      z-index: 10;
+    }
+
+    p {
+      color: $white;
+      font-size: 35px;
+      font-weight: 400;
+      margin: 0 auto 2%;
+      width: 44%;
+    }
+  }
+
+  .btn {
+    background-color: $theme-green;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width:1441px) {
+  .career-banner {
+    .overlay-content {
+      margin-top: -8%;
+    }
+  }
+}
+
+@media only screen and (min-width:1367px) and (max-width:1440px) {
+  .career-banner {
+    .overlay-content {
+      margin-top: -6%;
+
+      p {
+        width: 65%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1366px) {
+  .career-banner {
+    .overlay-content {
+      margin-top: -6%;
+
+      p {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1199px) {
+  .career-banner {
+    .overlay-content {
+      p {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:730px) and (max-width:992px) {
+  .career-banner {
+    .overlay-content {
+      p {
+        width: 75% $important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width:992px) {
+  .career-banner {
+    .overlay-content {
+      margin-top: 6%;
+
+      p {
+        font-size: 24px;
+        width: 90%;
+      }
+
+      .btn {
+        font-size: 15px;
+        height: 36px;
+        line-height: 38px;
+        padding: 0 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:515px) and (max-width:600px) {
+  .career-banner {
+    .overlay-content {
+      p {
+        font-size: 20px $important;
+        width: 80% $important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+  .career-banner {
+    .banner {
+      img {
+        height: 100%;
+      }
+    }
+
+    .overlay-content {
+      margin-top: 8%;
+
+      p {
+        font-size: 14px;
+        width: 94%;
+      }
+
+      .btn {
+        font-size: 15px;
+        height: 36px;
+        line-height: 38px;
+        padding: 0 12px;
+      }
+    }
+  }
+
+}
+
+//======================= Career Banner Ends ========================//
+
+//======================= Life ========================//
+.life {
+  h3 {
+    padding-left: 10px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width:992px) {
+  .life {
+    h3 {
+      margin: 10px 0;
+      padding-left: 0;
+    }
+
+    img {
+      height: auto;
+      margin-top: 30px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+  .life {
+    h3 {
+      margin: 10px 0;
+      padding-left: 0;
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}
+//======================= Life Ends ========================//
+
+//======================= Join us ========================//
+.joinus {
+
+  .card-hover {
+    &:hover {
+      color: $theme-blue;
+    }
+
+    .card:hover {
+      @extend .z-depth-3;
+    }
+  }
+
+  .card {
+    cursor: pointer;
+
+    .card-content {
+      padding: 35px;
+
+      .card-title {
+        font-size: 22px;
+        margin: 0 -25px;
+        padding-bottom: 8px;
+      }
+
+      h3 {
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:992px) {
+  .joinus {
+    .card {
+      .card-title {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+//======================= Joinus Ends ========================//
+
+//======================= career contact ========================//
+.career-contact {
+  text-align: center;
+
+  p {
+    color: $grey;
+    font-size: 18px;
+  }
+
+  a {
+    color: $theme-green;
+    font-size: 20px;
+
+    &:hover {
+      color: $theme-blue;
+    }
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:992px) {
+  .career-contact {
+    margin-bottom: 20px;
+
+    p,
+    a {
+      font-size: 16px $important;
+    }
+  }
+}
+//======================= career contact Ends ========================//

@@ -1,0 +1,399 @@
+//scss-lint:disable SelectorDepth NestingDepth VendorPrefix
+//======================= Home Banner ========================//
+.home-banner {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  .modal {
+    background: $black $important;
+    // border: 1px solid $white;
+    height: 100%;
+    overflow: hidden $important;
+
+    .modal-content {
+      height: 100%;
+      padding: 0;
+
+      iframe {
+        border: 0;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .modal-close {
+      // background: $black;
+      // border: 2px solid $white;
+      border-radius: 50%;
+      color: $white;
+      font-size: 30px;
+      font-weight: bold;
+      height: 40px;
+      line-height: 40px;
+      margin-top: 5px;
+      position: absolute;
+      right: 5px;
+      text-align: center;
+      width: 40px;
+      z-index: 9999;
+    }
+  }
+
+  .overlay {
+    @extend %overlay;
+    background-image: url('../img/overlay.png');
+
+    .overlay-content {
+      @extend %center-wrapper;
+      width: 100%;
+      z-index: 10;
+    }
+
+    p {
+      color: $white;
+      font-size: 40px;
+    }
+
+    .play-button {
+      .icon-play-o {
+        color: $white;
+        font-size: 50px;
+
+        &:hover {
+          &::before {
+            content: '\e90c';
+          }
+        }
+      }
+    }
+  }
+}
+
+.video {
+  width: 100%;
+}
+
+.down-arrow {
+  -webkit-animation: bounce 2s infinite ease-in-out;
+  color: $white;
+  cursor: pointer;
+  font-size: 40px;
+  height: 40px;
+  left: 0;
+  line-height: 40px;
+  margin: auto;
+  margin-top: 10%;
+  position: absolute;
+  right: 0;
+  width: 40px;
+}
+
+
+.modal-overlay {
+  background-color: $white $important;
+  opacity: 1 $important;
+}
+
+@media only screen and (min-width:1024px) {
+  .home-banner {
+    .overlay-content {
+      p {
+        font-size: 55px;
+        padding-bottom: 20px;
+      }
+
+      .icon-play-o {
+        font-size: 60px $important;
+      }
+
+      .down-arrow {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:601px) {
+  .home-banner {
+    .video {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+  .home-banner {
+    // height: 100vh;
+
+    .video {
+      img {
+        height: 60vh;
+        width: 100%;
+      }
+    }
+
+    .modal {
+      height: 50%;
+
+      .modal-close {
+        font-size: 20px;
+        height: 30px;
+        line-height: 30px;
+        width: 30px;
+
+      }
+    }
+
+    .overlay-content {
+
+      p {
+        font-size: 22px;
+      }
+
+      .icon-play-o {
+        font-size: 35px $important;
+      }
+
+      .down-arrow {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+//======================= Home Banner Ends ========================//
+
+//====================== Know us =================================//
+.knowus {
+
+  .iot-section {
+    img {
+      max-width: 94%;
+    }
+  }
+
+  .machine-section {
+    .content {
+      margin-top: 27px;
+    }
+
+    img {
+      height: 180px;
+    }
+  }
+}
+
+.waste-counter {
+  color: $theme-green;
+  font-size: 60px;
+  margin-top: -20px;
+}
+
+@media only screen and (min-width:601px) and (max-width:992px) {
+  .knowus {
+
+    .iot-section {
+      img {
+        height: 140px;
+        max-width: 100%;
+      }
+    }
+
+    .machine-section {
+      img {
+        height: 140px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+  .knowus {
+    .content {
+      margin-top: 10px;
+    }
+
+    .iot-section {
+      img {
+        height: 140px;
+        max-width: 100%;
+      }
+    }
+
+    .machine-section {
+      text-align: center;
+
+      img {
+        height: 100px;
+      }
+    }
+  }
+}
+//====================== Know us Ends=================================//
+
+//====================== Award =================================//
+.award {
+  background: $sky-blue;
+  padding-top: 4%;
+
+  .section-wrapper {
+    margin: 35px auto;
+  }
+
+  .award-continer {
+    @extend %scroll;
+    display: block;
+    // height: 230px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .award-img {
+    display: inline-block;
+    height: 190px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    width: 188px $important;
+
+    img {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      max-width: 100%;
+      padding: 15px;
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+  }
+}
+
+//====================== Award Ends=================================//
+
+//====================== Featured =================================//
+.featured {
+  .feature-img {
+    border-bottom: 1px solid $gray;
+    border-left: 1px solid $transparent;
+    border-right: 1px solid $gray;
+    border-top: 1px solid $transparent;
+    height: 200px;
+    position: relative;
+    text-align: center;
+
+    &:hover img {
+      -moz-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      -webkit-transition: .5s ease-in-out;
+    }
+
+    img {
+      bottom: 0;
+      -moz-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      left: 0;
+      margin: auto;
+      max-width: 80%;
+      padding: 20px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      -webkit-transition: .5s ease-in-out;
+   }
+  }
+}
+
+@media only screen and (min-width:1600px) {
+  .featured {
+    .feature-img {
+      img {
+        max-width: 60%;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width:993px) {
+  .featured {
+    .feature-img {
+      height: 200px;
+
+      &.feature-4,
+      &.feature-8,
+      &.feature-12 {
+        border-right: 1px solid $transparent;
+      }
+
+      &.feature-9,
+      &.feature-10,
+      &.feature-11,
+      &.feature-12 {
+        border-bottom: 1px solid $transparent $important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width:992px) {
+  .featured {
+    .feature-img {
+      height: 160px;
+
+      &.feature-3,
+      &.feature-6,
+      &.feature-9,
+      &.feature-12 {
+        border-right: 1px solid $transparent;
+      }
+
+      &.feature-10,
+      &.feature-11,
+      &.feature-12 {
+        border-bottom: 1px solid $transparent;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:600px)   {
+  .featured {
+    .feature-img {
+      height: 160px;
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+        padding: 30px;
+      }
+
+      &.feature-2,
+      &.feature-4,
+      &.feature-6,
+      &.feature-8,
+      &.feature-10,
+      &.feature-12 {
+        border-right: 1px solid $transparent;
+      }
+
+      &.feature-11,
+      &.feature-12 {
+        border-bottom: 1px solid $transparent;
+      }
+    }
+  }
+}
+//====================== Featured Ends =================================//
