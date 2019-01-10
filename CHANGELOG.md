@@ -8,6 +8,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Changed
 - Bangalore address has been updated on the contact page.
 
+### Removed
+- Bangalore office phone number has been temporarily removed.
+
 ## [2.1.0] - 2017-8-14
 ### Added
 - Mixpanel has been added to track the click events.
