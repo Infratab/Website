@@ -17,7 +17,7 @@ map.on('load', function () {
                 "features": [{
                     "type": "Feature",
                     "properties": {
-                        "description": "<b> Infratab Bangalore Pvt Ltd</b><br>Building 6A, RMZ Eco World, <br> Outer Ring Rd, Devarabisanahalli,<br> Bellandur, Bengaluru-560103 <br> Karnataka, India",
+                        "description": " <b> Infratab Bangalore Pvt Ltd </b><br> Cowrks, Building 6A,<br> RMZ Eco World, Outer Ring Rd,<br> Devarabisanahalli,Bellandur, <br> Bengaluru, Karnataka 560103<br>",
                         "icon": "marker"
                     },
                     "geometry": {
