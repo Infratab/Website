@@ -6,10 +6,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 ### Changed
-- Bangalore address has been updated on the contact page.
+- Contact information and bangalore office address has been updated in the contact page.
 
 ### Removed
-- Bangalore office phone number has been temporarily removed.
+- Infratab.com access from footer has been removed.
+
+### Fixed
+- Contact page title typo has been fixed.
 
 ## [2.1.0] - 2017-8-14
 ### Added
