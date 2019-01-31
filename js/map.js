@@ -17,17 +17,17 @@ map.on('load', function () {
                 "features": [{
                     "type": "Feature",
                     "properties": {
-                        "description": "<strong> Infratab Bangalore Pvt Ltd </strong><br>#20, 24th Main Road <br>2nd Phase, JP nagar, <br>Bangalore - 560078, <br>Karnataka, India",
+                        "description": " <b> Infratab Bangalore Pvt Ltd </b><br> Cowrks, Building 6A,<br> RMZ Eco World, Outer Ring Rd,<br> Devarabisanahalli,Bellandur, <br> Bengaluru, Karnataka 560103<br>",
                         "icon": "marker"
                     },
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [77.585906, 12.912864]
+                        "coordinates": [77.684878, 12.9212885]
                     }
                 }, {
                     "type": "Feature",
                     "properties": {
-                        "description": "<strong> Infratab, Inc</strong><br>4347 Raytheon Road <br>Oxnard, California, <br>USA-93033",
+                        "description": "<b> Infratab, Inc</b><br>4347 Raytheon Road <br>Oxnard, California, <br>USA-93033",
                         "icon": "marker"
                     },
                     "geometry": {
