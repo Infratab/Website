@@ -30,7 +30,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Added
 - More award has been added in award section.
 - Real map has been added instead of map image in contact page.
-- Form validation has been.
+- Form validation has been added for contact page.
 
 ### Changed
 - Life at infratab section image layout has been updated.
