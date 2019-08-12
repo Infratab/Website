@@ -17,12 +17,12 @@ map.on('load', function () {
                 "features": [{
                     "type": "Feature",
                     "properties": {
-                        "description": " <b> Infratab Bangalore Pvt Ltd </b><br> Cowrks, Building 6A,<br> RMZ Eco World, Outer Ring Rd,<br> Devarabisanahalli,Bellandur, <br> Bengaluru, Karnataka 560103<br>",
+                        "description": " <b>Infratab Bangalore Pvt Ltd </b><br> Padmavathi Complex, 3rd Floor, <br> Koramangala 8th Block,<br> Koramangala, Bengaluru,<br> Karnataka 560095<br>",
                         "icon": "marker"
                     },
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [77.684878, 12.9212885]
+                        "coordinates": [77.621307, 12.943668]
                     }
                 }, {
                     "type": "Feature",
