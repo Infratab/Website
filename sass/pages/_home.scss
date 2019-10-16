@@ -1,7 +1,7 @@
 //scss-lint:disable SelectorDepth NestingDepth VendorPrefix
 //======================= Home Banner ========================//
 .home-banner {
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -44,6 +44,7 @@
   .overlay {
     @extend %overlay;
     background-image: url('../img/overlay.png');
+    bottom: auto;
 
     .overlay-content {
       @extend %center-wrapper;
@@ -117,6 +118,8 @@
 
 @media only screen and (min-width:601px) {
   .home-banner {
+    height: 60vh;
+
     .video {
       img {
         width: 100%;
@@ -128,6 +131,7 @@
 @media only screen and (min-width:320px) and (max-width:600px) {
   .home-banner {
     // height: 100vh;
+    height: 60vh;
 
     .video {
       img {
@@ -194,6 +198,8 @@
 }
 
 @media only screen and (min-width:601px) and (max-width:992px) {
+
+
   .knowus {
 
     .iot-section {
@@ -279,6 +285,9 @@
 
 //====================== Featured =================================//
 .featured {
+  height: 80vh;
+  overflow: hidden;
+
   .feature-img {
     border-bottom: 1px solid $gray;
     border-left: 1px solid $transparent;
