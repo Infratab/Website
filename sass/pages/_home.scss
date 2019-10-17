@@ -1,7 +1,6 @@
 //scss-lint:disable SelectorDepth NestingDepth VendorPrefix
 //======================= Home Banner ========================//
 .home-banner {
-  height: 100vh;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -44,7 +43,6 @@
   .overlay {
     @extend %overlay;
     background-image: url('../img/overlay.png');
-    bottom: auto;
 
     .overlay-content {
       @extend %center-wrapper;
@@ -97,6 +95,16 @@
   opacity: 1 $important;
 }
 
+@media only screen and (min-width:1200px) {
+  .home-banner {
+    height: 100vh;
+
+    .overlay {
+      bottom: auto;
+    }
+  }
+}
+
 @media only screen and (min-width:1024px) {
   .home-banner {
     .overlay-content {
@@ -118,7 +126,6 @@
 
 @media only screen and (min-width:601px) {
   .home-banner {
-    height: 60vh;
 
     .video {
       img {
@@ -131,11 +138,9 @@
 @media only screen and (min-width:320px) and (max-width:600px) {
   .home-banner {
     // height: 100vh;
-    height: 60vh;
 
     .video {
       img {
-        height: 60vh;
         width: 100%;
       }
     }
@@ -285,15 +290,13 @@
 
 //====================== Featured =================================//
 .featured {
-  height: 80vh;
-  overflow: hidden;
 
   .feature-img {
     border-bottom: 1px solid $gray;
     border-left: 1px solid $transparent;
     border-right: 1px solid $gray;
     border-top: 1px solid $transparent;
-    height: 200px;
+    height: 180px;
     position: relative;
     text-align: center;
 
@@ -325,6 +328,24 @@
   }
 }
 
+@media only screen and (min-width:992px) {
+  .featured {
+    .feature-7,
+    .feature-8,
+    .feature-9,
+    .feature-10,
+    .feature-11,
+    .feature-12 {
+      border-bottom: 1px solid $transparent;
+    }
+
+    .feature-6,
+    .feature-12 {
+      border-right: 1px solid $transparent;
+    }
+  }
+}
+
 @media only screen and (min-width:1600px) {
   .featured {
     .feature-img {
@@ -333,47 +354,29 @@
       }
     }
   }
-
 }
 
-@media only screen and (min-width:993px) {
+@media only screen and (min-width:1200px) {
   .featured {
-    .feature-img {
-      height: 200px;
-
-      &.feature-4,
-      &.feature-8,
-      &.feature-12 {
-        border-right: 1px solid $transparent;
-      }
-
-      &.feature-9,
-      &.feature-10,
-      &.feature-11,
-      &.feature-12 {
-        border-bottom: 1px solid $transparent $important;
-      }
-    }
+    height: 100vh;
+    overflow: hidden;
   }
 }
 
 @media only screen and (min-width:601px) and (max-width:992px) {
   .featured {
-    .feature-img {
-      height: 160px;
+    .feature-10,
+    .feature-11,
+    .feature-12 {
+      border-bottom: 1px solid $transparent;
+    }
 
-      &.feature-3,
-      &.feature-6,
-      &.feature-9,
-      &.feature-12 {
-        border-right: 1px solid $transparent;
-      }
-
-      &.feature-10,
-      &.feature-11,
-      &.feature-12 {
-        border-bottom: 1px solid $transparent;
-      }
+    .feature-3,
+    .feature-6,   
+    .feature-9,
+    .feature-9,
+    .feature-12 {
+      border-right: 1px solid $transparent;
     }
   }
 }
@@ -381,7 +384,6 @@
 @media only screen and (min-width:320px) and (max-width:600px)   {
   .featured {
     .feature-img {
-      height: 160px;
       overflow: hidden;
 
       img {
