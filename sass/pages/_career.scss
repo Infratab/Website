@@ -1,7 +1,7 @@
 //scss-lint:disable NestingDepth SelectorDepth PlaceholderInExtend
 //======================= Career Banner ========================//
 .career-banner {
-  height: auto;
+  height: 100vh;
   max-width: 100%;
   overflow: hidden;
   position: relative;
@@ -87,11 +87,11 @@
   }
 }
 
-@media only screen and (min-width:730px) and (max-width:992px) {
+@media only screen and (min-width:601px) and (max-width:925px) {
   .career-banner {
-    .overlay-content {
-      p {
-        width: 75% $important;
+    .banner {
+      img {
+        height: 100vh;
       }
     }
   }
@@ -119,6 +119,12 @@
 
 @media only screen and (min-width:515px) and (max-width:600px) {
   .career-banner {
+    height: 55vh;
+
+    .banner {
+      height: 55vh;
+    }
+
     .overlay-content {
       p {
         font-size: 20px $important;
