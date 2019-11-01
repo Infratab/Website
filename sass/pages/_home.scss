@@ -253,14 +253,26 @@
 
   .section-wrapper {
     margin: 35px auto;
+    position: relative;
+
+    .left-paddle {
+      position: absolute;
+      left: 0px;
+      top: 50%;
+    }
+
+    .right-paddle {
+      position: absolute;
+      right: 0px;
+      top: 50%;
+    }
   }
 
   .award-continer {
     @extend %scroll;
     display: block;
     // height: 230px;
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow: hidden;
     text-align: center;
     white-space: nowrap;
   }
