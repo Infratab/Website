@@ -17,7 +17,7 @@ map.on('load', function () {
                 "features": [{
                     "type": "Feature",
                     "properties": {
-                        "description": " <b> Infratab Bangalore Pvt Ltd </b><br> 91 springboard, 3rd Floor,<br> Padmavathi Complex, 80 Feet Rd,<br> Koramangala 8th Block, <br>Bengaluru-560095, Karnataka<br>",
+                        "description": " <b> Infratab Bangalore Pvt Ltd </b><br> 91 springboard, 2nd Floor,<br> Padmavathi Complex, 80 Feet Rd,<br> Koramangala 8th Block, <br>Bengaluru-560095, Karnataka<br>",
                         "icon": "marker"
                     },
                     "geometry": {
