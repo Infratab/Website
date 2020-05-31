@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Changed
+- Job link have been updated for Front-end Developer, DevOps Engineer and Backend Developer role in the career page
 
 ## [2.1.1] - 2019-12-20
 ### Changed
