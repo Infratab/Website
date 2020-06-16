@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 ### Changed
-- Job link have been updated for Front-end Developer, DevOps Engineer and Backend Developer role in the career page
+- Job link has been updated for Front-end Developer, DevOps Engineer, Backend Developer and Project Manager role in the career page
 
 ## [2.1.1] - 2019-12-20
 ### Changed
