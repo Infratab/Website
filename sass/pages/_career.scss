@@ -52,7 +52,34 @@
   height: 500px;
 
   .card-content {
-    padding: 25px;
+    padding: 25px $important;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    h1 {
+      font-size: 60px;
+      line-height: 45px;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: 14px $important;
+    }
+
+    .join-description {
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #f44336;
+
+      &:hover {
+        color: #fff $important;
+      }
+    }
   }
 }
 
