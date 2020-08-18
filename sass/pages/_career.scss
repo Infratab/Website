@@ -1,4 +1,4 @@
-//scss-lint:disable NestingDepth SelectorDepth PlaceholderInExtend
+//scss-lint:disable NestingDepth SelectorDepth PlaceholderInExtend ColorVariable
 //======================= Career Banner ========================//
 .career-banner {
   height: auto;
@@ -42,6 +42,40 @@
     background-color: $theme-green;
     font-size: 18px;
     font-weight: 400;
+  }
+}
+
+.join-card-details {
+  background: #103f6e;
+  color: #fff;
+  cursor: pointer $important;
+  height: 500px;
+
+  .card-content {
+    padding: 25px;
+  }
+}
+
+.job-card-details {
+  height: 241px;
+  margin-bottom: 8px $important;
+
+  .card-image {
+    img {
+      height: 241px;
+    }
+
+    .card-title {
+      background: #000;
+      opacity: .7;
+      padding: 10px $important;
+      width: 100%;
+
+      p {
+        font-size: 15px $important;
+        font-weight: bold;
+      }
+    }
   }
 }
 
