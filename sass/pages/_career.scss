@@ -307,6 +307,35 @@
   }
 }
 
+@media only screen and (min-width:320px) and (max-width:768px) {
+  .join-card-details {
+    .card-content {
+      padding: 15px $important;
+
+      h2 {
+        font-size: 24px;
+      }
+
+      h1 {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 20px;
+      }
+
+      .join-description {
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+  .join-card-details {
+    height: 370px;
+  }
+}
+
 //======================= Joinus Ends ========================//
 
 //======================= career contact ========================//
