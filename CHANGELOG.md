@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [unreleased]
 ### Changed
-- Updated the Job Post layout to new layout to support experience & Intern Form.
+- The Job Post layout has been updated to include experience & intern form
 
 ## [2.1.1] - 2019-12-20
 ### Changed
